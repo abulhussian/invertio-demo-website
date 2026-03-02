@@ -13,9 +13,9 @@ const page = () => {
     <>
       <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
         <SectionHeader
-          badge="Our Services"
+          badge="About Invertio"
           heading="Engineering Technology That Powers Business Transformation"
-          subheading={`From transforming business operations to designing user-focused experiences, our services combine strategy, technology, and engineering expertise.
+          subheading={`Invertio is a technology-driven company helping organizations build scalable digital solutions through innovation, strategy, and engineering excellence.
 We partner with startups, enterprises, and growing businesses to transform ideas into impactful digital platforms. By combining modern technologies with deep industry understanding, we deliver solutions that improve efficiency, enhance user experiences, and support sustainable business growth.`}
           size="xl"
           headingColor="#0F172A"
