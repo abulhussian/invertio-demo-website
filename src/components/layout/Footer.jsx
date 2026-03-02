@@ -3,25 +3,19 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] px-30 pt-16 pb-8 flex flex-col gap-8">
-      <Image
-        src="/navbar/logo.svg"
-        alt="Logo"
-        width={308}
-        height={96}
-        priority
-      />
+    <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] p-7 lg:px-30 lg:pt-16 lg:pb-8 flex flex-col gap-8">
+      <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority />
 
       <hr className="border-t border-[#101323]" />
 
       {/* links */}
-      <div className="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
+      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-12">
         {footerData.map((section) => (
           <div key={section.title} className="flex flex-col gap-3">
             <h3 className="font-semibold font-jakarta text-white text-sm">
               {section.title}
             </h3>
-            <ul className="flex flex-col gap-1 text-sm text-gray-300">
+            <ul className="flex flex-col gap-2 text-sm text-gray-300 w-full">
               {section.links.map((link) => (
                 <li key={link.href} className="p-1">
                   <Link
@@ -80,7 +74,7 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* social media logos */}
-      <div className="flex gap-3 items-center w-full justify-center">
+      <div className="flex gap-4 items-center w-full justify-center py-4">
         <Image
           src="/footer/facebook.svg"
           alt="facebook"
@@ -120,7 +114,7 @@ const Footer = () => {
           </div>
 
           {/* Email Subscription Box */}
-          <div className="w-fit bg-white rounded-xl flex items-center p-2 overflow-hidden">
+          <div className="w-full lg:w-fit bg-white rounded-xl flex items-center p-2 overflow-hidden">
             {/* Input + Icon */}
             <div className="flex items-center gap-3 px-3 flex-1">
               <Image
@@ -150,7 +144,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300">
         <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
 
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-6">
           <Link href="/privacy-policy" className="hover:text-white transition">
             Privacy Policy
           </Link>
