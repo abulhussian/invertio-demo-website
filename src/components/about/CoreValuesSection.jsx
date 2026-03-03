@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "../common/ui/Section";
 import SectionHeader from "../common/ui/SectionHeader";
 import Image from "next/image";
@@ -34,7 +33,7 @@ const values = [
 const CoreValuesSection = () => {
   return (
     <Section>
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start ">
+      <div className=" mx-auto grid lg:grid-cols-2 gap-16 items-start ">
         {/* LEFT CONTENT */}
         <div className="sticky top-0 pt-30">
           <SectionHeader
