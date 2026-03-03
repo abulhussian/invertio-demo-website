@@ -3,6 +3,8 @@ import AboutSection from "./components/AboutSection";
 import CtaSection from "../common/components/CtaSection";
 import InsightsSection from "../common/components/InsightsSection";
 import TestimonialsSection from "../common/components/TestimonialsSection";
+import TransformationHero from "./components/TransformationHero";
+import CaseStudy from "./components/CaseStudy";
 const cloudSectionData = {
   left: [
     {
@@ -26,6 +28,49 @@ const cloudSectionData = {
     containerClass: "bg-[#0B1120] text-white shadow-xl",
   },
 };
+const transformationData = {
+  badge: "Driving Cloud Transformation",
+  heading: "Building Secure, Scalable, and High-Performance Cloud Environments",
+  subheading:
+    "Invertio combines cloud strategy, engineering expertise, and automation to help organizations adopt cloud technologies confidently. Our solutions ensure optimized workloads, improved agility, and long-term operational resilience.",
+  benefits: [
+    "Seamless migration from legacy infrastructure",
+    "Improved scalability and system performance",
+    "Reduced operational and infrastructure costs",
+    "Enhanced cloud security and compliance",
+    "High availability and business continuity",
+  ],
+  button: {
+    text: "Contact Us",
+    href: "/contact-us",
+  },
+};
+const caseStudyData = {
+  badge: "Case Study",
+  heading: "Core Cloud Capabilities Powering Modern Enterprises",
+  subheading:
+    "From migration and infrastructure management to optimization and security, our cloud services help businesses unlock innovation while maintaining performance, governance, and reliability.",
+  cards: [
+    {
+      title: "Cloud Migration",
+      description:
+        "Seamlessly transition applications, databases, and workloads to the cloud with minimal downtime using structured migration frameworks and best practices.",
+      variant: "secondary",
+    },
+    {
+      title: "Cloud Management & Optimization",
+      description:
+        "Maximize cloud efficiency through continuous monitoring, performance tuning, automation, and cost optimization strategies.",
+      variant: "primary",
+    },
+    {
+      title: "Cloud Security & Compliance",
+      description:
+        "Protect your cloud infrastructure with advanced security architecture, compliance governance, proactive threat detection, and zero-trust frameworks.",
+      variant: "secondary",
+    },
+  ],
+};
 const CloudService = () => {
   return (
     <>
@@ -40,6 +85,8 @@ const CloudService = () => {
         leftCards={cloudSectionData.left}
         rightCard={cloudSectionData.right}
       />
+      <TransformationHero data={transformationData} />
+      <CaseStudy data={caseStudyData} />
       <CtaSection />
       <InsightsSection />
       <TestimonialsSection />
