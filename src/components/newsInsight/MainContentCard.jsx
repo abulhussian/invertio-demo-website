@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const MainContentCard = ({
       date,
@@ -56,17 +57,17 @@ const MainContentCard = ({
                               {/* Button */}
                               {link && (
                                     <div className="self-start">
-                                          <a
+                                          <Link
                                                 href={link}
                                                 className="inline-flex items-center gap-2 
-                                                bg-[#2563EB] hover:bg-[#1E4FD8] 
-                                                text-white text-sm font-medium 
-                                                px-6 py-3 rounded-full
-                                                transition-all duration-300"
+      bg-[#2563EB] hover:bg-[#1E4FD8] 
+      text-white text-sm font-medium 
+      px-6 py-3 rounded-full
+      transition-all duration-300"
                                           >
                                                 {buttonText}
                                                 <span className="text-base">↗</span>
-                                          </a>
+                                          </Link>
                                     </div>
                               )}
                         </div>

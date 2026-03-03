@@ -47,20 +47,18 @@ const Navbar = () => {
             onClick={() => setActiveMenu(null)}
             href="/about-us"
             className={`text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center
-  ${
-    pathname === "/about-us" ? "text-white" : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname === "/about-us" ? "text-white" : "text-[#717BBC] hover:text-white"
+              }`}
           >
             About Us
           </Link>
 
           <div
             className={`relative text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center gap-2
-  ${
-    pathname.startsWith("/services")
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/services")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
           >
             <Link onClick={() => setActiveMenu(null)} href="/services">
               Our Services
@@ -88,11 +86,10 @@ const Navbar = () => {
 
           <div
             className={`relative text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center gap-2
-  ${
-    pathname.startsWith("/solutions")
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/solutions")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
           >
             <Link onClick={() => setActiveMenu(null)} href="/solutions">
               Our Solutions
@@ -120,11 +117,10 @@ const Navbar = () => {
 
           <div
             className={`relative text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center gap-2
-  ${
-    pathname.startsWith("/industries")
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/industries")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
           >
             <Link onClick={() => setActiveMenu(null)} href="/industries">
               Industries
@@ -154,9 +150,8 @@ const Navbar = () => {
             onClick={() => setActiveMenu(null)}
             href="/our-work"
             className={`text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center
-  ${
-    pathname === "/our-work" ? "text-white" : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname === "/our-work" ? "text-white" : "text-[#717BBC] hover:text-white"
+              }`}
           >
             Our Work
           </Link>
@@ -165,11 +160,13 @@ const Navbar = () => {
             onClick={() => setActiveMenu(null)}
             href="/news-insights"
             className={`text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center
-  ${
-    pathname === "/news-insights"
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/news-insights")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
+
+
+
           >
             News & Insights
           </Link>
