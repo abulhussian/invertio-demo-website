@@ -1,0 +1,49 @@
+import Link from "next/link";
+
+function RightSideSection({
+      title,
+      description,
+      buttonText,
+      image,
+      slug,
+}) {
+      return (
+            <section className="w-full bg-[#F4F6FA] py-20">
+                  <div className="flex flex-col lg:flex-row items-center gap-48">
+
+                        {/* LEFT SIDE - IMAGE */}
+                        <div className="flex-1">
+                              <div className="bg-white rounded-2xl">
+                                    <img
+                                          src={image}
+                                          alt="preview"
+                                          className="w-full rounded-xl object-contain"
+                                    />
+                              </div>
+                        </div>
+
+                        {/* RIGHT SIDE - TEXT */}
+                        <div className="flex-1 max-w-xl">
+                              <h2 className="text-md md:text-4xl font-semibold text-[#0F172A] mb-4">
+                                    {title}
+                              </h2>
+
+                              <p className="text-gray-600 leading-relaxed text-[14px] mb-4">
+                                    {description}
+                              </p>
+
+                              <Link href={`/our-work/${slug}`}>
+                                    <button className="inline-flex items-center gap-2 bg-black hover:bg-black/50 text-white text-sm font-medium px-6 py-3 rounded-full transition">
+                                          {buttonText}
+                                          <span className="text-xl font-bold">&#8599;</span>
+                                    </button>
+                              </Link>
+
+                        </div>
+
+                  </div>
+            </section>
+      );
+}
+
+export default RightSideSection;

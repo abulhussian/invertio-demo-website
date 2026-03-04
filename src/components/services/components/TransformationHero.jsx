@@ -14,9 +14,8 @@ const TransformationHero = ({ data }) => {
           {benefits.map((value, index) => (
             <div
               key={index}
-              className={`flex items-start sm:items-center gap-4 bg-[#FCFCFD] border border-[#D5D9EB] rounded-xl p-4 sm:p-6 shadow-gray-100 transition duration-300 hover:shadow-xl ${
-                index % 2 === 0 ? "lg:hover:rotate-1" : "lg:hover:-rotate-1"
-              }`}
+              className={`flex items-start sm:items-center gap-4 bg-[#FCFCFD] border border-[#D5D9EB] rounded-xl p-4 sm:p-6 shadow-gray-100 transition duration-300 hover:shadow-xl ${index % 2 === 0 ? "lg:hover:rotate-1" : "lg:hover:-rotate-1"
+                }`}
             >
               {/* ICON */}
               <div className="flex-shrink-0">

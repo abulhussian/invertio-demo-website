@@ -22,8 +22,7 @@ const Navbar = () => {
     return () => document.removeEventListener("click", handleClick);
   }, []);
   return (
-    <header className="navbar-wrapper px-4 sm:px-6 md:px-10 lg:px-20 py-4 sm:py-5 md:py-6 sticky top-0 z-50 font-jakarta">
-      <div className="bg-[#101323] py-4 lg:py-0  px-4 sm:px-6 md:px-8 rounded-2xl md:rounded-[20px] flex justify-between items-center">
+<header className="navbar-wrapper fixed top-0 left-0 w-full px-4 sm:px-6 md:px-10 lg:px-20 py-4 sm:py-5 md:py-6 z-50 font-jakarta">      <div className="bg-[#101323] py-4 lg:py-0  px-4 sm:px-6 md:px-8 rounded-2xl md:rounded-[20px] flex justify-between items-center">
         <Link onClick={() => setActiveMenu(null)} href="/">
           <Image
             src="/logo/logo.svg"
@@ -47,20 +46,18 @@ const Navbar = () => {
             onClick={() => setActiveMenu(null)}
             href="/about-us"
             className={`text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center
-  ${
-    pathname === "/about-us" ? "text-white" : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname === "/about-us" ? "text-white" : "text-[#717BBC] hover:text-white"
+              }`}
           >
             About Us
           </Link>
 
           <div
             className={`relative text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center gap-2
-  ${
-    pathname.startsWith("/services")
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/services")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
           >
             <Link onClick={() => setActiveMenu(null)} href="/services">
               Our Services
@@ -88,11 +85,10 @@ const Navbar = () => {
 
           <div
             className={`relative text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center gap-2
-  ${
-    pathname.startsWith("/solutions")
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/solutions")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
           >
             <Link onClick={() => setActiveMenu(null)} href="/solutions">
               Our Solutions
@@ -120,11 +116,10 @@ const Navbar = () => {
 
           <div
             className={`relative text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center gap-2
-  ${
-    pathname.startsWith("/industries")
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/industries")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
           >
             <Link onClick={() => setActiveMenu(null)} href="/industries">
               Industries
@@ -154,9 +149,8 @@ const Navbar = () => {
             onClick={() => setActiveMenu(null)}
             href="/our-work"
             className={`text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center
-  ${
-    pathname === "/our-work" ? "text-white" : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname === "/our-work" ? "text-white" : "text-[#717BBC] hover:text-white"
+              }`}
           >
             Our Work
           </Link>
@@ -165,11 +159,13 @@ const Navbar = () => {
             onClick={() => setActiveMenu(null)}
             href="/news-insights"
             className={`text-[14px] font-semibold h-20 px-4 py-2.5 flex items-center
-  ${
-    pathname === "/news-insights"
-      ? "text-white"
-      : "text-[#717BBC] hover:text-white"
-  }`}
+  ${pathname.startsWith("/news-insights")
+                ? "text-white"
+                : "text-[#717BBC] hover:text-white"
+              }`}
+
+
+
           >
             News & Insights
           </Link>
