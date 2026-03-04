@@ -21,7 +21,7 @@ const FeatureSection = ({
                     <div
                         className={`space-y-3 ${imagePosition === "left" ? "md:order-2" : "md:order-1"
                             }`}
-                    > 
+                    >
                         <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
                             {tag}
                         </p>
