@@ -35,7 +35,7 @@ function RightSideSection({
                                     className="inline-flex items-center gap-2 bg-black hover:bg-black/50 text-white text-sm font-medium px-6 py-3 rounded-full transition"
                               >
                                     {buttonText}
-                                    <span className="text-base">→</span>
+                                    <span className="text-xl font-bold">&#8599;</span>
                               </button>
                         </div>
 

@@ -210,42 +210,43 @@ const BlogFilterSection = () => {
                         ))}
                   </div>
 
-                  <div className="mt-8 flex justify-center">
-                        <div className="flex items-center gap-3 bg-transparent">
+                  <div className="mt-8 flex justify-center px-4">
+                        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-3">
 
                               {/* Previous */}
-                              <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition">
-                                    ← Previous
+                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition w-full sm:w-auto">
+                                    ← <span className="hidden sm:inline">Previous</span>
                               </button>
 
                               {/* Page Numbers */}
-                              <div className="flex items-center gap-2">
-                                    <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#0F172A] text-white font-semibold">
+                              <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto max-w-full">
+
+                                    <button className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg bg-[#0F172A] text-white text-sm sm:text-base font-semibold">
                                           1
                                     </button>
-                                    <button className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
+
+                                    <button className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 text-sm sm:text-base">
                                           2
                                     </button>
-                                    <button className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
+
+                                    <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
                                           3
                                     </button>
 
-                                    <span className="px-2 text-gray-500">...</span>
+                                    <span className="hidden sm:inline px-2 text-gray-500">...</span>
 
-                                    <button className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
-                                          8
-                                    </button>
-                                    <button className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
+                                    <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
                                           9
                                     </button>
-                                    <button className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
+
+                                    <button className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 text-sm sm:text-base">
                                           10
                                     </button>
                               </div>
 
                               {/* Next */}
-                              <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition">
-                                    Next →
+                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition w-full sm:w-auto">
+                                    <span className="hidden sm:inline">Next</span> →
                               </button>
 
                         </div>
