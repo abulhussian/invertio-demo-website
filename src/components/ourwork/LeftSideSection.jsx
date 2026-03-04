@@ -9,7 +9,7 @@ function LeftSideSection({
 }) {
       return (
             <section className="w-full bg-[#F4F6FA] py-20">
-                  <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-48">
+                  <div className="flex flex-col lg:flex-row items-center gap-8">
 
                         {/* IMAGE */}
                         <div className="flex-1 order-1 lg:order-2">

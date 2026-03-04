@@ -1,50 +1,50 @@
-
-import NextImage from "next/image";
+import Image from "next/image";
 
 const SubscribeSection = () => {
       return (
-            <section className="relative w-full py-20 px-3 md:px-16 lg:px-24 overflow-hidden bg-[#050A1A]">
+            <section className="relative w-full py-12 overflow-hidden bg-[#0B1120]">
 
-                  {/* 1. DECORATIVE IMAGE FIX */}
-                  {/* We use negative positioning to "cut" the image off like the design */}
-                  <div className="absolute -left-10 -bottom-10 opacity-20 pointer-events-none z-50">
-                        <NextImage
-                              src="/newsinsight/subimage.png"
-                              alt=""
-                              width={400} // Increased size to ensure it's visible
-                              height={400}
-                              className="object-contain"
-                              priority
-                        />
-                  </div>
+                  {/* Decorative Background Shape (same style as CTA) */}
+                  <Image
+                        className="absolute -left-40 top-16 opacity-20"
+                        src="/newsinsight/subimage.png"
+                        alt="Background Shape"
+                        width={353}
+                        height={464}
+                  />
 
-                  {/* 2. CONTENT LAYER */}
-                  <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-10">
+                  {/* Content */}
+                  <div className="relative w-full mx-auto px-8 md:px-14 lg:px-20 
+      flex flex-col md:flex-row md:items-center md:justify-between gap-8">
 
-                        {/* TEXT CONTENT */}
-                        <div className="flex flex-col gap-3">
-                              <span className="text-[#94A3B8] text-sm font-semibold tracking-wide uppercase">
+                        {/* LEFT */}
+                        <div className="flex flex-col gap-4 max-w-2xl">
+                              <span className="text-sm text-gray-400 font-medium">
                                     News & Insights
                               </span>
 
-                              <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+                              <h2 className="text-3xl md:text-4xl font-semibold text-white">
                                     Never Miss an Update
                               </h2>
 
-                              <p className="text-[#94A3B8] text-base md:text-lg max-w-xl leading-relaxed">
+                              <p className="text-gray-300 text-sm md:text-base">
                                     Subscribe to receive the latest technology insights, innovation stories,
                                     and industry updates directly in your inbox.
                               </p>
                         </div>
 
-                        {/* BUTTON */}
+                        {/* RIGHT BUTTON */}
                         <div className="flex-shrink-0">
-                              <button className="px-10 py-4 rounded-full bg-[#FF813E] hover:bg-[#e67337] text-white font-bold text-lg transition-transform hover:scale-105 duration-200 shadow-xl">
+                              <button className="px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-medium transition">
                                     Subscribe Now
                               </button>
                         </div>
 
                   </div>
+
+                  {/* Bottom Gradient Line */}
+                  <div className="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-r from-purple-900 via-blue-900 to-cyan-900 opacity-70" />
+
             </section>
       );
 };
