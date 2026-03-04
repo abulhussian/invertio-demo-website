@@ -27,7 +27,12 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <body className="antialiased">
         <Navbar />
-        {children}
+
+        {/* Main content */}
+        <main className="pt-[120px]">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
