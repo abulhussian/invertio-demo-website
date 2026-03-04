@@ -1,9 +1,9 @@
+import CtaSection from "@/components/common/components/CtaSection";
 import InsightsSection from "@/components/common/components/InsightsSection";
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
 import SectionHeader from "@/components/common/ui/SectionHeader";
 import LeftSideSection from "@/components/ourwork/LeftSideSection";
 import RightSideSection from "@/components/ourwork/RightSideSection";
-import StartJourneySection from "@/components/ourwork/StartJourneySection";
 
 const page = () => {
   return (
@@ -91,7 +91,7 @@ const page = () => {
           slug="taxi-dispatch-system"
         />
       </div>
-      <StartJourneySection />
+      <CtaSection />
       <InsightsSection />
       <TestimonialsSection />
     </>

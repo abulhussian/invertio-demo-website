@@ -9,10 +9,10 @@ function RightSideSection({
 }) {
       return (
             <section className="w-full bg-[#F4F6FA] py-20">
-                  <div className="flex flex-col lg:flex-row items-center gap-48">
+                  <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-48">
 
-                        {/* LEFT SIDE - IMAGE */}
-                        <div className="flex-1">
+                        {/* IMAGE */}
+                        <div className="flex-1 order-1 lg:order-1">
                               <div className="bg-white rounded-2xl">
                                     <img
                                           src={image}
@@ -22,8 +22,8 @@ function RightSideSection({
                               </div>
                         </div>
 
-                        {/* RIGHT SIDE - TEXT */}
-                        <div className="flex-1 max-w-xl">
+                        {/* TEXT */}
+                        <div className="flex-1 max-w-xl order-2 lg:order-2">
                               <h2 className="text-md md:text-4xl font-semibold text-[#0F172A] mb-4">
                                     {title}
                               </h2>
@@ -38,7 +38,6 @@ function RightSideSection({
                                           <span className="text-xl font-bold">&#8599;</span>
                                     </button>
                               </Link>
-
                         </div>
 
                   </div>
