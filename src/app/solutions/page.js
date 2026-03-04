@@ -23,9 +23,9 @@ const page = () => {
         title="Turning data into actionable intelligence that drives smarter decisions and business growth."
         description=""
         buttonText="Read More"
-        image="/services/Transformation.png"
+        image="/services/data-analytics.png"
         imagePosition="right"
-        slug = "data-analytics"
+        slug = "solutions/data-analytics"
        
       />
        <FeatureSection
@@ -33,9 +33,9 @@ const page = () => {
         title="Protecting digital assets with proactive security strategies and resilient defense frameworks."
         description=""
         buttonText="Read More"
-        image="/services/cloud services.png"
+        image="/services/cyberSecurity.png"
         imagePosition="left"
-        slug = "Cybersecurity"
+        slug = "solutions/cybersecurity"
        
       />
       <FeatureSection
@@ -43,9 +43,9 @@ const page = () => {
         title="Aligning technology strategy with business goals to enable innovation and operational excellence."
         description=""
         buttonText="Read More"
-        image="/services/Software-development.png"
+        image="/services/it-consulting.png"
         imagePosition="right"
-        slug = "IT-consulting"
+        slug = "solutions/It-consulting"
        
       />
       <CtaSection />

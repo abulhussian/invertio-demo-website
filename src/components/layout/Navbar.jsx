@@ -22,8 +22,7 @@ const Navbar = () => {
     return () => document.removeEventListener("click", handleClick);
   }, []);
   return (
-    <header className="navbar-wrapper px-4 sm:px-6 md:px-10 lg:px-20 py-4 sm:py-5 md:py-6 sticky top-0 z-50 font-jakarta">
-      <div className="bg-[#101323] py-4 lg:py-0  px-4 sm:px-6 md:px-8 rounded-2xl md:rounded-[20px] flex justify-between items-center">
+<header className="navbar-wrapper fixed top-0 left-0 w-full px-4 sm:px-6 md:px-10 lg:px-20 py-4 sm:py-5 md:py-6 z-50 font-jakarta">      <div className="bg-[#101323] py-4 lg:py-0  px-4 sm:px-6 md:px-8 rounded-2xl md:rounded-[20px] flex justify-between items-center">
         <Link onClick={() => setActiveMenu(null)} href="/">
           <Image
             src="/logo/logo.svg"

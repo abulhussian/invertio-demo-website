@@ -1,11 +1,13 @@
 import CtaSection from "@/components/common/components/CtaSection";
 import InsightsSection from "@/components/common/components/InsightsSection";
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
+import HeroSection from "@/components/HeroSection";
 
 const page = () => {
   return (
     <>
-      <div className="text-5xl h-screen">HOME </div>
+    
+        <HeroSection/>
       <CtaSection />
       <InsightsSection />
       <TestimonialsSection />
