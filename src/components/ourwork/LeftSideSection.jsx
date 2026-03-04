@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 function LeftSideSection({
       title,
       description,
       buttonText,
       image,
-      onClick,
+      slug,
 }) {
       return (
             <section className="w-full bg-[#F4F6FA] py-20">
@@ -19,13 +21,12 @@ function LeftSideSection({
                                     {description}
                               </p>
 
-                              <button
-                                    onClick={onClick}
-                                    className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1E4FD8] text-white text-sm font-medium px-6 py-3 rounded-full transition"
-                              >
-                                    {buttonText}
-                                    <span className="text-base">→</span>
-                              </button>
+                              <Link href={`/our-work/${slug}`}>
+                                    <button className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1E4FD8] text-white text-sm font-medium px-6 py-3 rounded-full transition">
+                                          {buttonText}
+                                          <span className="text-base font-bold text-xl">&#8599;</span>
+                                    </button>
+                              </Link>
                         </div>
 
                         {/* RIGHT SIDE */}
