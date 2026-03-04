@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
     return (
-        <div className="w-full  ">
+        <div className="w-full -mt-[120px] ">
 
             {/* HERO SECTION */}
             <section className="relative w-full h-[650px]">
