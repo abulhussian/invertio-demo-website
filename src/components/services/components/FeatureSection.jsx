@@ -35,7 +35,7 @@ const FeatureSection = ({
                         </p>
 
                         <button
-                            onClick={() => router.push(`/services/${slug}`)}
+                            onClick={() => router.push(`/${slug}`)}
                             className={`inline-flex items-center px-5 py-2.5 text-white rounded-full text-sm font-medium transition
                             ${imagePosition === "left"
                                     ? "bg-blue-600 hover:bg-blue-700"

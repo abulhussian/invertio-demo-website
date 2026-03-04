@@ -26,7 +26,7 @@ const page = () => {
         buttonText="Read More"
         image="/services/Transformation.png"
         imagePosition="right"
-        slug = "digital-transformation"
+        slug = "services/digital-transformation"
        
       />
        <FeatureSection
@@ -36,7 +36,7 @@ const page = () => {
         buttonText="Read More"
         image="/services/cloud services.png"
         imagePosition="left"
-        slug = "cloud-services"
+        slug = "services/cloud-services"
        
       />
       <FeatureSection
@@ -46,7 +46,7 @@ const page = () => {
         buttonText="Read More"
         image="/services/Software-development.png"
         imagePosition="right"
-        slug = "software-development"
+        slug = "services/software-development"
        
       />
       <CtaSection />
