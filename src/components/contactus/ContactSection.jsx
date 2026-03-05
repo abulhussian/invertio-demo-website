@@ -52,7 +52,9 @@ export default function ContactSection() {
                                           <div>
                                                 <p className="font-semibold text-[#0F172A]">Email Us</p>
                                                 <p className="text-gray-500 text-sm">
-                                                      info@invertiosolutions.com
+                                                      <a href="mailto:info@invertiosolutions.com" className="hover:underline">
+                                                            info@invertiosolutions.com
+                                                      </a>
                                                 </p>
                                           </div>
                                     </div>

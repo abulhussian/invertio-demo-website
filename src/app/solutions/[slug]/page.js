@@ -4,7 +4,7 @@ import CyberSecurity from "@/components/solutions/CyberSecurity";
 import DataAnalytics from "@/components/solutions/DataAnalytics";
 export default async function Page({ params }) {
   const { slug } = await params;
-  if (slug === "It-consulting") {
+  if (slug === "it-consulting") {
     return <ItConsulting />;
   }
 

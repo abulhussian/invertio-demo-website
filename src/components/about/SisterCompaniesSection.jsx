@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Section from "../common/ui/Section";
+import Link from "next/link";
 import SectionHeader from "../common/ui/SectionHeader";
 
 const SisterCompaniesSection = () => {
@@ -21,10 +22,12 @@ const SisterCompaniesSection = () => {
             align="left"
           />
 
-          <button className="mt-8 bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition flex items-center gap-2">
-            Contact Us
-            <span>↗</span>
-          </button>
+          <Link href="/contact-us">
+            <button className="mt-8 bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition flex items-center gap-2">
+              Contact Us
+              <span>↗</span>
+            </button>
+          </Link>
         </div>
 
         {/* RIGHT TIMELINE */}
@@ -35,7 +38,7 @@ const SisterCompaniesSection = () => {
           {/* TOP CARD */}
           <div className="relative z-10 w-full max-w-md bg-white border border-gray-200 rounded-2xl p-6 shadow-sm mb-16">
             <div className="flex justify-between items-start">
-              <h3 className="text-2xl font-bold text-gray-900">AVIAAH</h3>
+              <h3 className="text-2xl font-bold text-gray-900">AIVAAH</h3>
               <Image
                 src="/about/aviaah.png"
                 alt="Aviaah Logo"

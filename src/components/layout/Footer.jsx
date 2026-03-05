@@ -37,24 +37,35 @@ const Footer = () => {
           </h3>
           <ul className="flex flex-col gap-4 text-sm text-gray-300  w-fit">
             <li className="flex gap-2 items-center">
-              <Image
-                src="/footer/phone.svg"
-                alt="phone"
-                width={40}
-                height={40}
-                priority
-              />
-              +91 81219 10307
+              <a
+                href="tel:+918121910307"
+                className="flex gap-2 items-center hover:underline"
+              >
+                <Image
+                  src="/footer/phone.svg"
+                  alt="phone"
+                  width={40}
+                  height={40}
+                  priority
+                />
+                +91 81219 10307
+              </a>
             </li>
             <li className="flex gap-2 items-center">
               <Image
                 src="/footer/email.svg"
-                alt="phone"
+                alt="email"
                 width={40}
                 height={40}
                 priority
               />
-              info@invertiosolutions.com
+
+              <a
+                href="mailto:info@invertiosolutions.com"
+                className="hover:underline"
+              >
+                info@invertiosolutions.com
+              </a>
             </li>
             <li className="flex gap-2 items-start ">
               <Image

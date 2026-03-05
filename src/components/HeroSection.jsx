@@ -14,55 +14,58 @@ const HeroSection = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                {/* dark overlay */}
+                {/* overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#06030E00] to-[#06030E]"></div>
 
                 {/* content */}
-                <div className="relative z-10 w-full mx-auto h-full flex items-center px-6 pt-32">
-                    <div className="flex items-end justify-between w-full  text-white">
+                <div className="relative h-full flex items-end  px-8 pb-12">
+
+                    <div className="flex flex-col lg:flex-row w-full lg:items-end gap-6">
 
                         {/* LEFT TEXT */}
-                        <div className="w-full">
+                        <div className="flex-1  text-white">
 
-                            <p className="text-sm mb-4 text-gray-200">
+                            <p className="text-sm mb-2 text-white">
                                 Welcome to Invertio
                             </p>
 
-                            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+                            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
                                 Engineering Scalable Digital Solutions for Modern Businesses
                             </h1>
 
+                            <p className="text-gray-300 text-sm md:text-base mb-2">
+                                We help organizations design, build, and scale high-performance digital products through strategic thinking, modern technology, and expert engineering — turning complex ideas into powerful business solutions.
+                            </p>
                             <p className="text-gray-300 text-sm md:text-base">
-                                We help organizations design, build, and scale high-performing
-                                digital products through strategic thinking, modern technology,
-                                and expert engineering — turning complex ideas into powerful
-                                business solutions.
+                                Trusted by growing startups and enterprises across industries worldwide.
                             </p>
 
                         </div>
 
                         {/* RIGHT BUTTONS */}
-                        <div className="flex gap-4">
+                        <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
 
                             <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-sm font-medium">
                                 Start Your Project
                             </button>
 
-                            <button className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition">
+                            <button className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white">
                                 Book A Consultation
                             </button>
 
                         </div>
 
                     </div>
+
                 </div>
+
             </section>
 
             {/* blue divider */}
             <div className="h-[3px] bg-blue-600 w-full"></div>
 
             {/* STATS SECTION */}
-            <section className="bg-gray-100 py-16">
+            <section className="bg-gray-100 py-16 ">
 
                 <div className="max-w-6xl mx-auto px-6 text-center">
 

@@ -6,7 +6,7 @@ import FeatureSection from "@/components/services/components/FeatureSection";
 
 
 const page = () => {
-      
+
 
   return (
     <>
@@ -25,18 +25,18 @@ const page = () => {
         buttonText="Read More"
         image="/services/data-analytics.png"
         imagePosition="right"
-        slug = "solutions/data-analytics"
-       
+        slug="solutions/data-analytics"
+
       />
-       <FeatureSection
+      <FeatureSection
         tag="Cyber Security"
         title="Protecting digital assets with proactive security strategies and resilient defense frameworks."
         description=""
         buttonText="Read More"
         image="/services/cyberSecurity.png"
         imagePosition="left"
-        slug = "solutions/cybersecurity"
-       
+        slug="solutions/cybersecurity"
+
       />
       <FeatureSection
         tag="IT Consulting"
@@ -45,8 +45,8 @@ const page = () => {
         buttonText="Read More"
         image="/services/it-consulting.png"
         imagePosition="right"
-        slug = "solutions/It-consulting"
-       
+        slug="solutions/It-consulting"
+
       />
       <CtaSection />
       <InsightsSection />

@@ -1,24 +1,25 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import Section from "../common/ui/Section";
 
 const CompanyOverviewSection = () => {
   return (
     <Section>
-      <div className="  mx-auto grid lg:grid-cols-2 gap-8">
+      <div className="flex flex-col gap-6 lg:gap-8">
         {/* LEFT COLUMN */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 lg:gap-8">
           {/* Top Blue Card */}
-          <div className="relative overflow-hidden rounded-[20px] p-10 bg-linear-to-r from-blue-600 to-blue-500 text-white shadow-lg flex flex-col gap-3">
+          <div className="relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-10 bg-linear-to-r from-blue-600 to-blue-500 text-white shadow-lg flex flex-col gap-3">
             <span className="text-[20px] font-bold opacity-90">
               Our Purpose
             </span>
 
-            <h2 className=" text-[48px] font-bold font-jakarta leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold font-jakarta leading-snug">
               Driven by Innovation. Guided by Impact.
             </h2>
 
-            <p className=" text-lg font-medium opacity-90 ">
+            <p className="text-base sm:text-lg font-medium opacity-90">
               To empower businesses with intelligent technology solutions that
               accelerate innovation, improve efficiency, and create measurable
               value.
@@ -39,18 +40,18 @@ const CompanyOverviewSection = () => {
           </div>
 
           {/* Bottom Light Card */}
-          <div className="relative overflow-hidden rounded-[20px] p-10 bg-gray-200 flex flex-col gap-3">
+          <div className="relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-10 bg-gray-200 flex flex-col gap-3">
             <span className="text-[20px] font-bold  text-blue-600">
               Our Approach
             </span>
 
             {/* <h2 className="mt-4 text-3xl font-bold text-gray-900 leading-snug">
           </h2> */}
-            <h2 className=" text-[48px] font-bold text-gray-900 font-jakarta leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold text-gray-900 font-jakarta leading-snug">
               Strategy, Design, and Engineering Working Together
             </h2>
 
-            <p className=" text-lg text-gray-600 font-medium">
+            <p className="text-base sm:text-lg text-gray-600 font-medium">
               We follow a collaborative and structured approach to deliver
               solutions that align technology with business objectives.
               <br />
@@ -72,14 +73,14 @@ const CompanyOverviewSection = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="relative overflow-hidden rounded-[20px] p-12 bg-[#0B1120] text-white shadow-xl justify-center flex flex-col gap-3">
+        <div className="relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-12 bg-[#0B1120] text-white shadow-xl flex flex-col justify-center gap-3">
           <span className="text-[20px] font-bold opacity-90">Who We Are</span>
 
-          <h2 className=" text-[48px] font-bold  font-jakarta leading-snug">
+          <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold font-jakarta leading-snug">
             A Trusted Technology Partner Focused on Long-Term Success
           </h2>
 
-          <p className="text-lg font-medium">
+          <p className="text-base sm:text-lg font-medium">
             Our team brings together strategic thinking, creative design, and
             advanced engineering to solve complex business challenges.
             <br />
@@ -89,10 +90,12 @@ const CompanyOverviewSection = () => {
             evolving needs.
           </p>
 
-          <button className="mt-8 w-fit bg-white text-black px-6 py-3 rounded-full text-sm font-bold hover:bg-gray-200 cursor-pointer transition flex items-center gap-2">
-            Contact Us
-            <span className="text-lg">↗</span>
-          </button>
+          <Link href="/contact-us">
+            <button className="mt-8 w-fit bg-white text-black px-6 py-3 rounded-full text-sm font-bold hover:bg-gray-200 cursor-pointer transition flex items-center gap-2">
+              Contact Us
+              <span className="text-lg">↗</span>
+            </button>
+          </Link>
 
           {/* Decorative Shape */}
           <Image

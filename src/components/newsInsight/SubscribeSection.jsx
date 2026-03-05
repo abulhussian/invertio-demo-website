@@ -42,9 +42,6 @@ const SubscribeSection = () => {
 
                   </div>
 
-                  {/* Bottom Gradient Line */}
-                  <div className="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-r from-purple-900 via-blue-900 to-cyan-900 opacity-70" />
-
             </section>
       );
 };
