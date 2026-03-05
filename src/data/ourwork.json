@@ -232,7 +232,7 @@
                   "items": [
                         {
                               "name": "TensorFlow",
-                              "icon": "/tech/tensorflow.png"
+                              "icon": "/tech/tensor.png"
                         },
                         {
                               "name": "Python",
@@ -324,7 +324,7 @@
                         }
                   ]
             },
-            "showcaseImage": "/ourwork/baladi-express-dashboard.png",
+            "showcaseImage": "/public/ourwork/baladi.png",
             "solutionSection": {
                   "badge": "Solution & Impact",
                   "heading": "Cloud-Based Retail Automation Platform",
@@ -443,7 +443,7 @@
                         }
                   ]
             },
-            "showcaseImage": "/ourwork/singleview-dashboard.png",
+            "showcaseImage": "/ourwork/erp.png",
             "solutionSection": {
                   "badge": "Solution & Impact",
                   "heading": "Multi-ERP Integration Architecture for Open Banking",
@@ -478,7 +478,7 @@
                         },
                         {
                               "name": "Oracle Fusion",
-                              "icon": "/tech/oracle-fusion.png"
+                              "icon": "/tech/oracle-fusion.webp"
                         },
                         {
                               "name": "SAP",
@@ -486,7 +486,7 @@
                         },
                         {
                               "name": "Node.js",
-                              "icon": "/tech/node.png"
+                              "icon": "/tech/nodejs.png"
                         },
                         {
                               "name": "MuleSoft",
@@ -1064,24 +1064,24 @@
                   "heading": "Tech Stack Used",
                   "items": [
                         {
-                              "name": "Cloud-Native Marketplace Architecture",
-                              "icon": "/tech/cloud.png"
+                              "name": "Node Js",
+                              "icon": "/tech/nodejs.png"
                         },
                         {
-                              "name": "Secure Transaction Frameworks",
-                              "icon": "/tech/security.png"
+                              "name": "React Js",
+                              "icon": "/tech/react.png"
                         },
                         {
-                              "name": "Real-Time Data Processing",
-                              "icon": "/tech/realtime.png"
+                              "name": "Tailwind CSS",
+                              "icon": "/tech/tailwind.png"
                         },
                         {
-                              "name": "Scalable B2B Workflow Systems",
-                              "icon": "/tech/workflow.png"
+                              "name": "JavaScript",
+                              "icon": "/tech/javascript.png"
                         },
                         {
-                              "name": "Multi-Language Platform Support",
-                              "icon": "/tech/language.png"
+                              "name": "PostgreSQL",
+                              "icon": "/tech/postgresql.png"
                         }
                   ]
             }
@@ -1204,7 +1204,7 @@
                         },
                         {
                               "name": "Google Maps Integration",
-                              "icon": "/tech/maps.png"
+                              "icon": "/tech/map.png"
                         }
                   ]
             }

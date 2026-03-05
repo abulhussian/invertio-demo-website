@@ -43,7 +43,7 @@ export default function Page() {
           title="Baladi Express Mart"
           description="A unified retail ecosystem integrating online, mobile, and in-store experiences with real-time inventory management and intelligent order processing."
           buttonText="Read More"
-          image="/ourwork/baladi.png"
+          image="/ourwork/baladi2.png"
           slug="baladi-express-mart"
         />
 
