@@ -91,6 +91,22 @@ export default function Page() {
           image="/ourwork/taxidispatch.png"
           slug="360-taxi-ride-management"
         />
+        {/* 9 */}
+        <LeftSideSection
+          title="GreenLoop Marketplace"
+          description="A B2B marketplace platform enabling industries to securely trade surplus industrial materials, reduce waste, and unlock value from excess inventory while supporting sustainability initiatives."
+          buttonText="Read More"
+          image="/ourwork/greenloop.png"
+          slug="greenloop-b2b-marketplace"
+        />
+        {/* 10 */}
+        <RightSideSection
+          title="Green Vision Community Platform"
+          description="A community-driven mobile platform that enables citizens to plant trees, track environmental contributions, and participate in sustainability initiatives through an interactive and gamified ecosystem."
+          buttonText="Read More"
+          image="/ourwork/green-vision.png"
+          slug="green-vision-community-platform"
+        />
 
       </div>
 

@@ -143,7 +143,7 @@
             "title": "Driving Intelligent Automation Through AI and Real-Time Data",
             "description": "Invertio developed AI Pilot, an intelligent automation platform designed to transform traditional workflows into AI-powered operations. The platform integrates Artificial Intelligence, predictive analytics, BLE device connectivity, and scalable cloud infrastructure to deliver real-time insights and automated decision-making for government and enterprise organizations.",
             "about": "Organizations often struggle with manual workflows, disconnected systems, and limited real-time visibility into operational data. AI Pilot was built to bridge these gaps by combining hardware data capture with intelligent software automation.\n\nInvertio designed and implemented an integrated platform that collects data from BLE-enabled devices, processes it through AI models, and delivers actionable insights via centralized dashboards.\n\nThe system enables organizations to automate workflows, analyze operational trends, and improve responsiveness through predictive intelligence and cloud-based scalability.",
-            "image": "/ourwork/aipilot.png",
+            "image": "/ourwork/aipolit.png",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Intelligent Automation Features for Data-Driven Operations",
@@ -262,7 +262,7 @@
             "title": "Transforming Retail Operations with Smart Automation and Real-Time Insights",
             "description": "Invertio developed BaladiExpress Mart, a smart retail automation platform designed to modernize retail operations, automate inventory management, and enhance the customer shopping experience. The platform integrates cloud infrastructure, real-time analytics, and intelligent search capabilities to enable scalable retail growth.",
             "about": "Retailers often struggle with manual inventory management, limited operational visibility, and inefficient checkout processes. BaladiExpress Mart was designed to address these challenges by introducing automation, real-time monitoring, and data-driven retail insights.\n\nInvertio implemented a cloud-native retail platform that automates inventory tracking, enables real-time analytics, and improves product discovery through intelligent search capabilities. The system empowers retailers with better operational control while delivering a faster and more convenient shopping experience for customers.",
-            "image": "/ourwork/baladi-express-mart.png",
+            "image": "/ourwork/baladi.png",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Smart Retail Features for Modern Commerce",
@@ -504,7 +504,7 @@
             "title": "Building a Unified Logistics Platform for Real-Time Supply Chain Visibility",
             "description": "Invertio developed an intelligent supply chain platform for SMSA Express to enable real-time shipment tracking, automate logistics workflows, and improve operational transparency across the entire delivery lifecycle.",
             "about": "SMSA Express required a unified logistics platform capable of improving shipment tracking, automating customs and operational processes, and providing end-to-end supply chain visibility. Existing systems created delays due to limited transparency and heavy manual intervention across logistics operations.\n\nInvertio designed and implemented an intelligent logistics management platform that integrates shipment tracking, operational workflows, customs automation, and e-commerce fulfilment into a single system. The platform enables seamless coordination among logistics stakeholders while ensuring faster deliveries and improved operational efficiency.",
-            "image": "/ourwork/smsa-express.png",
+            "image": "/ourwork/smsa.png",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Advanced Logistics Features for Modern Supply Chains",
@@ -615,7 +615,7 @@
             "title": "Enabling AI-Powered Enterprise Transformation with Secure Cloud and Automation",
             "description": "Invertio collaborated with KPMG to deliver intelligent enterprise solutions that combine AI systems, cloud platforms, cybersecurity frameworks, and automation technologies to help organizations modernize operations, improve efficiency, and maintain regulatory compliance at scale.",
             "about": "Large enterprises face increasing complexity in managing operations, security, compliance, and digital transformation across distributed environments. Traditional systems often lack the intelligence, scalability, and automation needed to support modern enterprise demands.\n\nInvertio supported KPMG by implementing intelligent enterprise solutions that integrate multi-agent artificial intelligence, enterprise cloud platforms, cybersecurity frameworks, and automation pipelines. These systems enable organizations to automate workflows, strengthen security, and gain deeper operational insights while maintaining global compliance standards.",
-            "image": "/ourwork/kpmg-enterprise.png",
+            "image": "/ourwork/kpmg.png",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Intelligent Enterprise Capabilities for Modern Organizations",
@@ -738,7 +738,7 @@
             "title": "Transforming Education with AI-Driven Personalized Learning",
             "description": "Invertio developed StudyFoxAI, an intelligent learning platform that leverages artificial intelligence, natural language processing, and adaptive learning algorithms to deliver personalized educational experiences for learners worldwide.",
             "about": "Traditional learning platforms often rely on static content and lack personalization, making it difficult for learners to retain knowledge effectively. Students increasingly require intelligent systems that adapt to their learning patterns and provide real-time interactive support.\n\nInvertio designed and implemented StudyFoxAI, an AI-powered learning platform that integrates natural language processing, adaptive learning algorithms, and interactive chat-based interfaces. The platform enables personalized study workflows, document-based learning, and seamless browser-level accessibility through a Chrome extension to improve knowledge retention and engagement.",
-            "image": "/ourwork/studyfox-ai.png",
+            "image": "/ourwork/studyfox.png",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Intelligent Learning Features for Modern Education",
@@ -857,7 +857,7 @@
             "title": "Optimizing Fleet Operations with Real-Time Ride Management",
             "description": "Invertio developed 360 Taxi, a cloud-native ride management platform designed to enable real-time vehicle tracking, automated dispatch, intelligent routing, and seamless communication between drivers, operators, and passengers.",
             "about": "Taxi and mobility operators require modern systems to efficiently manage fleets, optimize routing, and provide reliable services to passengers. Legacy dispatch platforms often lack real-time tracking, automation capabilities, and scalability needed to support modern ride management operations.\n\nInvertio designed and implemented 360 Taxi, an intelligent ride management platform that integrates real-time geolocation, vehicle telemetry, automated dispatch algorithms, and communication services. The system enables dynamic job allocation, optimized routing, and improved coordination between drivers, operators, and passengers.",
-            "image": "/ourwork/360-taxi.png",
+            "image": "/ourwork/taxidispatch.png",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Advanced Mobility Features for Fleet Optimization",

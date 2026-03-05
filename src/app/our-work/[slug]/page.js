@@ -1,5 +1,3 @@
-
-
 import projects from "@/data/ourwork.json";
 
 import SectionHeader from "@/components/common/ui/SectionHeader";
