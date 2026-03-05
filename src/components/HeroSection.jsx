@@ -61,8 +61,6 @@ const HeroSection = () => {
 
             </section>
 
-            {/* blue divider */}
-            <div className="h-[3px] bg-blue-600 w-full"></div>
 
             {/* STATS SECTION */}
             <section className="bg-gray-100 py-16 ">

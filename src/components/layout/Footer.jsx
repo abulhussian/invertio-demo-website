@@ -85,26 +85,61 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* social media logos */}
+      {/* social media logos */}
       <div className="flex gap-4 items-center w-full justify-center py-4">
-        <Image
-          src="/footer/facebook.svg"
-          alt="facebook"
-          width={40}
-          height={40}
-        />
-        <Image
-          src="/footer/instagram.svg"
-          alt="instagram"
-          width={40}
-          height={40}
-        />
-        <Image src="/footer/x.svg" alt="x" width={40} height={40} />
-        <Image
-          src="/footer/linkedin.svg"
-          alt="linkedin"
-          width={40}
-          height={40}
-        />
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61554332513059"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/facebook.svg"
+            alt="facebook"
+            width={40}
+            height={40}
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/invertiotechsolutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/instagram.svg"
+            alt="instagram"
+            width={40}
+            height={40}
+          />
+        </a>
+
+        <a
+          href="https://x.com/Invertio_s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/x.svg"
+            alt="x"
+            width={40}
+            height={40}
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/linkedin.svg"
+            alt="linkedin"
+            width={40}
+            height={40}
+          />
+        </a>
+
       </div>
 
       <hr className="border-t border-[#101323]" />
