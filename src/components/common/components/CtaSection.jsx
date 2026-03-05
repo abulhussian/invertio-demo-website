@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHeader from "../ui/SectionHeader";
 import Section from "../ui/Section";
+import Link from "next/link";
 
 const CtaSection = () => {
   return (
@@ -26,13 +27,19 @@ const CtaSection = () => {
 
         {/* RIGHT BUTTONS */}
         <div className="flex flex-col gap-4">
-          <button className="px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition cursor-pointer ">
+          <Link
+            href="/contact-us"
+            className="px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition cursor-pointer inline-block"
+          >
             Start Your Journey
-          </button>
+          </Link>
 
-          <button className="px-8 py-3 rounded-full bg-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/40 transition cursor-pointer">
+          <Link
+            href="/our-work"
+            className="px-8 py-3 rounded-full bg-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/40 transition cursor-pointer inline-block"
+          >
             View Our Work
-          </button>
+          </Link>
         </div>
 
         {/* Decorative Background Shape */}

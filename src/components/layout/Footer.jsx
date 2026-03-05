@@ -83,8 +83,6 @@ const Footer = () => {
       </div>
 
       <hr className="border-t border-[#101323]" />
-
-      {/* social media logos */}
       {/* social media logos */}
       <div className="flex gap-4 items-center w-full justify-center py-4">
 
@@ -253,12 +251,12 @@ const footerData = [
     links: [
       { label: "Education", href: "/industries/education" },
       { label: "Logistics", href: "/industries/logistics" },
-      { label: "Retail", href: "/industries/retail" },
-      { label: "Finance", href: "/industries/finance" },
+      { label: "Retail", href: "/industries/retail-ecommerce" },
+      { label: "Finance", href: "/industries/finance-banking" },
       { label: "Healthcare", href: "/industries/healthcare" },
       {
         label: "Information Service",
-        href: "/industries/information-service",
+        href: "/industries/information",
       },
     ],
   },
