@@ -1,3 +1,4 @@
+
 import CtaSection from "@/components/common/components/CtaSection";
 import InsightsSection from "@/components/common/components/InsightsSection";
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
@@ -5,7 +6,7 @@ import SectionHeader from "@/components/common/ui/SectionHeader";
 import LeftSideSection from "@/components/ourwork/LeftSideSection";
 import RightSideSection from "@/components/ourwork/RightSideSection";
 
-const page = () => {
+export default function Page() {
   return (
     <>
       <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
@@ -20,7 +21,6 @@ const page = () => {
         />
 
         {/* 1 */}
-
         <LeftSideSection
           title="QATAR MOEHE"
           description="A digital learning and examination management platform enabling seamless collaboration between students, educators, and administrators through modern education technology."
@@ -38,7 +38,7 @@ const page = () => {
           slug="ai-pilot"
         />
 
-        {/* 3 - NEW */}
+        {/* 3 */}
         <LeftSideSection
           title="Baladi Express Mart"
           description="A unified retail ecosystem integrating online, mobile, and in-store experiences with real-time inventory management and intelligent order processing."
@@ -47,21 +47,22 @@ const page = () => {
           slug="baladi-express-mart"
         />
 
-        {/* 4 - NEW */}
+        {/* 4 */}
         <RightSideSection
           title="Single View"
           description="An integrated enterprise platform delivering centralized visibility, streamlined workflows, and enhanced operational decision-making for modern organizations."
           buttonText="Read More"
           image="/ourwork/singleview.png"
-          slug="single-view"
+          slug="singleview-enterprise-integration"
         />
+
         {/* 5 */}
         <LeftSideSection
           title="SMSA Express"
           description="A logistics transformation initiative enabling real-time shipment tracking, automated workflows, and improved delivery performance across global operations."
           buttonText="Read More"
           image="/ourwork/smsa.png"
-          slug="smsa-express"
+          slug="smsa-express-logistics"
         />
 
         {/* 6 */}
@@ -70,7 +71,7 @@ const page = () => {
           description="A comprehensive digital advisory and implementation program supporting enterprise modernization through analytics, automation, and scalable technology platforms."
           buttonText="Read More"
           image="/ourwork/kpmg.png"
-          slug="kpmg-digital-transformation"
+          slug="kpmg-intelligent-enterprise"
         />
 
         {/* 7 */}
@@ -88,14 +89,14 @@ const page = () => {
           description="A cloud-based taxi dispatch platform providing live vehicle tracking, automated booking management, and optimized fleet operations through smart mobility technology."
           buttonText="Read More"
           image="/ourwork/taxidispatch.png"
-          slug="taxi-dispatch-system"
+          slug="360-taxi-ride-management"
         />
+
       </div>
+
       <CtaSection />
       <InsightsSection />
       <TestimonialsSection />
     </>
   );
-};
-
-export default page;
+}

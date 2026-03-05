@@ -1,0 +1,1212 @@
+{
+      "qatar-moehe": {
+            "badge": "QATAR MOEHE – Education Digital Transformation",
+            "title": "Empowering National Education Through Unified Digital Innovation",
+            "description": "Invertio partnered with Qatar’s Ministry of Education and Higher Education (MOEHE) to build a centralized digital ecosystem that modernizes academic operations, streamlines data management, and enhances accessibility across schools, universities, and administrative departments.\n\nThe platform connects institutions, educators, and students through scalable cloud technologies, enabling smarter decision-making, improved collaboration, and a future-ready education infrastructure.",
+            "about": "The Qatar MOEHE initiative focused on transforming fragmented education systems into a unified, intelligent digital platform. The objective was to simplify administration, improve transparency, and deliver seamless digital experiences for students, teachers, and government stakeholders.\n\nInvertio designed and implemented secure, scalable web and cloud solutions that integrated enrollment systems, academic tracking, analytics dashboards, and communication workflows into a single ecosystem.\n\nFrom centralized reporting to real-time performance insights, the solution enabled efficient coordination between educational institutions and ministry leadership while ensuring high data reliability and operational efficiency.",
+            "image": "/ourwork/qatar.png",
+            "features": {
+                  "badge": "Product Features",
+                  "heading": "Powerful Features Built for Modern Education Ecosystems",
+                  "subheading": "Our platform combines intelligent automation, centralized data management, and scalable cloud technologies to simplify education operations. Designed for institutions and governing bodies, these features enhance efficiency, collaboration, and digital learning experiences across the entire ecosystem.",
+                  "benefits": [
+                        "Unified Education Management Platform",
+                        "Real-Time Analytics & Reporting Dashboards",
+                        "Automated Administrative Workflows",
+                        "Student Engagement & Rewards System",
+                        "Secure Cloud-Based Infrastructure",
+                        "Cross-Institution Communication Tools"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "Invertio successfully delivered a future-ready education ecosystem that supports digital learning, operational excellence, and long-term scalability — helping Qatar advance toward a smarter, technology-driven education landscape.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "The Ministry faced multiple operational challenges caused by disconnected legacy systems, manual processes, and limited visibility into educational performance data.\n\nManaging nationwide institutions required a scalable solution capable of handling large volumes of users while maintaining accuracy and transparency.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The Qatar MOEHE platform empowered leadership with real-time insights and streamlined collaboration across the education sector.\n\nBy replacing manual processes with intelligent automation, the transformation significantly improved operational efficiency while creating a modern digital learning environment.\n\nThe initiative established a strong foundation for future innovation, enabling continuous improvement in academic performance, governance, and student engagement.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Overcoming Complex Challenges in Education Transformation",
+                  "description": "Educational institutions faced fragmented systems, manual processes, and limited visibility into performance data. Our approach addressed these challenges by modernizing infrastructure, improving accessibility, and enabling seamless coordination across nationwide education networks.",
+                  "items": [
+                        {
+                              "title": "Fragmented Legacy Systems Across Institutions",
+                              "description": "Multiple disconnected platforms created operational inefficiencies and data silos."
+                        },
+                        {
+                              "title": "Manual Administrative Processes",
+                              "description": "Paper-based workflows slowed decision-making and increased processing time."
+                        },
+                        {
+                              "title": "Limited Visibility into Education Performance Data",
+                              "description": "Lack of centralized reporting made strategic planning difficult."
+                        },
+                        {
+                              "title": "Scalability Issues for Nationwide Operations",
+                              "description": "Existing systems were unable to support growing digital adoption."
+                        },
+                        {
+                              "title": "Inconsistent Communication Between Stakeholders",
+                              "description": "Coordination between schools, universities, and ministry departments was inefficient."
+                        },
+                        {
+                              "title": "Accessibility Challenges for Students and Educators",
+                              "description": "Users struggled with outdated systems lacking modern digital experiences."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/nottu.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Solution & Impact",
+                  "description": "Invertio implemented a cloud-enabled digital education ecosystem that automated workflows, centralized reporting, and enabled data-driven decision-making.",
+                  "points": [
+                        "60% reduction in administrative processing time",
+                        "Improved data accuracy and reporting transparency",
+                        "Faster communication between institutions and ministry",
+                        "Enhanced accessibility for students and educators",
+                        "Scalable infrastructure supporting nationwide adoption"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Start Your Digital Transformation Journey Today",
+                  "description": "Partner with Invertio to modernize your business, unlock innovation, and build scalable digital solutions that drive measurable growth.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "React.js",
+                              "icon": "/tech/react.png"
+                        },
+                        {
+                              "name": "Tailwind CSS",
+                              "icon": "/tech/tailwind.png"
+                        },
+                        {
+                              "name": "JavaScript",
+                              "icon": "/tech/javascript.png"
+                        },
+                        {
+                              "name": "Node.js",
+                              "icon": "/tech/nodejs.png"
+                        },
+                        {
+                              "name": "AWS Cloud",
+                              "icon": "/tech/aws.png"
+                        },
+                        {
+                              "name": "SQL",
+                              "icon": "/tech/sql.png"
+                        },
+                        {
+                              "name": "Express.js",
+                              "icon": "/tech/express.png"
+                        },
+                        {
+                              "name": "MongoDB",
+                              "icon": "/tech/mongodb.png"
+                        },
+                        {
+                              "name": "CSS3",
+                              "icon": "/tech/css.png"
+                        },
+                        {
+                              "name": "HTML5",
+                              "icon": "/tech/html.png"
+                        }
+                  ]
+            }
+      },
+      "ai-pilot": {
+            "badge": "AI Pilot – Intelligent Automation Platform",
+            "title": "Driving Intelligent Automation Through AI and Real-Time Data",
+            "description": "Invertio developed AI Pilot, an intelligent automation platform designed to transform traditional workflows into AI-powered operations. The platform integrates Artificial Intelligence, predictive analytics, BLE device connectivity, and scalable cloud infrastructure to deliver real-time insights and automated decision-making for government and enterprise organizations.",
+            "about": "Organizations often struggle with manual workflows, disconnected systems, and limited real-time visibility into operational data. AI Pilot was built to bridge these gaps by combining hardware data capture with intelligent software automation.\n\nInvertio designed and implemented an integrated platform that collects data from BLE-enabled devices, processes it through AI models, and delivers actionable insights via centralized dashboards.\n\nThe system enables organizations to automate workflows, analyze operational trends, and improve responsiveness through predictive intelligence and cloud-based scalability.",
+            "image": "/ourwork/aipilot.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Intelligent Automation Features for Data-Driven Operations",
+                  "subheading": "AI Pilot combines artificial intelligence, real-time data processing, and device connectivity to streamline operations, automate workflows, and enable smarter decision-making across enterprise systems.",
+                  "benefits": [
+                        "AI-Driven Workflow Automation",
+                        "Predictive Analytics for Decision Support",
+                        "Real-Time Data Ingestion & Processing",
+                        "BLE (Bluetooth Low Energy) Device Integration",
+                        "Centralized Monitoring & Analytics Dashboards",
+                        "Cloud-Based Scalable Infrastructure"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "The AI Pilot platform successfully transformed manual workflows into automated AI-driven processes. Organizations gained real-time visibility into operations, faster decision-making capabilities, and a scalable digital infrastructure that supports continuous innovation.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Organizations faced operational inefficiencies due to manual processes and fragmented systems that lacked integration. Limited access to real-time data made it difficult to make informed decisions and scale operations effectively. There was also a need to connect hardware devices with centralized digital systems to capture and process operational data.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "AI Pilot enabled organizations to automate workflows and unlock intelligent insights from operational data. The platform improved responsiveness, enhanced operational intelligence, and created a connected ecosystem where devices, analytics, and decision-making systems work together seamlessly.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Solving Operational Inefficiencies Through Intelligent Automation",
+                  "description": "Organizations required a modern platform capable of automating workflows, integrating hardware devices, and enabling real-time analytics to support smarter operational decisions.",
+                  "items": [
+                        {
+                              "title": "Manual and Time-Consuming Workflows",
+                              "description": "Operational tasks relied heavily on manual processes, slowing productivity and increasing human error."
+                        },
+                        {
+                              "title": "Disconnected Systems and Data Silos",
+                              "description": "Multiple systems operated independently, preventing efficient data sharing and centralized monitoring."
+                        },
+                        {
+                              "title": "Limited Real-Time Data Visibility",
+                              "description": "Organizations lacked real-time insights needed to optimize performance and respond quickly to operational changes."
+                        },
+                        {
+                              "title": "Difficulty Integrating Hardware Devices",
+                              "description": "Existing infrastructure did not support seamless connectivity with BLE-enabled hardware devices."
+                        },
+                        {
+                              "title": "Scalability Constraints",
+                              "description": "Legacy systems struggled to support growing operational demands and increased data volumes."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/aipilot-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "AI-Powered Automation Platform",
+                  "description": "Invertio implemented an AI-driven automation ecosystem that integrates predictive analytics, device connectivity, and cloud infrastructure to automate workflows and deliver actionable insights.",
+                  "points": [
+                        "Up to 50% faster operational turnaround",
+                        "Automated workflow processes powered by AI",
+                        "Real-time operational insights through centralized dashboards",
+                        "Improved system intelligence and responsiveness",
+                        "Connected ecosystem integrating devices, data, and automation"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Transform Your Operations with Intelligent Automation",
+                  "description": "Partner with Invertio to build AI-powered platforms that automate workflows, connect devices, and unlock real-time insights for smarter decision-making.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "TensorFlow",
+                              "icon": "/tech/tensorflow.png"
+                        },
+                        {
+                              "name": "Python",
+                              "icon": "/tech/python.png"
+                        },
+                        {
+                              "name": "PostgreSQL",
+                              "icon": "/tech/postgresql.png"
+                        },
+                        {
+                              "name": "React Native",
+                              "icon": "/tech/react.png"
+                        },
+                        {
+                              "name": "Bluetooth Low Energy",
+                              "icon": "/tech/ble.png"
+                        },
+                        {
+                              "name": "Microsoft Azure",
+                              "icon": "/tech/azure.png"
+                        }
+                  ]
+            }
+      },
+      "baladi-express-mart": {
+            "badge": "Smart Retail Automation Platform",
+            "title": "Transforming Retail Operations with Smart Automation and Real-Time Insights",
+            "description": "Invertio developed BaladiExpress Mart, a smart retail automation platform designed to modernize retail operations, automate inventory management, and enhance the customer shopping experience. The platform integrates cloud infrastructure, real-time analytics, and intelligent search capabilities to enable scalable retail growth.",
+            "about": "Retailers often struggle with manual inventory management, limited operational visibility, and inefficient checkout processes. BaladiExpress Mart was designed to address these challenges by introducing automation, real-time monitoring, and data-driven retail insights.\n\nInvertio implemented a cloud-native retail platform that automates inventory tracking, enables real-time analytics, and improves product discovery through intelligent search capabilities. The system empowers retailers with better operational control while delivering a faster and more convenient shopping experience for customers.",
+            "image": "/ourwork/baladi-express-mart.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Smart Retail Features for Modern Commerce",
+                  "subheading": "BaladiExpress Mart combines automation, analytics, and scalable cloud technologies to streamline retail operations and improve the end-to-end shopping experience.",
+                  "benefits": [
+                        "Smart Inventory Tracking and Automation",
+                        "Real-Time Retail Analytics and Reporting",
+                        "Search-Driven Product Discovery",
+                        "Streamlined Checkout Workflows",
+                        "Cloud-Native Scalable Architecture",
+                        "Real-Time Operational Monitoring"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "The BaladiExpress Mart platform successfully modernized retail operations by automating inventory tracking and enabling real-time operational visibility. Retailers gained better control over stock management, improved checkout efficiency, and enhanced the overall shopping experience for customers.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "BaladiExpress Mart faced operational limitations due to manual inventory management and limited analytics capabilities. These challenges restricted scalability and prevented retailers from gaining real-time insights into stock levels, sales performance, and operational efficiency.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The platform transformed retail management by enabling automated inventory tracking, real-time analytics, and faster checkout workflows. Retailers now benefit from improved operational efficiency, enhanced customer satisfaction, and a scalable digital infrastructure that supports future growth.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Overcoming Retail Inefficiencies Through Automation",
+                  "description": "BaladiExpress Mart required a modern retail platform capable of automating inventory management, improving product discovery, and delivering real-time insights for better operational decision-making.",
+                  "items": [
+                        {
+                              "title": "Manual Inventory Management",
+                              "description": "Retail operations relied on manual inventory tracking processes, leading to inefficiencies and stock visibility challenges."
+                        },
+                        {
+                              "title": "Limited Operational Insights",
+                              "description": "Retailers lacked access to real-time analytics needed to monitor sales trends, stock levels, and operational performance."
+                        },
+                        {
+                              "title": "Inefficient Product Discovery",
+                              "description": "Customers experienced difficulty finding products quickly due to limited search capabilities."
+                        },
+                        {
+                              "title": "Slow Checkout Processes",
+                              "description": "Traditional retail systems slowed down the checkout experience and affected customer satisfaction."
+                        },
+                        {
+                              "title": "Scalability Limitations",
+                              "description": "Legacy systems were not designed to support rapid growth and high-volume retail operations."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/baladi-express-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Cloud-Based Retail Automation Platform",
+                  "description": "Invertio delivered a cloud-native retail platform that integrates inventory automation, analytics, and intelligent search capabilities to optimize retail operations and enhance the customer shopping journey.",
+                  "points": [
+                        "Automated inventory tracking and stock visibility",
+                        "Real-time analytics and retail performance insights",
+                        "Faster product discovery through intelligent search",
+                        "Streamlined checkout experience for customers",
+                        "Scalable infrastructure supporting retail growth"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build Smarter Retail Experiences",
+                  "description": "Partner with Invertio to build modern retail platforms that automate operations, enable real-time insights, and deliver seamless shopping experiences for customers.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Google Cloud Platform",
+                              "icon": "/tech/gcp.png"
+                        },
+                        {
+                              "name": "BigQuery",
+                              "icon": "/tech/bigquery.png"
+                        },
+                        {
+                              "name": "Vue.js",
+                              "icon": "/tech/vue.png"
+                        },
+                        {
+                              "name": "Python",
+                              "icon": "/tech/python.png"
+                        },
+                        {
+                              "name": "Elasticsearch",
+                              "icon": "/tech/elasticsearch.png"
+                        },
+                        {
+                              "name": "Firebase",
+                              "icon": "/tech/firebase.png"
+                        }
+                  ]
+            }
+      },
+      "singleview-enterprise-integration": {
+            "badge": "Enterprise ERP Integration Platform",
+            "title": "Enabling Seamless ERP Integration for Open Banking Ecosystems",
+            "description": "Invertio developed an enterprise integration framework for SingleView to connect its Open Banking platform with multiple ERP systems. The solution enables automated financial data synchronization, secure payment processing, and real-time reconciliation across enterprise clients.",
+            "about": "Enterprise organizations using SingleView required seamless connectivity between their Open Banking platform and multiple ERP systems to support automated financial operations. Fragmented ERP environments created challenges in maintaining data consistency, enabling real-time reporting, and automating workflows.\n\nInvertio designed and implemented a scalable multi-ERP integration framework that enables secure, bi-directional data exchange between SingleView and enterprise ERP platforms including Oracle NetSuite, Oracle EBS, Oracle Fusion, and SAP. The platform uses event-driven synchronization, APIs, and middleware integrations to automate financial workflows while maintaining regulatory compliance.",
+            "image": "/ourwork/singleview.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Enterprise Integration Features for Financial Automation",
+                  "subheading": "SingleView integration enables enterprises to synchronize financial data across ERP systems, automate payments and reconciliation, and improve operational transparency.",
+                  "benefits": [
+                        "Multi-ERP Integration Framework",
+                        "Event-Driven Financial Data Synchronization",
+                        "Automated Payment Initiation and Status Updates",
+                        "Account Statements and Reconciliation Integration",
+                        "Secure API and Webhook Communication",
+                        "Configurable and Scalable Integration Architecture"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "The integration framework enabled seamless financial data exchange between SingleView and enterprise ERP platforms. Organizations achieved improved financial accuracy, automated reconciliation processes, and faster reporting across enterprise systems.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Enterprise clients using SingleView relied on multiple ERP systems such as Oracle NetSuite, Oracle EBS, and Oracle Fusion. These systems operated independently, creating fragmented data flows, limiting financial visibility, and preventing automation of payments and reconciliation workflows.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The platform transformed enterprise financial operations by automating financial data synchronization, enabling real-time payment workflows, and improving data consistency across ERP systems. Businesses gained faster reporting, better operational visibility, and improved efficiency.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Solving ERP Fragmentation in Enterprise Finance Systems",
+                  "description": "SingleView required a scalable integration architecture capable of connecting multiple ERP platforms with its Open Banking ecosystem while ensuring security, compliance, and real-time synchronization.",
+                  "items": [
+                        {
+                              "title": "Fragmented ERP Systems",
+                              "description": "Enterprise clients operated across multiple ERP platforms, leading to inconsistent financial data and limited system interoperability."
+                        },
+                        {
+                              "title": "Manual Financial Workflows",
+                              "description": "Payment processing, reconciliation, and reporting processes required manual intervention due to lack of system integration."
+                        },
+                        {
+                              "title": "Limited Cross-System Visibility",
+                              "description": "Financial teams lacked unified visibility across ERP systems, making reporting and decision-making difficult."
+                        },
+                        {
+                              "title": "Complex ERP Integration Requirements",
+                              "description": "Each ERP platform required specialized connectors, APIs, and middleware to support secure and reliable integration."
+                        },
+                        {
+                              "title": "Scalability and Compliance Needs",
+                              "description": "The platform needed to support growing enterprise clients while maintaining financial security and regulatory compliance."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/singleview-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Multi-ERP Integration Architecture for Open Banking",
+                  "description": "Invertio implemented a secure, scalable integration framework connecting SingleView with enterprise ERP systems through APIs, middleware, and event-driven synchronization.",
+                  "points": [
+                        "Automated financial data synchronization across ERP platforms",
+                        "Secure API and webhook-based integration framework",
+                        "Real-time payment initiation and status updates",
+                        "Automated account statements and reconciliation workflows",
+                        "Scalable architecture supporting additional ERP integrations"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build Connected Financial Systems",
+                  "description": "Partner with Invertio to build secure enterprise integration platforms that connect ERP systems, automate financial workflows, and enable real-time financial intelligence.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Oracle NetSuite",
+                              "icon": "/tech/netsuite.png"
+                        },
+                        {
+                              "name": "Oracle EBS",
+                              "icon": "/tech/oracle-ebs.png"
+                        },
+                        {
+                              "name": "Oracle Fusion",
+                              "icon": "/tech/oracle-fusion.png"
+                        },
+                        {
+                              "name": "SAP",
+                              "icon": "/tech/sap.png"
+                        },
+                        {
+                              "name": "Node.js",
+                              "icon": "/tech/node.png"
+                        },
+                        {
+                              "name": "MuleSoft",
+                              "icon": "/tech/mulesoft.png"
+                        },
+                        {
+                              "name": "REST APIs",
+                              "icon": "/tech/api.png"
+                        }
+                  ]
+            }
+      },
+      "smsa-express-logistics": {
+            "badge": "Intelligent Supply Chain Platform",
+            "title": "Building a Unified Logistics Platform for Real-Time Supply Chain Visibility",
+            "description": "Invertio developed an intelligent supply chain platform for SMSA Express to enable real-time shipment tracking, automate logistics workflows, and improve operational transparency across the entire delivery lifecycle.",
+            "about": "SMSA Express required a unified logistics platform capable of improving shipment tracking, automating customs and operational processes, and providing end-to-end supply chain visibility. Existing systems created delays due to limited transparency and heavy manual intervention across logistics operations.\n\nInvertio designed and implemented an intelligent logistics management platform that integrates shipment tracking, operational workflows, customs automation, and e-commerce fulfilment into a single system. The platform enables seamless coordination among logistics stakeholders while ensuring faster deliveries and improved operational efficiency.",
+            "image": "/ourwork/smsa-express.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Advanced Logistics Features for Modern Supply Chains",
+                  "subheading": "The SMSA Express platform combines digital tracking, workflow automation, and integrated logistics management to improve delivery efficiency and operational transparency.",
+                  "benefits": [
+                        "Real-Time Shipment Tracking",
+                        "Integrated Logistics Management Platform",
+                        "Automated Customs and Compliance Workflows",
+                        "E-commerce Fulfilment Integration",
+                        "Centralized Operational Visibility",
+                        "Scalable Enterprise Logistics Infrastructure"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "The SMSA Express platform enabled real-time shipment visibility, automated logistics workflows, and improved coordination across the supply chain. The solution significantly improved operational transparency and delivery reliability.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "SMSA Express faced operational challenges due to fragmented logistics systems, limited shipment visibility, and manual customs and fulfilment processes that slowed down delivery timelines and reduced operational efficiency.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The intelligent supply chain platform improved logistics transparency, accelerated delivery workflows, and reduced manual processing through automation. The system provided centralized operational visibility across the logistics lifecycle.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Addressing Logistics Inefficiencies Through Digital Supply Chain Solutions",
+                  "description": "SMSA Express required a scalable logistics platform capable of automating fulfilment operations, improving shipment tracking, and integrating logistics workflows across the entire supply chain.",
+                  "items": [
+                        {
+                              "title": "Limited Shipment Visibility",
+                              "description": "Existing systems did not provide real-time tracking across shipments, making it difficult to monitor delivery progress."
+                        },
+                        {
+                              "title": "Manual Logistics and Customs Processes",
+                              "description": "Operational workflows required manual intervention for customs and logistics processing, slowing down deliveries."
+                        },
+                        {
+                              "title": "Fragmented Logistics Systems",
+                              "description": "Multiple independent systems created inefficiencies and prevented centralized operational monitoring."
+                        },
+                        {
+                              "title": "E-commerce Fulfilment Complexity",
+                              "description": "Increasing e-commerce demands required better integration between logistics platforms and fulfilment systems."
+                        },
+                        {
+                              "title": "Scalability Requirements",
+                              "description": "The logistics infrastructure needed to scale efficiently to support growing shipment volumes and regional operations."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/smsa-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Integrated Logistics and Supply Chain Automation Platform",
+                  "description": "Invertio implemented a unified logistics platform that integrates shipment tracking, customs automation, and operational workflows to streamline supply chain management.",
+                  "points": [
+                        "Real-time shipment tracking and logistics monitoring",
+                        "Automated customs and compliance workflows",
+                        "Integrated e-commerce fulfilment capabilities",
+                        "Centralized operational dashboards and reporting",
+                        "Scalable architecture supporting regional logistics operations"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Transform Your Supply Chain with Intelligent Logistics",
+                  "description": "Partner with Invertio to build modern logistics platforms that enable real-time tracking, automate workflows, and deliver efficient supply chain operations.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Real-Time Tracking Systems",
+                              "icon": "/tech/tracking.png"
+                        },
+                        {
+                              "name": "Logistics Integration Platforms",
+                              "icon": "/tech/logistics.png"
+                        },
+                        {
+                              "name": "Workflow Automation",
+                              "icon": "/tech/workflow.png"
+                        },
+                        {
+                              "name": "Enterprise Cloud Infrastructure",
+                              "icon": "/tech/cloud.png"
+                        }
+                  ]
+            }
+      },
+      "kpmg-intelligent-enterprise": {
+            "badge": "Intelligent Enterprise Solutions",
+            "title": "Enabling AI-Powered Enterprise Transformation with Secure Cloud and Automation",
+            "description": "Invertio collaborated with KPMG to deliver intelligent enterprise solutions that combine AI systems, cloud platforms, cybersecurity frameworks, and automation technologies to help organizations modernize operations, improve efficiency, and maintain regulatory compliance at scale.",
+            "about": "Large enterprises face increasing complexity in managing operations, security, compliance, and digital transformation across distributed environments. Traditional systems often lack the intelligence, scalability, and automation needed to support modern enterprise demands.\n\nInvertio supported KPMG by implementing intelligent enterprise solutions that integrate multi-agent artificial intelligence, enterprise cloud platforms, cybersecurity frameworks, and automation pipelines. These systems enable organizations to automate workflows, strengthen security, and gain deeper operational insights while maintaining global compliance standards.",
+            "image": "/ourwork/kpmg-enterprise.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Intelligent Enterprise Capabilities for Modern Organizations",
+                  "subheading": "The KPMG enterprise solutions integrate AI, cloud infrastructure, security frameworks, and automation technologies to enable scalable, secure, and intelligent business operations.",
+                  "benefits": [
+                        "Multi-Agent AI Enablement",
+                        "Enterprise Cloud Platform Integration",
+                        "Cybersecurity and Privacy Controls",
+                        "Automation and DevOps Enablement",
+                        "Strategic Technology Alliance Integration",
+                        "Scalable Enterprise Architecture"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "The intelligent enterprise solutions enabled organizations to leverage AI, cloud technologies, and automation to transform operations while maintaining strong security and compliance standards.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Enterprises needed advanced digital solutions capable of optimizing operational efficiency, strengthening cybersecurity, automating workflows, and maintaining compliance across complex enterprise environments.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The platform improved enterprise resilience, accelerated digital transformation, and enabled organizations to deploy AI-driven and cloud-enabled solutions while ensuring secure and compliant operations.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Modernizing Enterprise Systems with AI, Cloud, and Security",
+                  "description": "Enterprises required a scalable architecture capable of integrating artificial intelligence, cloud infrastructure, and cybersecurity controls while maintaining operational efficiency and compliance.",
+                  "items": [
+                        {
+                              "title": "Complex Enterprise Environments",
+                              "description": "Large organizations operate across distributed systems that require unified platforms for monitoring and management."
+                        },
+                        {
+                              "title": "Security and Compliance Requirements",
+                              "description": "Enterprises must ensure strong cybersecurity and data privacy controls while adhering to global regulatory standards."
+                        },
+                        {
+                              "title": "Limited Automation Across Workflows",
+                              "description": "Manual operational processes reduce efficiency and slow down enterprise transformation initiatives."
+                        },
+                        {
+                              "title": "Integration Across Multiple Technology Ecosystems",
+                              "description": "Enterprises rely on multiple technology vendors and platforms that must operate seamlessly together."
+                        },
+                        {
+                              "title": "Scalability for Global Operations",
+                              "description": "Enterprise systems must support large-scale deployments while maintaining reliability and performance."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/kpmg-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "AI-Driven Enterprise Transformation Platform",
+                  "description": "Invertio implemented enterprise-grade intelligent solutions that integrate artificial intelligence, cloud platforms, security frameworks, and automation pipelines to modernize business operations.",
+                  "points": [
+                        "AI-powered enterprise automation and decision support",
+                        "Secure enterprise cloud platform integrations",
+                        "Advanced cybersecurity and privacy frameworks",
+                        "Automation and DevOps pipeline enablement",
+                        "Integration with strategic technology ecosystems"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build Intelligent and Secure Enterprise Platforms",
+                  "description": "Partner with Invertio to develop AI-powered enterprise platforms that combine automation, cloud infrastructure, and cybersecurity to drive scalable and secure digital transformation.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Multi-Agent Artificial Intelligence",
+                              "icon": "/tech/ai.png"
+                        },
+                        {
+                              "name": "Enterprise Cloud Platforms",
+                              "icon": "/tech/cloud.png"
+                        },
+                        {
+                              "name": "Cybersecurity & Privacy Frameworks",
+                              "icon": "/tech/security.png"
+                        },
+                        {
+                              "name": "Automation & DevOps Pipelines",
+                              "icon": "/tech/devops.png"
+                        },
+                        {
+                              "name": "SAP Ecosystem",
+                              "icon": "/tech/sap.png"
+                        },
+                        {
+                              "name": "Hedera Network",
+                              "icon": "/tech/hedera.png"
+                        },
+                        {
+                              "name": "Zscaler Security",
+                              "icon": "/tech/zscaler.png"
+                        }
+                  ]
+            }
+      },
+      "studyfox-ai": {
+            "badge": "AI-Powered Intelligent Learning Platform",
+            "title": "Transforming Education with AI-Driven Personalized Learning",
+            "description": "Invertio developed StudyFoxAI, an intelligent learning platform that leverages artificial intelligence, natural language processing, and adaptive learning algorithms to deliver personalized educational experiences for learners worldwide.",
+            "about": "Traditional learning platforms often rely on static content and lack personalization, making it difficult for learners to retain knowledge effectively. Students increasingly require intelligent systems that adapt to their learning patterns and provide real-time interactive support.\n\nInvertio designed and implemented StudyFoxAI, an AI-powered learning platform that integrates natural language processing, adaptive learning algorithms, and interactive chat-based interfaces. The platform enables personalized study workflows, document-based learning, and seamless browser-level accessibility through a Chrome extension to improve knowledge retention and engagement.",
+            "image": "/ourwork/studyfox-ai.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Intelligent Learning Features for Modern Education",
+                  "subheading": "StudyFoxAI combines AI-powered learning assistance, adaptive algorithms, and interactive study tools to create personalized learning experiences that improve retention and engagement.",
+                  "benefits": [
+                        "AI-Driven Natural Language Learning Assistance",
+                        "Adaptive Learning Logic and Personalization",
+                        "Interactive Chat-Based Study Interfaces",
+                        "Chrome Extension Integration",
+                        "Spaced Repetition Learning Algorithms",
+                        "Engagement-Focused Learning Workflows"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "StudyFoxAI successfully delivered an intelligent learning platform that improves knowledge retention and learner engagement through adaptive study workflows and AI-powered assistance.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Learners required a more personalized and interactive learning environment, as traditional education tools lacked adaptive intelligence, personalization, and real-time interaction capabilities.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The platform improved knowledge retention, increased learner engagement, and enabled personalized study experiences by combining AI-driven learning assistance with adaptive algorithms.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Solving Personalization Gaps in Digital Learning Platforms",
+                  "description": "StudyFoxAI required a scalable learning platform capable of delivering personalized study experiences, real-time interaction, and adaptive learning logic for modern learners.",
+                  "items": [
+                        {
+                              "title": "Lack of Personalized Learning",
+                              "description": "Traditional learning platforms provide static content that does not adapt to individual learner behavior or progress."
+                        },
+                        {
+                              "title": "Low Engagement with Static Study Tools",
+                              "description": "Conventional digital study tools fail to provide interactive and engaging learning experiences."
+                        },
+                        {
+                              "title": "Limited Real-Time Learning Assistance",
+                              "description": "Learners lacked intelligent systems capable of answering questions and guiding their learning journey instantly."
+                        },
+                        {
+                              "title": "Difficulty Retaining Knowledge",
+                              "description": "Without adaptive learning strategies, students often struggle to retain information over time."
+                        },
+                        {
+                              "title": "Accessibility Across Learning Environments",
+                              "description": "Students required seamless access to learning tools directly within their everyday browsing environments."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/studyfox-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "AI-Powered Personalized Learning Ecosystem",
+                  "description": "Invertio built an AI-powered learning platform that integrates natural language processing, adaptive learning logic, and browser-based tools to deliver highly personalized educational experiences.",
+                  "points": [
+                        "AI-powered natural language learning assistance",
+                        "Adaptive learning workflows personalized for each learner",
+                        "Interactive chat-based study experiences",
+                        "Chrome extension enabling browser-level accessibility",
+                        "Spaced repetition algorithms improving knowledge retention"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build the Future of Intelligent Learning",
+                  "description": "Partner with Invertio to build AI-powered education platforms that personalize learning experiences, improve knowledge retention, and engage learners through intelligent technologies.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Artificial Intelligence",
+                              "icon": "/tech/ai.png"
+                        },
+                        {
+                              "name": "Natural Language Processing",
+                              "icon": "/tech/nlp.png"
+                        },
+                        {
+                              "name": "Adaptive Learning Algorithms",
+                              "icon": "/tech/adaptive-learning.png"
+                        },
+                        {
+                              "name": "Chrome Extension Framework",
+                              "icon": "/tech/chrome.png"
+                        },
+                        {
+                              "name": "Interactive Chat Interfaces",
+                              "icon": "/tech/chat.png"
+                        },
+                        {
+                              "name": "Spaced Repetition Engines",
+                              "icon": "/tech/repetition.png"
+                        }
+                  ]
+            }
+      },
+      "360-taxi-ride-management": {
+            "badge": "Intelligent Ride Management Platform",
+            "title": "Optimizing Fleet Operations with Real-Time Ride Management",
+            "description": "Invertio developed 360 Taxi, a cloud-native ride management platform designed to enable real-time vehicle tracking, automated dispatch, intelligent routing, and seamless communication between drivers, operators, and passengers.",
+            "about": "Taxi and mobility operators require modern systems to efficiently manage fleets, optimize routing, and provide reliable services to passengers. Legacy dispatch platforms often lack real-time tracking, automation capabilities, and scalability needed to support modern ride management operations.\n\nInvertio designed and implemented 360 Taxi, an intelligent ride management platform that integrates real-time geolocation, vehicle telemetry, automated dispatch algorithms, and communication services. The system enables dynamic job allocation, optimized routing, and improved coordination between drivers, operators, and passengers.",
+            "image": "/ourwork/360-taxi.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Advanced Mobility Features for Fleet Optimization",
+                  "subheading": "360 Taxi combines real-time vehicle tracking, automated dispatching, and intelligent routing to improve operational efficiency and passenger experience.",
+                  "benefits": [
+                        "Real-Time Vehicle Tracking and Monitoring",
+                        "Automated Dispatch and Routing Algorithms",
+                        "Dynamic Fare Calculation Engine",
+                        "VoIP Integration for Driver–Operator Communication",
+                        "SMS and VoIP Notification Services",
+                        "Job Queue and Workflow Automation"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "360 Taxi delivered a scalable ride management platform that enables mobility operators to monitor fleets in real time, automate ride dispatching, and provide faster and more reliable transportation services.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Taxi operators required a modern platform capable of managing fleets efficiently while providing real-time vehicle tracking, automated job allocation, and accurate fare calculations. Legacy dispatch systems lacked automation, real-time intelligence, and scalability.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The platform improved fleet efficiency, reduced delays through intelligent routing, and enhanced passenger experience by enabling reliable, real-time ride management services.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Modernizing Fleet and Dispatch Management Systems",
+                  "description": "Taxi operators required a scalable mobility platform capable of managing fleet operations, optimizing routes, and providing real-time coordination between drivers and dispatch teams.",
+                  "items": [
+                        {
+                              "title": "Lack of Real-Time Fleet Visibility",
+                              "description": "Legacy systems could not provide accurate real-time tracking of vehicles across the fleet."
+                        },
+                        {
+                              "title": "Manual Dispatch and Routing",
+                              "description": "Ride assignments and route planning required manual intervention, leading to delays and inefficiencies."
+                        },
+                        {
+                              "title": "Inefficient Communication Channels",
+                              "description": "Drivers and dispatch operators lacked integrated communication tools for coordinating ride operations."
+                        },
+                        {
+                              "title": "Limited Fare Calculation Automation",
+                              "description": "Existing systems lacked dynamic fare calculation based on distance, time, and route conditions."
+                        },
+                        {
+                              "title": "Scalability Constraints",
+                              "description": "Mobility operators required a scalable system capable of supporting growing fleets and ride volumes."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/360-taxi-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Cloud-Native Ride Management and Fleet Optimization Platform",
+                  "description": "Invertio implemented a cloud-based mobility platform that integrates real-time tracking, dispatch automation, and communication services to streamline taxi and fleet operations.",
+                  "points": [
+                        "Real-time vehicle telemetry and geolocation tracking",
+                        "Automated ride dispatch and route optimization",
+                        "Dynamic fare calculation and ride management",
+                        "Integrated VoIP and SMS communication services",
+                        "Scalable architecture supporting large mobility fleets"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build Intelligent Mobility Platforms",
+                  "description": "Partner with Invertio to build intelligent transportation platforms that optimize fleet operations, enable real-time ride management, and deliver seamless mobility experiences.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Cloud-Native Web Architecture",
+                              "icon": "/tech/cloud.png"
+                        },
+                        {
+                              "name": "Real-Time Geolocation Systems",
+                              "icon": "/tech/geolocation.png"
+                        },
+                        {
+                              "name": "Vehicle Telemetry Systems",
+                              "icon": "/tech/telemetry.png"
+                        },
+                        {
+                              "name": "VoIP Communication Integration",
+                              "icon": "/tech/voip.png"
+                        },
+                        {
+                              "name": "SMS and Notification Services",
+                              "icon": "/tech/sms.png"
+                        },
+                        {
+                              "name": "Routing and Job Queue Engines",
+                              "icon": "/tech/routing.png"
+                        }
+                  ]
+            }
+      },
+      "greenloop-b2b-marketplace": {
+            "badge": "B2B Industrial Sustainability Marketplace",
+            "title": "Building a Secure Marketplace for Surplus Industrial Materials",
+            "description": "Invertio is developing GreenLoop, a B2B marketplace platform that enables industries to securely trade surplus industrial materials, reduce waste, and unlock value from excess inventory while supporting sustainability initiatives.",
+            "about": "Industrial organizations often accumulate surplus materials and unused assets that remain underutilized due to inefficient offline trading processes. Traditional procurement and resale channels lack transparency, scalability, and secure transaction frameworks.\n\nInvertio is building GreenLoop, a digital B2B marketplace designed to connect verified buyers and sellers of surplus industrial materials. The platform enables secure transactions, efficient product discovery, and competitive bidding while maintaining confidentiality and compliance for participating enterprises.",
+            "image": "/ourwork/greenloop.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Key Features for Industrial B2B Trading",
+                  "subheading": "GreenLoop enables enterprises to trade surplus industrial resources through a secure, scalable marketplace that promotes efficiency, transparency, and sustainability.",
+                  "benefits": [
+                        "Verified Buyer and Seller Onboarding",
+                        "Secure B2B Marketplace Infrastructure",
+                        "Bidding and Transaction Workflows",
+                        "Real-Time Communication Between Parties",
+                        "Multi-Language Platform Support",
+                        "Admin Governance and Moderation Tools"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "GreenLoop will enable industries to unlock value from surplus materials while improving resource utilization and supporting sustainable industrial practices.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Industries lacked a secure and scalable platform to trade surplus materials efficiently. Traditional offline trading processes limited visibility, reduced transaction efficiency, and resulted in wasted industrial resources.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The GreenLoop marketplace is expected to improve resource utilization, reduce industrial waste, and create transparent B2B trading opportunities for surplus materials across industries.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Addressing Inefficiencies in Surplus Industrial Trading",
+                  "description": "Industries required a trusted digital marketplace capable of enabling secure transactions, confidential trading, and efficient discovery of surplus industrial assets.",
+                  "items": [
+                        {
+                              "title": "Lack of Digital Trading Platforms",
+                              "description": "Industrial surplus materials were typically traded through manual or offline channels with limited visibility."
+                        },
+                        {
+                              "title": "Confidentiality and Compliance Requirements",
+                              "description": "Enterprises required secure environments to ensure confidential transactions and regulatory compliance."
+                        },
+                        {
+                              "title": "Limited Market Discovery",
+                              "description": "Buyers and sellers struggled to efficiently discover trading opportunities across industrial networks."
+                        },
+                        {
+                              "title": "Operational Inefficiencies",
+                              "description": "Manual negotiation and transaction processes slowed down industrial trading workflows."
+                        },
+                        {
+                              "title": "Sustainability Challenges",
+                              "description": "Unused surplus materials often resulted in waste instead of being reused across industrial ecosystems."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/greenloop-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Secure and Scalable B2B Industrial Marketplace",
+                  "description": "Invertio is building a cloud-native B2B marketplace platform that enables secure trading, efficient discovery, and scalable transaction workflows for industrial surplus materials.",
+                  "points": [
+                        "Secure buyer and seller onboarding and verification",
+                        "Confidential B2B trading environment",
+                        "Efficient bidding and transaction workflows",
+                        "Real-time communication between marketplace participants",
+                        "Scalable marketplace architecture supporting industrial ecosystems"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build Sustainable Digital Marketplaces",
+                  "description": "Partner with Invertio to develop secure B2B marketplace platforms that enable efficient trading, unlock value from surplus assets, and support sustainable industrial ecosystems.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "Cloud-Native Marketplace Architecture",
+                              "icon": "/tech/cloud.png"
+                        },
+                        {
+                              "name": "Secure Transaction Frameworks",
+                              "icon": "/tech/security.png"
+                        },
+                        {
+                              "name": "Real-Time Data Processing",
+                              "icon": "/tech/realtime.png"
+                        },
+                        {
+                              "name": "Scalable B2B Workflow Systems",
+                              "icon": "/tech/workflow.png"
+                        },
+                        {
+                              "name": "Multi-Language Platform Support",
+                              "icon": "/tech/language.png"
+                        }
+                  ]
+            }
+      },
+      "green-vision-community-platform": {
+            "badge": "Community Tree Plantation Platform",
+            "title": "Empowering Communities Through a Digital Tree Plantation Ecosystem",
+            "description": "Invertio is developing Green Vision, a community-driven mobile platform that enables citizens to plant trees, track environmental contributions, and participate in sustainability initiatives through an interactive and gamified digital ecosystem.",
+            "about": "Environmental organizations and communities require better tools to track tree plantation initiatives, encourage citizen participation, and monitor the long-term health of planted trees. Traditional initiatives rely on manual tracking, limited reporting, and minimal engagement mechanisms.\n\nInvertio is designing and building Green Vision, a mobile application that allows users to plant trees, record plantation details using photo capture and GPS tagging, and track their environmental impact through an interactive map and dashboard. The platform combines community participation, gamification, and real-time tracking to encourage sustainable environmental action.",
+            "image": "/ourwork/green-vision.png",
+            "features": {
+                  "badge": "Platform Capabilities",
+                  "heading": "Digital Tools for Community-Driven Environmental Action",
+                  "subheading": "Green Vision combines mobile technology, gamification, and real-time environmental tracking to enable large-scale community participation in sustainability initiatives.",
+                  "benefits": [
+                        "Secure User Onboarding with Google, Apple, and Email Login",
+                        "Tree Plantation Workflow with Photo Capture and GPS Tagging",
+                        "Interactive Community Tree Map with Real-Time Updates",
+                        "Tree Health Monitoring and Status Reporting",
+                        "Gamification System with Points, Badges, and Leaderboards",
+                        "Community Activity Feed and Notifications"
+                  ],
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  }
+            },
+            "impactSection": {
+                  "outcome": {
+                        "title": "Outcome",
+                        "description": "Green Vision will enable communities and organizations to digitally manage tree plantation initiatives, track environmental contributions, and encourage large-scale participation in sustainability programs.",
+                        "image": "/services/outcome-shape.png"
+                  },
+                  "challenge": {
+                        "title": "Business Challenge",
+                        "description": "Tree plantation initiatives often lack digital tools for tracking planted trees, maintaining long-term monitoring, and engaging communities effectively. Manual processes result in poor visibility and limited participation.",
+                        "image": "/services/challenge-shape.png"
+                  },
+                  "impact": {
+                        "title": "Project Impact",
+                        "description": "The platform is expected to improve environmental awareness, increase community participation in tree plantation initiatives, and enable organizations to measure and track ecological impact more effectively.",
+                        "image": "/services/impact-shape.png"
+                  }
+            },
+            "challengesSection": {
+                  "badge": "Challenges",
+                  "heading": "Improving Community Engagement in Environmental Initiatives",
+                  "description": "Environmental organizations required a scalable digital platform capable of engaging communities, tracking plantation activities, and monitoring tree health over time.",
+                  "items": [
+                        {
+                              "title": "Manual Tree Plantation Tracking",
+                              "description": "Traditional plantation initiatives relied on spreadsheets and manual reporting, making monitoring inefficient."
+                        },
+                        {
+                              "title": "Low Community Participation",
+                              "description": "Without engaging digital tools, community participation in environmental initiatives remained limited."
+                        },
+                        {
+                              "title": "Limited Visibility of Environmental Impact",
+                              "description": "Organizations lacked reliable data to measure the long-term impact of plantation campaigns."
+                        },
+                        {
+                              "title": "Lack of Monitoring for Tree Health",
+                              "description": "Planted trees were rarely monitored after plantation, resulting in reduced survival tracking."
+                        },
+                        {
+                              "title": "Scalability Challenges for Large Campaigns",
+                              "description": "Environmental campaigns required platforms capable of supporting thousands of participants and trees."
+                        }
+                  ]
+            },
+            "showcaseImage": "/ourwork/green-vision-dashboard.png",
+            "solutionSection": {
+                  "badge": "Solution & Impact",
+                  "heading": "Community-Driven Environmental Sustainability Platform",
+                  "description": "Invertio is building a scalable mobile platform that integrates GPS tracking, gamification, and real-time community engagement tools to support tree plantation and sustainability initiatives.",
+                  "points": [
+                        "Mobile platform for recording and tracking planted trees",
+                        "Interactive map visualizing community plantation activity",
+                        "Gamified engagement system with points and badges",
+                        "Real-time community activity feeds and notifications",
+                        "Scalable infrastructure supporting environmental campaigns"
+                  ]
+            },
+            "ctaSection": {
+                  "badge": "Let's Build Together",
+                  "heading": "Build Technology for Sustainable Communities",
+                  "description": "Partner with Invertio to create digital platforms that empower communities, track environmental impact, and support global sustainability initiatives.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            },
+            "techStack": {
+                  "heading": "Tech Stack Used",
+                  "items": [
+                        {
+                              "name": "React Native with TypeScript",
+                              "icon": "/tech/react-native.png"
+                        },
+                        {
+                              "name": "Firebase Backend-as-a-Service",
+                              "icon": "/tech/firebase.png"
+                        },
+                        {
+                              "name": "Firestore Real-Time Database",
+                              "icon": "/tech/firestore.png"
+                        },
+                        {
+                              "name": "Firebase Authentication",
+                              "icon": "/tech/auth.png"
+                        },
+                        {
+                              "name": "Firebase Cloud Messaging",
+                              "icon": "/tech/fcm.png"
+                        },
+                        {
+                              "name": "Firebase Storage",
+                              "icon": "/tech/storage.png"
+                        },
+                        {
+                              "name": "Google Maps Integration",
+                              "icon": "/tech/maps.png"
+                        }
+                  ]
+            }
+      }
+}
