@@ -324,7 +324,7 @@
                         }
                   ]
             },
-            "showcaseImage": "/public/ourwork/baladi.png",
+            "showcaseImage": "/ourwork/baladi1.png",
             "solutionSection": {
                   "badge": "Solution & Impact",
                   "heading": "Cloud-Based Retail Automation Platform",
@@ -827,7 +827,7 @@
                   "items": [
                         {
                               "name": "Artificial Intelligence",
-                              "icon": "/tech/ai.png"
+                              "icon": "/tech/python.png"
                         },
                         {
                               "name": "Natural Language Processing",
@@ -958,11 +958,11 @@
                         },
                         {
                               "name": "VoIP Communication Integration",
-                              "icon": "/tech/voip.png"
+                              "icon": "/tech/voip.jpg"
                         },
                         {
                               "name": "SMS and Notification Services",
-                              "icon": "/tech/sms.png"
+                              "icon": "/tech/sms.jpg"
                         },
                         {
                               "name": "Routing and Job Queue Engines",
