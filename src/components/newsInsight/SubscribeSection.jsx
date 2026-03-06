@@ -1,15 +1,17 @@
+import Image from "next/image";
+
 const SubscribeSection = () => {
       return (
-            <section className="relative w-full py-12 overflow-hidden">
+            <section className="relative w-full py-12 overflow-hidden bg-[#0B1120]">
 
-                  {/* Background Image */}
-                  <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: "url('/public/newsinsight/subimage.png')" }}
+                  {/* Decorative Background Shape (same style as CTA) */}
+                  <Image
+                        className="absolute -left-40 top-16 opacity-20"
+                        src="/newsinsight/subimage.png"
+                        alt="Background Shape"
+                        width={353}
+                        height={464}
                   />
-
-                  {/* Dark Overlay */}
-                  <div className="absolute inset-0 bg-[#101323]/90" />
 
                   {/* Content */}
                   <div className="relative w-full mx-auto px-8 md:px-14 lg:px-20 

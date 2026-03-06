@@ -6,17 +6,17 @@ const AboutSection = ({ leftCards = [], rightCard }) => {
     <Section>
       <div className="mx-auto grid lg:grid-cols-2 gap-8">
         {/* LEFT COLUMN */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 sm:gap-8">
           {leftCards.map((card, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-[20px] p-10 flex flex-col gap-4 ${card.containerClass}`}
+              className={`relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col gap-4 ${card.containerClass}`}
             >
-              <h2 className="text-[40px] lg:text-[48px] font-bold font-jakarta leading-snug">
+              <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold font-jakarta leading-snug">
                 {card.title}
               </h2>
 
-              <p className="text-lg font-medium leading-relaxed">
+              <p className="text-base sm:text-lg font-medium leading-relaxed">
                 {card.description}
               </p>
 
@@ -36,9 +36,9 @@ const AboutSection = ({ leftCards = [], rightCard }) => {
         {/* RIGHT COLUMN */}
         {rightCard && (
           <div
-            className={`relative overflow-hidden rounded-[20px] p-12 flex flex-col gap-6 ${rightCard.containerClass}`}
+            className={`relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-12 flex flex-col gap-6 ${rightCard.containerClass}`}
           >
-            <h2 className="text-[42px] lg:text-[56px] font-bold font-jakarta leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-[56px] font-bold font-jakarta leading-snug">
               {rightCard.title}
             </h2>
 

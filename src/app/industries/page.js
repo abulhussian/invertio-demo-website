@@ -6,7 +6,7 @@ import FeatureSection from "@/components/services/components/FeatureSection";
 
 
 const page = () => {
-      
+
 
   return (
     <>
@@ -25,18 +25,18 @@ const page = () => {
         buttonText="Read More"
         image="/services/Education.png"
         imagePosition="right"
-        slug = "industries/education"
-       
+        slug="industries/education"
+
       />
-       <FeatureSection
+      <FeatureSection
         tag="Logistics Industry"
         title="Optimizing supply chain operations with real-time visibility and intelligent automation."
         description=""
         buttonText="Read More"
         image="/services/logistics.png"
         imagePosition="left"
-        slug = "industries/logistics"
-       
+        slug="industries/logistics"
+
       />
       <FeatureSection
         tag="Retail & E-Commerce Industry"
@@ -45,8 +45,8 @@ const page = () => {
         buttonText="Read More"
         image="/services/Retail.png"
         imagePosition="right"
-        slug = "industries/retail-ecommerce"
-       
+        slug="industries/retail-ecommerce"
+
       />
       <FeatureSection
         tag="Finance & Banking Industry"
@@ -55,8 +55,8 @@ const page = () => {
         buttonText="Read More"
         image="/services/finance.png"
         imagePosition="left"
-        slug = "industries/finance-banking"
-       
+        slug="industries/finance-banking"
+
       />
       <FeatureSection
         tag="Healthcare Industry"
@@ -65,8 +65,8 @@ const page = () => {
         buttonText="Read More"
         image="/services/Health.png"
         imagePosition="right"
-        slug = "industries/healthcare"
-       
+        slug="industries/healthcare"
+
       />
       <FeatureSection
         tag="Information Industry"
@@ -75,8 +75,8 @@ const page = () => {
         buttonText="Read More"
         image="/services/information.png"
         imagePosition="left"
-        slug = "industries/information"
-       
+        slug="industries/information"
+
       />
       <CtaSection />
       <InsightsSection />

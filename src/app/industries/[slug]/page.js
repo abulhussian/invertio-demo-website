@@ -1,12 +1,13 @@
 import { notFound } from "next/navigation";
 import Information from "@/components/industries/Information";
 import Logistics from "@/components/industries/Logistics";
-import RetailECommerce from "@/components/industries/RetailECommerence";
+import RetailECommerce from "@/components/industries/RetailECommerce";
 import FinanceBanking from "@/components/industries/FinanceBanking";
 import HealthCare from "@/components/industries/HealthCare";
 import Education from "@/components/industries/Education";
 export default async function Page({ params }) {
   const { slug } = await params;
+
   if (slug === "retail-ecommerce") {
     return <RetailECommerce />;
   }
@@ -19,15 +20,15 @@ export default async function Page({ params }) {
     return <HealthCare />;
   }
   if (slug === "information") {
-      return<Information/>;
+    return <Information />;
   }
   if (slug === "logistics") {
-      return<Logistics/>;
-  }
-  if (slug === "education") {
-      return<Education/>;
+    return <Logistics />;
+  } if (slug === "education") {
+    return <Education />;
   }
 
 
-  notFound();
+  return notFound();
 }
+

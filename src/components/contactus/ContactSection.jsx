@@ -52,7 +52,9 @@ export default function ContactSection() {
                                           <div>
                                                 <p className="font-semibold text-[#0F172A]">Email Us</p>
                                                 <p className="text-gray-500 text-sm">
-                                                      info@invertiosolutions.com
+                                                      <a href="mailto:info@invertiosolutions.com" className="hover:underline">
+                                                            info@invertiosolutions.com
+                                                      </a>
                                                 </p>
                                           </div>
                                     </div>
@@ -111,13 +113,13 @@ export default function ContactSection() {
                               <form className="space-y-5">
 
                                     <div className="grid md:grid-cols-2 gap-5">
-                                          <Input label="Full Name *" placeholder="Enter Your Full Name" className="rounded-md" />
-                                          <Input label="Company Name *" placeholder="Enter Company Name" className="rounded-md" />
+                                          <Input label="Full Name *" placeholder="Enter Your Full Name" className="rounded-xs" />
+                                          <Input label="Company Name *" placeholder="Enter Company Name" className="rounded-xs" />
                                     </div>
 
                                     <div className="grid md:grid-cols-2 gap-5">
-                                          <Input label="Email *" placeholder="example@gmail.com" className="rounded-md" />
-                                          <Input label="Contact Number *" placeholder="+91 Enter 10 Digit Mobile Number" className="rounded-md" />
+                                          <Input label="Email *" placeholder="example@gmail.com" className="rounded-xs" />
+                                          <Input label="Contact Number *" placeholder="+91 Enter 10 Digit Mobile Number" className="rounded-xs" />
                                     </div>
 
                                     {/* Service Selection */}
@@ -151,16 +153,16 @@ export default function ContactSection() {
                                           </label>
                                           <textarea
                                                 rows="4"
-                                                className="w-full border border-gray-200 rounded-md p-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                                className="w-full border border-gray-200 rounded-md p-4 focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
                                                 placeholder="Message..."
                                           />
                                     </div>
 
                                     {/* Submit */}
-                                    <div className="flex justify-end">
+                                    <div className="flex justify-end xs:justify-start">
                                           <button
                                                 type="submit"
-                                                className="bg-[#0F172A] text-white px-8 py-3 rounded-md font-medium hover:bg-[#1E293B] transition"
+                                                className="bg-[#0F172A] text-white px-8 py-3 rounded-md font-medium hover:bg-[#1E293B] transition "
                                           >
                                                 Send Message
                                           </button>

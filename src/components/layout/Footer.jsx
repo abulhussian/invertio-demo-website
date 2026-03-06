@@ -37,24 +37,35 @@ const Footer = () => {
           </h3>
           <ul className="flex flex-col gap-4 text-sm text-gray-300  w-fit">
             <li className="flex gap-2 items-center">
-              <Image
-                src="/footer/phone.svg"
-                alt="phone"
-                width={40}
-                height={40}
-                priority
-              />
-              +91 81219 10307
+              <a
+                href="tel:+918121910307"
+                className="flex gap-2 items-center hover:underline"
+              >
+                <Image
+                  src="/footer/phone.svg"
+                  alt="phone"
+                  width={40}
+                  height={40}
+                  priority
+                />
+                +91 81219 10307
+              </a>
             </li>
             <li className="flex gap-2 items-center">
               <Image
                 src="/footer/email.svg"
-                alt="phone"
+                alt="email"
                 width={40}
                 height={40}
                 priority
               />
-              info@invertiosolutions.com
+
+              <a
+                href="mailto:info@invertiosolutions.com"
+                className="hover:underline"
+              >
+                info@invertiosolutions.com
+              </a>
             </li>
             <li className="flex gap-2 items-start ">
               <Image
@@ -72,28 +83,61 @@ const Footer = () => {
       </div>
 
       <hr className="border-t border-[#101323]" />
-
       {/* social media logos */}
       <div className="flex gap-4 items-center w-full justify-center py-4">
-        <Image
-          src="/footer/facebook.svg"
-          alt="facebook"
-          width={40}
-          height={40}
-        />
-        <Image
-          src="/footer/instagram.svg"
-          alt="instagram"
-          width={40}
-          height={40}
-        />
-        <Image src="/footer/x.svg" alt="x" width={40} height={40} />
-        <Image
-          src="/footer/linkedin.svg"
-          alt="linkedin"
-          width={40}
-          height={40}
-        />
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61554332513059"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/facebook.svg"
+            alt="facebook"
+            width={40}
+            height={40}
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/invertiotechsolutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/instagram.svg"
+            alt="instagram"
+            width={40}
+            height={40}
+          />
+        </a>
+
+        <a
+          href="https://x.com/Invertio_s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/x.svg"
+            alt="x"
+            width={40}
+            height={40}
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/linkedin.svg"
+            alt="linkedin"
+            width={40}
+            height={40}
+          />
+        </a>
+
       </div>
 
       <hr className="border-t border-[#101323]" />
@@ -207,12 +251,12 @@ const footerData = [
     links: [
       { label: "Education", href: "/industries/education" },
       { label: "Logistics", href: "/industries/logistics" },
-      { label: "Retail", href: "/industries/retail" },
-      { label: "Finance", href: "/industries/finance" },
+      { label: "Retail", href: "/industries/retail-ecommerce" },
+      { label: "Finance", href: "/industries/finance-banking" },
       { label: "Healthcare", href: "/industries/healthcare" },
       {
         label: "Information Service",
-        href: "/industries/information-service",
+        href: "/industries/information",
       },
     ],
   },

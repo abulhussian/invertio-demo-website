@@ -21,9 +21,12 @@ export default function CTASection() {
 
                         {/* RIGHT BUTTON */}
                         <div className="flex-shrink-0">
-                              <button className="bg-[#0F172A] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1E293B] transition">
+                              <a
+                                    href="tel:+919876543210"
+                                    className="inline-block bg-[#0F172A] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1E293B] transition"
+                              >
                                     Contact Our Experts
-                              </button>
+                              </a>
                         </div>
 
                   </div>

@@ -211,13 +211,12 @@ const BlogFilterSection = () => {
                   </div>
 
                   <div className="mt-8 flex justify-center px-4">
-                        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-3">
+                        <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
 
                               {/* Previous */}
-                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition w-full sm:w-auto">
+                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition">
                                     ← <span className="hidden sm:inline">Previous</span>
                               </button>
-
                               {/* Page Numbers */}
                               <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto max-w-full">
 
@@ -245,7 +244,7 @@ const BlogFilterSection = () => {
                               </div>
 
                               {/* Next */}
-                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition w-full sm:w-auto">
+                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition">
                                     <span className="hidden sm:inline">Next</span> →
                               </button>
 
