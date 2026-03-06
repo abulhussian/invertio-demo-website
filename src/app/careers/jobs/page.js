@@ -7,6 +7,7 @@ import Image from "next/image";
 
 const jobs = [
       {
+            slug: "ui-ux-designer",
             date: "Mar 10, 2026",
             title: "UI/UX Designer",
             company: "Invertio",
@@ -15,6 +16,7 @@ const jobs = [
             pay: "₹40,000 – ₹90,000 / month",
       },
       {
+            slug: "frontend-developer",
             date: "Mar 10, 2026",
             title: "Frontend Developer (React.js)",
             company: "Invertio",
@@ -23,6 +25,7 @@ const jobs = [
             pay: "₹50,000 – ₹1,20,000 / month",
       },
       {
+            slug: "backend-developer",
             date: "Mar 10, 2026",
             title: "Backend Developer (Node.js)",
             company: "Invertio",
@@ -31,6 +34,7 @@ const jobs = [
             pay: "₹60,000 – ₹1,40,000 / month",
       },
       {
+            slug: "data-analyst",
             date: "Mar 10, 2026",
             title: "Data Analyst",
             company: "Invertio",
@@ -39,6 +43,7 @@ const jobs = [
             pay: "₹45,000 – ₹1,10,000 / month",
       },
       {
+            slug: "cybersecurity-analyst",
             date: "Mar 10, 2026",
             title: "Cybersecurity Analyst",
             company: "Invertio",
@@ -52,6 +57,7 @@ const jobs = [
             pay: "₹70,000 – ₹1,60,000 / month",
       },
       {
+            slug: "cloud-engineer",
             date: "Mar 10, 2026",
             title: "Cloud Engineer (AWS)",
             company: "Invertio",
@@ -81,7 +87,7 @@ export default function JobsPage() {
                         subheadingColor="#475569"
                   />
 
-                  {/* Search Bar */}
+                  {/* Search */}
                   <div className="flex justify-center mt-10">
                         <div className="relative w-full max-w-2xl">
 
@@ -95,7 +101,7 @@ export default function JobsPage() {
 
                               <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#0F172A] flex items-center justify-center">
                                     <Image
-                                          src="/icons/search.svg"
+                                          src="/icons/search.png"
                                           alt="search"
                                           width={18}
                                           height={18}
@@ -105,11 +111,13 @@ export default function JobsPage() {
                         </div>
                   </div>
 
-                  {/* Job Cards */}
+                  {/* Jobs Grid */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
                         {filteredJobs.map((job) => (
-                              <JobCard key={job.title} {...job} />
+                              <JobCard key={job.slug} {...job} />
                         ))}
+
                   </div>
 
                   {/* No Results */}

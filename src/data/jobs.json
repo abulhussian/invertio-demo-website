@@ -1,0 +1,104 @@
+[
+      {
+            "slug": "ui-ux-designer",
+            "date": "Mar 10, 2026",
+            "title": "UI/UX Designer",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹40,000 – ₹90,000 / month",
+            "description": "We are looking for a passionate UI/UX designer who can craft intuitive and visually appealing digital experiences for web and mobile applications.",
+            "summary": "The UI/UX Designer will collaborate with product managers and developers to design user-friendly interfaces and improve the overall user experience.",
+            "responsibilities": [
+                  "Design user flows, wireframes, and prototypes",
+                  "Conduct user research and usability testing",
+                  "Collaborate with developers and product teams",
+                  "Create and maintain design systems"
+            ],
+            "skills": [
+                  "Figma",
+                  "Wireframing",
+                  "User Research",
+                  "Prototyping",
+                  "Design Systems"
+            ],
+            "preferred": [
+                  "Experience with responsive design",
+                  "Basic understanding of frontend development",
+                  "Strong design portfolio"
+            ],
+            "benefits": [
+                  "Competitive salary",
+                  "Flexible working environment",
+                  "Learning & development programs",
+                  "Collaborative team culture"
+            ]
+      },
+      {
+            "slug": "frontend-developer",
+            "date": "Mar 10, 2026",
+            "title": "Frontend Developer (React.js)",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹50,000 – ₹1,20,000 / month",
+            "description": "We are seeking a Frontend Developer skilled in React.js to build scalable and responsive web applications.",
+            "summary": "You will develop modern UI components and collaborate closely with backend developers and designers.",
+            "responsibilities": [
+                  "Build responsive interfaces using React",
+                  "Optimize application performance",
+                  "Integrate APIs with frontend",
+                  "Maintain code quality"
+            ],
+            "skills": [
+                  "React.js",
+                  "JavaScript",
+                  "HTML5",
+                  "Tailwind CSS",
+                  "REST APIs"
+            ],
+            "preferred": [
+                  "Experience with Next.js",
+                  "Understanding of UI/UX principles",
+                  "Familiarity with Git"
+            ],
+            "benefits": [
+                  "Competitive salary",
+                  "Remote-friendly environment",
+                  "Career growth opportunities",
+                  "Team mentorship"
+            ]
+      },
+      {
+            "slug": "backend-developer",
+            "date": "Mar 10, 2026",
+            "title": "Backend Developer (Node.js)",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹60,000 – ₹1,40,000 / month",
+            "description": "We are looking for a Backend Developer experienced in Node.js to build scalable APIs and backend systems.",
+            "summary": "The role involves developing REST APIs, database management, and backend architecture design.",
+            "responsibilities": [
+                  "Build RESTful APIs",
+                  "Manage databases like MongoDB",
+                  "Implement authentication systems",
+                  "Collaborate with frontend developers"
+            ],
+            "skills": [
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB",
+                  "REST APIs",
+                  "JWT Authentication"
+            ],
+            "preferred": [
+                  "Cloud experience",
+                  "Microservices knowledge",
+                  "Docker familiarity"
+            ],
+            "benefits": [
+                  "Competitive salary",
+                  "Health support programs",
+                  "Certification sponsorship",
+                  "Flexible working hours"
+            ]
+      }
+]

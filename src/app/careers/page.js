@@ -4,39 +4,37 @@ import SectionHeader from "@/components/common/ui/SectionHeader";
 import TransformationHero from "@/components/services/components/TransformationHero";
 import CaseStudy from "@/components/services/components/CaseStudy";
 import Link from "next/link";
-import JoinCTA from "@/components/careers/JoinCTA ";
-// import Image from "next/image";
+import JoinCTA from "@/components/careers/JoinCTA";
 
-const page = () => {
+const Page = () => {
+
   const caseStudyData = {
     badge: "Diversity & Inclusion",
-
     heading: "Everyone Belongs at Invertio",
-
     subheading:
       "We believe diversity drives innovation. Our workplace values different perspectives, backgrounds, and experiences, creating an environment where everyone can contribute and succeed.",
-
     cards: [
       {
         title: "Driven by Innovation, Powered by People",
         description:
-          "We believe great ideas come from diverse perspectives and collaborative environments. Our culture encourages open communication, experimentation, and continuous improvement. From brainstorming new technologies to delivering impactful digital solutions, every team member plays a key role in shaping our journey.",
+          "We believe great ideas come from diverse perspectives and collaborative environments.",
         variant: "secondary",
       },
       {
         title: "A Workplace Where Innovation Meets Opportunity",
         description:
-          "We foster a culture that values creativity, collaboration, and continuous learning. Our team works on cutting-edge technologies, solving real-world challenges for global organizations across multiple industries. At Invertio, we don't just build technology — we build careers.",
+          "We foster a culture that values creativity, collaboration, and continuous learning.",
         variant: "primary",
       },
       {
         title: "Start Your Career Journey",
         description:
-          "We provide internship opportunities for students and fresh graduates looking to gain real-world experience in software development, UI/UX design, data analytics, and cybersecurity. Work alongside experienced professionals and develop skills that prepare you for the future.",
+          "We provide internship opportunities for students and fresh graduates.",
         variant: "secondary",
       },
     ],
   };
+
   const benefitsData = {
     badge: "Employee Benefits",
     heading: "We Support Your Growth and Well-being",
@@ -44,7 +42,7 @@ const page = () => {
       "We invest in our people by providing benefits that support both professional success and personal well-being.",
     benefits: [
       "Competitive salary packages",
-      "Professional development and training programs",
+      "Professional development programs",
       "Flexible working arrangements",
       "Health and wellness support",
       "Career growth opportunities",
@@ -55,8 +53,10 @@ const page = () => {
       href: "/contact-us",
     },
   };
+
   const jobs = [
     {
+      slug: "ui-ux-designer",
       date: "Mar 10, 2026",
       title: "UI/UX Designer",
       company: "Invertio",
@@ -65,6 +65,7 @@ const page = () => {
       pay: "₹40,000 – ₹90,000 / month",
     },
     {
+      slug: "frontend-developer",
       date: "Mar 10, 2026",
       title: "Frontend Developer (React.js)",
       company: "Invertio",
@@ -73,6 +74,7 @@ const page = () => {
       pay: "₹50,000 – ₹1,20,000 / month",
     },
     {
+      slug: "backend-developer",
       date: "Mar 10, 2026",
       title: "Backend Developer (Node.js)",
       company: "Invertio",
@@ -81,6 +83,7 @@ const page = () => {
       pay: "₹60,000 – ₹1,40,000 / month",
     },
     {
+      slug: "data-analyst",
       date: "Mar 10, 2026",
       title: "Data Analyst",
       company: "Invertio",
@@ -89,19 +92,16 @@ const page = () => {
       pay: "₹45,000 – ₹1,10,000 / month",
     },
     {
+      slug: "cybersecurity-analyst",
       date: "Mar 10, 2026",
       title: "Cybersecurity Analyst",
       company: "Invertio",
       logo: "/logo/logo.png",
-      skills: [
-        "Network Security",
-        "Vulnerability Assessment",
-        "SIEM Tools",
-        "Ethical Hacking",
-      ],
+      skills: ["Network Security", "Vulnerability Assessment", "SIEM Tools", "Ethical Hacking"],
       pay: "₹70,000 – ₹1,60,000 / month",
     },
     {
+      slug: "cloud-engineer",
       date: "Mar 10, 2026",
       title: "Cloud Engineer (AWS)",
       company: "Invertio",
@@ -110,6 +110,7 @@ const page = () => {
       pay: "₹80,000 – ₹1,80,000 / month",
     },
   ];
+
   return (
     <>
       <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
@@ -117,7 +118,7 @@ const page = () => {
         <SectionHeader
           badge="Join Us"
           heading="Build the Future of Technology With Us"
-          subheading={`Join a team of innovators, creators, and problem-solvers passionate about building impactful digital solutions. At Invertio, we believe in empowering talented individuals to grow, innovate, and shape the future of technology.`}
+          subheading="Join a team of innovators passionate about building impactful digital solutions."
           size="md"
           headingColor="#0F172A"
           subheadingColor="#475569"
@@ -129,9 +130,10 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {jobs.map((job) => (
-            <JobCard key={job.title} {...job} />
+            <JobCard key={job.slug} {...job} />
           ))}
         </div>
+
         <div className="mt-16 flex justify-center">
           <Link
             href="/careers/jobs"
@@ -151,9 +153,10 @@ const page = () => {
         <CaseStudy data={caseStudyData} />
 
       </div>
+
       <JoinCTA />
     </>
-  )
+  );
 };
 
-export default page;
+export default Page;

@@ -1,12 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const JobCard = ({ date, title, company, skills, pay, logo }) => {
+const JobCard = ({ slug, date, title, company, skills, pay, logo }) => {
       return (
             <div className="bg-white border border-gray-100 rounded-md p-8 flex flex-col justify-between min-h-[420px] shadow-sm hover:shadow-md transition-shadow">
 
                   {/* Top Section */}
                   <div>
-                        <p className="text-[13px] text-gray-400 font-medium mb-2">{date}</p>
+                        <p className="text-[13px] text-gray-400 font-medium mb-2">
+                              {date}
+                        </p>
 
                         <h3 className="text-[28px] md:text-[32px] font-bold text-[#111827] leading-[1.1] tracking-tight mb-2">
                               {title}
@@ -21,7 +24,6 @@ const JobCard = ({ date, title, company, skills, pay, logo }) => {
                                     height={20}
                                     className="object-contain"
                               />
-
                         </div>
 
                         {/* Skills */}
@@ -47,9 +49,12 @@ const JobCard = ({ date, title, company, skills, pay, logo }) => {
                               Pay : <span className="font-bold">{pay}</span>
                         </p>
 
-                        <button className="w-full py-4 rounded-2xl text-[16px] font-semibold bg-black text-white hover:bg-gray-600 transition-colors">
-                              Apply Now
-                        </button>
+                        <Link href={`/careers/jobs/${slug}`}>
+                              <button className="w-full py-4 rounded-2xl text-[16px] font-semibold bg-black text-white hover:bg-gray-600 transition-colors">
+                                    Apply Now
+                              </button>
+                        </Link>
+
                   </div>
             </div>
       );
