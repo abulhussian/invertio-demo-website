@@ -22,9 +22,9 @@ const TechStackSection = ({ data }) => {
                                           <Image
                                                 src={tech.icon}
                                                 alt={tech.name}
-                                                width={40}
-                                                height={40}
-                                                className="object-contain"
+                                                width={80}
+                                                height={80}
+                                                className="object-cover"
                                           />
 
                                           <span className="text-sm font-medium text-gray-600">
