@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
@@ -45,13 +46,19 @@ const HeroSection = () => {
                         {/* RIGHT BUTTONS */}
                         <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
 
-                            <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-sm font-medium">
+                            <Link
+                                href="/contact-us"
+                                className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-sm font-medium text-white text-center"
+                            >
                                 Start Your Project
-                            </button>
+                            </Link>
 
-                            <button className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white">
+                            <Link
+                                href="/contact-us"
+                                className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
+                            >
                                 Book A Consultation
-                            </button>
+                            </Link>
 
                         </div>
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHeader from "../ui/SectionHeader";
 import Section from "../ui/Section";
+import Link from "next/link";
 
 const insights = [
   {
@@ -108,15 +109,18 @@ const InsightsSection = () => {
         </div>
         {/* VIEW ALL BUTTON */}
         <div className="mt-16 flex justify-center">
-          <button className="px-8 py-3 rounded-full bg-[#0F172A] text-white font-bold hover:bg-[#1E293B] transition shadow-md flex  gap-2 cursor-pointer">
-            View All Insights{" "}
+          <Link
+            href="/news-insights"
+            className="px-8 py-3 rounded-full bg-[#0F172A] text-white font-bold hover:bg-[#1E293B] transition shadow-md flex items-center gap-2 cursor-pointer w-fit"
+          >
+            View All Insights
             <Image
               src="/arrows/rightTopFace.svg"
               alt="arrow"
               width={20}
               height={20}
             />
-          </button>
+          </Link>
         </div>
       </div>
     </Section>
