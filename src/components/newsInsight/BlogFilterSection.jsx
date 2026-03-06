@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+
 
 const categories = [
       "All",
@@ -13,93 +16,102 @@ const categories = [
       "AI & Automation",
 ];
 
-const insights = [
-      {
-            id: 1,
-            image: "/common/insights/insight1.png",
-            date: "March 10, 2026",
-            category: "Mobile App Development",
-            title: "Native vs Cross-Platform Application Development — How to Choose?",
-            description:
-                  "The Asset Management module now features improved tracking, performance insights, and real-time alerts for enhanced operations.",
-            slug: "native-vs-cross-platform-development",
-      },
-      {
-            id: 2,
-            image: "/common/insights/insight2.png",
-            date: "February 28, 2026",
-            category: "Startup & Innovation",
-            title: "On-Demand Applications: Powering the Digital Economy",
-            description:
-                  "On-demand platforms are reshaping industries by enabling real-time services and seamless customer experiences.",
-            slug: "on-demand-applications-digital-economy",
-      },
-      {
-            id: 3,
-            image: "/common/insights/insight3.png",
-            date: "February 14, 2026",
-            category: "Mobile App Development",
-            title: "What’s New in the Latest Flutter Ecosystem",
-            description:
-                  "Flutter continues to accelerate cross-platform development with improved performance, UI flexibility, and faster deployment cycles.",
-            slug: "latest-flutter-ecosystem-updates",
-      },
-      {
-            id: 4,
-            image: "/common/insights/insight4.png",
-            date: "January 30, 2026",
-            category: "Technology Trends",
-            title: "Top Mobile App Development Trends Shaping the Future",
-            description:
-                  "From AI integration and super apps to enhanced security and immersive user experiences, explore the major mobile technology shifts.",
-            slug: "mobile-app-development-trends-2026",
-      },
+// const insights = [
+//       {
+//             id: 1,
+//             image: "/common/insights/insight1.png",
+//             date: "March 10, 2026",
+//             category: "Mobile App Development",
+//             title: "Native vs Cross-Platform Application Development — How to Choose?",
+//             description:
+//                   "The Asset Management module now features improved tracking, performance insights, and real-time alerts for enhanced operations.",
+//             slug: "native-vs-cross-platform-development",
+//       },
+//       {
+//             id: 2,
+//             image: "/common/insights/insight2.png",
+//             date: "February 28, 2026",
+//             category: "Startup & Innovation",
+//             title: "On-Demand Applications: Powering the Digital Economy",
+//             description:
+//                   "On-demand platforms are reshaping industries by enabling real-time services and seamless customer experiences.",
+//             slug: "on-demand-applications-digital-economy",
+//       },
+//       {
+//             id: 3,
+//             image: "/common/insights/insight3.png",
+//             date: "February 14, 2026",
+//             category: "Mobile App Development",
+//             title: "What’s New in the Latest Flutter Ecosystem",
+//             description:
+//                   "Flutter continues to accelerate cross-platform development with improved performance, UI flexibility, and faster deployment cycles.",
+//             slug: "latest-flutter-ecosystem-updates",
+//       },
+//       {
+//             id: 4,
+//             image: "/common/insights/insight4.png",
+//             date: "January 30, 2026",
+//             category: "Technology Trends",
+//             title: "Top Mobile App Development Trends Shaping the Future",
+//             description:
+//                   "From AI integration and super apps to enhanced security and immersive user experiences, explore the major mobile technology shifts.",
+//             slug: "mobile-app-development-trends-2026",
+//       },
 
-      // NEW ROW (From Screenshot)
+//       // NEW ROW (From Screenshot)
 
-      {
-            id: 5,
-            image: "/common/insights/insight5.png",
-            date: "January 21, 2026",
-            category: "Data & Analytics",
-            title: "How Data Analytics Is Transforming Business Decision-Making",
-            description:
-                  "Modern organizations rely on real-time analytics to drive smarter strategies, improve efficiency, and unlock actionable insights.",
-            slug: "data-analytics-transforming-business",
-      },
-      {
-            id: 6,
-            image: "/common/insights/insight6.png",
-            date: "January 15, 2026",
-            category: "Cybersecurity",
-            title: "Why Zero-Trust Security Is the Future of Enterprise Protection",
-            description:
-                  "With cyber threats becoming more sophisticated, Zero-Trust architecture is emerging as the gold standard for modern security.",
-            slug: "zero-trust-security-enterprise",
-      },
-      {
-            id: 7,
-            image: "/common/insights/insight7.png",
-            date: "January 05, 2026",
-            category: "Cloud Computing",
-            title: "Cloud Migration Strategies for Scalable Digital Growth",
-            description:
-                  "Migrating to the cloud enhances flexibility, cost efficiency, and operational resilience for modern enterprises.",
-            slug: "cloud-migration-strategies",
-      },
-      {
-            id: 8,
-            image: "/common/insights/insight8.png",
-            date: "December 28, 2025",
-            category: "AI & Automation",
-            title: "Automation & AI: Redefining Modern Enterprise Operations",
-            description:
-                  "AI-powered automation is helping organizations streamline workflows, reduce costs, and enhance productivity at scale.",
-            slug: "ai-automation-enterprise-operations",
-      },
-];
+//       {
+//             id: 5,
+//             image: "/common/insights/insight5.png",
+//             date: "January 21, 2026",
+//             category: "Data & Analytics",
+//             title: "How Data Analytics Is Transforming Business Decision-Making",
+//             description:
+//                   "Modern organizations rely on real-time analytics to drive smarter strategies, improve efficiency, and unlock actionable insights.",
+//             slug: "data-analytics-transforming-business",
+//       },
+//       {
+//             id: 6,
+//             image: "/common/insights/insight6.png",
+//             date: "January 15, 2026",
+//             category: "Cybersecurity",
+//             title: "Why Zero-Trust Security Is the Future of Enterprise Protection",
+//             description:
+//                   "With cyber threats becoming more sophisticated, Zero-Trust architecture is emerging as the gold standard for modern security.",
+//             slug: "zero-trust-security-enterprise",
+//       },
+//       {
+//             id: 7,
+//             image: "/common/insights/insight7.png",
+//             date: "January 05, 2026",
+//             category: "Cloud Computing",
+//             title: "Cloud Migration Strategies for Scalable Digital Growth",
+//             description:
+//                   "Migrating to the cloud enhances flexibility, cost efficiency, and operational resilience for modern enterprises.",
+//             slug: "cloud-migration-strategies",
+//       },
+//       {
+//             id: 8,
+//             image: "/common/insights/insight8.png",
+//             date: "December 28, 2025",
+//             category: "AI & Automation",
+//             title: "Automation & AI: Redefining Modern Enterprise Operations",
+//             description:
+//                   "AI-powered automation is helping organizations streamline workflows, reduce costs, and enhance productivity at scale.",
+//             slug: "ai-automation-enterprise-operations",
+//       },
+// ];
+
 
 const BlogFilterSection = () => {
+      const [insights, setInsights] = useState([]);
+
+      useEffect(() => {
+            fetch("/news-insights/blogs.json")
+                  .then((res) => res.json())
+                  .then((data) => setInsights(data))
+                  .catch((err) => console.error("Error loading blogs:", err));
+      }, []);
       return (
             <>
                   <section className="w-full py-12">
@@ -193,7 +205,10 @@ const BlogFilterSection = () => {
 
                                           {/* Button */}
                                           <div className="flex justify-end items-center pt-2">
-                                                <button className="text-[13px] font-semibold text-[#0F172A] flex items-center gap-2 group">
+                                                <a
+                                                      href={`/news-insights/${item.slug}.html`}
+                                                      className="text-[13px] font-semibold text-[#0F172A] flex items-center gap-2 group"
+                                                >
                                                       Read More
                                                       <Image
                                                             src="/newsinsight/rightFace.png"
@@ -202,7 +217,7 @@ const BlogFilterSection = () => {
                                                             height={16}
                                                             className="brightness-0 transition-transform duration-300 group-hover:translate-x-1"
                                                       />
-                                                </button>
+                                                </a>
                                           </div>
 
                                     </div>

@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "image": "/common/insights/insight1.png",
+    "date": "March 10, 2026",
+    "category": "Mobile App Development",
+    "title": "Native vs Cross-Platform Application Development — How to Choose?",
+    "description": "The Asset Management module now features improved tracking.",
+    "slug": "native-vs-cross-platform-development"
+  }
+]
