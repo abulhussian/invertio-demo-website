@@ -9,10 +9,9 @@ const JobCard = ({ slug, date, title, company, logo, skills, pay, isActive }) =>
                         <h3 className="text-[28px] font-bold text-[#0F172A] leading-tight mb-3">{title}</h3>
 
                         <div className="flex items-center gap-2 mb-6">
-                              <div className="relative w-6 h-6">
+                              <div className="relative w-16 h-8">
                                     <Image src={logo} alt={company} fill className="object-contain" />
                               </div>
-                              <span className="text-lg font-bold text-[#0F172A] lowercase tracking-tighter">{company}</span>
                         </div>
 
                         <p className="text-[14px] font-semibold text-[#0F172A] mb-3">Required Skills</p>
