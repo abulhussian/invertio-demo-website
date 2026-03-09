@@ -1,35 +1,42 @@
 "use client";
 
 import { useState } from "react";
+import projects from "@/data/ourwork.json";
+import Link from "next/link";
+// import Link from "next/link";
 
-const projects = [
-  {
-    title: "SMSA Express",
-    desc: "A comprehensive logistics and fulfillment platform leading real-time tracking, route optimization, and automated logistics workflows.",
-    image: "/Home/samsa-Cards.png",
-  },
-  {
-    title: "StudyFox AI",
-    desc: "AI-powered learning platform delivering intelligent study assistance through adaptive learning, NLP capabilities, and more.",
-    image: "/Home/study-fox-cards.png",
-  },
-  {
-    title: "QATAR MOHE",
-    desc: "A large-scale digital education and examination management system supporting secure collaboration between students and institutions.",
-    image: "/Home/qatar-cards.png",
-  },
-  {
-    title: "Single View",
-    desc: "Enterprise digital transformation platform integrating cloud computing, cybersecurity analytics, and business intelligence.",
-    image: "/Home/singleview-cards.png",
-  },
-];
+
+
+
+const projectList = Object.values(projects);
+// const projects = [
+//   {
+//     title: "SMSA Express",
+//     desc: "A comprehensive logistics and fulfillment platform leading real-time tracking, route optimization, and automated logistics workflows.",
+//     image: "/Home/samsa-Cards.png",
+//   },
+//   {
+//     title: "StudyFox AI",
+//     desc: "AI-powered learning platform delivering intelligent study assistance through adaptive learning, NLP capabilities, and more.",
+//     image: "/Home/study-fox-cards.png",
+//   },
+//   {
+//     title: "QATAR MOHE",
+//     desc: "A large-scale digital education and examination management system supporting secure collaboration between students and institutions.",
+//     image: "/Home/qatar-cards.png",
+//   },
+//   {
+//     title: "Single View",
+//     desc: "Enterprise digital transformation platform integrating cloud computing, cybersecurity analytics, and business intelligence.",
+//     image: "/Home/singleview-cards.png",
+//   },
+// ];
 
 export default function ProjectsSection() {
   const [index, setIndex] = useState(0);
 
   const next = () => {
-    if (index < projects.length - 1) {
+    if (index < projectList.length - 1) {
       setIndex(index + 1);
     }
   };
@@ -67,27 +74,30 @@ export default function ProjectsSection() {
               transform: `translateX(-${index * 340}px)`
             }}
           >
-            {projects.map((project, i) => (
+            {projectList.map((project, i) => (
               <div
                 key={i}
                 className="min-w-[320px] rounded-xl overflow-hidden bg-white shadow-md"
               >
-                <div className="h-[260px] bg-gray-200">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <div className="relative h-[560px] bg-gray-200">
+                  <Link href={project.path}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover cursor-pointer"
+                    />
+                  </Link>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/50  text-white">
 
-                <div className="p-5">
-                  <h3 className="font-semibold text-lg text-gray-900">
-                    {project.title}
-                  </h3>
+                    <h3 className="font-semibold text-md">
+                      {project.badge}
+                    </h3>
 
-                  <p className="text-gray-500 text-sm mt-2">
-                    {project.desc}
-                  </p>
+                    <p className="text-xs mt-1 line-clamp-3 text-gray-200">
+                      {project.title}
+                    </p>
+
+                  </div>
                 </div>
               </div>
             ))}

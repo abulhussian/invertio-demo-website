@@ -1,17 +1,30 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
-import jobs from "@/data/jobs.json";
-import { notFound } from "next/navigation";
+import { useState, useEffect } from "react";
+// import jobs from "@/data/jobs.json";
+import defaultJobs from "@/data/jobs.json";
+import { useParams } from "next/navigation";
 import Image from "next/image";
 
-export default function JobDetails({ params: paramsPromise }) {
+export default function JobDetails() {
       // Unwrap params in Next.js 15
-      const params = use(paramsPromise);
-      const { slug } = params;
+      const { slug } = useParams();
 
-      const job = jobs.find((j) => j.slug === slug);
+
       const [isSticky, setIsSticky] = useState(true);
+      const [jobs, setJobs] = useState(defaultJobs);
+      const job = jobs.find((j) => j.slug === slug);
+
+
+      useEffect(() => {
+
+            const storedJobs = JSON.parse(localStorage.getItem("jobs"));
+
+            if (storedJobs) {
+                  setJobs([...defaultJobs, ...storedJobs]);
+            }
+
+      }, []);
 
       // useEffect to prevent the form from overflowing if the screen is too small
       useEffect(() => {
@@ -28,7 +41,13 @@ export default function JobDetails({ params: paramsPromise }) {
             return () => window.removeEventListener("resize", handleResize);
       }, []);
 
-      if (!job) return notFound();
+      if (!job) {
+            return (
+                  <div className="py-20 text-center text-gray-500">
+                        Job not found
+                  </div>
+            );
+      }
 
       return (
             <div className="px-8 md:px-14 lg:px-20 py-12 bg-white min-h-screen">

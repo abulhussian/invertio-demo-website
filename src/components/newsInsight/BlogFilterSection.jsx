@@ -105,6 +105,10 @@ const categories = [
 
 const BlogFilterSection = () => {
       const [insights, setInsights] = useState([]);
+      const [activeCategory, setActiveCategory] = useState("All");
+      const [searchTerm, setSearchTerm] = useState("");
+      const [currentPage, setCurrentPage] = useState(1);
+      const postsPerPage = 8;
 
       useEffect(() => {
             fetch("/news-insights/blogs.json")
@@ -112,6 +116,27 @@ const BlogFilterSection = () => {
                   .then((data) => setInsights(data))
                   .catch((err) => console.error("Error loading blogs:", err));
       }, []);
+      const filteredBlogs = insights.filter((blog) => {
+            const matchCategory =
+                  activeCategory === "All" || blog.category === activeCategory;
+
+            const matchSearch =
+                  blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  blog.description.toLowerCase().includes(searchTerm.toLowerCase());
+
+            return matchCategory && matchSearch;
+      });
+      const totalPages = Math.ceil(filteredBlogs.length / postsPerPage);
+
+      const indexOfLastPost = currentPage * postsPerPage;
+      const indexOfFirstPost = indexOfLastPost - postsPerPage;
+
+      const currentBlogs = filteredBlogs.slice(indexOfFirstPost, indexOfLastPost);
+      const pageNumbers = [];
+
+      for (let i = 1; i <= totalPages; i++) {
+            pageNumbers.push(i);
+      }
       return (
             <>
                   <section className="w-full py-12">
@@ -132,8 +157,9 @@ const BlogFilterSection = () => {
                                           {categories.map((cat, index) => (
                                                 <button
                                                       key={index}
+                                                      onClick={() => setActiveCategory(cat)}
                                                       className={`px-3 py-2 text-[10px] font-bold rounded-full transition-all duration-200 flex-shrink-0
-          ${cat === "All"
+      ${activeCategory === cat
                                                                   ? "bg-[#0F172A] text-white"
                                                                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                                             }`}
@@ -148,10 +174,12 @@ const BlogFilterSection = () => {
                                           <input
                                                 type="text"
                                                 placeholder="Search Blog"
-                                                className="w-full bg-gray-100 text-sm px-4 py-2 rounded-full outline-none "
+                                                value={searchTerm}
+                                                onChange={(e) => setSearchTerm(e.target.value)}
+                                                className="w-full bg-gray-100 text-sm px-4 py-2 rounded-full outline-none"
                                           />
                                           <img
-                                                src="/newsinsight/search.png"   // replace with your icon path
+                                                src="/newsinsight/search.png"
                                                 alt="Search"
                                                 className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 opacity-60"
                                           />
@@ -161,9 +189,13 @@ const BlogFilterSection = () => {
                         </div>
                   </section>
 
-
+                  {currentBlogs.length === 0 && (
+                        <p className="text-center text-gray-500 py-10">
+                              No blogs found.
+                        </p>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {insights.map((item) => (
+                        {currentBlogs.map((item) => (
                               <div
                                     key={item.id}
                                     className="group bg-white rounded-xl overflow-hidden 
@@ -229,37 +261,34 @@ const BlogFilterSection = () => {
                         <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
 
                               {/* Previous */}
-                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition">
+                              <button
+                                    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                                    className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                              >
                                     ← <span className="hidden sm:inline">Previous</span>
                               </button>
                               {/* Page Numbers */}
                               <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto max-w-full">
-
-                                    <button className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg bg-[#0F172A] text-white text-sm sm:text-base font-semibold">
-                                          1
-                                    </button>
-
-                                    <button className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 text-sm sm:text-base">
-                                          2
-                                    </button>
-
-                                    <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
-                                          3
-                                    </button>
-
-                                    <span className="hidden sm:inline px-2 text-gray-500">...</span>
-
-                                    <button className="hidden sm:flex w-10 h-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100">
-                                          9
-                                    </button>
-
-                                    <button className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 text-sm sm:text-base">
-                                          10
-                                    </button>
+                                    {pageNumbers.map((number) => (
+                                          <button
+                                                key={number}
+                                                onClick={() => setCurrentPage(number)}
+                                                className={`w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg text-sm sm:text-base
+        ${currentPage === number
+                                                            ? "bg-[#0F172A] text-white font-semibold"
+                                                            : "text-gray-700 hover:bg-gray-100"
+                                                      }`}
+                                          >
+                                                {number}
+                                          </button>
+                                    ))}
                               </div>
 
                               {/* Next */}
-                              <button className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition">
+                              <button
+                                    onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                                    className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                              >
                                     <span className="hidden sm:inline">Next</span> →
                               </button>
 

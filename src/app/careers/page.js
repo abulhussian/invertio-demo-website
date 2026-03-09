@@ -1,42 +1,4 @@
-// import SectionHeader from "@/components/common/ui/SectionHeader";
-// import TransformationHero from "@/components/services/components/TransformationHero";
-// import CaseStudy from "@/components/services/components/CaseStudy";
-// import JoinCTA from "@/components/careers/JoinCTA";
-// import Link from "next/link";
-// import Image from "next/image";
-
-// // Sample data for the page sections
-// const benefitsData = { /* ... your benefits data ... */ };
-// const caseStudyData = { /* ... your case study data ... */ };
-
-// export default function CareersPage() {
-//       return (
-//             <>
-//                   <div className="px-8 md:px-14 lg:px-20 py-20 bg-[#F8F9FC]">
-//                         <SectionHeader
-//                               badge="Join Us"
-//                               heading="Build the Future of Technology With Us"
-//                               subheading="Join a team of innovators passionate about building impactful digital solutions."
-//                               size="md"
-//                         />
-
-//                         <div className="mt-16 flex justify-center">
-//                               <Link
-//                                     href="/careers/jobs"
-//                                     className="px-8 py-3 rounded-full bg-[#0F172A] text-white font-bold hover:bg-[#1E293B] transition shadow-md flex gap-2"
-//                               >
-//                                     View All Open Jobs
-//                                     <Image src="/arrows/rightTopFace.svg" alt="arrow" width={20} height={20} />
-//                               </Link>
-//                         </div>
-
-//                         <TransformationHero data={benefitsData} />
-//                         <CaseStudy data={caseStudyData} />
-//                   </div>
-//                   <JoinCTA />
-//             </>
-//       );
-// }
+"use client";
 
 import JobCard from "@/components/careers/JobCard";
 import Image from "next/image";
