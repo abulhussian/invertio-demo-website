@@ -60,75 +60,111 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
           <div>
             <button
               onClick={() => toggleDropdown("services")}
-              className="flex justify-between w-full"
+              className="flex justify-between items-center w-full"
             >
               Our Services
-              <span>+</span>
+              <span
+                className={`transition-transform duration-300 ${openDropdown === "services" ? "rotate-45" : ""
+                  }`}
+              >
+                +
+              </span>
             </button>
 
-            {openDropdown === "services" && (
-              <div className="ml-4 mt-2 flex flex-col gap-2 text-sm text-gray-300">
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out
+    ${openDropdown === "services"
+                  ? "max-h-40 opacity-100 mt-2"
+                  : "max-h-0 opacity-0"
+                }`}
+            >
+              <div className="ml-4 flex flex-col gap-2 text-sm text-gray-300">
                 {megaMenuData.services.links.map((item, i) => (
                   <Link
                     key={i}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
+                    className="hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>
                 ))}
               </div>
-            )}
+            </div>
           </div>
 
           {/* Solutions */}
           <div>
             <button
               onClick={() => toggleDropdown("solutions")}
-              className="flex justify-between w-full"
+              className="flex justify-between items-center w-full"
             >
               Our Solutions
-              <span>+</span>
+              <span
+                className={`transition-transform duration-300 ${openDropdown === "solutions" ? "rotate-45" : ""
+                  }`}
+              >
+                +
+              </span>
             </button>
 
-            {openDropdown === "solutions" && (
-              <div className="ml-4 mt-2 flex flex-col gap-2 text-sm text-gray-300">
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out
+    ${openDropdown === "solutions"
+                  ? "max-h-40 opacity-100 mt-2"
+                  : "max-h-0 opacity-0"
+                }`}
+            >
+              <div className="ml-4 flex flex-col gap-2 text-sm text-gray-300">
                 {megaMenuData.solutions.links.map((item, i) => (
                   <Link
                     key={i}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
+                    className="hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>
                 ))}
               </div>
-            )}
+            </div>
           </div>
 
           {/* Industries */}
           <div>
             <button
               onClick={() => toggleDropdown("industries")}
-              className="flex justify-between w-full"
+              className="flex justify-between items-center w-full"
             >
               Industries
-              <span>+</span>
+              <span
+                className={`transition-transform duration-300 ${openDropdown === "industries" ? "rotate-45" : ""
+                  }`}
+              >
+                +
+              </span>
             </button>
 
-            {openDropdown === "industries" && (
-              <div className="ml-4 mt-2 flex flex-col gap-2 text-sm text-gray-300">
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out
+    ${openDropdown === "industries"
+                  ? "max-h-52 opacity-100 mt-2"
+                  : "max-h-0 opacity-0"
+                }`}
+            >
+              <div className="ml-4 flex flex-col gap-2 text-sm text-gray-300">
                 {megaMenuData.industries.links.map((item, i) => (
                   <Link
                     key={i}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
+                    className="hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>
                 ))}
               </div>
-            )}
+            </div>
           </div>
 
           <Link href="/our-work" onClick={() => setMobileOpen(false)}>

@@ -32,6 +32,7 @@ const Navbar = () => {
           priority
         />
       </Link>
+
       <nav className="hidden lg:flex">
         <Link
           onClick={() => setActiveMenu(null)}
