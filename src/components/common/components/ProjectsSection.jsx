@@ -9,6 +9,7 @@ import Link from "next/link";
 
 
 const projectList = Object.values(projects);
+console.log(projectList)
 // const projects = [
 //   {
 //     title: "SMSA Express",

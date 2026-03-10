@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const MobileNavbar = ({ setMobileOpen, megaMenuData }) => {
+const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const toggleDropdown = (key) => {
@@ -15,15 +15,17 @@ const MobileNavbar = ({ setMobileOpen, megaMenuData }) => {
     <>
       {/* Overlay */}
       <div
-        className="fixed inset-0 bg-black/40 z-40"
+        className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-500
+  ${mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         onClick={() => setMobileOpen(false)}
       />
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 w-[80%] max-w-[350px] h-full bg-[#101323] text-white z-50 p-6 overflow-y-auto transform transition-transform duration-300 ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-full w-[80%] max-w-[350px]
+  bg-[#101323] text-white z-50 p-6 overflow-y-auto
+  transform transition-transform duration-500 ease-in-out
+  ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         {/* Close Button */}
         <div className="flex justify-end mb-6">

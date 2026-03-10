@@ -145,7 +145,7 @@
             "description": "Invertio developed AI Pilot, an intelligent automation platform designed to transform traditional workflows into AI-powered operations. The platform integrates Artificial Intelligence, predictive analytics, BLE device connectivity, and scalable cloud infrastructure to deliver real-time insights and automated decision-making for government and enterprise organizations.",
             "about": "Organizations often struggle with manual workflows, disconnected systems, and limited real-time visibility into operational data. AI Pilot was built to bridge these gaps by combining hardware data capture with intelligent software automation.\n\nInvertio designed and implemented an integrated platform that collects data from BLE-enabled devices, processes it through AI models, and delivers actionable insights via centralized dashboards.\n\nThe system enables organizations to automate workflows, analyze operational trends, and improve responsiveness through predictive intelligence and cloud-based scalability.",
             "image": "/ourwork/aipolit.png",
-            "path":"/our-work/ai-pilot",
+            "path": "/our-work/ai-pilot",
             "features": {
                   "badge": "Platform Capabilities",
                   "heading": "Intelligent Automation Features for Data-Driven Operations",
