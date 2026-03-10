@@ -25,7 +25,7 @@ export default function Page() {
           title="QATAR MOEHE"
           description="A digital learning and examination management platform enabling seamless collaboration between students, educators, and administrators through modern education technology."
           buttonText="Read More"
-          image="/ourwork/qatar.png"
+          image="/ourwork/qatar1.png"
           slug="qatar-moehe"
         />
 
@@ -34,7 +34,7 @@ export default function Page() {
           title="AI-PILOT"
           description="An AI-powered child height measurement solution delivering highly accurate analytics and automated health insights using computer vision and smart data modeling."
           buttonText="Read More"
-          image="/ourwork/aipolit.png"
+          image="/ourwork/ai.png"
           slug="ai-pilot"
         />
 
@@ -52,7 +52,7 @@ export default function Page() {
           title="Single View"
           description="An integrated enterprise platform delivering centralized visibility, streamlined workflows, and enhanced operational decision-making for modern organizations."
           buttonText="Read More"
-          image="/ourwork/singleview.png"
+          image="/ourwork/singleview1.png"
           slug="singleview-enterprise-integration"
         />
 
@@ -61,7 +61,7 @@ export default function Page() {
           title="SMSA Express"
           description="A logistics transformation initiative enabling real-time shipment tracking, automated workflows, and improved delivery performance across global operations."
           buttonText="Read More"
-          image="/ourwork/smsa.png"
+          image="/ourwork/smsa1.png"
           slug="smsa-express-logistics"
         />
 
@@ -70,7 +70,7 @@ export default function Page() {
           title="KPMG Digital Transformation"
           description="A comprehensive digital advisory and implementation program supporting enterprise modernization through analytics, automation, and scalable technology platforms."
           buttonText="Read More"
-          image="/ourwork/kpmg.png"
+          image="/ourwork/kpmg1.png"
           slug="kpmg-intelligent-enterprise"
         />
 
@@ -79,7 +79,7 @@ export default function Page() {
           title="StudyFox AI"
           description="An AI-driven learning assistant designed to personalize education experiences through intelligent recommendations, real-time assessments, and adaptive learning tools."
           buttonText="Read More"
-          image="/ourwork/studyfox.png"
+          image="/ourwork/studyfox1.png"
           slug="studyfox-ai"
         />
 
@@ -88,7 +88,7 @@ export default function Page() {
           title="360 Taxi Dispatch System"
           description="A cloud-based taxi dispatch platform providing live vehicle tracking, automated booking management, and optimized fleet operations through smart mobility technology."
           buttonText="Read More"
-          image="/ourwork/taxidispatch.png"
+          image="/ourwork/360Image.png"
           slug="360-taxi-ride-management"
         />
         {/* 9 */}

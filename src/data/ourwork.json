@@ -4,7 +4,7 @@
             "title": "Empowering National Education Through Unified Digital Innovation",
             "description": "Invertio partnered with Qatar’s Ministry of Education and Higher Education (MOEHE) to build a centralized digital ecosystem that modernizes academic operations, streamlines data management, and enhances accessibility across schools, universities, and administrative departments.\n\nThe platform connects institutions, educators, and students through scalable cloud technologies, enabling smarter decision-making, improved collaboration, and a future-ready education infrastructure.",
             "about": "The Qatar MOEHE initiative focused on transforming fragmented education systems into a unified, intelligent digital platform. The objective was to simplify administration, improve transparency, and deliver seamless digital experiences for students, teachers, and government stakeholders.\n\nInvertio designed and implemented secure, scalable web and cloud solutions that integrated enrollment systems, academic tracking, analytics dashboards, and communication workflows into a single ecosystem.\n\nFrom centralized reporting to real-time performance insights, the solution enabled efficient coordination between educational institutions and ministry leadership while ensuring high data reliability and operational efficiency.",
-            "image": "/ourwork/qatar.png",
+            "image": "/ourwork/qatar1.png",
             "path": "/our-work/qatar-moehe",
             "features": {
                   "badge": "Product Features",
@@ -144,7 +144,7 @@
             "title": "Driving Intelligent Automation Through AI and Real-Time Data",
             "description": "Invertio developed AI Pilot, an intelligent automation platform designed to transform traditional workflows into AI-powered operations. The platform integrates Artificial Intelligence, predictive analytics, BLE device connectivity, and scalable cloud infrastructure to deliver real-time insights and automated decision-making for government and enterprise organizations.",
             "about": "Organizations often struggle with manual workflows, disconnected systems, and limited real-time visibility into operational data. AI Pilot was built to bridge these gaps by combining hardware data capture with intelligent software automation.\n\nInvertio designed and implemented an integrated platform that collects data from BLE-enabled devices, processes it through AI models, and delivers actionable insights via centralized dashboards.\n\nThe system enables organizations to automate workflows, analyze operational trends, and improve responsiveness through predictive intelligence and cloud-based scalability.",
-            "image": "/ourwork/aipolit.png",
+            "image": "/ourwork/ai.png",
             "path": "/our-work/ai-pilot",
             "features": {
                   "badge": "Platform Capabilities",
@@ -384,7 +384,7 @@
             "title": "Enabling Seamless ERP Integration for Open Banking Ecosystems",
             "description": "Invertio developed an enterprise integration framework for SingleView to connect its Open Banking platform with multiple ERP systems. The solution enables automated financial data synchronization, secure payment processing, and real-time reconciliation across enterprise clients.",
             "about": "Enterprise organizations using SingleView required seamless connectivity between their Open Banking platform and multiple ERP systems to support automated financial operations. Fragmented ERP environments created challenges in maintaining data consistency, enabling real-time reporting, and automating workflows.\n\nInvertio designed and implemented a scalable multi-ERP integration framework that enables secure, bi-directional data exchange between SingleView and enterprise ERP platforms including Oracle NetSuite, Oracle EBS, Oracle Fusion, and SAP. The platform uses event-driven synchronization, APIs, and middleware integrations to automate financial workflows while maintaining regulatory compliance.",
-            "image": "/ourwork/singleview.png",
+            "image": "/ourwork/singleview1.png",
             "path": "/our-work/singleview-enterprise-integration",
             "features": {
                   "badge": "Platform Capabilities",
@@ -508,7 +508,7 @@
             "title": "Building a Unified Logistics Platform for Real-Time Supply Chain Visibility",
             "description": "Invertio developed an intelligent supply chain platform for SMSA Express to enable real-time shipment tracking, automate logistics workflows, and improve operational transparency across the entire delivery lifecycle.",
             "about": "SMSA Express required a unified logistics platform capable of improving shipment tracking, automating customs and operational processes, and providing end-to-end supply chain visibility. Existing systems created delays due to limited transparency and heavy manual intervention across logistics operations.\n\nInvertio designed and implemented an intelligent logistics management platform that integrates shipment tracking, operational workflows, customs automation, and e-commerce fulfilment into a single system. The platform enables seamless coordination among logistics stakeholders while ensuring faster deliveries and improved operational efficiency.",
-            "image": "/ourwork/smsa.png",
+            "image": "/ourwork/smsa1.png",
             "path": "/our-work/smsa-express-logistics",
             "features": {
                   "badge": "Platform Capabilities",
@@ -620,7 +620,7 @@
             "title": "Enabling AI-Powered Enterprise Transformation with Secure Cloud and Automation",
             "description": "Invertio collaborated with KPMG to deliver intelligent enterprise solutions that combine AI systems, cloud platforms, cybersecurity frameworks, and automation technologies to help organizations modernize operations, improve efficiency, and maintain regulatory compliance at scale.",
             "about": "Large enterprises face increasing complexity in managing operations, security, compliance, and digital transformation across distributed environments. Traditional systems often lack the intelligence, scalability, and automation needed to support modern enterprise demands.\n\nInvertio supported KPMG by implementing intelligent enterprise solutions that integrate multi-agent artificial intelligence, enterprise cloud platforms, cybersecurity frameworks, and automation pipelines. These systems enable organizations to automate workflows, strengthen security, and gain deeper operational insights while maintaining global compliance standards.",
-            "image": "/ourwork/kpmg.png",
+            "image": "/ourwork/kpmg1.png",
             "path": "/our-work/kpmg-intelligent-enterprise",
             "features": {
                   "badge": "Platform Capabilities",
@@ -744,7 +744,7 @@
             "title": "Transforming Education with AI-Driven Personalized Learning",
             "description": "Invertio developed StudyFoxAI, an intelligent learning platform that leverages artificial intelligence, natural language processing, and adaptive learning algorithms to deliver personalized educational experiences for learners worldwide.",
             "about": "Traditional learning platforms often rely on static content and lack personalization, making it difficult for learners to retain knowledge effectively. Students increasingly require intelligent systems that adapt to their learning patterns and provide real-time interactive support.\n\nInvertio designed and implemented StudyFoxAI, an AI-powered learning platform that integrates natural language processing, adaptive learning algorithms, and interactive chat-based interfaces. The platform enables personalized study workflows, document-based learning, and seamless browser-level accessibility through a Chrome extension to improve knowledge retention and engagement.",
-            "image": "/ourwork/studyfox.png",
+            "image": "/ourwork/studyfox1.png",
             "path": "/our-work/studyfox-ai",
             "features": {
                   "badge": "Platform Capabilities",
@@ -864,7 +864,7 @@
             "title": "Optimizing Fleet Operations with Real-Time Ride Management",
             "description": "Invertio developed 360 Taxi, a cloud-native ride management platform designed to enable real-time vehicle tracking, automated dispatch, intelligent routing, and seamless communication between drivers, operators, and passengers.",
             "about": "Taxi and mobility operators require modern systems to efficiently manage fleets, optimize routing, and provide reliable services to passengers. Legacy dispatch platforms often lack real-time tracking, automation capabilities, and scalability needed to support modern ride management operations.\n\nInvertio designed and implemented 360 Taxi, an intelligent ride management platform that integrates real-time geolocation, vehicle telemetry, automated dispatch algorithms, and communication services. The system enables dynamic job allocation, optimized routing, and improved coordination between drivers, operators, and passengers.",
-            "image": "/ourwork/taxidispatch.png",
+            "image": "/ourwork/360Image.png",
             "path": "/our-work/360-taxi-ride-management",
             "features": {
                   "badge": "Platform Capabilities",
