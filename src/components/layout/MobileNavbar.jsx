@@ -2,7 +2,7 @@
 import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -10,6 +10,19 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
   const toggleDropdown = (key) => {
     setOpenDropdown(openDropdown === key ? null : key);
   };
+
+  // 🔒 Prevent background scrolling
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
 
   return (
     <>

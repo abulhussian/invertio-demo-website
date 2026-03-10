@@ -75,12 +75,11 @@ const Navbar = () => {
               )
             }
           />
-          {activeMenu === "services" && (
-            <MegaMenu
-              columns={megaMenuData.services}
-              setActiveMenu={setActiveMenu}
-            />
-          )}
+          <MegaMenu
+            columns={megaMenuData.services}
+            setActiveMenu={setActiveMenu}
+            open={activeMenu === "services"}
+          />
         </div>
 
         <div
@@ -106,12 +105,11 @@ const Navbar = () => {
               )
             }
           />
-          {activeMenu === "solutions" && (
-            <MegaMenu
-              columns={megaMenuData.solutions}
-              setActiveMenu={setActiveMenu}
-            />
-          )}
+          <MegaMenu
+            columns={megaMenuData.solutions}
+            setActiveMenu={setActiveMenu}
+            open={activeMenu === "solutions"}
+          />
         </div>
 
         <div
@@ -137,13 +135,14 @@ const Navbar = () => {
               )
             }
           />
-          {activeMenu === "industries" && (
-            <MegaMenu
-              columns={megaMenuData.industries}
-              setActiveMenu={setActiveMenu}
-            />
-          )}
+          <MegaMenu
+            columns={megaMenuData.industries}
+            setActiveMenu={setActiveMenu}
+            open={activeMenu === "industries"}
+          />
         </div>
+
+
 
         <Link
           onClick={() => setActiveMenu(null)}
