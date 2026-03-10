@@ -64,7 +64,7 @@ const SisterCompaniesSection = () => {
               Invertio.
             </span>
 
-            <h3 className="text-3xl font-bold">INVERTO TAXIATION</h3>
+            <h3 className="text-3xl font-bold">INVERTIO TAXATION</h3>
 
             <p className="mt-4 text-sm leading-relaxed opacity-95">
               Focused on AI and machine learning–driven platforms that enable

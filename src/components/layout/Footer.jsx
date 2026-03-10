@@ -189,19 +189,19 @@ const Footer = () => {
         <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
 
         <div className="flex flex-wrap items-center justify-center gap-6">
-          <Link href="/privacy-policy" className="hover:text-white transition">
+          <Link href="/PrivacyPolicy" className="hover:text-white transition duration-200">
             Privacy Policy
           </Link>
-          <Link
-            href="/terms-and-conditions"
-            className="hover:text-white transition"
-          >
+
+          <Link href="/terms-and-conditions" className="hover:text-white transition duration-200">
             Terms & Conditions
           </Link>
-          <Link href="/disclaimer" className="hover:text-white transition">
+
+          <Link href="/disclaimer" className="hover:text-white transition duration-200">
             Disclaimer
           </Link>
-          <Link href="/cookie-policy" className="hover:text-white transition">
+
+          <Link href="/cookie-policy" className="hover:text-white transition duration-200">
             Cookie Policy
           </Link>
         </div>
