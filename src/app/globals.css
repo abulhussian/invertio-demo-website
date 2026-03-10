@@ -7,20 +7,55 @@
 }
 
 @keyframes bounce-x {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(6px);
   }
 }
+
 @utility font-inter {
   font-family: var(--font-inter);
 }
+
 @utility font-jakarta {
   font-family: var(--font-jakarta);
 }
+
 body {
   font-family: var(--font-inter);
+}
+
+
+/* Universal Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  /* Tailwind gray-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  /* gray-400 */
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+  /* gray-500 */
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af #f3f4f6;
 }

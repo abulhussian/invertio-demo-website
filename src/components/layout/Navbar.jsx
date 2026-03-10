@@ -208,54 +208,174 @@ const Navbar = () => {
 export default Navbar;
 
 const megaMenuData = {
-  services: {
-    title: "Our Services",
-    links: [
-      {
-        label: "Digital Transformation",
-        href: "/services/digital-transformation",
-      },
-      {
-        label: "Cloud Services",
-        href: "/services/cloud-services",
-      },
-      {
-        label: "Software Development",
-        href: "/services/software-development",
-      },
-    ],
-  },
+  services: [
+    {
+      id: "ai",
+      label: "AI, Data & Automation",
+      subTabs: [
+        {
+          tabLabel: "Strategy & Development",
+          columns: [
+            {
+              title: "STRATEGY & GOVERNANCE",
+              links: [
+                { label: "AI Strategy Consulting", href: "/services/ai-strategy" },
+                { label: "N8n Consulting & Automation Services", href: "/services/n8n" },
+              ],
+            },
+            {
+              title: "CUSTOM AI DEVELOPMENT",
+              links: [
+                { label: "AI Software Development", href: "/services/ai-software" },
+                { label: "AI Mobile App Development", href: "/services/ai-mobile" },
+              ],
+            },
+            {
+              title: "ENTERPRISE AI PLATFORMS",
+              links: [
+                { label: "Salesforce AI Services", href: "/services/salesforce-ai" },
+                { label: "ServiceNow AI Services", href: "/services/servicenow-ai" },
+              ],
+            },
+          ],
+        },
+        { tabLabel: "Generative AI & Automation", columns: [] },
+        { tabLabel: "Data & ML Engineering", columns: [] },
+      ],
+    },
+    {
+      id: "product",
+      label: "Product Engineering",
+      subTabs: [
+        {
+          tabLabel: "By Service",
+          columns: [
+            {
+              title: "DISCOVERY & DESIGN",
+              links: [
+                { label: "Product Discovery & Roadmapping", href: "#" },
+                { label: "UI/UX Design Services", href: "#" },
+              ],
+            },
+            {
+              title: "FULL-CYCLE DEVELOPMENT",
+              links: [
+                { label: "Software Product Development", href: "#" },
+                { label: "Mobile App Development", href: "#" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "strategic",
+      label: "Strategic Advisory",
+      subTabs: [
+        {
+          tabLabel: "Strategy",
+          columns: [
+            {
+              title: "TECHNOLOGY STRATEGY",
+              links: [{ label: "Technology Strategy & Roadmap", href: "#" }],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 
-  solutions: {
-    title: "Our Solutions",
-    links: [
-      {
-        label: "Data & Analytics",
-        href: "/solutions/data-analytics",
-      },
-      {
-        label: "Cybersecurity",
-        href: "/solutions/cybersecurity",
-      },
-      {
-        label: "IT Consulting",
-        href: "/solutions/it-consulting",
-      },
-    ],
-  },
+  solutions: [
+    {
+      id: "startups",
+      label: "For Startups",
+      subTabs: [
+        {
+          tabLabel: "Startup Solutions",
+          columns: [
+            {
+              title: "STARTUP SOLUTIONS",
+              links: [
+                { label: "Product Feasibility Studies", href: "/solutions/startups/feasibility" },
+                { label: "Rapid MVP in 90 Days", href: "/solutions/startups/mvp" },
+                { label: "Product Strategy & Validation", href: "/solutions/startups/strategy" },
+                { label: "On-Demand CTO", href: "/solutions/startups/cto" },
+                { label: "Build Investor-Ready Products", href: "/solutions/startups/investor" },
+                { label: "Validate Ideas Before Big Spend", href: "/solutions/startups/validate" },
+                { label: "AI Pilot Program", href: "/solutions/startups/ai-pilot" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "scaleups",
+      label: "For Scale-ups",
+      subTabs: [
+        {
+          tabLabel: "Scale-up Solutions",
+          columns: [
+            {
+              title: "SCALE-UP SOLUTIONS",
+              links: [
+                { label: "Technology Strategy & Roadmap", href: "/solutions/scaleups/roadmap" },
+                { label: "Cloud & DevOps Acceleration", href: "/solutions/scaleups/devops" },
+                { label: "Scale Teams Fast", href: "/solutions/scaleups/scale" },
+                { label: "Technology Modernization Planning", href: "/solutions/scaleups/modernization" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "enterprises",
+      label: "For Enterprises",
+      subTabs: [
+        {
+          tabLabel: "Enterprise Solutions",
+          columns: [
+            {
+              title: "ENTERPRISE SOLUTIONS",
+              links: [
+                { label: "Global Compliance Management", href: "/solutions/enterprises/compliance" },
+                { label: "Digital Transformation", href: "/solutions/enterprises/digital" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 
-  industries: {
-    title: "Industries",
-    links: [
-      { label: "Education", href: "/industries/education" },
-      { label: "Logistics", href: "/industries/logistics" },
-      { label: "Retail", href: "/industries/retail-ecommerce" },
-      { label: "Finance", href: "/industries/finance-banking" },
-      { label: "Healthcare", href: "/industries/healthcare" },
-      {
-        label: "Information Service",
-        href: "/industries/information",
-      },
-    ],
-  },
+  industries: [
+    {
+      id: "all-industries",
+      label: "Industries We Serve",
+      subTabs: [
+        {
+          tabLabel: "By Sector",
+          columns: [
+            {
+              title: "CORE INDUSTRIES",
+              links: [
+                { label: "Education", href: "/industries/education" },
+                { label: "Logistics", href: "/industries/logistics" },
+                { label: "Retail & E-commerce", href: "/industries/retail-ecommerce" },
+              ],
+            },
+            {
+              title: "SPECIALIZED",
+              links: [
+                { label: "Finance & Banking", href: "/industries/finance-banking" },
+                { label: "Healthcare", href: "/industries/healthcare" },
+                { label: "Information Services", href: "/industries/information" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };

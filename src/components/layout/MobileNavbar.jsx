@@ -1,5 +1,5 @@
 "use client";
-import { X } from "lucide-react";
+import { X, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -11,181 +11,165 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
     setOpenDropdown(openDropdown === key ? null : key);
   };
 
-  // 🔒 Prevent background scrolling
+  // 🔒 Prevent background scrolling when menu is open
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
-
     return () => {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
 
+  // Unified helper to render dropdown sections based on your megaMenuData structure
+  const renderDropdownSection = (dataArray) => {
+    if (!Array.isArray(dataArray)) return null;
+    return (
+      <div className="mt-2 flex flex-col gap-5 bg-white/5 p-5 rounded-2xl border border-white/5">
+        {dataArray.map((category, catIdx) => (
+          <div key={catIdx} className="flex flex-col gap-3">
+            <p className="text-[#F7A600] font-black uppercase text-[10px] tracking-[0.2em] opacity-80">
+              {category.label}
+            </p>
+            {category.subTabs?.[0]?.columns?.map((col, colIdx) => (
+              <div key={colIdx} className="flex flex-col gap-3 border-l border-white/10 ml-1 pl-4">
+                {col.links.map((link, linkIdx) => (
+                  <Link
+                    key={`${catIdx}-${colIdx}-${linkIdx}`}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-gray-300 hover:text-white text-[15px] font-medium transition-colors py-1"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <>
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-500
-  ${mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        className={`fixed inset-0 bg-black/80 z-[60] transition-opacity duration-500 backdrop-blur-md
+          ${mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         onClick={() => setMobileOpen(false)}
       />
 
-      {/* Sidebar */}
+      {/* Full-Width Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-[80%] max-w-[350px]
-  bg-[#101323] text-white z-50 p-6 overflow-y-auto
-  transform transition-transform duration-500 ease-in-out
-  ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 h-full w-full bg-[#0B0E1A] text-white z-[70] shadow-2xl overflow-y-auto
+          transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
+          ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        {/* Close Button */}
-        <div className="flex justify-end mb-6">
-          <button onClick={() => setMobileOpen(false)}>
-            <X />
+        {/* Header Section */}
+        <div className="flex justify-between items-center px-6 py-8 border-b border-white/5">
+          <div className="relative w-32 h-10">
+            <Image
+              src="/logo.png"
+              alt="Invertio Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <button
+            onClick={() => setMobileOpen(false)}
+            className="w-12 h-12 flex items-center justify-center bg-white/5 hover:bg-white/10 rounded-full transition-all active:scale-90"
+          >
+            <X size={24} className="text-white" />
           </button>
         </div>
 
-        <nav className="flex flex-col gap-4 text-[16px]">
-          <Link href="/" onClick={() => setMobileOpen(false)}>
+        <nav className="flex flex-col px-6 py-8 gap-2 text-[18px] font-semibold">
+          <Link href="/" onClick={() => setMobileOpen(false)} className="py-4 border-b border-white/5 hover:text-[#F7A600] transition-colors">
             Home
           </Link>
 
-          <Link href="/about-us" onClick={() => setMobileOpen(false)}>
+          <Link href="/about-us" onClick={() => setMobileOpen(false)} className="py-4 border-b border-white/5 hover:text-[#F7A600] transition-colors">
             About Us
           </Link>
 
           {/* Services */}
-          <div>
+          <div className="border-b border-white/5">
             <button
               onClick={() => toggleDropdown("services")}
-              className="flex justify-between items-center w-full"
+              className="flex justify-between items-center w-full py-5 text-left transition-colors"
             >
-              Our Services
-              <span
-                className={`transition-transform duration-300 ${openDropdown === "services" ? "rotate-45" : ""
-                  }`}
-              >
-                +
-              </span>
+              <span className={openDropdown === "services" ? "text-[#F7A600]" : ""}>Our Services</span>
+              <ChevronRight
+                size={20}
+                className={`transition-transform duration-300 ${openDropdown === "services" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
+              />
             </button>
-
-            <div
-              className={`overflow-hidden transition-all duration-300 ease-in-out
-    ${openDropdown === "services"
-                  ? "max-h-40 opacity-100 mt-2"
-                  : "max-h-0 opacity-0"
-                }`}
+            <div className={`overflow-hidden transition-all duration-500 ease-in-out
+              ${openDropdown === "services" ? "max-h-[3000px] opacity-100 pb-6" : "max-h-0 opacity-0"}`}
             >
-              <div className="ml-4 flex flex-col gap-2 text-sm text-gray-300">
-                {megaMenuData.services.links.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
+              {renderDropdownSection(megaMenuData.services)}
             </div>
           </div>
 
           {/* Solutions */}
-          <div>
+          <div className="border-b border-white/5">
             <button
               onClick={() => toggleDropdown("solutions")}
-              className="flex justify-between items-center w-full"
+              className="flex justify-between items-center w-full py-5 text-left transition-colors"
             >
-              Our Solutions
-              <span
-                className={`transition-transform duration-300 ${openDropdown === "solutions" ? "rotate-45" : ""
-                  }`}
-              >
-                +
-              </span>
+              <span className={openDropdown === "solutions" ? "text-[#F7A600]" : ""}>Our Solutions</span>
+              <ChevronRight
+                size={20}
+                className={`transition-transform duration-300 ${openDropdown === "solutions" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
+              />
             </button>
-
-            <div
-              className={`overflow-hidden transition-all duration-300 ease-in-out
-    ${openDropdown === "solutions"
-                  ? "max-h-40 opacity-100 mt-2"
-                  : "max-h-0 opacity-0"
-                }`}
+            <div className={`overflow-hidden transition-all duration-500 ease-in-out
+              ${openDropdown === "solutions" ? "max-h-[3000px] opacity-100 pb-6" : "max-h-0 opacity-0"}`}
             >
-              <div className="ml-4 flex flex-col gap-2 text-sm text-gray-300">
-                {megaMenuData.solutions.links.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
+              {renderDropdownSection(megaMenuData.solutions)}
             </div>
           </div>
 
           {/* Industries */}
-          <div>
+          <div className="border-b border-white/5">
             <button
               onClick={() => toggleDropdown("industries")}
-              className="flex justify-between items-center w-full"
+              className="flex justify-between items-center w-full py-5 text-left transition-colors"
             >
-              Industries
-              <span
-                className={`transition-transform duration-300 ${openDropdown === "industries" ? "rotate-45" : ""
-                  }`}
-              >
-                +
-              </span>
+              <span className={openDropdown === "industries" ? "text-[#F7A600]" : ""}>Industries</span>
+              <ChevronRight
+                size={20}
+                className={`transition-transform duration-300 ${openDropdown === "industries" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
+              />
             </button>
-
-            <div
-              className={`overflow-hidden transition-all duration-300 ease-in-out
-    ${openDropdown === "industries"
-                  ? "max-h-52 opacity-100 mt-2"
-                  : "max-h-0 opacity-0"
-                }`}
+            <div className={`overflow-hidden transition-all duration-500 ease-in-out
+              ${openDropdown === "industries" ? "max-h-[3000px] opacity-100 pb-6" : "max-h-0 opacity-0"}`}
             >
-              <div className="ml-4 flex flex-col gap-2 text-sm text-gray-300">
-                {megaMenuData.industries.links.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
+              {renderDropdownSection(megaMenuData.industries)}
             </div>
           </div>
 
-          <Link href="/our-work" onClick={() => setMobileOpen(false)}>
+          <Link href="/our-work" onClick={() => setMobileOpen(false)} className="py-5 border-b border-white/5 hover:text-[#F7A600]">
             Our Work
           </Link>
 
-          <Link href="/news-insights" onClick={() => setMobileOpen(false)}>
+          <Link href="/news-insights" onClick={() => setMobileOpen(false)} className="py-5 border-b border-white/5 hover:text-[#F7A600]">
             News & Insights
           </Link>
 
-          <Link href="/careers" onClick={() => setMobileOpen(false)}>
-            Careers
-          </Link>
-
-          <Link
-            href="/contact-us"
-            onClick={() => setMobileOpen(false)}
-            className="bg-white text-[#101323] px-4 py-3 rounded-xl font-bold mt-4 text-center"
-          >
-            Contact Us
-          </Link>
+          {/* Contact Button */}
+          <div className="mt-10 mb-20">
+            <Link
+              href="/contact-us"
+              onClick={() => setMobileOpen(false)}
+              className="block w-full bg-[#F7A600] text-black px-4 py-5 rounded-2xl font-bold text-center text-[18px] shadow-xl hover:bg-[#ffb726] transition-all active:scale-[0.98]"
+            >
+              Contact Us
+            </Link>
+          </div>
         </nav>
       </div>
     </>
