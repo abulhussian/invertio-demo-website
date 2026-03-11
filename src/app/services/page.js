@@ -6,7 +6,7 @@ import FeatureSection from "@/components/services/components/FeatureSection";
 
 
 const page = () => {
-      
+
 
   return (
     <>
@@ -21,33 +21,26 @@ const page = () => {
       {/* Section 1 */}
       <FeatureSection
         tag="Digital Transformation"
-        title="Reimagining business processes using modern technologies to improve efficiency, agility, and customer experience."
-        description=""
-        buttonText="Read More"
+        title="Reimagining business processes..."
         image="/services/Transformation.png"
         imagePosition="right"
-        slug = "services/digital-transformation"
-       
+        slug="digital-transformation"
       />
-       <FeatureSection
+
+      <FeatureSection
         tag="Cloud Services"
-        title="Designing secure and scalable cloud environments that enhance performance, flexibility, and operational reliability."
-        description=""
-        buttonText="Read More"
+        title="Designing secure and scalable cloud environments..."
         image="/services/cloud services.png"
         imagePosition="left"
-        slug = "services/cloud-services"
-       
+        slug="cloud-services"
       />
+
       <FeatureSection
         tag="Software Development"
-        title="Building custom applications and enterprise platforms tailored to business needs with a focus on scalability and performance.."
-        description=""
-        buttonText="Read More"
+        title="Building custom applications..."
         image="/services/Software-development.png"
         imagePosition="right"
-        slug = "services/software-development"
-       
+        slug="software-development"
       />
       <CtaSection />
       <InsightsSection />
