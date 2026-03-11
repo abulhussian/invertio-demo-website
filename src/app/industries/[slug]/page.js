@@ -33,18 +33,19 @@
 // }
 
 
+
+
 import { notFound } from "next/navigation";
-import { getAllRoutes } from "@/lib/getAllRoutes";
-import IndustryTemplate from "@/components/industries/IndustryTemplate";
+// import services from "@/data/services.json";
+import ServiceTemplate from "@/components/services/ServiceTemplate";
 
-export default async function Page({ params }) {
-  const { slug } = await params;
+export default function Page({ params }) {
 
-  const industries = getAllRoutes("industries");
+  const { slug } = params;
 
-  const industry = industries.find((i) => i.slug === slug);
+  const service = services[slug];
 
-  if (!industry) return notFound();
+  if (!service) return notFound();
 
-  return <IndustryTemplate data={industry} />;
+  return <ServiceTemplate data={service} />;
 }
