@@ -4,28 +4,42 @@
 
 import { useEffect, useState } from "react";
 import JobCard from "@/components/careers/JobCard";
-import defaultJobs  from "@/data/jobs.json";
+import defaultJobs from "@/data/jobs.json";
 import SectionHeader from "@/components/common/ui/SectionHeader";
 import Image from "next/image";
 
 export default function JobsPage() {
 
       const [search, setSearch] = useState("");
-      const [jobs, setJobs] = useState(defaultJobs);
-
+      const [jobs, setJobs] = useState([]);
       const filteredJobs = jobs.filter((job) =>
             job.title.toLowerCase().includes(search.toLowerCase())
       );
 
+      //       useEffect(() => {
+
+      //   const storedJobs = JSON.parse(localStorage.getItem("jobs"));
+
+      //   if (storedJobs) {
+      //     setJobs([...defaultJobs, ...storedJobs]);
+      //   }
+
+      // }, []);
+
       useEffect(() => {
+            const fetchJobs = async () => {
+                  try {
+                        const res = await fetch("https://invertiosolutions.com/get-jobs.php");
+                        const data = await res.json();
+                        setJobs(data);
+                  } catch (error) {
+                        console.error("Failed to load jobs:", error);
+                        setJobs(defaultJobs);
+                  }
+            };
 
-  const storedJobs = JSON.parse(localStorage.getItem("jobs"));
-
-  if (storedJobs) {
-    setJobs([...defaultJobs, ...storedJobs]);
-  }
-
-}, []);
+            fetchJobs();
+      }, []);;
 
       return (
             <div className="px-8 md:px-14 lg:px-20 py-20 bg-[#F8F9FC]">
