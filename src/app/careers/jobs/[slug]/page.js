@@ -18,11 +18,14 @@ export default function JobDetails() {
 
       useEffect(() => {
 
-            const storedJobs = JSON.parse(localStorage.getItem("jobs"));
-
-            if (storedJobs) {
-                  setJobs([...defaultJobs, ...storedJobs]);
-            }
+            fetch("https://invertiosolutions.com/get-jobs.php")
+                  .then((res) => res.json())
+                  .then((data) => {
+                        setJobs(data);
+                  })
+                  .catch(() => {
+                        setJobs(defaultJobs);
+                  });
 
       }, []);
 
