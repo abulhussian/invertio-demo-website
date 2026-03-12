@@ -18,16 +18,16 @@
 
 //   notFound();
 // }
+
+
+import services from "@/data/services/services.json";
 import { notFound } from "next/navigation";
-import { getAllRoutes } from "@/lib/getAllRoutes";
-import ServiceTemplate from "@/components/services/components/ServiceTemplate";
+import ServiceTemplate from "@/components/services/ServiceTemplate";
 
 export default async function Page({ params }) {
   const { slug } = await params;
-
-  const services = getAllRoutes("services");
-
-  const service = services.find((s) => s.slug === slug);
+  const service = services[slug];
+  console.log(slug, services);
 
   if (!service) return notFound();
 

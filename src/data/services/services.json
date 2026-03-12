@@ -1,0 +1,1868 @@
+{
+      "ai-strategy": {
+            "hero": {
+                  "label": "AI Strategy Consulting",
+                  "subtitle": "Tech Leadership That Delivers, Not Just Advises",
+                  "description": "We help businesses define and execute AI strategies that deliver measurable outcomes.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Partnering with Invertio transformed our tech roadmap.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "We Deliver More Than Just CTO Expertise",
+                  "description": [
+                        "Running a tech startup comes with real challenges.",
+                        "You get a team of specialists and a CTO who owns the outcome."
+                  ],
+                  "points": [
+                        "India's Top 1% Technology Leaders",
+                        "Trusted by Startups to Enterprises",
+                        "Strategy, Architecture & Team Management",
+                        "Enterprise-Grade Security & Compliance",
+                        "On-Time Delivery, Every Time"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands, owned delivery, or your dedicated engineering hub.",
+                  "models": [
+                        {
+                              "title": "Staff Augmentation / Team Extension",
+                              "description1": "Expand your team. Maintain control",
+                              "description2": "Add engineering capacity without changing how you deliver.",
+                              "points": [
+                                    "Individual engineers or groups",
+                                    "Integrate into your team",
+                                    "You manage priorities"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Skill gaps and scaling teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "We support companies across industries with modern technology solutions.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say About Us",
+                  "description": "We are grateful for our clients’ trust.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Their engineering leadership helped us scale faster.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free Tech Strategy Session",
+                  "description": "Discuss your roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "n8n-automation": {
+            "hero": {
+                  "label": "N8n Consulting & Automation Services",
+                  "subtitle": "Tech Leadership That Delivers, Not Just Advises",
+                  "description": "We help organizations automate complex workflows using N8n and scalable automation pipelines.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Partnering with Invertio transformed our tech roadmap.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "We Deliver More Than Just Automation Expertise",
+                  "description": [
+                        "Running automation at scale requires more than tools.",
+                        "We design workflows that integrate your entire tech ecosystem."
+                  ],
+                  "points": [
+                        "Advanced Workflow Automation",
+                        "API Integrations",
+                        "Enterprise Automation Architecture",
+                        "Security & Compliance",
+                        "Automation Governance"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands, owned delivery, or your dedicated engineering hub.",
+                  "models": [
+                        {
+                              "title": "Staff Augmentation / Team Extension",
+                              "description1": "Expand your team. Maintain control",
+                              "description2": "Add automation engineers without changing how you deliver.",
+                              "points": [
+                                    "Individual engineers or groups",
+                                    "Integrate into your team",
+                                    "You manage priorities"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Skill gaps and scaling teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "We support companies across industries with automation solutions.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say About Us",
+                  "description": "We are grateful for our clients’ trust.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Their engineering leadership helped us scale faster.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free Automation Strategy Session",
+                  "description": "Discuss your automation roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "ai-software-dev": {
+            "hero": {
+                  "label": "AI Software Development",
+                  "subtitle": "Tech Leadership That Delivers, Not Just Advises",
+                  "description": "We build AI-powered software solutions that automate processes and unlock intelligent insights.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Partnering with Invertio transformed our tech roadmap.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "AI Software Engineering Expertise",
+                  "description": [
+                        "We design and build intelligent applications powered by machine learning.",
+                        "Our engineers deliver scalable and production-ready AI solutions."
+                  ],
+                  "points": [
+                        "Custom AI Applications",
+                        "Machine Learning Models",
+                        "AI System Architecture",
+                        "Enterprise AI Integration",
+                        "Scalable Cloud Infrastructure"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands, owned delivery, or your dedicated engineering hub.",
+                  "models": [
+                        {
+                              "title": "Staff Augmentation / Team Extension",
+                              "description1": "Expand your team. Maintain control",
+                              "description2": "Add engineering capacity without changing how you deliver.",
+                              "points": [
+                                    "Individual engineers or groups",
+                                    "Integrate into your team",
+                                    "You manage priorities"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Skill gaps and scaling teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "We support companies across industries with modern technology solutions.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say About Us",
+                  "description": "We are grateful for our clients’ trust.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Their engineering leadership helped us scale faster.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free Tech Strategy Session",
+                  "description": "Discuss your roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "ai-mobile-dev": {
+            "hero": {
+                  "label": "AI Mobile App Development",
+                  "subtitle": "Build Intelligent Mobile Experiences",
+                  "description": "We develop AI-powered mobile applications that deliver smart, personalized user experiences.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Their AI expertise helped us launch a smarter mobile product.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "AI Mobile Engineering Expertise",
+                  "description": [
+                        "We create AI-driven mobile applications for iOS and Android.",
+                        "Our apps leverage machine learning for automation, recommendations, and personalization."
+                  ],
+                  "points": [
+                        "AI-powered Mobile Apps",
+                        "iOS & Android Development",
+                        "Computer Vision Integration",
+                        "Voice & NLP Features",
+                        "Cloud AI Integration"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            }
+      },
+      "salesforce-ai": {
+            "hero": {
+                  "label": "Salesforce AI Services",
+                  "subtitle": "Smarter CRM With AI",
+                  "description": "We help organizations leverage Salesforce AI capabilities to automate workflows and deliver intelligent customer experiences.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Their Salesforce expertise helped us unlock the power of AI.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "Salesforce AI Expertise",
+                  "description": [
+                        "We integrate AI into Salesforce to improve sales, service, and marketing operations.",
+                        "Our solutions help teams automate workflows and improve decision-making."
+                  ],
+                  "points": [
+                        "Salesforce Einstein AI",
+                        "Salesforce AI Automation",
+                        "AI-driven CRM Insights",
+                        "Predictive Analytics",
+                        "Custom Salesforce AI Apps"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            }
+      },
+      "servicenow-ai": {
+            "hero": {
+                  "label": "ServiceNow AI Services",
+                  "subtitle": "Tech Leadership That Delivers, Not Just Advises",
+                  "description": "We help enterprises integrate AI capabilities into ServiceNow to automate workflows and improve operational efficiency.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Partnering with Invertio transformed our tech roadmap.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "ServiceNow AI Automation Expertise",
+                  "description": [
+                        "We integrate artificial intelligence into ServiceNow to automate enterprise workflows.",
+                        "Our experts design scalable solutions that improve operational productivity."
+                  ],
+                  "points": [
+                        "ServiceNow AI Integration",
+                        "Automated ITSM Workflows",
+                        "AI Service Desk Automation",
+                        "Predictive Incident Management",
+                        "Enterprise Workflow Intelligence"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands, owned delivery, or your dedicated engineering hub.",
+                  "models": [
+                        {
+                              "title": "Staff Augmentation / Team Extension",
+                              "description1": "Expand your team. Maintain control",
+                              "description2": "Add engineering capacity without changing how you deliver.",
+                              "points": [
+                                    "Individual engineers or groups",
+                                    "Integrate into your team",
+                                    "You manage priorities"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Skill gaps and scaling teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "We support companies across industries with modern ServiceNow automation solutions.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say About Us",
+                  "description": "We are grateful for our clients’ trust.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Their engineering leadership helped us scale faster.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free Tech Strategy Session",
+                  "description": "Discuss your roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "gen-ai-consulting": {
+            "hero": {
+                  "label": "Generative AI Consulting",
+                  "subtitle": "Tech Leadership That Delivers, Not Just Advises",
+                  "description": "We help organizations adopt generative AI technologies to automate workflows, build intelligent products, and unlock new business opportunities.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Their AI consulting expertise helped us launch AI-powered products faster.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "Generative AI Expertise",
+                  "description": [
+                        "Generative AI enables businesses to automate complex tasks and generate new insights.",
+                        "Our team helps organizations integrate LLMs and AI models into scalable applications."
+                  ],
+                  "points": [
+                        "AI Strategy & Roadmapping",
+                        "LLM Application Development",
+                        "AI Product Architecture",
+                        "Enterprise AI Integration",
+                        "Secure AI Infrastructure"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands, owned delivery, or your dedicated engineering hub.",
+                  "models": [
+                        {
+                              "title": "Staff Augmentation / Team Extension",
+                              "description1": "Expand your AI team. Maintain control",
+                              "description2": "Add AI engineers without disrupting your workflow.",
+                              "points": [
+                                    "Individual AI engineers",
+                                    "Integrate into your team",
+                                    "Flexible scaling"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "AI skill gaps and scaling teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "Our generative AI solutions power innovation across industries.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say About Us",
+                  "description": "We are grateful for our clients’ trust.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Their AI expertise helped us launch an intelligent automation platform.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free AI Strategy Session",
+                  "description": "Discuss your AI roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "llm": {
+            "hero": {
+                  "label": "Large Language Model (LLM) Development",
+                  "subtitle": "Tech Leadership That Delivers, Not Just Advises",
+                  "description": "We design and deploy LLM-powered applications including AI assistants, chatbots, and intelligent knowledge systems.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Their LLM engineering team helped us build an AI assistant that transformed our support system.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "LLM Development Expertise",
+                  "description": [
+                        "Large Language Models power next-generation AI applications.",
+                        "We help organizations build scalable LLM applications and enterprise AI copilots."
+                  ],
+                  "points": [
+                        "Custom LLM Development",
+                        "AI Chatbot Development",
+                        "Enterprise Knowledge AI",
+                        "LLM Fine-Tuning",
+                        "AI Model Deployment"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands or full delivery.",
+                  "models": [
+                        {
+                              "title": "AI Team Extension",
+                              "description1": "Expand your AI engineering team",
+                              "description2": "Add experienced LLM engineers without disrupting your process.",
+                              "points": [
+                                    "LLM Engineers",
+                                    "AI Architects",
+                                    "Flexible scaling"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Scaling AI teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "Our LLM solutions power AI innovation across industries.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say",
+                  "description": "Clients trust our AI expertise.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Their LLM development helped us launch our AI knowledge platform.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free AI Strategy Session",
+                  "description": "Discuss your AI roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "adaptive-ai": {
+            "hero": {
+                  "label": "Adaptive AI Development",
+                  "subtitle": "AI Systems That Continuously Learn",
+                  "description": "We build adaptive AI systems that evolve with data and improve performance automatically.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Their adaptive AI platform improved our predictive models dramatically.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "Adaptive AI Expertise",
+                  "description": [
+                        "Adaptive AI systems continuously improve using real-time data.",
+                        "We help organizations build self-learning AI applications."
+                  ],
+                  "points": [
+                        "Adaptive Machine Learning",
+                        "Real-Time Model Training",
+                        "Continuous AI Optimization",
+                        "AI Model Monitoring",
+                        "Enterprise AI Integration"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose flexible engagement models for adaptive AI development.",
+                  "models": [
+                        {
+                              "title": "AI Team Extension",
+                              "description1": "Scale your AI engineering team",
+                              "description2": "Add adaptive AI specialists to your project.",
+                              "points": [
+                                    "ML Engineers",
+                                    "Data Scientists",
+                                    "AI Architects"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Scaling AI teams",
+                              "how": "You interview & select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "Adaptive AI solutions powering industry innovation.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "Client Success Stories",
+                  "description": "Companies trust our AI expertise.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Adaptive AI helped us improve predictions by 40%.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free AI Strategy Session",
+                  "description": "Discuss your adaptive AI roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      },
+      "cognitive-automation": {
+            "hero": {
+                  "label": "Cognitive Process Automation",
+                  "subtitle": "AI-Driven Intelligent Automation",
+                  "description": "We help enterprises automate complex business processes using AI, machine learning, and intelligent automation platforms.",
+                  "cta": {
+                        "text": "Get Free Consultation"
+                  },
+                  "testimonial": {
+                        "quote": "Their automation platform reduced our manual operations by 60%.",
+                        "author": "Henry, Entrepreneur",
+                        "avatar": "/avatars/henry.jpg"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "rating": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "rating": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "/partners/microsoft.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "/partners/aws.svg"
+                        },
+                        {
+                              "name": "Google Cloud",
+                              "logo": "/partners/google-cloud.svg"
+                        },
+                        {
+                              "name": "Clutch",
+                              "logo": "/partners/clutch-rate.svg"
+                        }
+                  ]
+            },
+            "expertise": {
+                  "title": "Cognitive Automation Expertise",
+                  "description": [
+                        "Cognitive automation combines AI and RPA to automate complex decision-based workflows.",
+                        "We design intelligent systems that improve efficiency and reduce operational costs."
+                  ],
+                  "points": [
+                        "AI Process Automation",
+                        "Document Processing AI",
+                        "Intelligent Decision Automation",
+                        "AI-Powered Workflow Optimization",
+                        "Enterprise Automation Integration"
+                  ],
+                  "clientLogos": [
+                        "/logos/panasonic.svg",
+                        "/logos/save.svg",
+                        "/logos/orange.svg",
+                        "/logos/yale.svg"
+                  ],
+                  "certifications": [
+                        {
+                              "src": "/certs/clutch.svg",
+                              "alt": "Clutch Rate"
+                        },
+                        {
+                              "src": "/certs/cmmi.svg",
+                              "alt": "CMMI"
+                        },
+                        {
+                              "src": "/certs/docker.svg",
+                              "alt": "Docker Partner"
+                        },
+                        {
+                              "src": "/certs/aws.svg",
+                              "alt": "AWS Partner"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Flexible engagement models for enterprise automation projects.",
+                  "models": [
+                        {
+                              "title": "Automation Team Extension",
+                              "description1": "Expand your automation capabilities",
+                              "description2": "Add intelligent automation engineers to your team.",
+                              "points": [
+                                    "Automation Engineers",
+                                    "AI Specialists",
+                                    "Workflow Architects"
+                              ],
+                              "billing": "Time & Material",
+                              "bestFor": "Automation initiatives",
+                              "how": "You interview and select engineers.",
+                              "button": "Request Profiles"
+                        }
+                  ]
+            },
+            "industries": {
+                  "title": "Industries We Serve",
+                  "description": "Our automation solutions power digital transformation across industries.",
+                  "items": [
+                        {
+                              "title": "Healthcare",
+                              "image": "/industries/healthcare.jpg"
+                        },
+                        {
+                              "title": "Finance",
+                              "image": "/industries/finance.jpg"
+                        },
+                        {
+                              "title": "Retail",
+                              "image": "/industries/retail.jpg"
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say",
+                  "description": "Companies trust our automation expertise.",
+                  "items": [
+                        {
+                              "thumbnail": "/testimonials/video1.jpg",
+                              "feedback": "Cognitive automation helped us streamline our internal operations.",
+                              "name": "John Carter",
+                              "position": "CEO",
+                              "company": "TechNova",
+                              "avatar": "/testimonials/john.jpg"
+                        }
+                  ]
+            },
+            "trustedCompanies": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "suffix": "companies",
+                  "companies": [
+                        {
+                              "name": "Yale University",
+                              "logo": "/trusted/yale.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "logo": "/trusted/dubai-police.png"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "logo": "/trusted/panasonic.png"
+                        },
+                        {
+                              "name": "Infosys",
+                              "logo": "/trusted/infosys.png"
+                        }
+                  ]
+            },
+            "strategyCTA": {
+                  "title": "Book a Free Automation Strategy Session",
+                  "description": "Discuss your automation roadmap with our experts.",
+                  "buttonText": "Schedule Free Consultation",
+                  "stats": [
+                        {
+                              "text": "executed successfully projects",
+                              "value": "700+",
+                              "subValue": "Full-time Staff"
+                        },
+                        {
+                              "text": "experience in this field",
+                              "value": "20+",
+                              "subValue": "Years Experience"
+                        },
+                        {
+                              "text": "satisfied customers",
+                              "value": "4500+",
+                              "subValue": "Satisfied Customers"
+                        }
+                  ]
+            },
+            "contactConsultation": {
+                  "topLinks": [
+                        {
+                              "label": "Book A Call"
+                        },
+                        {
+                              "label": "Email us"
+                        }
+                  ],
+                  "trustText": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities."
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500."
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "image": "/logos/microsoft.png",
+                              "alt": "Microsoft"
+                        },
+                        {
+                              "image": "/logos/aws.png",
+                              "alt": "AWS"
+                        },
+                        {
+                              "image": "/logos/googlecloud.png",
+                              "alt": "Google Cloud"
+                        }
+                  ]
+            }
+      }
+}
