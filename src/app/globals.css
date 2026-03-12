@@ -59,3 +59,17 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #9ca3af #f3f4f6;
 }
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}

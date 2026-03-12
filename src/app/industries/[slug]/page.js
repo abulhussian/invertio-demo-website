@@ -32,20 +32,19 @@
 //   return notFound();
 // }
 
-
-
-
 import { notFound } from "next/navigation";
-// import services from "@/data/services.json";
-import ServiceTemplate from "@/components/services/ServiceTemplate";
+// import industries from "@/data/industries/industries.json";
+import IndustryTemplate from "@/components/industries/IndustryTemplate";
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
 
-  const { slug } = params;
+  const { slug } = params;   // no need to await params
 
-  const service = services[slug];
+  const industry = industries[slug];
 
-  if (!service) return notFound();
+  if (!industry) {
+    return notFound();
+  }
 
-  return <ServiceTemplate data={service} />;
+  return <IndustryTemplate data={industry} />;
 }

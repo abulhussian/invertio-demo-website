@@ -1,0 +1,399 @@
+{
+      "feasibility": {
+            "hero": {
+                  "breadcrumb": [
+                        "Home",
+                        "Solutions",
+                        "Product Feasibility Studies"
+                  ],
+                  "title": "Product Discovery Phase",
+                  "description": "Eliminate uncertainty before committing engineering effort. We align stakeholders, requirements, and feasibility to move into development with confidence.",
+                  "ctaText": "Get Free Consultation",
+                  "testimonial": {
+                        "name": "James",
+                        "message": "Professional, reliable, and results-driven — they delivered exactly what we needed, on time and within budget.",
+                        "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=200"
+                  },
+                  "ratings": [
+                        {
+                              "platform": "G2",
+                              "score": "4.8/5"
+                        },
+                        {
+                              "platform": "Clutch",
+                              "score": "4.9/5"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "https://logo.clearbit.com/microsoft.com"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "https://logo.clearbit.com/aws.amazon.com"
+                        }
+                  ]
+            },
+            "clientLogos": {
+                  "title": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        {
+                              "name": "Yale University",
+                              "src": "https://logo.clearbit.com/yale.edu"
+                        },
+                        {
+                              "name": "Kuwait Police",
+                              "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Kuwait_Police_logo.png"
+                        },
+                        {
+                              "name": "Dubai Police",
+                              "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Dubai_Police_logo.svg"
+                        },
+                        {
+                              "name": "Panasonic",
+                              "src": "https://logo.clearbit.com/panasonic.com"
+                        },
+                        {
+                              "name": "Infosys",
+                              "src": "https://logo.clearbit.com/infosys.com"
+                        },
+                        {
+                              "name": "Kia",
+                              "src": "https://logo.clearbit.com/kia.com"
+                        },
+                        {
+                              "name": "Hitachi",
+                              "src": "https://logo.clearbit.com/hitachi.com"
+                        },
+                        {
+                              "name": "Orange",
+                              "src": "https://logo.clearbit.com/orange.com"
+                        },
+                        {
+                              "name": "CSF",
+                              "src": "https://logo.clearbit.com/csf.org"
+                        },
+                        {
+                              "name": "Spinny",
+                              "src": "https://logo.clearbit.com/spinny.com"
+                        },
+                        {
+                              "name": "HappyHR",
+                              "src": "https://logo.clearbit.com/happyhr.com"
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "title": "Our Hiring Models",
+                  "description": "Choose how you want work to move – added hands, owned delivery, or your dedicated engineering hub. Each model is designed to remove friction, speed up progress, and keep accountability clear.",
+                  "models": [
+                        {
+                              "icon": "brain",
+                              "title": "Staff Augmentation / Team Extension",
+                              "subtitle": "Expand your team. Maintain control",
+                              "description": "Add engineering capacity without changing how you deliver.",
+                              "points": [
+                                    "Individual engineers or groups (1–3)",
+                                    "Integrate into your existing team",
+                                    "You manage priorities, we handle employment"
+                              ],
+                              "billing": "Time & Material, Retainer",
+                              "bestFor": "Specific skill gaps, capacity crunches",
+                              "howItWorks": "You interview & select. Scale up/down with 30 days notice.",
+                              "buttonText": "Request Profiles"
+                        },
+                        {
+                              "icon": "team",
+                              "title": "Dedicated Teams / Delivery Pods",
+                              "subtitle": "Cross-Functional Teams That Own Delivery",
+                              "description": "Dedicated teams accountable for predictable sprint outcomes.",
+                              "points": [
+                                    "Dedicated squad (4–10 people)",
+                                    "Tech Lead + Engineers + QA",
+                                    "Shared accountability for predictable sprint delivery"
+                              ],
+                              "billing": "Milestone-based, T&M with commitments, or Fixed-Cost",
+                              "bestFor": "Products needing speed, cross-team coordination",
+                              "howItWorks": "We own sprint delivery metrics. Weekly demos.",
+                              "buttonText": "Get a Pod Proposal"
+                        },
+                        {
+                              "icon": "globe",
+                              "title": "Development Centers",
+                              "subtitle": "Your Dedicated Engineering Excellence Hub",
+                              "description": "Build your secure, scalable engineering hub, operated by us, owned by you.",
+                              "points": [
+                                    "Long-term, scaled teams (10–100+)",
+                                    "Your branding, culture, processes",
+                                    "Full infrastructure, HR, security & compliance"
+                              ],
+                              "billing": "Long-term retainer, BOT (Build-Operate-Transfer)",
+                              "bestFor": "Enterprises needing sustained large-scale capacity",
+                              "howItWorks": "Multi-year partnerships. BOT options.",
+                              "buttonText": "Book a Consultation"
+                        }
+                  ]
+            },
+            "faqs": {
+                  "title": "FAQs",
+                  "items": [
+                        {
+                              "question": "When should organizations invest in a product discovery phase?",
+                              "answer": "The product discovery phase delivers the most value before new product builds, major enhancements, or platform rewrites, when clarity upfront prevents costly rework later."
+                        },
+                        {
+                              "question": "What outcomes can teams expect from product discovery phase services?",
+                              "answer": "Teams gain validated requirements, clearer scope, feasibility insights, and a roadmap that supports faster, more predictable development."
+                        },
+                        {
+                              "question": "How long does a typical product discovery process take?",
+                              "answer": "The time it takes to develop a project’s discovery phase can vary depending on the size and complexity of the project. However, on average, teams generally spend around two weeks on this phase."
+                        },
+                        {
+                              "question": "How much does it cost to develop project discovery phase?",
+                              "answer": "The cost depends on project complexity, team size, and scope. Discovery engagements are typically designed to be short, focused, and cost-efficient while providing high clarity."
+                        }
+                  ]
+            },
+            "testimonials": {
+                  "title": "What Our Clients Have to Say About Us",
+                  "description": "We are grateful for our clients' trust in us, and we take great pride in delivering quality solutions that exceed their expectations. Here is what some of them have to say about us:",
+                  "items": [
+                        {
+                              "name": "Judith Mueller",
+                              "role": "Executive Director, Mueller Health Foundation",
+                              "rating": 5,
+                              "video": "/videos/testimonial1.mp4",
+                              "quote": "The team has provided exceptional services in creating this portal. We were impressed by how efficiently and quickly the team came up with creative solutions."
+                        },
+                        {
+                              "name": "James Kelly",
+                              "role": "Co-founder, Miracle Choice",
+                              "rating": 5,
+                              "video": "/videos/testimonial2.mp4",
+                              "quote": "The collaboration was smooth and the final product exceeded expectations."
+                        },
+                        {
+                              "name": "Kris Bruynson",
+                              "role": "Director",
+                              "rating": 5,
+                              "video": "/videos/testimonial3.mp4",
+                              "quote": "Great technical team with strong project management and communication."
+                        },
+                        {
+                              "name": "Mohammed Mirza",
+                              "role": "Director",
+                              "rating": 5,
+                              "video": "/videos/testimonial4.mp4",
+                              "quote": "Professional delivery and reliable engineering team."
+                        }
+                  ]
+            },
+            "contactSection": {
+                  "title": "Book Free Consultation",
+                  "subtitle": "Guaranteed response within 8 business hours.",
+                  "trustedTitle": "Trusted by Startups and Fortune 500 companies",
+                  "stats": [
+                        {
+                              "title": "20+ years of experience",
+                              "description": "We can handle projects of all complexities.",
+                              "icon": "award"
+                        },
+                        {
+                              "title": "4500+ satisfied customers",
+                              "description": "Startups to Fortune 500, we have worked with all.",
+                              "icon": "users"
+                        },
+                        {
+                              "title": "700+ in-house experts",
+                              "description": "Top 1% industry talent to ensure your digital success.",
+                              "icon": "star"
+                        }
+                  ],
+                  "partners": [
+                        {
+                              "name": "Microsoft",
+                              "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                        },
+                        {
+                              "name": "AWS",
+                              "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                        },
+                        {
+                              "name": "Google",
+                              "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Cloud_Logo.svg"
+                        }
+                  ],
+                  "relatedServices": [
+                        "Artificial Intelligence Services",
+                        "AI Development",
+                        "AI Implementation",
+                        "AI Integration & MCP Engineering Services",
+                        "AI Support & Optimization Services",
+                        "AI Chatbot Development Services",
+                        "AI-Powered Mobile App Development"
+                  ]
+            },
+            "industriesSection": {
+                  "title": "Industries We Cater To",
+                  "description": "Partnering with businesses in diverse sectors to unlock new avenues for growth and innovation.",
+                  "industries": [
+                        {
+                              "title": "Healthcare",
+                              "image": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1200"
+                        },
+                        {
+                              "title": "Retail & eCommerce",
+                              "image": "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?q=80&w=1200"
+                        },
+                        {
+                              "title": "Media & Entertainment",
+                              "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1200"
+                        }
+                  ]
+            },
+            "ourProcess": {
+                  "title": "Our Process",
+                  "description": "We divide our product delivery process into three stages: preparation, requirement analysis, and solution definition.",
+                  "steps": [
+                        {
+                              "title": "Discovery Kick-off",
+                              "description": "Align goals, stakeholders, and success criteria."
+                        },
+                        {
+                              "title": "Research & Validation",
+                              "description": "Assess problems, users, and feasibility."
+                        },
+                        {
+                              "title": "Definition & Design",
+                              "description": "Document requirements and solution direction."
+                        },
+                        {
+                              "title": "Roadmap & Handover",
+                              "description": "Deliver actionable artifacts for development."
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "title": "Rushing Into Development Without Clarity?",
+                  "description": "ValueCoders helps structure a focused discovery phase that aligns scope, feasibility, and a build-ready roadmap.",
+                  "buttonText": "Contact Us",
+                  "stats": [
+                        {
+                              "value": "700+",
+                              "label": "Full-time Staff",
+                              "circleText": "successfully projects delivered • successfully projects delivered •"
+                        },
+                        {
+                              "value": "20+",
+                              "label": "Years Experience",
+                              "circleText": "years of experience in software development •"
+                        },
+                        {
+                              "value": "4500+",
+                              "label": "Satisfied Customers",
+                              "circleText": "total number of satisfied customers •"
+                        }
+                  ]
+            },
+            "discoveryExpertise": {
+                  "eyebrow": "We are Experts in",
+                  "title": "Discovery Phase Planning & Implementation",
+                  "description": "We enable businesses across the globe to scale, transform, and gain a competitive advantage through the discovery phase development, which includes defining problems, identifying stakeholders, creating and executing project plan, etc.",
+                  "uspTitle": "We are acknowledged in the industry owing to the following USPs:",
+                  "uspList": [
+                        "India's Top 1% Software Talent",
+                        "Trusted by Startups to Fortune 500",
+                        "Idea to Deployment, We Handle All",
+                        "Time-Zone Friendly: Global Presence",
+                        "Top-tier Data Security Protocols",
+                        "On-time Delivery, No Surprises"
+                  ],
+                  "clients": [
+                        "https://logo.clearbit.com/save.com",
+                        "https://logo.clearbit.com/orange.com",
+                        "https://logo.clearbit.com/thomsonreuters.com",
+                        "https://logo.clearbit.com/yale.edu",
+                        "https://logo.clearbit.com/otava.com",
+                        "https://logo.clearbit.com/happyhr.com",
+                        "https://logo.clearbit.com/grundfos.com",
+                        "https://logo.clearbit.com/magicbricks.com",
+                        "https://logo.clearbit.com/signeasy.com",
+                        "https://logo.clearbit.com/ezetap.com"
+                  ],
+                  "awardsTitle": "Awards & Certifications –",
+                  "awards": [
+                        "https://logo.clearbit.com/clutch.co",
+                        "https://logo.clearbit.com/cmmiinstitute.com",
+                        "https://logo.clearbit.com/docker.com",
+                        "https://logo.clearbit.com/aws.amazon.com",
+                        "https://logo.clearbit.com/microsoft.com"
+                  ]
+            },
+            "discoveryServices": {
+                  "title": "Project Discovery Phase Services",
+                  "description": "Product discovery services help validate priorities, reduce delivery risk, and move into development with a clear, execution-ready plan. Our team of experts will work with you to understand your needs and create a plan that meets your specific goals.",
+                  "services": [
+                        {
+                              "title": "Market Research & Competitive Analysis",
+                              "description": "Validate product direction against real market demand.",
+                              "points": [
+                                    "Market trends, size, and growth analysis",
+                                    "Competitive feature, pricing, and positioning review",
+                                    "Opportunity and risk identification"
+                              ]
+                        },
+                        {
+                              "title": "User Research & Journey Mapping",
+                              "description": "Ground product decisions in real user behavior.",
+                              "points": [
+                                    "User research through interviews, surveys, and observation",
+                                    "Persona creation for key customer segments",
+                                    "Journey mapping to identify pain points and opportunities"
+                              ]
+                        },
+                        {
+                              "title": "Feature Prioritization & MVP Planning",
+                              "description": "Define what to build first and what to defer.",
+                              "points": [
+                                    "Core vs non-core feature identification",
+                                    "MVP scope aligned with business impact",
+                                    "Value-driven prioritization to reduce time-to-market"
+                              ]
+                        },
+                        {
+                              "title": "Technical Feasibility Assessment",
+                              "description": "Confirm technical viability before development begins.",
+                              "points": [
+                                    "Scalability, integration, and performance assessment",
+                                    "Technical risk and dependency analysis",
+                                    "Architecture direction and tech stack recommendations"
+                              ]
+                        }
+                  ]
+            },
+            "stakeholderCTA": {
+                  "title": "Stakeholders Misaligned on Product Direction?",
+                  "description": "Align business goals, user needs, and technical constraints early in discovery.",
+                  "buttonText": "Book a Free Consultation",
+                  "avatars": [
+                        {
+                              "name": "Jay Tiwari",
+                              "role": "Sales Executive",
+                              "image": "https://randomuser.me/api/portraits/men/32.jpg",
+                              "top": "10%",
+                              "left": "55%"
+                        },
+                        {
+                              "name": "Anirudh",
+                              "role": "Sales Executive",
+                              "image": "https://randomuser.me/api/portraits/men/41.jpg",
+                              "top": "60%",
+                              "left": "50%"
+                        }
+                  ]
+            }
+      }
+}

@@ -1,0 +1,18 @@
+{
+      "media-entertainment": {
+            "label": "Media & Entertainment",
+            "slug": "media-entertainment"
+      },
+      "education-edtech": {
+            "label": "Education & EdTech",
+            "slug": "education-edtech"
+      },
+      "fintech": {
+            "label": "FinTech & Financial Services",
+            "slug": "fintech"
+      },
+      "healthcare": {
+            "label": "Healthcare & MedTech",
+            "slug": "healthcare"
+      }
+}

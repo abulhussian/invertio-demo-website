@@ -13,36 +13,36 @@ import VisionToExecution from "./components/NestedRoutes/VisionToExecution";
 import ResultsFocusedAI from "./components/NestedRoutes/ResultsFocusedAI";
 import ClientLogoGrid from "./components/NestedRoutes/ClientLogoGrid";
 
-const ServiceTemplate = () => {
+const ServiceTemplate = ({ data }) => {
       return (
             <>
-                  {/* hero page */}
-                  <DynamicHero />
-                  {/* images */}
-                  <ClientLogoGrid />
-                  {/* RESULT FOCUSED */}
-                  <ResultsFocusedAI />
-                  {/* vision */}
-                  <VisionToExecution />
-                  {/* use cases */}
-                  <AIUseCases />
-                  {/* empowersection */}
-                  <EmpowerSection />
-                  <AIStrategySection />
-                  {/* industry */}
-                  <IndustriesSection />
-                  {/* tech stack */}
-                  <TechStack />
-                  {/* our process */}
-                  <OurProcess />
-                  {/* hiring model */}
-                  <ServiceModels />
-                  {/* faq question */}
-                  <FooterSection />
-                  {/* client testomonial */}
-                  <ClientTestimonials />
-                  {/* contact form */}
-                  <ContactConsultation />
+                  <DynamicHero content={data.hero} />
+
+                  <ClientLogoGrid content={data.clientLogos} />
+
+                  <ResultsFocusedAI content={data.resultsFocusedAI} />
+
+                  <VisionToExecution content={data.visionToExecution} />
+
+                  <AIUseCases content={data.aiUseCases} />
+
+                  <EmpowerSection content={data.empowerSection} />
+
+                  <AIStrategySection content={data.aiStrategySection} />
+
+                  <IndustriesSection content={data.industriesSection} />
+
+                  <TechStack content={data.techStack} />
+
+                  <OurProcess content={data.process} />
+
+                  <ServiceModels content={data.hiringModels} />
+
+                  <FooterSection content={data.faq} />
+
+                  <ClientTestimonials content={data.testimonials} />
+
+                  <ContactConsultation content={data.contactConsultation} />
             </>
       );
 };

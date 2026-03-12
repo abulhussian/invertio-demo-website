@@ -22,21 +22,27 @@
 
 import { notFound } from "next/navigation";
 import { getAllRoutes } from "@/lib/getAllRoutes";
+import solutionsData from "@/data/solutions/solution.json";
 import SolutionTemplate from "@/components/solutions/SolutionTemplate";
 
 export default async function Page({ params }) {
+
   const { slug } = await params;
 
-  const solutions = getAllRoutes("solutions");
+  // menu routes
+  const routes = getAllRoutes("solutions");
 
-  console.log("solutions:", solutions);
+  console.log("routes:", routes);
   console.log("slug:", slug);
 
-  const solution = solutions.find((s) => s.slug === slug);
+  const route = routes.find((r) => r.slug === slug);
 
-  console.log("solution:", solution);
+  // page content
+  const solution = solutionsData[slug];
 
-  if (!solution) return notFound();
+  console.log("solution data:", solution);
+
+  if (!route || !solution) return notFound();
 
   return <SolutionTemplate data={solution} />;
 }

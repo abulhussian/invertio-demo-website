@@ -20,14 +20,18 @@
 // }
 
 
-import services from "@/data/services/services.json";
 import { notFound } from "next/navigation";
+import services from "@/data/services/services.json";
 import ServiceTemplate from "@/components/services/ServiceTemplate";
 
 export default async function Page({ params }) {
-  const { slug } = await params;
+
+  const { slug } = await params;   // ✅ REQUIRED in Next 16
+
   const service = services[slug];
-  // console.log(slug, services);
+
+  console.log("slug:", slug);
+  console.log("service:", service);
 
   if (!service) return notFound();
 

@@ -73,9 +73,9 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
           <div className="relative w-32 h-10">
             <Image
               src="/logo.png"
+              width={120}
+              height={40}
               alt="Invertio Logo"
-              fill
-              className="object-contain"
             />
           </div>
           <button

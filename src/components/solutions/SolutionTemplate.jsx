@@ -1,42 +1,37 @@
-import SolutionAIStrategySection from "./Nested/SolutionAIStrategySection";
-import SolutionAIUseCases from "./Nested/SolutionAIUseCases";
-import SolutionClientLogoGrid from "./Nested/SolutionClientLogoGrid";
-import SolutionClientTestimonials from "./Nested/SolutionClientTestimonials";
-import SolutionContactConsultation from "./Nested/SolutionContactConsultation";
 import SolutionDynamicHero from "./Nested/SolutionDynamicHero";
-import SolutionEmpowerSection from "./Nested/SolutionEmpowerSection";
-import SolutionFooterSection from "./Nested/SolutionFooterSection";
-import SolutionGuideTopics from "./Nested/SolutionGuideTopics";
-import SolutionIndustriesSection from "./Nested/SolutionIndustriesSection";
-import SolutionInsightGrid from "./Nested/SolutionInsightGrid";
-import SolutionOurProcess from "./Nested/SolutionOurProcess";
-import SolutionResultsFocusedAI from "./Nested/SolutionResultsFocusedAI";
-import SolutionServiceModels from "./Nested/SolutionServiceModels";
-import SolutionTailoredTechSection from "./Nested/SolutionTailoredTechSection";
-import SolutionVisionToExecution from "./Nested/SolutionVisionToExecution";
-
+import SolutionClientLogoGrid from "./Nested/SolutionClientLogoGrid";
+import HiringModels from "./Nested/HiringModels";
+import ServiceFAQ from "./Nested/ServiceFAQ";
+import SolutionTestimonials from "./Nested/SolutionTestimonials";
+import Contact from "./Nested/Contact";
+import IndustriesSection from "./Nested/IndustriesSection"
+import OurProcess from "./Nested/OurProcess";
+import StakeholderCTA from "./Nested/StakeholderCTA";
+import CASection from "./Nested/CASection";
+import DiscoveryServices from "./Nested/DiscoveryServices";
+import DiscoveryExpertise from "./Nested/DiscoveryExpertise";
 
 const SolutionTemplate = ({ data }) => {
+
+      if (!data) return null;
+
       return (
             <>
-                  <SolutionDynamicHero />
-                  <SolutionClientLogoGrid />
-                  <SolutionResultsFocusedAI />
-                  <SolutionAIUseCases />
-                  <SolutionEmpowerSection />
-                  <SolutionVisionToExecution />
-                  <SolutionIndustriesSection />
-                  <SolutionTailoredTechSection />
-                  <SolutionOurProcess />
-                  <SolutionAIStrategySection />
-                  <SolutionServiceModels />
-                  <SolutionInsightGrid />
-                  <SolutionGuideTopics />
-                  <SolutionFooterSection />
-                  <SolutionClientTestimonials />
-                  <SolutionContactConsultation />
+                  <SolutionDynamicHero data={data.hero} />
+                  <SolutionClientLogoGrid data={data.clientLogos} />
+                  <DiscoveryServices data={data.discoveryServices} />
+                  <StakeholderCTA data={data.stakeholderCTA} />
+                  <DiscoveryExpertise data={data.discoveryExpertise} />
+                  <CASection data={data.ctaSection} />
+                  <IndustriesSection data={data.industriesSection} />
+                  <OurProcess data={data.ourProcess} />
+                  <HiringModels data={data.hiringModels} />
+                  <ServiceFAQ data={data.faqs} />
+                  <SolutionTestimonials data={data.testimonials} />
+                  <Contact data={data.contactSection} />
             </>
       );
+
 };
 
 export default SolutionTemplate;
