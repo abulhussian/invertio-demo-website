@@ -1,41 +1,40 @@
-import AIStrategySection from "../services/components/NestedRoutes/AIStrategySection";
-import AIUseCases from "../services/components/NestedRoutes/AIUseCases";
-import ClientLogoGrid from "../services/components/NestedRoutes/ClientLogoGrid";
-import ClientTestimonials from "../services/components/NestedRoutes/ClientTestimonials";
-import ContactConsultation from "../services/components/NestedRoutes/ContactConsultation";
-import DynamicHero from "../services/components/NestedRoutes/DynamicHero";
-import EmpowerSection from "../services/components/NestedRoutes/EmpowerSection";
-import FooterSection from "../services/components/NestedRoutes/FooterSection";
-import IndustriesSection from "../services/components/NestedRoutes/IndustryCard";
-import InsightGrid from "../services/components/NestedRoutes/InsightGrid";
-import OurProcess from "../services/components/NestedRoutes/OurProcess";
-import ResultsFocusedAI from "../services/components/NestedRoutes/ResultsFocusedAI";
-import ServiceModels from "../services/components/NestedRoutes/ServiceModels";
-import TailoredTechSection from "../services/components/NestedRoutes/TailoredTechSection";
-import TechStack from "../services/components/NestedRoutes/TechStack";
-import VisionToExecution from "../services/components/NestedRoutes/VisionToExecution";
-import GuideTopics from "../solutions/Nested/GuideTopics.jsx"
+import SolutionAIStrategySection from "./Nested/SolutionAIStrategySection";
+import SolutionAIUseCases from "./Nested/SolutionAIUseCases";
+import SolutionClientLogoGrid from "./Nested/SolutionClientLogoGrid";
+import SolutionClientTestimonials from "./Nested/SolutionClientTestimonials";
+import SolutionContactConsultation from "./Nested/SolutionContactConsultation";
+import SolutionDynamicHero from "./Nested/SolutionDynamicHero";
+import SolutionEmpowerSection from "./Nested/SolutionEmpowerSection";
+import SolutionFooterSection from "./Nested/SolutionFooterSection";
+import SolutionGuideTopics from "./Nested/SolutionGuideTopics";
+import SolutionIndustriesSection from "./Nested/SolutionIndustriesSection";
+import SolutionInsightGrid from "./Nested/SolutionInsightGrid";
+import SolutionOurProcess from "./Nested/SolutionOurProcess";
+import SolutionResultsFocusedAI from "./Nested/SolutionResultsFocusedAI";
+import SolutionServiceModels from "./Nested/SolutionServiceModels";
+import SolutionTailoredTechSection from "./Nested/SolutionTailoredTechSection";
+import SolutionVisionToExecution from "./Nested/SolutionVisionToExecution";
+
 
 const SolutionTemplate = ({ data }) => {
       return (
             <>
-                  <DynamicHero />
-                  <ClientLogoGrid />
-                  <ResultsFocusedAI />
-                  <AIUseCases />
-                  <EmpowerSection />
-                  <AIStrategySection />
-                  <VisionToExecution />
-                  <IndustriesSection />
-                  <TechStack />
-                  <TailoredTechSection />
-                  <OurProcess />
-                  <ServiceModels />
-                  <InsightGrid />
-                  <GuideTopics />
-                  <FooterSection />
-                  <ClientTestimonials />
-                  <ContactConsultation />
+                  <SolutionDynamicHero />
+                  <SolutionClientLogoGrid />
+                  <SolutionResultsFocusedAI />
+                  <SolutionAIUseCases />
+                  <SolutionEmpowerSection />
+                  <SolutionVisionToExecution />
+                  <SolutionIndustriesSection />
+                  <SolutionTailoredTechSection />
+                  <SolutionOurProcess />
+                  <SolutionAIStrategySection />
+                  <SolutionServiceModels />
+                  <SolutionInsightGrid />
+                  <SolutionGuideTopics />
+                  <SolutionFooterSection />
+                  <SolutionClientTestimonials />
+                  <SolutionContactConsultation />
             </>
       );
 };

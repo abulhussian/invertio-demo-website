@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 
-const IndustriesSection = () => {
+import React, { useState } from 'react';
+import { ArrowLeft, ArrowRight, ChevronUp, ChevronDown } from 'lucide-react';
+const SolutionIndustriesSection = () => {
       const [activeCard, setActiveCard] = useState(0);
 
       const cardData = [
@@ -100,6 +100,7 @@ const IndustriesSection = () => {
                   </div>
             </section>
       );
-};
 
-export default IndustriesSection;
+}
+
+export default SolutionIndustriesSection

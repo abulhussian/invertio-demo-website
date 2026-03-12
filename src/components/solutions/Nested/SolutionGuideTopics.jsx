@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-const GuideTopics = () => {
+const SolutionGuideTopics = () => {
       const [activeSection, setActiveSection] = useState("when-is-the-time");
 
       const topics = [
@@ -38,12 +38,12 @@ const GuideTopics = () => {
 
       return (
             <>
-                  <div class="max-w-4xl mx-auto text-center py-16 px-4 font-sans">
-                        <h3 class="text-[#051139] text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+                  <div className="max-w-4xl mx-auto text-center py-16 px-4 font-sans">
+                        <h3 className="text-[#051139] text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
                               A Practical Guide to Digital Transformation for Enterprises
                         </h3>
 
-                        <p class="text-gray-500 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-gray-500 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
                               Learn how to initiate digital transformation, the challenges businesses face, and why
                               expert partnerships drive ROI with measurable, sustainable success.
                         </p>
@@ -149,4 +149,4 @@ const GuideTopics = () => {
       );
 };
 
-export default GuideTopics;
+export default SolutionGuideTopics;

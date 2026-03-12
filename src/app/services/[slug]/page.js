@@ -27,7 +27,7 @@ import ServiceTemplate from "@/components/services/ServiceTemplate";
 export default async function Page({ params }) {
   const { slug } = await params;
   const service = services[slug];
-  console.log(slug, services);
+  // console.log(slug, services);
 
   if (!service) return notFound();
 
