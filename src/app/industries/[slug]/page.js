@@ -31,14 +31,13 @@
 
 //   return notFound();
 // }
-
 import { notFound } from "next/navigation";
-// import industries from "@/data/industries/industries.json";
+import industries from "@/data/industries/industries.json";
 import IndustryTemplate from "@/components/industries/IndustryTemplate";
 
 export default async function Page({ params }) {
 
-  const { slug } = params;   // no need to await params
+  const { slug } = await params;   // ✅ await params
 
   const industry = industries[slug];
 

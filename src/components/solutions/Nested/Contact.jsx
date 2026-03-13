@@ -9,252 +9,145 @@ import {
       Star,
       ChevronDown,
       ArrowRight,
+      ShieldCheck,
+      Zap,
 } from "lucide-react";
 
 const Contact = () => {
       return (
-            <section className="bg-[#fcfbf7] py-20 px-6 md:px-12 lg:px-24">
-                  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <section className="bg-[#020617] py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+                  {/* Background Decorative Elements */}
+                  <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-500/5 blur-[120px] rounded-full" />
+                  <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-600/5 blur-[100px] rounded-full" />
 
-                        {/* LEFT COLUMN */}
-                        <div className="lg:col-span-4 space-y-12">
+                  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
 
-                              {/* Contact Links */}
-                              <div className="flex gap-6 text-[#051139] font-medium">
-                                    <a
-                                          href="#"
-                                          className="flex items-center gap-2 hover:text-amber-600 transition"
-                                    >
-                                          <Phone size={18} /> Book A Call
-                                    </a>
+                        {/* LEFT COLUMN: Trust & Authority */}
+                        <div className="lg:col-span-5 space-y-12">
+                              <div>
+                                    <div className="inline-flex items-center gap-2 bg-amber-500/10 text-amber-500 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+                                          <Zap size={14} fill="currentColor" />
+                                          Direct Access
+                                    </div>
+                                    <h2 className="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter mb-8">
+                                          Let's build <br />
+                                          <span className="text-amber-500 italic">the future.</span>
+                                    </h2>
 
-                                    <a
-                                          href="#"
-                                          className="flex items-center gap-2 hover:text-amber-600 transition"
-                                    >
-                                          <Mail size={18} /> Email us
-                                    </a>
+                                    <div className="flex gap-8 text-white/60 font-bold text-sm">
+                                          <a href="tel:+" className="flex items-center gap-2 hover:text-amber-500 transition-colors group">
+                                                <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500/50">
+                                                      <Phone size={16} />
+                                                </div>
+                                                Book A Call
+                                          </a>
+                                          <a href="mailto:info@example.com" className="flex items-center gap-2 hover:text-amber-500 transition-colors group">
+                                                <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500/50">
+                                                      <Mail size={16} />
+                                                </div>
+                                                Email Us
+                                          </a>
+                                    </div>
                               </div>
 
-                              <div className="space-y-10">
-                                    <h3 className="text-[#051139] text-xl font-bold border-b border-gray-200 pb-4">
-                                          Trusted by Startups and Fortune 500 companies
-                                    </h3>
-
-                                    {/* Stats */}
-                                    <div className="space-y-8">
-
-                                          <div className="flex gap-4">
-                                                <div className="bg-white p-3 rounded-full shadow-sm h-fit">
-                                                      <Award className="text-gray-400" size={24} />
+                              {/* Stats Cards */}
+                              <div className="space-y-4">
+                                    {[
+                                          { icon: <Award size={20} />, title: "20+ Years Experience", desc: "Complex enterprise-grade architectures.", color: "text-blue-400" },
+                                          { icon: <Users size={20} />, title: "4500+ Clients", desc: "From stealth startups to Fortune 500s.", color: "text-amber-400" },
+                                          { icon: <Star size={20} />, title: "700+ Experts", desc: "Top 1% specialized industry talent.", color: "text-emerald-400" },
+                                    ].map((stat, i) => (
+                                          <div key={i} className="flex gap-5 p-6 rounded-3xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.05] transition-all group">
+                                                <div className={`${stat.color} p-3 rounded-2xl bg-white/[0.03] group-hover:scale-110 transition-transform`}>
+                                                      {stat.icon}
                                                 </div>
                                                 <div>
-                                                      <h4 className="font-bold text-[#051139] text-lg">
-                                                            20+ years of experience
-                                                      </h4>
-                                                      <p className="text-gray-500 text-sm">
-                                                            We can handle projects of all complexities.
-                                                      </p>
+                                                      <h4 className="font-bold text-white text-lg leading-none mb-1">{stat.title}</h4>
+                                                      <p className="text-gray-500 text-sm font-medium">{stat.desc}</p>
                                                 </div>
                                           </div>
+                                    ))}
+                              </div>
 
-                                          <div className="flex gap-4">
-                                                <div className="bg-white p-3 rounded-full shadow-sm h-fit">
-                                                      <Users className="text-gray-400" size={24} />
-                                                </div>
-                                                <div>
-                                                      <h4 className="font-bold text-[#051139] text-lg">
-                                                            4500+ satisfied customers
-                                                      </h4>
-                                                      <p className="text-gray-500 text-sm">
-                                                            Startups to Fortune 500, we have worked with all.
-                                                      </p>
-                                                </div>
-                                          </div>
-
-                                          <div className="flex gap-4">
-                                                <div className="bg-white p-3 rounded-full shadow-sm h-fit">
-                                                      <Star className="text-gray-400" size={24} />
-                                                </div>
-                                                <div>
-                                                      <h4 className="font-bold text-[#051139] text-lg">
-                                                            700+ in-house experts
-                                                      </h4>
-                                                      <p className="text-gray-500 text-sm">
-                                                            Top 1% industry talent to ensure your digital success.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-
-                                    {/* Partner Logos */}
-                                    <div className="flex gap-4 pt-6 opacity-80">
-                                          <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-                                                className="h-6"
-                                                alt="Microsoft"
-                                          />
-                                          <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-                                                className="h-6"
-                                                alt="AWS"
-                                          />
-                                          <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Cloud_Logo.svg"
-                                                className="h-6"
-                                                alt="Google"
-                                          />
+                              {/* Trust Badges */}
+                              <div className="pt-6 border-t border-white/5">
+                                    <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-6">Preferred Partner Of</p>
+                                    <div className="flex gap-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" className="h-5" alt="Microsoft" />
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" className="h-5" alt="AWS" />
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Cloud_Logo.svg" className="h-5" alt="Google" />
                                     </div>
                               </div>
                         </div>
 
-                        {/* RIGHT COLUMN FORM */}
-                        <div className="lg:col-span-8 bg-white p-8 md:p-12 rounded-[2rem] shadow-xl border border-gray-100">
+                        {/* RIGHT COLUMN: The Command Center Form */}
+                        <div className="lg:col-span-7 bg-white rounded-[3rem] p-8 md:p-14 shadow-2xl relative">
+                              <div className="absolute top-8 right-12 hidden md:block">
+                                    <div className="flex items-center gap-2 text-[10px] font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+                                          <ShieldCheck size={14} /> 8h Response Guarantee
+                                    </div>
+                              </div>
 
-                              <h2 className="text-[#051139] text-3xl md:text-4xl font-bold mb-2">
-                                    Book Free Consultation
-                              </h2>
+                              <h3 className="text-[#020617] text-4xl font-black tracking-tight mb-2">Book Free Consultation</h3>
+                              <p className="text-gray-400 font-medium mb-12">Share your project brief and our strategy team will reach out.</p>
 
-                              <p className="text-gray-500 mb-10">
-                                    Guaranteed response within 8 business hours.
-                              </p>
-
-                              <form className="space-y-6">
-
-                                    {/* Name + Email */}
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                                          <div className="relative">
-                                                <label className="absolute -top-2.5 left-4 bg-white px-2 text-xs font-semibold text-gray-400">
-                                                      Full Name *
-                                                </label>
-
-                                                <input
-                                                      type="text"
-                                                      placeholder="Full Name"
-                                                      className="w-full border border-gray-200 rounded-lg px-4 py-4 focus:outline-none focus:border-amber-500"
-                                                />
+                              <form className="space-y-8">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                          <div className="group space-y-2">
+                                                <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Full Name *</label>
+                                                <input type="text" className="w-full bg-gray-50 border-none rounded-2xl px-6 py-5 focus:ring-2 focus:ring-amber-500 transition-all outline-none font-medium placeholder:text-gray-300" placeholder="John Doe" />
                                           </div>
-
-                                          <div className="relative">
-                                                <label className="absolute -top-2.5 left-4 bg-white px-2 text-xs font-semibold text-gray-400">
-                                                      Email *
-                                                </label>
-
-                                                <input
-                                                      type="email"
-                                                      placeholder="Email Address"
-                                                      className="w-full border border-gray-200 rounded-lg px-4 py-4 focus:outline-none focus:border-amber-500"
-                                                />
+                                          <div className="group space-y-2">
+                                                <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Email Address *</label>
+                                                <input type="email" className="w-full bg-gray-50 border-none rounded-2xl px-6 py-5 focus:ring-2 focus:ring-amber-500 transition-all outline-none font-medium placeholder:text-gray-300" placeholder="john@company.com" />
                                           </div>
                                     </div>
 
-                                    {/* Phone + Country */}
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                                          <div className="relative">
-                                                <label className="absolute -top-2.5 left-4 bg-white px-2 text-xs font-semibold text-gray-400">
-                                                      Phone No.
-                                                </label>
-
-                                                <div className="flex">
-                                                      <div className="flex items-center gap-1 border border-r-0 border-gray-200 rounded-l-lg px-3 bg-gray-50 text-sm">
-                                                            🇺🇸 <ChevronDown size={14} />
-                                                      </div>
-
-                                                      <input
-                                                            type="tel"
-                                                            placeholder="Phone Number (Optional)"
-                                                            className="w-full border border-gray-200 rounded-r-lg px-4 py-4 focus:outline-none focus:border-amber-500"
-                                                      />
-                                                </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                          <div className="group space-y-2">
+                                                <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Phone Number</label>
+                                                <input type="tel" className="w-full bg-gray-50 border-none rounded-2xl px-6 py-5 focus:ring-2 focus:ring-amber-500 transition-all outline-none font-medium placeholder:text-gray-300" placeholder="+1 (555) 000-0000" />
                                           </div>
-
-                                          <div className="relative">
-                                                <label className="absolute -top-2.5 left-4 bg-white px-2 text-xs font-semibold text-gray-400">
-                                                      Select Country *
-                                                </label>
-
-                                                <select className="w-full border border-gray-200 rounded-lg px-4 py-4 appearance-none bg-white">
-                                                      <option>Country</option>
+                                          <div className="group space-y-2 relative">
+                                                <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Project Category *</label>
+                                                <select className="w-full bg-gray-50 border-none rounded-2xl px-6 py-5 focus:ring-2 focus:ring-amber-500 transition-all outline-none font-medium appearance-none cursor-pointer">
+                                                      <option>Artificial Intelligence</option>
+                                                      <option>Web Development</option>
+                                                      <option>Mobile Apps</option>
                                                 </select>
-
-                                                <ChevronDown
-                                                      className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
-                                                      size={18}
-                                                />
+                                                <ChevronDown className="absolute right-6 top-[54px] text-gray-400 pointer-events-none" size={18} />
                                           </div>
                                     </div>
 
-                                    {/* Service Dropdown */}
-                                    <div className="relative">
-                                          <label className="absolute -top-2.5 left-4 bg-white px-2 text-xs font-semibold text-gray-400">
-                                                Select Your Service *
-                                          </label>
-
-                                          <select className="w-full border border-gray-200 rounded-lg px-4 py-4 appearance-none bg-white">
-                                                <option>Please Select From The Dropdown</option>
-                                          </select>
-
-                                          <ChevronDown
-                                                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
-                                                size={18}
-                                          />
-                                    </div>
-
-                                    {/* Project Brief */}
-                                    <div className="relative">
-                                          <label className="absolute -top-2.5 left-4 bg-white px-2 text-xs font-semibold text-gray-400">
-                                                Your Requirements *
-                                          </label>
-
-                                          <textarea
-                                                placeholder="Project Brief"
-                                                rows="4"
-                                                className="w-full border border-gray-200 rounded-lg px-4 py-4 resize-none"
-                                          ></textarea>
-
-                                          <div className="absolute bottom-4 left-4">
-                                                <button
-                                                      type="button"
-                                                      className="text-xs font-bold text-gray-400 border-2 border-dashed border-gray-200 px-3 py-1 rounded-md hover:border-amber-500"
-                                                >
-                                                      BROWSE | DROP FILES HERE
-                                                </button>
-                                          </div>
-                                    </div>
-
-                                    {/* Submit Button */}
-                                    <div className="flex justify-end pt-4">
-                                          <button className="bg-amber-500 hover:bg-[#051139] text-white px-8 py-4 rounded-full font-bold flex items-center gap-3 transition-all group shadow-lg shadow-amber-200 hover:shadow-none">
-                                                ENQUIRE NOW
-                                                <div className="bg-white/20 rounded-full p-1 group-hover:translate-x-1 transition-transform">
-                                                      <ArrowRight size={20} />
+                                    <div className="group space-y-2">
+                                          <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Project Brief *</label>
+                                          <div className="relative">
+                                                <textarea rows="5" className="w-full bg-gray-50 border-none rounded-[2rem] px-6 py-6 focus:ring-2 focus:ring-amber-500 transition-all outline-none font-medium resize-none placeholder:text-gray-300" placeholder="Tell us about your goals..."></textarea>
+                                                <div className="absolute bottom-4 left-4">
+                                                      <button type="button" className="bg-white border border-gray-100 px-4 py-2 rounded-xl text-[10px] font-black text-gray-500 hover:bg-gray-50 transition-colors shadow-sm uppercase">
+                                                            Attach Files +
+                                                      </button>
                                                 </div>
-                                          </button>
+                                          </div>
                                     </div>
+
+                                    <button className="w-full bg-[#020617] text-white py-6 rounded-[2rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-amber-500 transition-all duration-500 group shadow-2xl shadow-blue-900/20">
+                                          INITIATE PROJECT
+                                          <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                                    </button>
                               </form>
                         </div>
                   </div>
 
-                  {/* RELATED SERVICES */}
-                  <div className="max-w-7xl mx-auto mt-20">
-                        <p className="font-bold text-[#051139] mb-4">Related Services :</p>
-
-                        <div className="flex flex-wrap gap-3">
+                  {/* Footer Tags: Maximalist List */}
+                  <div className="max-w-7xl mx-auto mt-32 border-t border-white/5 pt-12">
+                        <p className="text-[10px] font-black text-amber-500 uppercase tracking-[0.4em] mb-8 text-center">Industry Leading Specializations</p>
+                        <div className="flex flex-wrap justify-center gap-3">
                               {[
-                                    "Artificial Intelligence Services",
-                                    "AI Development",
-                                    "AI Implementation",
-                                    "AI Integration & MCP Engineering Services",
-                                    "AI Support & Optimization Services",
-                                    "AI Chatbot Development Services",
-                                    "AI-Powered Mobile App Development",
+                                    "Artificial Intelligence Services", "AI Development", "AI Implementation",
+                                    "MCP Engineering", "Chatbot Development", "Cloud Architecture"
                               ].map((tag) => (
-                                    <span
-                                          key={tag}
-                                          className="bg-white border border-gray-200 rounded-lg px-4 py-2 text-xs text-gray-500 hover:border-amber-500 transition cursor-pointer"
-                                    >
+                                    <span key={tag} className="bg-white/5 border border-white/5 rounded-full px-6 py-3 text-[11px] font-bold text-gray-400 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all cursor-pointer">
                                           {tag}
                                     </span>
                               ))}
