@@ -264,7 +264,7 @@
             "title": "Transforming Retail Operations with Smart Automation and Real-Time Insights",
             "description": "Invertio developed BaladiExpress Mart, a smart retail automation platform designed to modernize retail operations, automate inventory management, and enhance the customer shopping experience. The platform integrates cloud infrastructure, real-time analytics, and intelligent search capabilities to enable scalable retail growth.",
             "about": "Retailers often struggle with manual inventory management, limited operational visibility, and inefficient checkout processes. BaladiExpress Mart was designed to address these challenges by introducing automation, real-time monitoring, and data-driven retail insights.\n\nInvertio implemented a cloud-native retail platform that automates inventory tracking, enables real-time analytics, and improves product discovery through intelligent search capabilities. The system empowers retailers with better operational control while delivering a faster and more convenient shopping experience for customers.",
-            "image": "/ourwork/baladi.png",
+            "image": "/ourwork/baladimain.jpeg",
             "path": "/our-work/baladi-express-mart",
             "features": {
                   "badge": "Platform Capabilities",
@@ -327,7 +327,7 @@
                         }
                   ]
             },
-            "showcaseImage": "/ourwork/baladi1.png",
+            "showcaseImage": "/ourwork/baladi123.jpeg",
             "solutionSection": {
                   "badge": "Solution & Impact",
                   "heading": "Cloud-Based Retail Automation Platform",
@@ -571,7 +571,7 @@
                         }
                   ]
             },
-            "showcaseImage": "/ourwork/smsa-dashboard.png",
+            "showcaseImage": "/ourwork/smsa-dashboard.jpeg",
             "solutionSection": {
                   "badge": "Solution & Impact",
                   "heading": "Integrated Logistics and Supply Chain Automation Platform",

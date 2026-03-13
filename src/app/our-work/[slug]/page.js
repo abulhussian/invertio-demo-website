@@ -24,32 +24,32 @@ export default async function Page({ params }) {
 
       return (
             <>
-                  <div className="px-8 md:px-14 lg:px-20 py-16 bg-[#F8F9FC]">
 
+                  <div className="px-8 md:px-14 lg:px-20 py-16 bg-[#F8F9FC]">
                         <SectionHeader
                               badge={project.badge}
                               heading={project.title}
                               subheading={project.description}
                         />
-
-                        <div className="bg-[#0B132B] text-white p-10 rounded-xl mt-12">
-                              <h2 className="text-2xl font-semibold mb-4">About the Project</h2>
-                              <p className="text-gray-300 leading-relaxed">
-                                    {project.about}
-                              </p>
-                        </div>
-
-                        <div className="mt-12">
-                              <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="rounded-xl w-full"
-                              />
-                        </div>
-
-                        <TransformationHero data={project.features} />
-                        <ChallengesSection data={project.challengesSection} />
                   </div>
+
+                  <div className="bg-[#0B132B] text-white px-8 md:px-14 lg:px-20 py-16  mt-12">
+                        <h2 className="text-2xl font-semibold mb-4">About the Project</h2>
+                        <p className="text-gray-300 leading-relaxed">
+                              {project.about}
+                        </p>
+                  </div>
+
+                  <div className="mt-12">
+                        <img
+                              src={project.image}
+                              alt={project.title}
+                              className="rounded-xl w-full h-[280px] md:h-[400px] lg:h-[700px] object-cover"
+                        />
+                  </div>
+
+                  <TransformationHero data={project.features} />
+                  <ChallengesSection data={project.challengesSection} />
 
                   <ProjectShowcase
                         image={project.showcaseImage}
@@ -61,7 +61,7 @@ export default async function Page({ params }) {
                   </div>
 
                   <SolutionImpactSection data={project.solutionSection} />
-                  
+
                   <TechStackSection data={project.techStack} />
                   <CSection data={project.ctaSection} />
             </>

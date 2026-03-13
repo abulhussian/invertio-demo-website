@@ -3,12 +3,13 @@ import CtaSection from "@/components/common/components/CtaSection";
 import InsightsSection from "@/components/common/components/InsightsSection";
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
 import SectionHeader from "@/components/common/ui/SectionHeader";
-import LeftSideSection from "@/components/ourwork/LeftSideSection";
-import RightSideSection from "@/components/ourwork/RightSideSection";
+import ProjectSection from "@/components/ourwork/ProjectSection";
 
 export default function Page() {
   return (
     <>
+
+
       <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
 
         <SectionHeader
@@ -21,91 +22,103 @@ export default function Page() {
         />
 
         {/* 1 */}
-        <LeftSideSection
+        <ProjectSection
           title="QATAR MOEHE"
           description="A digital learning and examination management platform enabling seamless collaboration between students, educators, and administrators through modern education technology."
           buttonText="Read More"
           image="/ourwork/qatar1.png"
           slug="qatar-moehe"
+          imagePosition="right"
         />
 
         {/* 2 */}
-        <RightSideSection
+        <ProjectSection
           title="AI-PILOT"
           description="An AI-powered child height measurement solution delivering highly accurate analytics and automated health insights using computer vision and smart data modeling."
           buttonText="Read More"
           image="/ourwork/ai.png"
           slug="ai-pilot"
+          imagePosition="left"
         />
 
         {/* 3 */}
-        <LeftSideSection
+        <ProjectSection
           title="Baladi Express Mart"
           description="A unified retail ecosystem integrating online, mobile, and in-store experiences with real-time inventory management and intelligent order processing."
           buttonText="Read More"
-          image="/ourwork/baladi2.png"
+          image="/ourwork/baladimain.jpeg"
           slug="baladi-express-mart"
+          imagePosition="right"
         />
 
         {/* 4 */}
-        <RightSideSection
+        <ProjectSection
           title="Single View"
           description="An integrated enterprise platform delivering centralized visibility, streamlined workflows, and enhanced operational decision-making for modern organizations."
           buttonText="Read More"
           image="/ourwork/singleview1.png"
           slug="singleview-enterprise-integration"
+          imagePosition="left"
         />
 
         {/* 5 */}
-        <LeftSideSection
+        <ProjectSection
           title="SMSA Express"
           description="A logistics transformation initiative enabling real-time shipment tracking, automated workflows, and improved delivery performance across global operations."
           buttonText="Read More"
           image="/ourwork/smsa1.png"
           slug="smsa-express-logistics"
+          imagePosition="right"
         />
 
         {/* 6 */}
-        <RightSideSection
+        <ProjectSection
           title="KPMG Digital Transformation"
           description="A comprehensive digital advisory and implementation program supporting enterprise modernization through analytics, automation, and scalable technology platforms."
           buttonText="Read More"
           image="/ourwork/kpmg1.png"
           slug="kpmg-intelligent-enterprise"
+          imagePosition="left"
         />
 
         {/* 7 */}
-        <LeftSideSection
+        <ProjectSection
           title="StudyFox AI"
           description="An AI-driven learning assistant designed to personalize education experiences through intelligent recommendations, real-time assessments, and adaptive learning tools."
           buttonText="Read More"
           image="/ourwork/studyfox1.png"
           slug="studyfox-ai"
+          imagePosition="right"
         />
 
         {/* 8 */}
-        <RightSideSection
+        <ProjectSection
           title="360 Taxi Dispatch System"
           description="A cloud-based taxi dispatch platform providing live vehicle tracking, automated booking management, and optimized fleet operations through smart mobility technology."
           buttonText="Read More"
           image="/ourwork/360Image.png"
           slug="360-taxi-ride-management"
+          imagePosition="left"
         />
+
         {/* 9 */}
-        <LeftSideSection
+        <ProjectSection
           title="GreenLoop Marketplace"
           description="A B2B marketplace platform enabling industries to securely trade surplus industrial materials, reduce waste, and unlock value from excess inventory while supporting sustainability initiatives."
           buttonText="Read More"
           image="/ourwork/greenloop.png"
           slug="greenloop-b2b-marketplace"
+          imagePosition="right"
         />
+
         {/* 10 */}
-        <RightSideSection
+        <ProjectSection
           title="Green Vision Community Platform"
           description="A community-driven mobile platform that enables citizens to plant trees, track environmental contributions, and participate in sustainability initiatives through an interactive and gamified ecosystem."
           buttonText="Read More"
           image="/ourwork/green-vision.png"
           slug="green-vision-community-platform"
+          imagePosition="left"
         />
 
       </div>

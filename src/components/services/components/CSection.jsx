@@ -1,10 +1,9 @@
-import Section from "@/components/common/ui/Section";
 import Link from "next/link";
 
 const CTASection = ({ data }) => {
       return (
-            <Section>
-                  <div className="w-full bg-gradient-to-r from-[#6E79B8] to-[#4E5FA8] rounded-2xl  md:px-14 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative overflow-hidden">
+            <section className="w-full">
+                  <div className="w-full bg-gradient-to-r from-[#6E79B8] to-[#4E5FA8] py-12 px-8 md:px-14 lg:px-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
 
                         {/* LEFT CONTENT */}
                         <div className="max-w-3xl flex flex-col gap-3">
@@ -32,7 +31,7 @@ const CTASection = ({ data }) => {
                         </Link>
 
                   </div>
-            </Section>
+            </section>
       );
 };
 

@@ -1,22 +1,17 @@
-import Section from "@/components/common/ui/Section";
 import Image from "next/image";
 
 const ProjectShowcase = ({ image, alt }) => {
       return (
-            <Section>
-                  <div className="w-full flex justify-center">
-                        <div className="w-full   overflow-hidden shadow-lg">
-                              <Image
-                                    src={image}
-                                    alt={alt || "Project showcase"}
-                                    width={1400}
-                                    height={700}
-                                    className="w-full h-auto object-cover"
-                                    priority
-                              />
-                        </div>
-                  </div>
-            </Section>
+            <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+                  <Image
+                        src={image}
+                        alt={alt || "Project showcase"}
+                        width={1600}
+                        height={600}
+                        className="w-full  object-contain"
+                        priority
+                  />
+            </div>
       );
 };
 
