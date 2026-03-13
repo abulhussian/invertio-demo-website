@@ -18,78 +18,79 @@ export default function ContactSection() {
                   <div className="grid lg:grid-cols-2 gap-16">
 
                         {/* LEFT SIDE */}
-                        <div className="flex flex-col gap-8">
-
-                              <div>
-                                    <p className="text-purple-600 font-medium mb-4">
+                        <div className="flex flex-col lg:flex-row gap-12 lg:items-start max-w-7xl mx-auto px-4 py-12">
+                              {/* Heading Section */}
+                              <div className="lg:w-1/3">
+                                    <p className="text-purple-600 font-semibold mb-3 text-sm tracking-wide uppercase">
                                           Get In Touch
                                     </p>
 
-                                    <h2 className="text-4xl lg:text-5xl font-semibold text-[#0F172A] leading-tight mb-6">
+                                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] leading-tight mb-4">
                                           We’d Love to Hear From You
                                     </h2>
 
-                                    <p className="text-gray-600 text-md font-bold max-w-xl">
+                                    <p className="text-gray-600 text-base sm:text-lg">
                                           Have a question, project idea, or partnership opportunity?
                                           Reach out to us — our team will respond promptly to help you
                                           move forward with confidence.
                                     </p>
                               </div>
 
-                              {/* Contact Cards */}
-                              <div className="space-y-4">
+                              {/* Contact Cards Grid */}
+                              <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                                    {/* Email */}
-                                    <div className="flex items-start gap-4 border border-gray-200 bg-white rounded-xl p-5">
-                                          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    {/* Email - md:col-span-2 makes this one full width on tablet if you prefer */}
+                                    <div className="border border-gray-100 bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-4">
+                                          <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center">
                                                 <Image
                                                       src="/contact/email.png"
                                                       alt="Email Icon"
-                                                      width={20}
-                                                      height={20}
+                                                      width={24}
+                                                      height={24}
                                                 />
                                           </div>
                                           <div>
-                                                <p className="font-semibold text-[#0F172A]">Email Us</p>
-                                                <p className="text-gray-500 text-sm">
-                                                      <a href="mailto:info@invertiosolutions.com" className="hover:underline">
-                                                            info@invertiosolutions.com
-                                                      </a>
-                                                </p>
+                                                <p className="font-bold text-[#0F172A] text-lg">Email Us</p>
+                                                <a
+                                                      href="mailto:info@invertiosolutions.com"
+                                                      className="text-gray-500 text-sm sm:text-base hover:text-purple-600 transition-colors break-all"
+                                                >
+                                                      info@invertiosolutions.com
+                                                </a>
                                           </div>
                                     </div>
 
                                     {/* Phone */}
-                                    <div className="flex items-start gap-4 border border-gray-200 bg-white rounded-xl p-5">
-                                          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <div className="border border-gray-100 bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-4">
+                                          <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center">
                                                 <Image
                                                       src="/contact/telephone.png"
                                                       alt="Phone Icon"
-                                                      width={20}
-                                                      height={20}
+                                                      width={24}
+                                                      height={24}
                                                 />
                                           </div>
                                           <div>
-                                                <p className="font-semibold text-[#0F172A]">Call Us</p>
-                                                <p className="text-gray-500 text-sm">
+                                                <p className="font-bold text-[#0F172A] text-lg">Call Us</p>
+                                                <a href="tel:+918121910307" className="text-gray-500 text-sm sm:text-base hover:text-blue-600 transition-colors">
                                                       +91 81219 10307
-                                                </p>
+                                                </a>
                                           </div>
                                     </div>
 
-                                    {/* Address */}
-                                    <div className="flex items-start gap-4 border border-gray-200 bg-white rounded-xl p-5">
-                                          <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    {/* Address - Full width on tablet/desktop for better readability */}
+                                    <div className="md:col-span-2 border border-gray-100 bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-4">
+                                          <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center">
                                                 <Image
                                                       src="/contact/email.png"
                                                       alt="Location Icon"
-                                                      width={20}
-                                                      height={20}
+                                                      width={24}
+                                                      height={24}
                                                 />
                                           </div>
                                           <div>
-                                                <p className="font-semibold text-[#0F172A]">Office Address</p>
-                                                <p className="text-gray-500 text-sm max-w-md">
+                                                <p className="font-bold text-[#0F172A] text-lg">Office Address</p>
+                                                <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
                                                       8-1-332-3/B/L, 7 Tombs Rd, JPB Colony, Aravind Nagar Colony,
                                                       Shaikpet, Hyderabad, Telangana 500008
                                                 </p>
@@ -100,7 +101,7 @@ export default function ContactSection() {
                         </div>
 
                         {/* RIGHT SIDE FORM */}
-                        <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+                        <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
 
                               <h3 className="text-2xl font-semibold text-[#0F172A] mb-2">
                                     Send Us a Message
@@ -159,10 +160,10 @@ export default function ContactSection() {
                                     </div>
 
                                     {/* Submit */}
-                                    <div className="flex justify-end xs:justify-start">
+                                    <div>
                                           <button
                                                 type="submit"
-                                                className="bg-[#0F172A] text-white px-8 py-3 rounded-md font-medium hover:bg-[#1E293B] transition "
+                                                className="w-full md:w-auto bg-[#0F172A] text-white px-8 py-3 rounded-md font-medium hover:bg-[#1E293B] transition"
                                           >
                                                 Send Message
                                           </button>

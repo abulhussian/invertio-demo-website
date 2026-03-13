@@ -15,12 +15,13 @@ const Footer = () => {
             <h3 className="font-semibold font-jakarta text-white text-sm">
               {section.title}
             </h3>
+
             <ul className="flex flex-col gap-2 text-sm text-gray-300 w-full">
               {section.links.map((link) => (
-                <li key={link.href} className="p-1">
+                <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="hover:text-white transition w-full text-sm  hover:underline underline-offset-4"
+                    className="hover:text-white transition text-sm hover:underline underline-offset-4"
                   >
                     {link.label}
                   </Link>
@@ -35,29 +36,30 @@ const Footer = () => {
           <h3 className="font-semibold font-jakarta text-white text-sm">
             Contact Us
           </h3>
-          <ul className="flex flex-col gap-4 text-sm text-gray-300  w-fit">
-            <li className="flex gap-2 items-center">
+
+          <ul className="flex flex-col gap-4 text-sm text-gray-300 w-full">
+
+            <li className="flex gap-3 items-center">
               <a
                 href="tel:+918121910307"
-                className="flex gap-2 items-center hover:underline"
+                className="flex gap-3 items-center hover:underline"
               >
                 <Image
                   src="/footer/phone.svg"
                   alt="phone"
-                  width={40}
-                  height={40}
-                  priority
+                  width={34}
+                  height={24}
                 />
                 +91 81219 10307
               </a>
             </li>
-            <li className="flex gap-2 items-center">
+
+            <li className="flex gap-3 items-center">
               <Image
                 src="/footer/email.svg"
                 alt="email"
-                width={40}
-                height={40}
-                priority
+                width={34}
+                height={24}
               />
 
               <a
@@ -67,17 +69,20 @@ const Footer = () => {
                 info@invertiosolutions.com
               </a>
             </li>
-            <li className="flex gap-2 items-start ">
+
+            <li className="flex gap-3 items-start">
               <Image
                 src="/footer/location.svg"
-                alt="phone"
-                width={40}
-                height={40}
-                priority
+                alt="location"
+                width={34}
+                height={24}
               />
-              8-1-332-3/B/L, 7 Tombs Rd, Aravind Nagar Colony, Shaikpet,
-              Hyderabad
+
+              <span>
+                8-1-332-3/B/L, 7 Tombs Rd, Aravind Nagar Colony, Shaikpet, Hyderabad
+              </span>
             </li>
+
           </ul>
         </div>
       </div>
@@ -140,6 +145,7 @@ const Footer = () => {
 
       </div>
 
+
       <hr className="border-t border-[#101323]" />
 
       {/* STAY UPDATED */}
@@ -147,10 +153,11 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
           {/* Left Content */}
-          <div className="flex flex-col gap-3 max-w-xl">
+          <div className="flex flex-col gap-3 max-w-xl text-center lg:text-left">
             <h2 className="text-white font-jakarta text-3xl font-semibold">
               Stay Updated
             </h2>
+
             <p className="text-gray-300 text-xs">
               Subscribe to receive the latest insights, technology updates, and
               innovation trends directly in your inbox.
@@ -158,15 +165,18 @@ const Footer = () => {
           </div>
 
           {/* Email Subscription Box */}
-          <div className="w-full lg:w-fit bg-white rounded-xl flex items-center p-2 overflow-hidden">
+          <div className="w-full lg:w-fit bg-white rounded-xl flex items-center p-2 gap-2">
+
             {/* Input + Icon */}
-            <div className="flex items-center gap-3 px-3 flex-1">
+            <div className="flex items-center gap-2 px-3 flex-1 min-w-0">
               <Image
                 src="/footer/email2.svg"
                 alt="email"
                 width={20}
                 height={20}
+                className="shrink-0"
               />
+
               <input
                 type="email"
                 placeholder="Enter Your Email Address"
@@ -175,9 +185,10 @@ const Footer = () => {
             </div>
 
             {/* Button */}
-            <button className="bg-orange-500 hover:bg-orange-600 transition text-white text-sm font-semibold px-6 py-3 rounded-lg">
+            <button className="bg-orange-500 hover:bg-orange-600 transition text-white text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg whitespace-nowrap">
               Subscribe
             </button>
+
           </div>
         </div>
       </div>
@@ -185,11 +196,11 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* Bottom Section */}
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-        <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300 text-center lg:text-left">
 
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          <Link href="/PrivacyPolicy" className="hover:text-white transition duration-200">
+        {/* Links */}
+        <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+          <Link href="/privacy-policy" className="hover:text-white transition duration-200">
             Privacy Policy
           </Link>
 
@@ -205,6 +216,10 @@ const Footer = () => {
             Cookie Policy
           </Link>
         </div>
+
+        {/* Copyright */}
+        <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
+
       </div>
     </div>
   );

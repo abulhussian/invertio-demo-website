@@ -1,29 +1,29 @@
 export default function CTASection() {
       return (
-            <section className="w-full bg-[#6C74B8] py-16 relative overflow-hidden">
+            <section className="w-full bg-[#6C74B8] py-14 md:py-16 relative overflow-hidden">
 
-                  {/* Optional subtle background pattern */}
+                  {/* Background Pattern */}
                   <div className="absolute inset-0 opacity-10 bg-[url('/patterns/cta-pattern.png')] bg-no-repeat bg-left"></div>
 
-                  <div className="relative px-4 md:px-14 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                  <div className="relative px-6 md:px-14 lg:px-20 flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8">
 
                         {/* LEFT CONTENT */}
                         <div>
-                              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3">
+                              <h2 className="text-2xl md:text-4xl font-semibold text-white mb-3 leading-tight">
                                     Let’s Build Something Exceptional Together
                               </h2>
 
-                              <p className="text-white/80 text-sm md:text-base max-w-2xl">
+                              <p className="text-white/80 text-sm md:text-base max-w-xl">
                                     Partner with Invertio to turn ideas into impactful digital solutions
                                     that accelerate growth and innovation.
                               </p>
                         </div>
 
-                        {/* RIGHT BUTTON */}
-                        <div className="flex-shrink-0">
+                        {/* BUTTON */}
+                        <div className="w-full md:w-auto">
                               <a
                                     href="tel:+919876543210"
-                                    className="inline-block bg-[#0F172A] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1E293B] transition"
+                                    className="block md:inline-block text-center w-full md:w-auto bg-[#0F172A] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1E293B] transition"
                               >
                                     Contact Our Experts
                               </a>
