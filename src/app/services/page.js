@@ -24,7 +24,7 @@ const page = () => {
         title="Reimagining business processes..."
         image="/services/Transformation.png"
         imagePosition="right"
-        slug="digital-transformation"
+        slug="services/digital-transformation"
       />
 
       <FeatureSection
@@ -32,7 +32,7 @@ const page = () => {
         title="Designing secure and scalable cloud environments..."
         image="/services/cloud services.png"
         imagePosition="left"
-        slug="cloud-services"
+        slug="services/cloud-services"
       />
 
       <FeatureSection
@@ -40,7 +40,7 @@ const page = () => {
         title="Building custom applications..."
         image="/services/Software-development.png"
         imagePosition="right"
-        slug="software-development"
+        slug="services/software-development"
       />
       <CtaSection />
       <InsightsSection />
