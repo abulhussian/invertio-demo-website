@@ -72,7 +72,7 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
         <div className="flex justify-between items-center px-6 py-8 border-b border-white/5">
           <div className="relative w-32 h-10">
             <Image
-              src="/logo.png"
+              src="/logo/logo.svg"
               width={120}
               height={40}
               alt="Invertio Logo"
@@ -116,26 +116,7 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
             </div>
           </div>
 
-          {/* Technology */}
-          <div className="border-b border-white/10">
-            <button
-              onClick={() => toggleDropdown("technology")}
-              className="flex justify-between items-center w-full py-5 text-left transition-colors"
-            >
-              <span className={openDropdown === "technology" ? "text-[#F7A600] font-semibold" : "text-white"}>Technology</span>
-              <ChevronRight
-                size={20}
-                className={`transition-transform duration-300 ${openDropdown === "technology" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
-              />
-            </button>
-            <div className={`overflow-hidden transition-all duration-500 ease-in-out
-    ${openDropdown === "technology" ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"}`}
-            >
-              <div className="pb-6">
-                {renderDropdownSection(megaMenuData.technology)}
-              </div>
-            </div>
-          </div>
+
 
           {/* Our Solutions */}
           <div className="border-b border-white/10">
@@ -185,6 +166,15 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
 
           <Link href="/news-insights" onClick={() => setMobileOpen(false)} className="py-5 border-b border-white/5 hover:text-[#F7A600]">
             News & Insights
+          </Link>
+
+
+          <Link
+            href="/careers"
+            onClick={() => setMobileOpen(false)}
+            className="py-5 border-b border-white/5 hover:text-[#F7A600]"
+          >
+            Careers
           </Link>
 
           {/* Contact Button */}
