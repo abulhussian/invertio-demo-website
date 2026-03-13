@@ -10,42 +10,18 @@ import Link from "next/link";
 
 const projectList = Object.values(projects);
 console.log(projectList)
-// const projects = [
-//   {
-//     title: "SMSA Express",
-//     desc: "A comprehensive logistics and fulfillment platform leading real-time tracking, route optimization, and automated logistics workflows.",
-//     image: "/Home/samsa-Cards.png",
-//   },
-//   {
-//     title: "StudyFox AI",
-//     desc: "AI-powered learning platform delivering intelligent study assistance through adaptive learning, NLP capabilities, and more.",
-//     image: "/Home/study-fox-cards.png",
-//   },
-//   {
-//     title: "QATAR MOHE",
-//     desc: "A large-scale digital education and examination management system supporting secure collaboration between students and institutions.",
-//     image: "/Home/qatar-cards.png",
-//   },
-//   {
-//     title: "Single View",
-//     desc: "Enterprise digital transformation platform integrating cloud computing, cybersecurity analytics, and business intelligence.",
-//     image: "/Home/singleview-cards.png",
-//   },
-// ];
-
 export default function ProjectsSection() {
   const [index, setIndex] = useState(0);
+  const CARD_WIDTH = 360; 
+  const visibleCards = 4; 
+  const maxIndex = projectList.length - visibleCards;
 
   const next = () => {
-    if (index < projectList.length - 1) {
-      setIndex(index + 1);
-    }
+    setIndex((prev) => Math.min(prev + 1, maxIndex));
   };
 
   const prev = () => {
-    if (index > 0) {
-      setIndex(index - 1);
-    }
+    setIndex((prev) => Math.max(prev - 1, 0));
   };
 
   return (
@@ -72,7 +48,7 @@ export default function ProjectsSection() {
           <div
             className="flex gap-6 transition-transform duration-500"
             style={{
-              transform: `translateX(-${index * 340}px)`
+              transform: `translateX(-${index * CARD_WIDTH}px)`
             }}
           >
             {projectList.map((project, i) => (
@@ -108,14 +84,16 @@ export default function ProjectsSection() {
           <div className="flex justify-end gap-3 mt-6">
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full border flex items-center justify-center bg-white shadow hover:bg-gray-100"
+              disabled={index === 0}
+              className="w-10 h-10 rounded-full border flex items-center justify-center bg-white shadow hover:bg-gray-100 disabled:opacity-40"
             >
               ←
             </button>
 
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full border flex items-center justify-center bg-white shadow hover:bg-gray-100"
+              disabled={index >= maxIndex}
+              className="w-10 h-10 rounded-full border flex items-center justify-center bg-white shadow hover:bg-gray-100 disabled:opacity-40"
             >
               →
             </button>

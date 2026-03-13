@@ -61,8 +61,9 @@ export default async function Page({ params }) {
                   </div>
 
                   <SolutionImpactSection data={project.solutionSection} />
-                  <CSection data={project.ctaSection} />
+                  
                   <TechStackSection data={project.techStack} />
+                  <CSection data={project.ctaSection} />
             </>
       );
 }

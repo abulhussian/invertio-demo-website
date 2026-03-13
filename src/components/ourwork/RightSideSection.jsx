@@ -57,7 +57,7 @@ function RightSideSection({
       slug,
 }) {
       return (
-            <section className="w-full bg-[#F4F6FA] py-20">
+            <section className="w-full bg-[#F4F6FA] py-10">
                   <div className="flex flex-col lg:flex-row items-center gap-8">
 
                         {/* IMAGE */}

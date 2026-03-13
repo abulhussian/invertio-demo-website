@@ -6,22 +6,20 @@ const HeroSection = () => {
         <div className="w-full -mt-[120px] ">
 
             {/* HERO SECTION */}
-            <section className="relative w-full h-[650px]">
+            <section className="relative w-full  min-h-screen">
 
                 {/* background image */}
                 <img
                     src="/services/hero.jpeg"
                     alt="hero"
-                    className="absolute inset-0 w-full h-full object-cover"
-                />
+                    className="absolute inset-0 w-full h-full object-cover" />
 
                 {/* overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#06030E00] to-[#06030E]"></div>
 
                 {/* content */}
-                <div className="relative h-full flex items-end  px-8 pb-12">
-
-                    <div className="flex flex-col lg:flex-row w-full lg:items-end gap-6">
+                <div className="relative min-h-screen flex items-end px-8 pb-12">
+                    <div className=" flex flex-col lg:flex-row w-full lg:flex-end gap-6">
 
                         {/* LEFT TEXT */}
                         <div className="flex-1  text-white">
