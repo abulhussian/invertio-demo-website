@@ -19,7 +19,7 @@ const HeroSection = () => {
 
                 {/* content */}
                 <div className="relative min-h-screen flex items-end px-8 pb-12">
-                    <div className=" flex flex-col lg:flex-row w-full lg:flex-end gap-6">
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center w-full gap-6">
 
                         {/* LEFT TEXT */}
                         <div className="flex-1  text-white">
@@ -72,7 +72,7 @@ const HeroSection = () => {
 
                 <div className="max-w-6xl mx-auto px-2 lg:px-6 text-center">
 
-                    <p className="text-xs text-gray-500 mb-2">
+                    <p className="text-xs text-black font-bold mb-2 ">
                         Proven Results. Measurable Impact. Trusted Delivery.
                     </p>
 
