@@ -26,10 +26,10 @@ const CtaSection = () => {
         </div>
 
         {/* RIGHT BUTTONS */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 z-10">
           <Link
             href="/contact-us"
-            className="px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition cursor-pointer inline-block"
+            className="px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition cursor-pointer inline-block "
           >
             Start Your Journey
           </Link>

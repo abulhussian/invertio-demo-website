@@ -31,18 +31,23 @@ const SolutionsSection = () => {
 
 
                 {/* Header */}
-                <div className="text-center flex flex-col gap-4 mb-12">
+                <div className=" flex flex-col items-center gap-2 mb-12">
 
                     <p className="text-white font-bold text-lg">
                         Our Solutions
                     </p>
 
-                    <h2 className="text-white font-bold leading-tight
-  text-[26px] sm:text-[32px] md:text-[38px] lg:text-[40px]">
-                        Smart Technology Solutions Designed to Solve Complex Business Challenges
+                    <h2
+                        className="text-white font-bold 
+  text-[18px] sm:text-[26px] md:text-[32px] lg:text-[36px]
+   max-w-[450px] sm:max-w-full text-center "
+                    >
+                        Smart Technology Solutions
+                        Designed to Solve Complex
+                        Business Challenges
                     </h2>
 
-                    <p className="text-[#cbd5f5] text-sm sm:text-base md:text-lg w-full mx-auto">
+                    <p className="text-[#cbd5f5] text-[8px] sm:text-base md:text-lg max-w-[450px] sm:max-w-full text-center ">
                         We empower organizations with data-driven insights, secure digital environments,
                         and strategic technology guidance.
                     </p>
@@ -50,15 +55,15 @@ const SolutionsSection = () => {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
                     {solutions.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group"
+                            className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition group"
                         >
                             {/* Image */}
-                            <div className="relative h-52 w-full">
+                            <div className="relative h-[210px] w-full">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -68,10 +73,9 @@ const SolutionsSection = () => {
                             </div>
 
                             {/* Content */}
-                            <div className="p-6 flex flex-col justify-between h-[200px]">
-
+                            <div className="bg-gray-50 p-5 flex flex-col justify-between">
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                                    <h3 className="text-base font-semibold text-gray-900 mb-2">
                                         {item.title}
                                     </h3>
 
@@ -82,7 +86,7 @@ const SolutionsSection = () => {
 
                                 <Link
                                     href={item.link}
-                                    className="text-sm font-semibold text-gray-900 mt-4 flex items-center gap-2 hover:text-orange-500"
+                                   className="text-sm font-semibold text-gray-900 mt-4 flex items-center justify-end gap-2 hover:text-orange-500"
                                 >
                                     Learn More →
                                 </Link>

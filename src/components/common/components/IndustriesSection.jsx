@@ -27,38 +27,36 @@ const industries = [
   },
 ];
 
-const icon = "/Home/AI.svg"; 
+const icon = "/Home/AI.svg";
 
 const IndustriesSection = () => {
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-gray-50 py-10">
+      <div className="max-w-7xl mx-auto px-2  lg:px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-sm text-gray-500 mb-3">Industries We Serve</p>
+        <div className="mb-4 lg:mb-12">
+          <p className="text-md font-bold text-black mb-3">Industries We Serve</p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 max-w-4xl mx-auto">
+          <h2 className="text-md md:text-2xl lg:text-[36px] font-bold text-gray-900 max-w-xl md:max-w-full lg:max-w-full leading-snug">
             Delivering Industry-Focused Technology Solutions That Drive Real Impact
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-4 max-w-4xl lg:max-w-full text-[8px] md:text-md lg:text-sm ">
             We combine deep domain expertise with modern technology to address
             unique industry challenges and accelerate digital innovation.
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {industries.map((item, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition"
+            className="flex flex-col bg-white border border-gray-200 rounded-xl p-5 hover:shadow-sm transition"
             >
               {/* Icon */}
-              <div className="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-md">
-                <img
+<div className="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-md mb-3">               <img
                   src={icon}
                   alt={item.title}
                   className="w-5 h-5"
@@ -67,11 +65,11 @@ const IndustriesSection = () => {
 
               {/* Content */}
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">
-                  {item.title}
+<h3 className="font-semibold text-gray-900 text-sm mb-1">
+                      {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {item.desc}
+<p className="text-xs text-gray-600 leading-relaxed">
+                    {item.desc}
                 </p>
               </div>
             </div>

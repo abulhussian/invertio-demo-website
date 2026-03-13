@@ -12,8 +12,8 @@ const projectList = Object.values(projects);
 console.log(projectList)
 export default function ProjectsSection() {
   const [index, setIndex] = useState(0);
-  const CARD_WIDTH = 360; 
-  const visibleCards = 4; 
+  const CARD_WIDTH = 360;
+  const visibleCards = 4;
   const maxIndex = projectList.length - visibleCards;
 
   const next = () => {
@@ -25,18 +25,18 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section className="bg-[#f5f6f7] py-20">
+    <section className="bg-[#f5f6f7] py-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-gray-500 text-sm mb-2">Our Work</p>
+        <div className=" mb-14">
+          <p className="text-black text-md font-bold mb-2 text-center">Our Work</p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-lg md:text-4xl font-bold text-gray-900 text-center">
             Real Projects. Real Innovation. Real Business Impact.
           </h2>
 
-          <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-500 text-[8px] lg:text-md mt-4 max-w-4xl text-center  ">
             We partner with organizations across industries to design and
             deliver scalable digital solutions that solve complex challenges.
           </p>
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
                 key={i}
                 className="min-w-[320px] rounded-xl overflow-hidden bg-white shadow-md"
               >
-                <div className="relative h-[560px] bg-gray-200">
+                <div className="relative h-[500px] bg-gray-200">
                   <Link href={project.path}>
                     <img
                       src={project.image}
@@ -79,9 +79,23 @@ export default function ProjectsSection() {
               </div>
             ))}
           </div>
+          {/* Mobile Dots */}
+         <div className="flex md:hidden justify-center items-center gap-2 mt-6">
+  {Array.from({ length: projectList.length - visibleCards + 1 }).map((_, i) => (
+    <button
+      key={i}
+      onClick={() => setIndex(i)}
+      className={`transition-all duration-300 rounded-full
+      ${index === i 
+        ? "w-10 h-1.5 bg-black" 
+        : "w-1.5 h-1.5 bg-gray-300"
+      }`}
+    />
+  ))}
+</div>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-end gap-3 mt-6">
+          <div className="hidden md:flex justify-end gap-3 mt-6">
             <button
               onClick={prev}
               disabled={index === 0}

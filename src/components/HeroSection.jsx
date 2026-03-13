@@ -68,51 +68,56 @@ const HeroSection = () => {
 
 
             {/* STATS SECTION */}
-            <section className="bg-gray-100 py-16 ">
+            <section className="bg-gray-100 py-16">
 
-                <div className="max-w-6xl mx-auto px-6 text-center">
+                <div className="max-w-6xl mx-auto px-2 lg:px-6 text-center">
 
                     <p className="text-xs text-gray-500 mb-2">
                         Proven Results. Measurable Impact. Trusted Delivery.
                     </p>
 
-                    <h2 className="text-3xl font-bold mb-3">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-3">
                         Delivering Consistent Value Through Innovation and Expertise
                     </h2>
 
-                    <p className="text-gray-600 mb-12 max-w-3xl mx-auto text-sm">
+                    <p className="text-gray-600 mb-12 max-w-2xl mx-auto text-sm">
                         We help businesses grow with scalable technology solutions built
                         for agility, performance, and long-term collaboration.
                     </p>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+                    {/* Stats */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
                         <div>
                             <h3 className="text-4xl font-bold text-blue-600">25+</h3>
-                            <p className="text-gray-600 text-sm mt-2">
+                            <h4 className="text-black font-semibold text-md mt-2">
                                 Successful Projects Delivered
-                            </p>
+                            </h4>
+                            <p className="text-gray-600 text-xs ">End-to-end digital solutions designed for scalability and performance.</p>
                         </div>
 
                         <div>
                             <h3 className="text-4xl font-bold text-blue-600">25+</h3>
-                            <p className="text-gray-600 text-sm mt-2">
+                            <h4 className="text-black font-semibold text-md mt-2">
                                 Enterprises & Growing Clients
-                            </p>
+                            </h4>
+                            <p className="text-gray-600 text-xs ">Trusted by businesses across industries and evolving markets.</p>
                         </div>
 
                         <div>
                             <h3 className="text-4xl font-bold text-blue-600">04+</h3>
-                            <p className="text-gray-600 text-sm mt-2">
+                            <h4 className="text-black font-semibold text-md mt-2">
                                 Countries Served Globally
-                            </p>
+                            </h4>
+                            <p className="text-gray-600 text-xs ">Delivering impactful technology solutions beyond borders.</p>
                         </div>
 
                         <div>
                             <h3 className="text-4xl font-bold text-blue-600">98%</h3>
-                            <p className="text-gray-600 text-sm mt-2">
+                            <h4 className="text-black font-semibold text-md mt-2">
                                 Client Satisfaction Rate
-                            </p>
+                            </h4>
+                            <p className="text-gray-600 text-xs ">Built through transparency, quality delivery, and lasting partnerships.</p>
                         </div>
 
                     </div>

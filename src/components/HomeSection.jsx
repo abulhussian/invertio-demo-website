@@ -48,119 +48,81 @@ const HomeSection = () => {
     ];
 
     return (
-        <div className="bg-gray-50 py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Top Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
-                    {/* Left Features */}
-                    <div className="border border-dashed border-gray-300 p-6 rounded-lg space-y-6 bg-white">
-                        {features.map((item, index) => (
-                            <div key={index} className="flex items-start gap-4">
+       <div className="bg-gray-50 py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                                <Image
-                                    src={item.icon}
-                                    alt={item.title}
-                                    width={28}
-                                    height={28}
-                                />
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-                                <div>
-                                    <h3 className="font-semibold text-gray-800">
-                                        {item.title}
-                                    </h3>
+      {/* RIGHT CONTENT - comes first on mobile */}
+      <div className="order-1 lg:order-2 flex flex-col justify-center">
 
-                                    <p className="text-gray-500 text-sm mt-1">
-                                        {item.desc}
-                                    </p>
-                                </div>
+        <span className="text-md font-bold text-black mb-2">
+          Who We Are
+        </span>
 
-                            </div>
-                        ))}
-                    </div>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+          A Technology Partner Committed to Innovation, Quality, and Sustainable Growth
+        </h2>
 
-                    {/* Right Content */}
-                    <div className="border border-dashed border-gray-300 p-8 rounded-lg bg-white flex flex-col justify-center">
-                        <span className="text-sm text-gray-500 mb-2">
-                            Who We Are
-                        </span>
+        <p className="text-gray-500 mt-4">
+          Invertio helps businesses transform ideas into scalable digital
+          solutions through strategy, design, and advanced engineering expertise.
+        </p>
 
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">                            A Technology Partner Committed to Innovation, Quality, and
-                            Sustainable Growth
-                        </h2>
+        <Link
+          href="/about-us"
+          className="mt-6 inline-flex items-center gap-2 bg-black text-white
+          px-5 py-3 rounded-full hover:bg-gray-800 transition text-sm w-fit"
+        >
+          About US
+          <img
+            src="/arrows/rightTopFace.svg"
+            alt="arrow"
+            className="w-4 h-4"
+          />
+        </Link>
+      </div>
 
-                        <p className="text-gray-500 mt-4">
-                            Invertio helps businesses transform ideas into scalable
-                            digital solutions through strategy, design, and engineering
-                            expertise.
-                        </p>
 
-                        <Link
-                            href="/about-us"
-                            className="mt-6 inline-flex items-center gap-1.5 sm:gap-2 bg-black text-white 
-  px-4 sm:px-5 py-2.5 sm:py-3 rounded-full hover:bg-gray-800 
-  transition text-xs sm:text-sm md:text-base w-fit"
-                        >
-                            ABOUT US
-                            <span className="flex items-center">
-                                <img
-                                    src="/arrows/rightTopFace.svg"
-                                    alt="arrow"
-                                    className="w-3 h-3 sm:w-4 sm:h-4"
-                                />
-                            </span>
-                        </Link>
-                    </div>
-                </div>
+      {/* FEATURES */}
+      <div className="order-2 lg:order-1 space-y-4">
 
-                {/* Services Section */}
-                <div className="mt-16 sm:mt-20">
-                    <p className="text-gray-500 text-sm mb-2">Our Services</p>
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-4 border border-gray-200 rounded-xl p-4 bg-white"
+          >
 
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">                        End-to-End Technology Solutions Built for Business Growth
-                    </h2>
-
-                    <p className="text-gray-500 mt-3 max-w-3xl">
-                        From transforming business operations to designing user-focused
-                        experiences, our services combine strategy, technology, and
-                        engineering expertise to create scalable and future-ready
-                        digital platforms.
-                    </p>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">                        {services.map((item, index) => (
-                        <div
-                            key={index}
-                            className="border rounded-lg p-5 sm:p-6 bg-white hover:shadow-lg transition"                        >
-
-                            <div className="w-12 h-12 flex items-center justify-center mb-4 bg-blue-600 rounded-md">
-                                <Image
-                                    src={item.icon}
-                                    alt={item.title}
-                                    width={40}
-                                    height={40}
-                                />
-                            </div>
-
-                            <h3 className="font-semibold text-lg text-gray-800">
-                                {item.title}
-                            </h3>
-
-                            <p className="text-gray-500 text-sm mt-2">
-                                {item.desc}
-                            </p>
-
-                            <Link
-                                href={item.path}
-                                className="font-semibold text-sm mt-4 flex items-center gap-1 hover:underline"
-                            >
-                                Learn More →
-                            </Link>
-                        </div>
-                    ))}
-                    </div>
-                </div>
-
+            {/* Icon Box */}
+            <div className="w-10 h-10 flex items-center justify-center rounded-md bg-gray-100">
+              <Image
+                src={item.icon}
+                alt={item.title}
+                width={22}
+                height={22}
+              />
             </div>
-        </div>
+
+            {/* Text */}
+            <div>
+              <h3 className="font-semibold text-gray-800">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-500 text-sm mt-1">
+                {item.desc}
+              </p>
+            </div>
+
+          </div>
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
     );
 };
 
