@@ -1,0 +1,214 @@
+[
+      {
+            "slug": "ui-ux-designer",
+            "date": "Mar 10, 2026",
+            "title": "UI/UX Designer",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹50,000 – ₹1,20,000 / month",
+            "job_title": "UI/UX Designer",
+            "job_type": "Full-Time",
+            "location": "Remote / India",
+            "description": "Invertio is seeking a creative and detail-oriented UI/UX Designer to join our product and design team. In this role, you will be responsible for designing intuitive digital experiences that solve real user problems and enhance usability across web and mobile applications.",
+            "summary": "You will collaborate closely with developers, product managers, and stakeholders to transform ideas into engaging interfaces that deliver exceptional user experiences.",
+            "responsibilities": [
+                  "Design intuitive and visually appealing interfaces for web and mobile applications.",
+                  "Conduct user research and usability testing to understand user behavior.",
+                  "Create wireframes, prototypes, and high-fidelity UI designs using tools like Figma.",
+                  "Develop and maintain design systems and UI component libraries.",
+                  "Collaborate with developers to ensure accurate implementation of designs.",
+                  "Improve existing user experiences through continuous testing and iteration."
+            ],
+            "skills": [
+                  "Figma",
+                  "Wireframing",
+                  "User Research",
+                  "Prototyping"
+            ],
+            "qualifications": [
+                  "1-3 years of experience in UI/UX design.",
+                  "Strong proficiency in Figma or Adobe XD.",
+                  "Solid understanding of user-centered design principles.",
+                  "Experience creating wireframes and prototypes."
+            ],
+            "preferred": [
+                  "Experience designing SaaS platforms.",
+                  "Familiarity with design systems.",
+                  "Experience working in Agile environments."
+            ],
+            "benefits": [
+                  "Competitive salary and performance incentives",
+                  "Flexible remote work environment",
+                  "Learning and professional development programs"
+            ],
+            "application_note": "After submission of your application, our recruitment team will review your qualifications. If your profile matches the role requirements, we will contact you for the next step."
+      },
+      {
+            "slug": "frontend-developer",
+            "date": "Mar 12, 2026",
+            "title": "Frontend Developer",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹60,000 – ₹1,40,000 / month",
+            "job_title": "Frontend Developer",
+            "job_type": "Full-Time",
+            "location": "Remote / India",
+            "description": "Invertio is looking for a talented Frontend Developer to build modern, scalable, and high-performance web interfaces. You will collaborate closely with designers and backend engineers to deliver seamless user experiences across digital platforms.",
+            "summary": "You will be responsible for implementing responsive UI components, improving application performance, and ensuring high-quality user experiences across devices and browsers.",
+            "responsibilities": [
+                  "Develop modern web interfaces using React and Next.js.",
+                  "Implement responsive UI components based on design systems.",
+                  "Collaborate with UI/UX designers to build pixel-perfect interfaces.",
+                  "Optimize applications for speed and performance.",
+                  "Integrate frontend applications with backend APIs.",
+                  "Ensure cross-browser compatibility and responsive layouts."
+            ],
+            "skills": [
+                  "React",
+                  "Next.js",
+                  "JavaScript",
+                  "Tailwind CSS"
+            ],
+            "qualifications": [
+                  "1-3 years of experience in frontend development.",
+                  "Strong knowledge of JavaScript, HTML, and CSS.",
+                  "Experience working with React.js or similar frameworks.",
+                  "Understanding of responsive design principles.",
+                  "Experience with Git and modern development workflows."
+            ],
+            "preferred": [
+                  "Experience with Next.js and server-side rendering.",
+                  "Knowledge of performance optimization techniques.",
+                  "Experience working with REST APIs.",
+                  "Understanding of UI/UX principles."
+            ],
+            "benefits": [
+                  "Competitive salary and performance incentives",
+                  "Flexible remote work environment",
+                  "Opportunity to work on global digital products",
+                  "Learning and professional development programs",
+                  "Collaborative and innovative team culture"
+            ],
+            "application_note": "Please note that after submission of your application, our recruitment team will review your qualifications. If your qualifications match the role requirements, we will contact you for the next step in the hiring process."
+      },
+      {
+            "slug": "backend-developer",
+            "date": "Mar 15, 2026",
+            "title": "Backend Developer",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹70,000 – ₹1,50,000 / month",
+            "job_title": "Backend Developer",
+            "job_type": "Full-Time",
+            "location": "Remote / India",
+            "description": "Invertio is looking for a Backend Developer to build and maintain scalable server-side applications and APIs.",
+            "summary": "You will collaborate with frontend developers and product teams to ensure reliable and efficient backend systems.",
+            "responsibilities": [
+                  "Develop scalable backend services and APIs.",
+                  "Design database schemas and manage data storage.",
+                  "Integrate third-party APIs.",
+                  "Ensure security and performance of backend systems."
+            ],
+            "skills": [
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB",
+                  "REST APIs"
+            ],
+            "qualifications": [
+                  "1-3 years of backend development experience.",
+                  "Strong knowledge of Node.js.",
+                  "Experience with databases like MongoDB."
+            ],
+            "preferred": [
+                  "Experience with cloud platforms.",
+                  "Understanding of microservices architecture."
+            ],
+            "benefits": [
+                  "Competitive salary and performance incentives",
+                  "Flexible remote work environment",
+                  "Learning opportunities"
+            ],
+            "application_note": "After submission of your application, our recruitment team will review your qualifications. If shortlisted, we will contact you."
+      },
+      {
+            "slug": "data-analytics-specialist",
+            "date": "Mar 18, 2026",
+            "title": "Data Analytics Specialist",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹60,000 – ₹1,30,000 / month",
+            "job_title": "Data Analytics Specialist",
+            "job_type": "Full-Time",
+            "location": "Remote / India",
+            "description": "Invertio is seeking a Data Analytics Specialist to analyze complex datasets and generate insights for business decision-making.",
+            "summary": "You will work with teams to track performance metrics and build data-driven strategies.",
+            "responsibilities": [
+                  "Analyze data from multiple sources.",
+                  "Build dashboards and reports.",
+                  "Identify trends and patterns.",
+                  "Provide actionable insights to teams."
+            ],
+            "skills": [
+                  "SQL",
+                  "Python",
+                  "Excel",
+                  "Data Visualization"
+            ],
+            "qualifications": [
+                  "1-3 years experience in data analytics.",
+                  "Strong SQL knowledge.",
+                  "Experience working with data visualization tools."
+            ],
+            "preferred": [
+                  "Experience with Power BI or Tableau.",
+                  "Basic machine learning knowledge."
+            ],
+            "benefits": [
+                  "Competitive salary",
+                  "Remote work flexibility",
+                  "Professional development opportunities"
+            ],
+            "application_note": "After submission of your application, our recruitment team will review your qualifications. If shortlisted, we will contact you."
+      },
+      {
+            "slug": "digital-marketing-specialist",
+            "date": "Mar 20, 2026",
+            "title": "Digital Marketing Specialist",
+            "company": "Invertio",
+            "logo": "/logo/logo.png",
+            "pay": "₹40,000 – ₹1,00,000 / month",
+            "job_title": "Digital Marketing Specialist",
+            "job_type": "Full-Time",
+            "location": "Remote / India",
+            "description": "Invertio is looking for a Digital Marketing Specialist to drive brand growth and manage digital campaigns.",
+            "summary": "You will plan and execute marketing strategies across multiple digital platforms.",
+            "responsibilities": [
+                  "Plan and execute marketing campaigns.",
+                  "Manage SEO and social media strategies.",
+                  "Track marketing performance metrics.",
+                  "Collaborate with design and product teams."
+            ],
+            "skills": [
+                  "SEO",
+                  "Google Analytics",
+                  "Content Marketing",
+                  "Social Media Marketing"
+            ],
+            "qualifications": [
+                  "1-3 years experience in digital marketing.",
+                  "Strong understanding of SEO and marketing tools.",
+                  "Experience managing online campaigns."
+            ],
+            "preferred": [
+                  "Experience with marketing automation tools.",
+                  "Knowledge of performance marketing."
+            ],
+            "benefits": [
+                  "Competitive salary",
+                  "Flexible remote work environment",
+                  "Learning opportunities"
+            ],
+            "application_note": "After submission of your application, our recruitment team will review your qualifications. If shortlisted, we will contact you."
+      }
+]

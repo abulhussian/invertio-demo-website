@@ -30,7 +30,7 @@ const JobCard = ({ slug, date, title, company, logo, skills, pay, isActive }) =>
                         </p>
 
                         <Link href={`/careers/jobs/${slug}`} className="block">
-                              <button className={`w-full py-4 rounded-2xl text-[15px] font-bold transition-all ${isActive ? "bg-[#0F172A] text-white" : "bg-[#EEF2FF] text-[#6366F1] hover:bg-[#E0E7FF]"
+                              <button className={`w-full py-4 rounded-2xl text-[15px] font-bold transition-all cursor-pointer ${isActive ? "bg-[#0F172A] text-white" : "bg-black text-white hover:bg-gray-500"
                                     }`}>
                                     Apply Now
                               </button>
