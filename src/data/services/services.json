@@ -1,4 +1,99 @@
 {
+      "cloud-services": {
+            "hero": {
+                  "tag": "Cloud Services",
+                  "title": "Scale Faster. Optimize Infrastructure. Secure Your Cloud Future.",
+                  "subtitle": "Modernizing Infrastructure for Scalability and Efficiency",
+                  "description": "Empower your business with Invertio's end-to-end cloud services designed to modernize infrastructure, enhance scalability, and improve operational efficiency through secure, high-performance cloud environments."
+            },
+            "clientLogos": {
+                  "text": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Cloud Migration & Modernization",
+                              "description": "Transition your legacy systems to the cloud with minimal downtime and maximum architectural efficiency.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid1.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "DevOps & CI/CD Automation",
+                              "description": "Accelerate software delivery cycles with automated pipelines and infrastructure-as-code (IaC).",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid2.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Cloud Security & Compliance",
+                        "description": "Robust security frameworks to protect your data and ensure compliance with global regulatory standards.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid3.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Cloud Transformation",
+                  "heading": "Building a Resilient Foundation for Digital Growth",
+                  "subheading": "Invertio provides expert cloud orchestration, helping you manage complex multi-cloud and hybrid environments while optimizing for cost and performance.",
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "99.9% uptime with high-availability architectures",
+                        "Reduced capital expenditure through cloud optimization",
+                        "Seamless scalability for fluctuating workloads",
+                        "Enhanced security with real-time threat monitoring",
+                        "Global deployment capabilities across major regions"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Cloud Infrastructure Powering Enterprise Speed",
+                  "subheading": "Our cloud experts help you navigate the complexities of AWS, Azure, and Google Cloud to build systems that are as agile as your business.",
+                  "cards": [
+                        {
+                              "title": "Serverless Architectures",
+                              "description": "Lower costs and operational overhead by moving to event-driven serverless computing environments.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Microservices Orchestration",
+                              "description": "Deploy and manage containerized applications with Kubernetes for ultimate flexibility.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Disaster Recovery",
+                              "description": "Ensure business continuity with automated backup and failover solutions across multiple availability zones.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Secure Your Cloud Future Today",
+                  "description": "Partner with Invertio to modernize your business, unlock innovation, and build scalable digital solutions that drive measurable growth.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
       "n8n-automation": {
             "hero": {
                   "tag": "N8n Consulting & Automation",
@@ -18,79 +113,1032 @@
                         "/logo/airbnb.png",
                         "/logo/disney.png",
                         "/logo/samsung.png",
-                        "/logo/nvidia.png",
-                        "/logo/spotify.png"
+                        "/logo/nvidia.png"
                   ]
             },
             "servicesGrid": {
                   "leftCards": [
                         {
-                              "title": "Custom Software Development",
-                              "description": "Develop tailored enterprise applications that align with business workflows, automate processes, and improve operational productivity.",
+                              "title": "Workflow Architecture",
+                              "description": "Design and implement complex, multi-step n8n workflows that connect your entire tech stack seamlessly.",
                               "containerClass": "bg-blue-600 text-white",
                               "image": "/images/grid1.png",
                               "imageClass": "absolute bottom-0 right-0 w-40"
                         },
                         {
-                              "title": "Software Maintenance & Support",
-                              "description": "Ensure application stability and performance through continuous monitoring, updates, optimization, and long-term technical support.",
+                              "title": "Custom Node Development",
+                              "description": "Extend n8n capabilities with custom-built nodes tailored to your proprietary APIs and unique business logic.",
                               "containerClass": "bg-gray-200 text-black",
                               "image": "/images/grid2.png",
                               "imageClass": "absolute bottom-0 right-0 w-32"
                         }
                   ],
                   "rightCard": {
-                        "title": "Web & Mobile Application Development",
-                        "description": "Build responsive web platforms and scalable mobile applications that deliver seamless user experiences across all devices.",
+                        "title": "Self-Hosted n8n Setup",
+                        "description": "Secure, scalable deployment of n8n on your own infrastructure for maximum data privacy and cost control.",
                         "containerClass": "bg-[#0b1220] text-white",
                         "image": "/images/grid3.png",
                         "imageClass": "mt-auto w-full"
                   }
             },
             "transformationHero": {
-                  "badge": "Driving Software Innovation",
-                  "heading": "Building Scalable, Secure, and High-Performance Software Solutions",
-                  "subheading": "Invertio combines modern engineering practices, scalable architectures, and agile development methodologies to help organizations build reliable digital products. Our software solutions improve operational efficiency, accelerate innovation, and support long-term business growth.",
+                  "badge": "Automated Efficiency",
+                  "heading": "Connecting Your Business Tools into One Intelligent Ecosystem",
+                  "subheading": "Invertio specializes in advanced n8n implementations. We move beyond simple triggers to create autonomous workflows that handle data transformation, conditional logic, and error recovery across hundreds of applications.",
                   "button": {
                         "text": "Contact Us",
                         "href": "/contact-us"
                   },
                   "benefits": [
-                        "Seamless modernization of legacy applications",
-                        "Scalable architecture designed for future growth",
-                        "Faster development cycles with agile delivery",
-                        "Enhanced application security and performance",
-                        "Reliable systems ensuring business continuity"
+                        "Elimination of repetitive manual data entry",
+                        "Reduced operational costs through SaaS consolidation",
+                        "Real-time data synchronization across all platforms",
+                        "Customizable error handling and alerting systems",
+                        "Full ownership of your automation infrastructure"
                   ]
             },
             "caseStudy": {
                   "badge": "Case Study",
-                  "heading": "Core Software Capabilities Powering Modern Enterprises",
-                  "subheading": "From product engineering and application modernization to ongoing optimization and support, our software development services help businesses build scalable digital solutions while ensuring performance, security, and long-term reliability.",
+                  "heading": "Automation Powering Modern Workflows",
+                  "subheading": "Our n8n experts help you bridge the gap between siloed tools, creating a unified flow of information that scales with your business needs.",
                   "cards": [
                         {
-                              "title": "Custom Software Development",
-                              "description": "Design and develop tailored software applications aligned with your business workflows, enabling improved efficiency, scalability, and operational control.",
+                              "title": "API Orchestration",
+                              "description": "Synchronize data between CRMs, ERPs, and marketing tools without writing complex custom code.",
                               "variant": "light"
                         },
                         {
-                              "title": "Application Development & Modernization",
-                              "description": "Build modern web and mobile applications or transform legacy systems using cloud-ready architectures, APIs, and scalable frameworks.",
+                              "title": "Event-Driven Logic",
+                              "description": "Trigger actions across your stack based on specific user behaviors or system changes instantly.",
                               "variant": "primary"
                         },
                         {
-                              "title": "Software Maintenance & Support",
-                              "description": "Ensure continuous performance with proactive monitoring, upgrades, bug fixes, and enhancements that keep your applications secure and future-ready.",
+                              "title": "Data Transformation",
+                              "description": "Clean, format, and enrich data automatically as it moves between different software environments.",
                               "variant": "light"
                         }
                   ]
             },
             "ctaSection": {
                   "tag": "Let's Build Together",
-                  "heading": "Start Your Digital Transformation Journey Today",
+                  "heading": "Start Your Automation Journey Today",
                   "description": "Partner with Invertio to modernize your business, unlock innovation, and build scalable digital solutions that drive measurable growth.",
                   "button": {
                         "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "ai-strategy": {
+            "hero": {
+                  "tag": "AI Strategy Consulting",
+                  "title": "Define Your AI Roadmap for Future Growth",
+                  "subtitle": "Strategic AI Advisory to Drive Business Innovation",
+                  "description": "Unlock the full potential of Artificial Intelligence with a clear, actionable strategy. We help you identify high-impact AI use cases, assess technical feasibility, and build a sustainable roadmap that aligns with your long-term business goals."
+            },
+            "clientLogos": {
+                  "text": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "AI Opportunity Assessment",
+                              "description": "Identify and prioritize business processes where AI can deliver the highest ROI and operational efficiency.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid1.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Data Readiness Audit",
+                              "description": "Evaluate your data infrastructure to ensure it is optimized for high-performance AI model training.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid2.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Enterprise AI Governance",
+                        "description": "Establish ethical guidelines and security protocols for responsible and compliant AI deployment.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid3.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Driving Strategic Growth",
+                  "heading": "Navigating the Complex Landscape of Artificial Intelligence",
+                  "subheading": "Invertio combines strategic foresight with technical depth to help organizations move from AI experimentation to full-scale production. Our advisory services ensure your AI investments are secure, scalable, and directly linked to your core business objectives.",
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Objective assessment of AI feasibility and impact",
+                        "Strategic alignment with corporate growth goals",
+                        "Risk mitigation for ethical and data concerns",
+                        "Accelerated time-to-market for AI solutions",
+                        "Future-proof architecture for evolving models"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Strategic Consulting Powering AI Readiness",
+                  "subheading": "From initial discovery and data auditing to full-scale governance and implementation roadmaps, our strategy services help businesses integrate AI with precision, ensuring long-term technical and operational success.",
+                  "cards": [
+                        {
+                              "title": "Strategy Development",
+                              "description": "Design custom AI blueprints that align technology choices with your specific market challenges and internal capabilities.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Infrastructure Planning",
+                              "description": "Build modern data environments capable of supporting complex machine learning and generative AI workloads at scale.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Governance & Compliance",
+                              "description": "Ensure your AI systems meet global regulatory standards while maintaining transparency and user trust through robust policies.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Start Your AI Transformation Journey Today",
+                  "description": "Partner with Invertio to modernize your business, unlock innovation, and build scalable AI solutions that drive measurable growth.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "ai-software-dev": {
+            "hero": {
+                  "tag": "Custom AI Development",
+                  "title": "Build Intelligent Software for the Future",
+                  "subtitle": "Engineering Scalable AI Applications and Systems",
+                  "description": "Transition from standard applications to intelligent systems. We specialize in developing custom AI-powered software that automates decision-making, predicts trends, and provides personalized user experiences at scale."
+            },
+            "clientLogos": {
+                  "text": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Machine Learning Engineering",
+                              "description": "Develop and deploy advanced ML models that transform raw data into predictive business intelligence.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid1.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Natural Language Processing",
+                              "description": "Build applications that understand, interpret, and respond to human language with high contextual accuracy.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid2.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Predictive Analytics Systems",
+                        "description": "Integrate real-time data analysis tools that forecast user behavior and optimize supply chain operations.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid3.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Engineering Excellence",
+                  "heading": "Deploying Sophisticated AI Within Your Ecosystem",
+                  "subheading": "Invertio bridges the gap between complex data science and robust software engineering. We build AI applications that are not only accurate but also performant, secure, and ready to scale within your existing enterprise architecture.",
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Seamless integration of AI models into production",
+                        "Optimized processing for low-latency responses",
+                        "Scalable cloud-native AI infrastructure",
+                        "Custom dashboards for real-time model monitoring",
+                        "Automated data pipelines for continuous learning"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Intelligent Software Powering Modern Growth",
+                  "subheading": "From predictive maintenance to customer recommendation engines, our AI development services help businesses automate complex tasks while ensuring application reliability and high-performance user experiences.",
+                  "cards": [
+                        {
+                              "title": "Custom Model Integration",
+                              "description": "Design and integrate custom algorithms that solve specific industry problems from retail optimization to finance.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Cognitive Automation",
+                              "description": "Implement AI agents that handle multi-step workflows, reducing manual intervention and operational bottlenecks.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Data Science as a Service",
+                              "description": "Access expert data scientists to refine your datasets and improve the accuracy of your existing AI investments.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Start Your AI Development Journey Today",
+                  "description": "Partner with Invertio to build intelligent products, unlock insights, and deploy scalable AI solutions that drive measurable growth.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "gen-ai-consulting": {
+            "hero": {
+                  "tag": "Generative AI Consulting",
+                  "title": "Strategy for the Generative Era",
+                  "subtitle": "Unlocking Value through Large Language Models",
+                  "description": "Navigate the complexities of Generative AI. We help you choose between open-source and proprietary models, design prompt architectures, and ensure strict data privacy for your enterprise LLM applications."
+            },
+            "clientLogos": {
+                  "text": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "LLM Selection & Integration",
+                              "description": "Expert guidance on choosing GPT-4, Claude, or Llama for your specific business requirements.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid1.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Prompt Engineering",
+                              "description": "Optimizing model inputs to ensure high accuracy, safety, and brand consistency in outputs.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid2.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Custom Fine-Tuning",
+                        "description": "Adapting foundation models to your unique corporate knowledge base and industry terminology.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid3.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "GenAI Transformation",
+                  "heading": "Harnessing Generative AI for Enterprise Innovation",
+                  "subheading": "Invertio enables organizations to securely deploy Generative AI. We focus on creating high-value applications that automate content creation, enhance customer support, and accelerate coding workflows while maintaining data sovereignty.",
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Deployment of secure, private LLM instances",
+                        "Significant reduction in content production time",
+                        "Enhanced internal knowledge discovery",
+                        "Optimized prompt libraries for repeatable results",
+                        "Continuous monitoring for AI hallucinations"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Scalable Generative AI Capabilities",
+                  "subheading": "From creative automation to advanced technical reasoning, our generative services empower teams to work faster and more creatively by leveraging state-of-the-art foundation models.",
+                  "cards": [
+                        {
+                              "title": "Text & Code Generation",
+                              "description": "Automate documentation, coding tasks, and marketing copy with high-precision generative tools.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "RAG Implementation",
+                              "description": "Build Retrieval-Augmented Generation systems to talk to your private enterprise data securely.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Multi-Modal AI",
+                              "description": "Implement vision and audio capabilities to process diverse data types through a single AI interface.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Start Your GenAI Journey Today",
+                  "description": "Partner with Invertio to modernize your business, unlock innovation, and build scalable digital solutions that drive measurable growth.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "llm-development": {
+            "hero": {
+                  "tag": "LLM Development",
+                  "title": "Custom LLM Solutions for Global Enterprises",
+                  "subtitle": "Training and Fine-Tuning Models for Specific Industries",
+                  "description": "Go beyond generic AI. We develop custom Large Language Models (LLMs) tailored to your industry's language, ensuring higher precision, lower latency, and complete control over your proprietary data."
+            },
+            "clientLogos": {
+                  "text": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Domain-Specific Training",
+                              "description": "Train models on niche datasets to achieve expert-level performance in legal, medical, or technical fields.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid1.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Model Optimization",
+                              "description": "Quantize and optimize models for efficient deployment on edge devices or private cloud clusters.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid2.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Vector Database Integration",
+                        "description": "Connect your LLM to advanced vector stores like Pinecone or Weaviate for long-term memory and retrieval.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid3.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Model Engineering",
+                  "heading": "Building Proprietary Intelligence for Your Business",
+                  "subheading": "Generic models often lack the nuance required for specialized professional tasks. Invertio builds custom LLM pipelines that prioritize data security and domain accuracy, giving your organization a unique intellectual property advantage.",
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Reduced reliance on third-party API providers",
+                        "Superior accuracy in niche vertical markets",
+                        "Enhanced privacy with on-premise deployment",
+                        "Lower inference costs via model distillation",
+                        "Proprietary fine-tuning for brand-specific voice"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Advanced LLM Capabilities Powering Growth",
+                  "subheading": "From architectural design of transformer models to the fine-tuning of parameters, our LLM development ensures your business stays at the forefront of the cognitive computing revolution.",
+                  "cards": [
+                        {
+                              "title": "Model Distillation",
+                              "description": "Transfer knowledge from large models to smaller, faster versions without significant loss in performance.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Private LLM Hosting",
+                              "description": "Deploy models within your VPC to ensure sensitive data never leaves your controlled environment.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Tokenization Strategy",
+                              "description": "Optimize how your data is processed to maximize model understanding and reduce computational overhead.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Start Your LLM Development Journey Today",
+                  "description": "Partner with Invertio to modernize your business, unlock innovation, and build scalable digital solutions that drive measurable growth.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "adaptive-ai": {
+            "hero": {
+                  "tag": "Adaptive AI Systems",
+                  "title": "AI That Learns and Evolves in Real-Time",
+                  "subtitle": "Building Self-Correcting Intelligent Architectures",
+                  "description": "Standard AI models are static, but your business is dynamic. Our Adaptive AI solutions continuously retrain on new data streams, allowing your systems to adjust to market shifts and user behavior changes without manual intervention."
+            },
+            "clientLogos": {
+                  "text": "Trusted by startups and Fortune",
+                  "highlight": "500",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png",
+                        "/"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Continuous Learning Loops",
+                              "description": "Implement automated feedback cycles that update model weights as new operational data becomes available.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid1.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Real-time Personalization",
+                              "description": "Deploy algorithms that adapt UI/UX and product recommendations instantly based on live session telemetry.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid2.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Anomaly Detection & Correction",
+                        "description": "Systems that recognize drift in performance and automatically apply corrective measures to maintain accuracy.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid3.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Dynamic Intelligence",
+                  "heading": "The Future of Self-Optimizing Enterprise Software",
+                  "subheading": "Invertio builds the infrastructure required for Adaptive AI. By leveraging streaming data and online learning techniques, we ensure your digital products become smarter with every interaction.",
+                  "button": {
+                        "text": "Contact Us",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Elimination of manual model retraining cycles",
+                        "Higher accuracy during rapid market fluctuations",
+                        "Proactive response to changing user preferences",
+                        "Reduced operational overhead for AI maintenance",
+                        "Resilient performance in unpredictable environments"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Adaptive Architectures in Production",
+                  "subheading": "Our systems don't just predict; they improve over time. We help businesses build self-improving AI that stays relevant regardless of how fast market conditions shift.",
+                  "cards": [
+                        {
+                              "title": "Online Learning Pipelines",
+                              "description": "Streamline data from production back into models for constant refinement without downtime.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Dynamic Risk Scoring",
+                              "description": "Financial and security models that adjust thresholds in real-time based on emerging global threat patterns.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Self-Healing Infrastructure",
+                              "description": "AI-managed cloud resources that adapt to traffic spikes and system failures autonomously.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Start Your Adaptive AI Journey Today",
+                  "description": "Partner with Invertio to build resilient, evolving software that grows with your business and outpaces the competition.",
+                  "button": {
+                        "text": "Talk To Our Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "cloud-platforms": {
+            "hero": {
+                  "tag": "Cloud & Infrastructure",
+                  "title": "Scalable Infrastructure for the Modern Enterprise",
+                  "subtitle": "High-Performance Cloud Architectures & DevOps Automation",
+                  "description": "Don't let infrastructure be your bottleneck. We design and deploy resilient cloud ecosystems that support millions of users, optimize operational costs, and automate the path from code to production with absolute security."
+            },
+            "clientLogos": {
+                  "text": "Powering cloud native leaders at",
+                  "highlight": "Scale",
+                  "logos": [
+                        "/logo/aws.png",
+                        "/logo/azure.png",
+                        "/logo/gcp.png",
+                        "/logo/digitalocean.png",
+                        "/logo/cloudflare.png",
+                        "/logo/terraform.png",
+                        "/logo/kubernetes.png",
+                        "/logo/docker.png",
+                        "/logo/jenkins.png",
+                        "/"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Cloud Migration",
+                              "description": "Seamlessly transitioning legacy workloads to AWS, Azure, or GCP with zero data loss and minimal downtime.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid-cloud.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "DevSecOps Integration",
+                              "description": "Automating security protocols directly into your CI/CD pipelines to catch vulnerabilities before production.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid-devops.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Serverless Architectures",
+                        "description": "Building event-driven systems that scale infinitely while ensuring you only pay for the compute you actually use.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid-serverless.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Operational Excellence",
+                  "heading": "The Foundation of Digital Transformation",
+                  "subheading": "Invertio builds the robust infrastructure required for modern software. By leveraging infrastructure-as-code and containerization, we ensure your platform is as agile as your business.",
+                  "button": {
+                        "text": "Optimize Your Cloud",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "99.99% system uptime through multi-region redundancy",
+                        "Up to 40% reduction in monthly cloud infrastructure spend",
+                        "Lightning-fast deployment cycles with automated CI/CD",
+                        "Enhanced disaster recovery and data sovereignty compliance",
+                        "Unified observability across your entire tech stack"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Cloud Scalability in Production",
+                  "subheading": "Our infrastructure designs are built to grow. We help businesses transition from fragile legacy setups to bulletproof cloud-native environments.",
+                  "cards": [
+                        {
+                              "title": "Global Scaling",
+                              "description": "Migrated a high-traffic fintech platform to a multi-cloud setup, handling 50k requests per second.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Cost Optimization",
+                              "description": "Refactored container orchestration for a SaaS provider, saving $500k in annual AWS costs.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Zero-Downtime Deployment",
+                              "description": "Implemented blue-green deployment strategies allowing daily updates without user disruption.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Scale",
+                  "heading": "Build a Resilient Infrastructure",
+                  "description": "Partner with Invertio to modernize your cloud stack and outpace your competition with superior performance.",
+                  "button": {
+                        "text": "Talk To Our Engineers",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "quality-engineering": {
+            "hero": {
+                  "tag": "Quality & Security",
+                  "title": "Zero-Defect Delivery for Peace of Mind",
+                  "subtitle": "Advanced Test Automation & Cybersecurity Frameworks",
+                  "description": "Quality is not an afterthought; it's a competitive advantage. Our engineering team implements rigorous automated testing and security protocols to ensure your users enjoy a seamless and safe experience."
+            },
+            "clientLogos": {
+                  "text": "Trusted by security-conscious",
+                  "highlight": "Brands",
+                  "logos": [
+                        "/logo/okta.png",
+                        "/logo/crowdstrike.png",
+                        "/logo/paloalto.png",
+                        "/logo/selenium.png",
+                        "/logo/cypress.png",
+                        "/logo/appium.png",
+                        "/logo/postman.png",
+                        "/logo/sonarqube.png",
+                        "/logo/jmeter.png",
+                        "/"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Automated Testing",
+                              "description": "End-to-end regression suites that verify every feature remains functional after every single code update.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid-qa.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Penetration Testing",
+                              "description": "Deep-dive security audits and ethical hacking to identify and patch vulnerabilities before they are exploited.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid-security.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Performance Tuning",
+                        "description": "Simulating high-traffic scenarios to ensure your platform remains lightning-fast under extreme user loads.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid-performance.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Uncompromising Quality",
+                  "heading": "Software That Never Stops Working",
+                  "subheading": "Invertio implements the 'Shift Left' testing philosophy. By catching bugs early in the design phase, we reduce development costs and drastically speed up time-to-market.",
+                  "button": {
+                        "text": "Secure Your Product",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "85% coverage of critical business paths through automation",
+                        "Full compliance with GDPR, HIPAA, and SOC2 standards",
+                        "Elimination of manual testing bottlenecks in your sprints",
+                        "Enhanced brand trust through consistent, bug-free releases",
+                        "Reduced long-term maintenance costs for complex codebases"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Excellence in Engineering",
+                  "subheading": "We turn QA from a chore into a core strength. Our clients experience fewer production incidents and higher user satisfaction scores.",
+                  "cards": [
+                        {
+                              "title": "API Integrity",
+                              "description": "Automated testing for a banking API that handles $100M+ in daily transaction volume.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Load Resilience",
+                              "description": "Optimized an e-commerce platform to withstand a 400% traffic surge during Black Friday.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Compliance Audit",
+                              "description": "Secured a healthcare application to meet 100% of federal data privacy requirements.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Secure",
+                  "heading": "Start Your Quality Journey",
+                  "description": "Build software that your customers can trust implicitly. Let Invertio's QE team audit your platform today.",
+                  "button": {
+                        "text": "Talk To Our QA Leads",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "product-engineering": {
+            "hero": {
+                  "tag": "Product Engineering",
+                  "title": "Engineering Excellence for Market-Ready Products",
+                  "subtitle": "Full-Cycle Development from Concept to Deployment",
+                  "description": "We don't just build features; we engineer business solutions. Our team combines high-performance backend architecture with scalable frontend frameworks to ensure your product can handle millions of users while maintaining a seamless experience."
+            },
+            "clientLogos": {
+                  "text": "Trusted by product leaders at",
+                  "highlight": "Invertio",
+                  "logos": [
+                        "/logo/shopify.png",
+                        "/logo/stripe.png",
+                        "/logo/hubspot.png",
+                        "/logo/atlassian.png",
+                        "/logo/zoom.png",
+                        "/logo/salesforce.png",
+                        "/logo/oracle.png",
+                        "/logo/intel.png",
+                        "/logo/adobe.png",
+                        "/"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Full-Stack Development",
+                              "description": "Building robust, secure, and scalable web applications using the MERN stack and modern cloud-native technologies.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid-dev.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Mobile App Ecosystems",
+                              "description": "Crafting native and cross-platform mobile experiences that deliver high engagement and offline functionality.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid-mobile.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "API & Microservices",
+                        "description": "Designing modular architectures that allow for independent scaling and rapid deployment of new features without downtime.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid-api.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Product Strategy",
+                  "heading": "Transforming Ideas into Digital Powerhouses",
+                  "subheading": "Invertio focuses on the intersection of technical feasibility and business value. We ensure your product engineering roadmap is aligned with your long-term growth objectives.",
+                  "button": {
+                        "text": "Start Building",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Rapid MVP development to test market assumptions",
+                        "Refactoring legacy code for modern cloud performance",
+                        "Seamless integration with third-party APIs and services",
+                        "Data-driven engineering focused on user retention",
+                        "Security-first development lifecycle (DevSecOps)"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Success in Engineering",
+                  "subheading": "From startups to enterprises, our engineering pods have delivered award-winning software that scales alongside business demand.",
+                  "cards": [
+                        {
+                              "title": "SaaS Platform",
+                              "description": "Scaled a B2B marketplace to support 10k+ concurrent vendors with a modular React architecture.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Fintech Security",
+                              "description": "Re-engineered a payment gateway to process transactions in under 200ms with bank-grade encryption.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "HealthTech Portal",
+                              "description": "Developed a HIPAA-compliant patient management system with real-time data synchronization.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Ready to Launch Your Next Big Idea?",
+                  "description": "Partner with Invertio's engineering experts to build a product that defines your market and delights your users.",
+                  "button": {
+                        "text": "Talk to a Technical Lead",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "ui-ux-design": {
+            "hero": {
+                  "tag": "UI/UX Design",
+                  "title": "User-Centric Design that Drives Growth",
+                  "subtitle": "Intuitive Interfaces and Immersive Digital Journeys",
+                  "description": "Design is more than just aesthetics; it's about solving problems. Our design team focuses on human-centered principles to create interfaces that are not only beautiful but also prioritize usability, accessibility, and conversions."
+            },
+            "clientLogos": {
+                  "text": "Designing for the best",
+                  "highlight": "Experiences",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Interactive Prototyping",
+                              "description": "High-fidelity clickable prototypes that allow you to validate user flows before writing a single line of code.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid-ux.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Design Systems",
+                              "description": "Building scalable component libraries that ensure visual consistency across all your digital touchpoints.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid-design.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Usability Testing",
+                        "description": "Deep-dive user research and session analysis to identify friction points and optimize the conversion funnel.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid-test.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Creative Excellence",
+                  "heading": "Visualizing the Future of Interaction",
+                  "subheading": "Invertio blends data-driven insights with creative intuition. We help you build products that users love to use, reducing churn and increasing lifetime value.",
+                  "button": {
+                        "text": "View Our Portfolio",
+                        "href": "/portfolio"
+                  },
+                  "benefits": [
+                        "Modern aesthetics including Glassmorphism and Dark Mode",
+                        "Mobile-first responsive designs for every screen size",
+                        "Reduced cognitive load through simplified workflows",
+                        "Compliance with WCAG 2.1 accessibility standards",
+                        "Rapid design iterations based on real-time feedback"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Impact Through Design",
+                  "subheading": "Our designs have helped brands increase user engagement by up to 60% and drastically simplify complex enterprise workflows.",
+                  "cards": [
+                        {
+                              "title": "Fintech App",
+                              "description": "Redesigned a complex investment dashboard to be intuitive for first-time retail investors.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "E-commerce UX",
+                              "description": "Optimized the checkout journey for a global retailer, resulting in a 25% increase in conversions.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "EdTech Portal",
+                              "description": "Created a gamified learning interface that increased daily active users by 40%.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Elevate Your Brand",
+                  "heading": "Transform Your User Experience",
+                  "description": "Let's build a design that speaks your brand's language and converts your visitors into loyal customers.",
+                  "button": {
+                        "text": "Start a Design Project",
+                        "href": "/contact-us"
+                  }
+            }
+      },
+      "product-pods": {
+            "hero": {
+                  "tag": "Dedicated Teams",
+                  "title": "On-Demand Engineering Pods to Scale Your Vision",
+                  "subtitle": "Elite Technical Talent Integrated into Your Workflow",
+                  "description": "Tired of long hiring cycles and talent gaps? We provide autonomous, pre-vetted engineering teams that specialize in modern web technologies. Our pods integrate seamlessly with your existing sprints, bringing senior-level expertise to your product development from day one."
+            },
+            "clientLogos": {
+                  "text": "Extending the reach of global",
+                  "highlight": "Teams",
+                  "logos": [
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Staff Augmentation",
+                              "description": "Quickly inject specialized frontend and backend developers into your internal team to clear backlogs and accelerate delivery.",
+                              "containerClass": "bg-blue-600 text-white",
+                              "image": "/images/grid-staff.png",
+                              "imageClass": "absolute bottom-0 right-0 w-40"
+                        },
+                        {
+                              "title": "Autonomous Product Pods",
+                              "description": "End-to-end teams including PMs, Designers, and Engineers dedicated to building a specific product or feature set independently.",
+                              "containerClass": "bg-gray-200 text-black",
+                              "image": "/images/grid-pods.png",
+                              "imageClass": "absolute bottom-0 right-0 w-32"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Offshore Excellence Centers",
+                        "description": "Establishing long-term satellite engineering hubs that act as a direct, high-performance extension of your home office culture.",
+                        "containerClass": "bg-[#0b1220] text-white",
+                        "image": "/images/grid-center.png",
+                        "imageClass": "mt-auto w-full"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Strategic Growth",
+                  "heading": "Scale Your Technical Capacity Without the Overhead",
+                  "subheading": "Invertio solves the talent shortage by providing senior-level engineers who are experts in React, Tailwind CSS, and the MERN stack. We handle the recruitment, training, and infrastructure so you can focus on your product.",
+                  "button": {
+                        "text": "Request a Team",
+                        "href": "/contact-us"
+                  },
+                  "benefits": [
+                        "Rapid onboarding: Teams ready to deploy in under 10 business days",
+                        "Significant reduction in recruitment and administrative costs",
+                        "Senior-level technical leadership included in every pod",
+                        "Full alignment with your time zone and communication style",
+                        "Scalable team sizes that adjust to your project milestones"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Engineering Partnerships at Scale",
+                  "subheading": "We’ve helped startups and enterprises alike meet aggressive deadlines and launch complex platforms by providing the right people at the right time.",
+                  "cards": [
+                        {
+                              "title": "Fintech Scale-up",
+                              "description": "Provided a 5-person pod to build an entire crypto dashboard from scratch in just 12 weeks.",
+                              "variant": "light"
+                        },
+                        {
+                              "title": "Enterprise Migration",
+                              "description": "Integrated 3 senior React developers to lead a major frontend refactor for a Fortune 500 company.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Product Launch",
+                              "description": "Established an autonomous pod that successfully took a concept to MVP for a Silicon Valley startup.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Scale Together",
+                  "heading": "Ready to Extend Your Technical Team?",
+                  "description": "Don't let a talent gap slow down your innovation. Partner with Invertio to get the elite engineering capacity you need to succeed.",
+                  "button": {
+                        "text": "Book a Talent Discovery Call",
                         "href": "/contact-us"
                   }
             }

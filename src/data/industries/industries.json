@@ -1,0 +1,77 @@
+{
+      "media-entertainment": {
+            "hero": {
+                  "tag": "Technology & Media Industry",
+                  "title": "Media & Entertainment Solutions",
+                  "subtitle": "Deliver Engaging Digital Experiences",
+                  "description": "We help media and entertainment companies build scalable digital platforms, enhance user engagement, and deliver content seamlessly across devices."
+            },
+            "clientLogos": {
+                  "text": "Trusted by media and tech companies",
+                  "highlight": "150",
+                  "logos": [
+                        "/logo/netflix.png",
+                        "/logo/spotify.png",
+                        "/logo/meta.png",
+                        "/logo/youtube.png"
+                  ]
+            },
+            "servicesGrid": {
+                  "leftCards": [
+                        {
+                              "title": "Content Platforms",
+                              "description": "Build scalable OTT and content delivery platforms.",
+                              "containerClass": "bg-blue-600 text-white"
+                        },
+                        {
+                              "title": "User Engagement",
+                              "description": "Enhance engagement with personalized experiences.",
+                              "containerClass": "bg-gray-200 text-black"
+                        }
+                  ],
+                  "rightCard": {
+                        "title": "Streaming Infrastructure",
+                        "description": "Deliver high-performance streaming systems globally.",
+                        "containerClass": "bg-[#0b1220] text-white"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "Digital Media Innovation",
+                  "heading": "Transforming Media with Technology",
+                  "subheading": "Deliver seamless, scalable, and engaging digital experiences.",
+                  "benefits": [
+                        "Scalable OTT platforms",
+                        "Personalized content delivery",
+                        "Real-time streaming performance",
+                        "Global content distribution",
+                        "Data-driven user insights"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Scaling Digital Media Platforms",
+                  "subheading": "Helping media companies improve engagement and performance.",
+                  "cards": [
+                        {
+                              "title": "Streaming Platform",
+                              "description": "Built scalable OTT platform with high user retention.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Content Personalization",
+                              "description": "Improved engagement using AI-based recommendations.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Transform Your Media Platform",
+                  "description": "Build scalable, high-performance media solutions for global audiences.",
+                  "button": {
+                        "text": "Talk To Experts",
+                        "href": "/contact-us"
+                  }
+            }
+      }
+}

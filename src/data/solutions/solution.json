@@ -1,50 +1,76 @@
 {
-      "feasibility": {
+      "mvp": {
             "hero": {
-                  "tag": "N8n Consulting & Automation",
-                  "title": "n8n Consulting & Automation Services",
-                  "subtitle": "Automating Complex Workflows with n8n Consulting & Integration",
-                  "description": "Stop wasting hours on manual processes, disconnected SaaS tools, and repetitive tasks. Our n8n consulting and automation services in India help you streamline operations, eliminate human errors, and build scalable workflow automation that grows with your business."
+                  "tag": "Startup Solutions",
+                  "title": "Rapid MVP Development",
+                  "subtitle": "Launch Your Product in 90 Days",
+                  "description": "We help startups turn ideas into working products quickly with a structured MVP development approach, enabling faster validation and market entry."
             },
             "clientLogos": {
-                  "text": "Trusted by startups and Fortune",
-                  "highlight": "500",
+                  "text": "Trusted by startups and innovators",
+                  "highlight": "200",
                   "logos": [
-                        "/logos/beefree.svg",
-                        "/logos/elastic.svg",
-                        "/logos/meta.svg",
-                        "/logos/netflix.svg",
-                        "/logos/slack.svg",
-                        "/logos/airbnb.svg",
-                        "/logos/disney.svg",
-                        "/logos/samsung.svg",
-                        "/logos/nvidia.svg",
-                        "/logos/spotify.svg"
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/meta.png",
+                        "/logo/spotify.png"
                   ]
             },
             "servicesGrid": {
                   "leftCards": [
                         {
-                              "title": "Custom Software Development",
-                              "description": "Develop tailored enterprise applications that align with business workflows, automate processes, and improve operational productivity.",
-                              "containerClass": "bg-blue-600 text-white",
-                              "image": "/images/grid1.png",
-                              "imageClass": "absolute bottom-0 right-0 w-40"
+                              "title": "Fast MVP Development",
+                              "description": "Launch a working product in weeks with a focused development approach.",
+                              "containerClass": "bg-blue-600 text-white"
                         },
                         {
-                              "title": "Software Maintenance & Support",
-                              "description": "Ensure application stability and performance through continuous monitoring, updates, optimization, and long-term technical support.",
-                              "containerClass": "bg-gray-200 text-black",
-                              "image": "/images/grid2.png",
-                              "imageClass": "absolute bottom-0 right-0 w-32"
+                              "title": "Lean Product Design",
+                              "description": "Design user-focused products that solve real problems.",
+                              "containerClass": "bg-gray-200 text-black"
                         }
                   ],
                   "rightCard": {
-                        "title": "Web & Mobile Application Development",
-                        "description": "Build responsive web platforms and scalable mobile applications that deliver seamless user experiences across all devices.",
-                        "containerClass": "bg-[#0b1220] text-white",
-                        "image": "/images/grid3.png",
-                        "imageClass": "mt-auto w-full"
+                        "title": "Scalable Architecture",
+                        "description": "Build a strong technical foundation that supports future growth.",
+                        "containerClass": "bg-[#0b1220] text-white"
+                  }
+            },
+            "transformationHero": {
+                  "badge": "MVP Development",
+                  "heading": "From Idea to Product — Faster Than Ever",
+                  "subheading": "Validate your idea, attract users, and secure funding with a strong MVP.",
+                  "benefits": [
+                        "Launch product in 60–90 days",
+                        "Reduce development cost",
+                        "Validate product-market fit quickly",
+                        "Scalable foundation for future growth",
+                        "Faster investor readiness"
+                  ]
+            },
+            "caseStudy": {
+                  "badge": "Case Study",
+                  "heading": "Helping Startups Launch Faster",
+                  "subheading": "We helped startups launch MVPs and validate their ideas in record time.",
+                  "cards": [
+                        {
+                              "title": "Startup MVP Launch",
+                              "description": "Delivered MVP in 8 weeks, enabling early user acquisition.",
+                              "variant": "primary"
+                        },
+                        {
+                              "title": "Product Validation",
+                              "description": "Helped validate idea before full-scale investment.",
+                              "variant": "light"
+                        }
+                  ]
+            },
+            "ctaSection": {
+                  "tag": "Let's Build Together",
+                  "heading": "Launch Your MVP Today",
+                  "description": "Turn your idea into a working product and start your startup journey with confidence.",
+                  "button": {
+                        "text": "Start Your MVP",
+                        "href": "/contact-us"
                   }
             }
       }
