@@ -15,7 +15,7 @@ const CompanyOverviewSection = () => {
               Our Purpose
             </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold font-jakarta leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold font-jakarta leading-snug">
               Driven by Innovation. Guided by Impact.
             </h2>
 
@@ -47,7 +47,7 @@ const CompanyOverviewSection = () => {
 
             {/* <h2 className="mt-4 text-3xl font-bold text-gray-900 leading-snug">
           </h2> */}
-            <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold text-gray-900 font-jakarta leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-gray-900 font-jakarta leading-snug">
               Strategy, Design, and Engineering Working Together
             </h2>
 
@@ -76,7 +76,7 @@ const CompanyOverviewSection = () => {
         <div className="relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-12 bg-[#0B1120] text-white shadow-xl flex flex-col justify-center gap-3">
           <span className="text-[20px] font-bold opacity-90">Who We Are</span>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-bold font-jakarta leading-snug">
+          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold font-jakarta leading-snug">
             A Trusted Technology Partner Focused on Long-Term Success
           </h2>
 

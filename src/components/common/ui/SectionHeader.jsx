@@ -2,6 +2,7 @@ export default function SectionHeader({
   badge,
   heading,
   subheading,
+   para,
   align = "left",
   size = "xl",
   headingColor = "#101828",
@@ -19,9 +20,10 @@ export default function SectionHeader({
     },
     md: {
       heading:
-        "text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-tight",
+        "text-[26px] sm:text-[32px] md:text-[40px] lg:text-[32px] leading-tight",
       subheading: "text-[14px] sm:text-[16px] md:text-[18px]",
       badge: "text-[13px] sm:text-[14px] md:text-[20px] font-bold",
+      para: "text-[8px] sm:text-[10px] md:text-[12px]",
     },
   };
   const alignStyles = {
@@ -55,7 +57,16 @@ export default function SectionHeader({
         >
           {subheading}
         </p>
+        
       )}
+      {para && (
+          <p
+            className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line `}
+            style={{ color: subheadingColor }}
+          >
+            {para}
+          </p>
+        )}
     </div>
   );
 }

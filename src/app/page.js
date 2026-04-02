@@ -10,12 +10,12 @@ import HomeSection from "@/components/HomeSection";
 const page = () => {
   return (
     <>
-    
-        <HeroSection/>
-        <HomeSection/>
-        <SolutionsSection/>
-        <IndustriesSection/>
-        <ProjectsSection/>
+
+      <HeroSection />
+      <HomeSection />
+      <SolutionsSection />
+      <IndustriesSection />
+      <ProjectsSection />
       <CtaSection />
       <InsightsSection />
       <TestimonialsSection />

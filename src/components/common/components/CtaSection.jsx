@@ -10,11 +10,10 @@ const CtaSection = () => {
         {/* LEFT CONTENT */}
         <div className="flex-1 z-4">
           <SectionHeader
-            badge="Let’s Build Together"
-            heading="Start Your Digital Transformation Journey with Invertio"
-            subheading={`Partner with us to turn your ideas into scalable, high-impact digital solutions.
-             Our team is ready to collaborate, innovate, and deliver technology
-            that drives measurable business growth.`}
+            badge="Gets Started"
+            heading="Ready to Transform Your Business with Technology?"
+            subheading={`Partner with Invertio to build scalable digital solutions that accelerate innovation and growth.`}
+            para="Let’s collaborate to turn your ideas into impactful technology solutions. Our team is ready to help you navigate digital transformation, optimize operations, and achieve long-term business success."
             align="left"
             size="md"
             headingColor="#FFFFFF"
@@ -26,17 +25,17 @@ const CtaSection = () => {
         </div>
 
         {/* RIGHT BUTTONS */}
-        <div className="flex flex-col gap-4 z-10">
-          <Link
+<div className="flex flex-col gap-4 z-10 w-full sm:w-auto">
+            <Link
             href="/contact-us"
-            className="px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition cursor-pointer inline-block "
+           className="w-full sm:w-auto px-4 sm:px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition text-center"
           >
             Start Your Journey
           </Link>
 
           <Link
             href="/our-work"
-            className="px-8 py-3 rounded-full bg-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/40 transition cursor-pointer inline-block"
+           className="w-full sm:w-auto px-4 sm:px-8 py-3 rounded-full bg-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/40 transition text-center"
           >
             View Our Work
           </Link>

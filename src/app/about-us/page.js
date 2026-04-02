@@ -17,7 +17,7 @@ const page = () => {
           heading="Engineering Technology That Powers Business Transformation"
           subheading={`Invertio is a technology-driven company helping organizations build scalable digital solutions through innovation, strategy, and engineering excellence.
 We partner with startups, enterprises, and growing businesses to transform ideas into impactful digital platforms. By combining modern technologies with deep industry understanding, we deliver solutions that improve efficiency, enhance user experiences, and support sustainable business growth.`}
-          size="xl"
+          size="md"
           headingColor="#0F172A"
           subheadingColor="#475569"
         />
