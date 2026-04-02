@@ -24,10 +24,9 @@ const CaseStudy = ({ data }) => {
               key={index}
               className={`
                 rounded-2xl border p-6 sm:p-8 transition duration-300
-                ${
-                  card.variant === "primary"
-                    ? "bg-blue-600 text-white border-blue-600 shadow-lg"
-                    : "bg-[#F3F4F6] text-[#111827] border-[#E5E7EB]"
+                ${card.variant === "primary"
+                  ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+                  : "bg-[#F3F4F6] text-[#111827] border-[#E5E7EB]"
                 }
               `}
             >

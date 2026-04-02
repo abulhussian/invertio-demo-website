@@ -9,7 +9,7 @@ export const megaMenuData = {
                               tabLabel: "Strategy & Development",
                               columns: [
                                     {
-                                          title: "STRATEGY & GOVERNANCE", 
+                                          title: "STRATEGY & GOVERNANCE",
                                           links: [
                                                 { label: "AI Strategy Consulting", href: "/services/ai-strategy" },
                                                 { label: "N8n Consulting & Automation Services", href: "/services/n8n-automation" },

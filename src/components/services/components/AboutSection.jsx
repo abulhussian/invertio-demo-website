@@ -1,7 +1,7 @@
 import Section from "@/components/common/ui/Section";
 import Image from "next/image";
 
-const AboutSection = ({ leftCards = [], rightCard }) => {
+const AboutSection = ({ leftCards = [], rightCard, hideImage = false }) => {
   return (
     <Section>
       <div className="mx-auto flex flex-row gap-8">
@@ -20,7 +20,7 @@ const AboutSection = ({ leftCards = [], rightCard }) => {
                 {card.description}
               </p>
 
-              {card.image && (
+              {card.image && !hideImage && (
                 <Image
                   className={card.imageClass}
                   src={card.image}
@@ -45,8 +45,7 @@ const AboutSection = ({ leftCards = [], rightCard }) => {
             <p className="text-lg font-medium leading-relaxed max-w-[600px]">
               {rightCard.description}
             </p>
-
-            {rightCard.image && (
+            {rightCard.image && !hideImage && (
               <Image
                 className={rightCard.imageClass}
                 src={rightCard.image}

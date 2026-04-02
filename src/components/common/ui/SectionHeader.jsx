@@ -2,7 +2,7 @@ export default function SectionHeader({
   badge,
   heading,
   subheading,
-   para,
+  para,
   align = "left",
   size = "xl",
   headingColor = "#101828",
@@ -57,16 +57,16 @@ export default function SectionHeader({
         >
           {subheading}
         </p>
-        
+
       )}
       {para && (
-          <p
-            className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line `}
-            style={{ color: subheadingColor }}
-          >
-            {para}
-          </p>
-        )}
+        <p
+          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line `}
+          style={{ color: subheadingColor }}
+        >
+          {para}
+        </p>
+      )}
     </div>
   );
 }
