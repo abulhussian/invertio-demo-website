@@ -12,7 +12,6 @@ import ProcessTimeline from "./ProcessTimeline";
 import HiringModels from "./HiringModels";
 import GuideSection from "./GuideSection";
 import FAQSection from "./FAQSection";
-import TechStackFeature from "./TechStackWrapper";
 import TechStackWrapper from "./TechStackWrapper";
 
 const ServiceTemplate = ({ data }) => {
@@ -26,7 +25,7 @@ const ServiceTemplate = ({ data }) => {
                         {/* 🔥 Hero Section */}
                         {/* {data.hero && <SolutionHero data={data.hero} />} */}
                         {data.hero && (
-                              <section className="bg-[#f8f9fb] pt-20 pb-14 px-6">
+                              <section className="bg-[#f8f9fb]  pb-14 px-6">
 
                                     <SectionHeader
                                           badge={data.hero.tag}

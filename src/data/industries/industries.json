@@ -1,77 +1,257 @@
 {
-      "media-entertainment": {
+      "fintech": {
             "hero": {
-                  "tag": "Technology & Media Industry",
-                  "title": "Media & Entertainment Solutions",
-                  "subtitle": "Deliver Engaging Digital Experiences",
-                  "description": "We help media and entertainment companies build scalable digital platforms, enhance user engagement, and deliver content seamlessly across devices."
+                  "tag": "Finance & Regulated",
+                  "title": "AI-Driven FinTech Solutions for Secure Scalability",
+                  "subtitle": "Modernizing Financial Services with Intelligent Automation",
+                  "description": "Navigate the complexities of modern finance with AI-powered infrastructure. From automated risk assessment to real-time fraud prevention, we help financial institutions build secure, compliant, and highly efficient digital ecosystems that drive customer trust and operational growth. Our approach ensures that every AI initiative contributes directly to your bottom line while fostering a culture of continuous innovation."
             },
             "clientLogos": {
-                  "text": "Trusted by media and tech companies",
-                  "highlight": "150",
+                  "text": "Trusted by Fortune 500 banks and global FinTech innovators",
+                  "highlight": "500",
                   "logos": [
-                        "/logo/netflix.png",
-                        "/logo/spotify.png",
-                        "/logo/meta.png",
-                        "/logo/youtube.png"
+                        "/logo/goldman.png",
+                        "/logo/stripe.png",
+                        "/logo/revolut.png",
+                        "/logo/hsbc.png",
+                        "/logo/visa.png",
+                        "/logo/mastercard.png",
+                        "/logo/jpmorgan.png",
+                        "/logo/barclays.png"
                   ]
             },
-            "servicesGrid": {
-                  "leftCards": [
+            "industrySolutions": {
+                  "heading": "Our FinTech AI Capabilities",
+                  "description": "Whether you're automating loan approvals, fraud detection, or regulatory reporting—we build automation that is secure, compliant, and aligned with banking standards. Our consultants work closely with your internal teams to ensure a smooth transition to AI-driven processes.",
+                  "services": [
                         {
-                              "title": "Content Platforms",
-                              "description": "Build scalable OTT and content delivery platforms.",
-                              "containerClass": "bg-blue-600 text-white"
+                              "title": "Automated Fraud Detection",
+                              "description": "Utilize anomaly detection algorithms to identify and block fraudulent transactions in milliseconds before they impact your ledger.",
+                              "features": [
+                                    "Real-time transaction monitoring and scoring",
+                                    "Pattern recognition for anti-money laundering (AML)",
+                                    "Biometric authentication and identity verification",
+                                    "Significant reduction in false-positive rates",
+                                    "AI-driven behavioral analysis for account protection"
+                              ],
+                              "isHighlighted": true
                         },
                         {
-                              "title": "User Engagement",
-                              "description": "Enhance engagement with personalized experiences.",
-                              "containerClass": "bg-gray-200 text-black"
+                              "title": "Algorithmic Wealth Management",
+                              "description": "Deliver personalized investment strategies at scale through AI-driven robo-advisory and automated portfolio rebalancing.",
+                              "features": [
+                                    "Predictive market trend analysis and forecasting",
+                                    "Automated tax-loss harvesting for retail clients",
+                                    "Risk-profile based dynamic asset allocation",
+                                    "Real-time portfolio performance tracking and alerts",
+                                    "Custom index creation using machine learning"
+                              ]
+                        },
+                        {
+                              "title": "Regulatory Compliance (RegTech)",
+                              "description": "Streamline KYC/AML workflows and ensure real-time adherence to global financial regulations with automated reporting.",
+                              "features": [
+                                    "Automated document verification and OCR",
+                                    "Real-time audit trail generation for regulators",
+                                    "Global sanction list and PEP screening",
+                                    "Regulatory reporting automation (MiFID II, GDPR)",
+                                    "Continuous compliance monitoring and risk scoring"
+                              ]
+                        },
+                        {
+                              "title": "Conversational Banking & Support",
+                              "description": "Deploy intelligent AI assistants to handle complex customer queries, loan applications, and account management 24/7.",
+                              "features": [
+                                    "Advanced Natural Language Processing (NLP)",
+                                    "Automated loan triaging and credit assessment",
+                                    "24/7 multilingual customer support bots",
+                                    "Seamless escalation to human banking agents",
+                                    "Sentiment analysis for customer satisfaction"
+                              ]
+                        },
+                        {
+                              "title": "Credit Scoring & Underwriting",
+                              "description": "Use alternative data and machine learning to assess creditworthiness more accurately than traditional models.",
+                              "features": [
+                                    "Non-traditional data point integration",
+                                    "Faster loan approval cycles (minutes vs days)",
+                                    "Reduced default rates through predictive modeling",
+                                    "Explainable AI (XAI) for regulatory transparency",
+                                    "Dynamic credit limit adjustments"
+                              ]
+                        },
+                        {
+                              "title": "Data Management & Pipeline Automation",
+                              "description": "Automated pipelines for financial data extraction, transformation, and loading to keep critical data accurate and accessible.",
+                              "features": [
+                                    "Secure ETL pipelines for sensitive financial data",
+                                    "Real-time data sync across cloud and on-prem",
+                                    "Manual error reduction in ledger reconciliations",
+                                    "Data cleansing for high-fidelity AI training",
+                                    "Secure archival and retrieval for compliance"
+                              ]
                         }
+                  ]
+            },
+            "industryCTA": {
+                  "title": "Automate What Slows Your Institution Down",
+                  "description": "Remove manual work, eliminate compliance bottlenecks, and save hours every week with custom FinTech workflows designed for modern finance. Our team handles the complexity so you can focus on the vision.",
+                  "buttonText": "Schedule a Security Audit",
+                  "href": "/contact-us"
+            },
+            "whyChooseUs": {
+                  "title": "Why Choose Our FinTech & Automation Solutions",
+                  "description": [
+                        "A generic vendor cannot deliver reliable financial solutions. You need a team that understands PCI-DSS, SOC2, and high-frequency data flows.",
+                        "We combine two decades of software engineering with cutting-edge AI research to deliver solutions that are fundamentally secure and scalable."
                   ],
-                  "rightCard": {
-                        "title": "Streaming Infrastructure",
-                        "description": "Deliver high-performance streaming systems globally.",
-                        "containerClass": "bg-[#0b1220] text-white"
-                  }
-            },
-            "transformationHero": {
-                  "badge": "Digital Media Innovation",
-                  "heading": "Transforming Media with Technology",
-                  "subheading": "Deliver seamless, scalable, and engaging digital experiences.",
-                  "benefits": [
-                        "Scalable OTT platforms",
-                        "Personalized content delivery",
-                        "Real-time streaming performance",
-                        "Global content distribution",
-                        "Data-driven user insights"
+                  "features": [
+                        "FinTech Experts with Average 7+ Years of Experience",
+                        "PCI-DSS and SOC2 Compliance Standards Adherence",
+                        "Proven Track Record with Tier-1 Banks and Startups",
+                        "End-to-End Delivery: From Strategy to Maintenance",
+                        "Time-Zone Friendly Global Collaboration Model",
+                        "Security-First Mentality in Every Line of Code",
+                        "99.99% Uptime Commitment for Critical Workflows",
+                        "Transparent Communication via Daily Standups",
+                        "Agile Methodology for Rapid Feature Deployment",
+                        "Scalable Infrastructure Built for High-Volume Data",
+                        "Expertise in ISO 20022 and Global Payment Standards",
+                        "Access to the Latest Research in Generative Finance"
+                  ],
+                  "logos": [
+                        "/logo/pci-dss.png",
+                        "/logo/soc2.png",
+                        "/logo/iso.png",
+                        "/logo/gdpr.png",
+                        "/logo/aws-finance.png",
+                        "/logo/azure-trust.png"
                   ]
             },
-            "caseStudy": {
-                  "badge": "Case Study",
-                  "heading": "Scaling Digital Media Platforms",
-                  "subheading": "Helping media companies improve engagement and performance.",
-                  "cards": [
+            "statsSection": {
+                  "title": "Scale Your Operations Without Extra Headcount",
+                  "subtitle": "Automate repetitive financial tasks so your team can focus on high-value strategy. Our solutions act as a force multiplier for your existing staff.",
+                  "buttonText": "See the Impact",
+                  "href": "/case-studies",
+                  "stats": [
                         {
-                              "title": "Streaming Platform",
-                              "description": "Built scalable OTT platform with high user retention.",
-                              "variant": "primary"
+                              "value": "$15B+",
+                              "label": "Processed Transaction Volume"
                         },
                         {
-                              "title": "Content Personalization",
-                              "description": "Improved engagement using AI-based recommendations.",
-                              "variant": "light"
+                              "value": "20+",
+                              "label": "Years of FinTech Engineering"
+                        },
+                        {
+                              "value": "85%",
+                              "label": "Reduction in Manual Data Entry"
+                        },
+                        {
+                              "value": "99.9%",
+                              "label": "System Availability & Reliability"
+                        },
+                        {
+                              "value": "24/7",
+                              "label": "Active Security Monitoring"
                         }
                   ]
             },
-            "ctaSection": {
-                  "tag": "Let's Build Together",
-                  "heading": "Transform Your Media Platform",
-                  "description": "Build scalable, high-performance media solutions for global audiences.",
-                  "button": {
-                        "text": "Talk To Experts",
-                        "href": "/contact-us"
-                  }
+            "techImpact": {
+                  "title": "Technology Stack for Financial Automation",
+                  "description": "We use a robust, modern, and high-performance tech stack to deliver secure financial solutions. Our approach is vendor-agnostic and security-focused.",
+                  "stackDescription": "Our expertise spans across secure cloud infrastructure (AWS/Azure), specialized FinTech APIs, and high-concurrency languages like Go and Rust for transaction processing. We utilize Python for AI modeling and React for premium dashboard experiences."
+            },
+            "processTimeline": {
+                  "title": "Our Proven FinTech Delivery Process",
+                  "description": "Financial automation requires a structured delivery cycle to ensure security and zero-downtime migrations.",
+                  "steps": [
+                        {
+                              "title": "Discovery & Compliance Audit",
+                              "description": "Identifying bottlenecks and reviewing existing security protocols."
+                        },
+                        {
+                              "title": "Strategy & Secure Architecture",
+                              "description": "Designing a roadmap with defined milestones and encryption standards."
+                        },
+                        {
+                              "title": "Modular Development",
+                              "description": "Building and configuring secure AI nodes and API integrations."
+                        },
+                        {
+                              "title": "Testing & Pen-Testing",
+                              "description": "Rigorous performance, security, and edge-case validation."
+                        },
+                        {
+                              "title": "Phased Deployment",
+                              "description": "Minimal disruption during go-live with CI/CD safety nets."
+                        },
+                        {
+                              "title": "Ongoing Optimization",
+                              "description": "Continuous monitoring and scaling as your volume grows."
+                        }
+                  ]
+            },
+            "hiringModels": {
+                  "heading": "Our Flexible Hiring Models for Finance",
+                  "subheading": "Choose the engagement model that fits your budget, timeline, and internal team structure.",
+                  "models": [
+                        {
+                              "title": "Staff Augmentation",
+                              "icon": "Users",
+                              "description": "Add senior FinTech engineers to your existing team immediately.",
+                              "whatItIs": [
+                                    "Individual senior engineers with AI/Finance skills",
+                                    "Direct integration into your internal workflow",
+                                    "Flexible scaling based on project needs",
+                                    "Immediate access to niche technical talent"
+                              ],
+                              "billing": "Monthly Time & Material",
+                              "bestFor": "Specific skill gaps and short-term bursts",
+                              "buttonText": "Hire Developers"
+                        },
+                        {
+                              "title": "Dedicated FinTech Pod",
+                              "icon": "UserGroup",
+                              "description": "A cross-functional team that owns the entire product delivery cycle.",
+                              "whatItIs": [
+                                    "Full squad: Devs, QA, Architect, PM",
+                                    "End-to-end accountability for milestones",
+                                    "Autonomous operation with regular reporting",
+                                    "Focused solely on your financial roadmap"
+                              ],
+                              "billing": "Monthly Retainer per Pod",
+                              "bestFor": "Long-term innovation and new product builds",
+                              "buttonText": "Start a Pod"
+                        },
+                        {
+                              "title": "Project-Based Consulting",
+                              "icon": "ClipboardCheck",
+                              "description": "Defined scope and fixed budget projects for clear deliverables.",
+                              "whatItIs": [
+                                    "Clearly defined timelines and features",
+                                    "Fixed-price model for budget certainty",
+                                    "Turnkey solutions from concept to launch",
+                                    "Ideal for specific automation integrations"
+                              ],
+                              "billing": "Fixed Price based on Scope",
+                              "bestFor": "MVPs and specific workflow automations",
+                              "buttonText": "Get a Quote"
+                        }
+                  ]
+            },
+            "faqs": {
+                  "heading": "Frequently Asked Questions",
+                  "subheading": "Answers to common queries about our financial automation services.",
+                  "questions": [
+                        {
+                              "question": "How do you ensure data security in AI models?",
+                              "answer": "We use end-to-end encryption, private VPC environments, and anonymization techniques to ensure sensitive financial data never leaves your secure perimeter."
+                        },
+                        {
+                              "question": "Can you integrate with legacy banking systems?",
+                              "answer": "Yes, we specialize in building secure API wrappers and middleware to connect modern AI workflows with legacy COBOL or mainframe systems."
+                        }
+                  ]
             }
       }
 }
