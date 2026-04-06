@@ -77,9 +77,8 @@ const ServiceTemplate = ({ data }) => {
                         )}
 
 
-                        {/* 🔥 Process Section */}
-                        {data.process && (
-                              <ProcessTimeline data={data.process} />
+                        {data.processTimeline && (
+                              <ProcessTimeline data={data.processTimeline} />
                         )}
 
                         {data.hiringModels && (

@@ -214,6 +214,58 @@
                   "description": "We use a robust and modern tech stack to deliver secure, scalable, and efficient workflow automation solutions.",
                   "stackDescription": "Our expertise spans across cloud infrastructure, specialized AI Strategy  nodes, and seamless API integrations to ensure your automation ecosystem is future-proof."
             },
+            "faqs": {
+                  "heading": "Frequently Asked Questions",
+                  "subheading": "Find answers to the most common questions about our AI Strategy  consulting & automation services in India.",
+                  "questions": [
+                        {
+                              "question": "Why should enterprises choose AI Strategy  for workflow automation?",
+                              "answer": "With these advantages, businesses can streamline operations, reduce manual effort, and scale automation as they grow."
+                        },
+                        {
+                              "question": "How can ValueCoders help with AI-powered AI Strategy  workflow automation?",
+                              "answer": "We integrate advanced AI models directly into your AI Strategy  workflows to handle complex decision-making and data processing."
+                        },
+                        {
+                              "question": "What types of processes can AI Strategy  automate?",
+                              "answer": "From sales pipelines and onboarding to financial reporting and backend operations."
+                        },
+                        {
+                              "question": "Can you integrate AI Strategy  with our internal or legacy systems?",
+                              "answer": "Yes, we specialize in connecting modern AI Strategy  workflows with older legacy databases and internal proprietary software."
+                        }
+                  ]
+            },
+            "processTimeline": {
+                  "title": "Our Process",
+                  "description": "Automation isn't just building workflows—it requires a structured delivery cycle to ensure reliability.",
+                  "steps": [
+                        {
+                              "title": "Discovery & Assessment",
+                              "description": "We identify bottlenecks and automation opportunities."
+                        },
+                        {
+                              "title": "Strategy & Planning",
+                              "description": "We design a clear roadmap and integration plans."
+                        },
+                        {
+                              "title": "Workflow Development",
+                              "description": "We build and configure custom n8n nodes and logic."
+                        },
+                        {
+                              "title": "Testing & Validation",
+                              "description": "Rigorous testing for performance and reliability."
+                        },
+                        {
+                              "title": "Seamless Deployment",
+                              "description": "Minimal disruption during system integration."
+                        },
+                        {
+                              "title": "Continuous Optimization",
+                              "description": "Ongoing updates to keep workflows future-ready."
+                        }
+                  ]
+            },
             "hiringModels": {
                   "heading": "Our Hiring Models",
                   "subheading": "Choose how you want work to move - added hands, owned delivery, or your dedicated engineering hub. Each model is designed to remove friction, speed up progress, and keep accountability clear.",
@@ -316,77 +368,6 @@
                         }
                   ]
             },
-            "stats": {
-                  "heading": "Scale Without Extra Headcount",
-                  "subheading": "Automate repetitive tasks so your team can focus on high-value work.",
-                  "buttonText": "Help Me Scale",
-                  "metrics": [
-                        {
-                              "value": "700+",
-                              "label": "Full-time Staff"
-                        },
-                        {
-                              "value": "20+",
-                              "label": "Years Experience"
-                        },
-                        {
-                              "value": "4500+",
-                              "label": "Satisfied Customers"
-                        }
-                  ]
-            },
-            "faqs": {
-                  "heading": "Frequently Asked Questions",
-                  "subheading": "Find answers to the most common questions about our AI Strategy  consulting & automation services in India.",
-                  "questions": [
-                        {
-                              "question": "Why should enterprises choose AI Strategy  for workflow automation?",
-                              "answer": "With these advantages, businesses can streamline operations, reduce manual effort, and scale automation as they grow."
-                        },
-                        {
-                              "question": "How can ValueCoders help with AI-powered AI Strategy  workflow automation?",
-                              "answer": "We integrate advanced AI models directly into your AI Strategy  workflows to handle complex decision-making and data processing."
-                        },
-                        {
-                              "question": "What types of processes can AI Strategy  automate?",
-                              "answer": "From sales pipelines and onboarding to financial reporting and backend operations."
-                        },
-                        {
-                              "question": "Can you integrate AI Strategy  with our internal or legacy systems?",
-                              "answer": "Yes, we specialize in connecting modern AI Strategy  workflows with older legacy databases and internal proprietary software."
-                        }
-                  ]
-            },
-            "process": {
-                  "heading": "Our Process",
-                  "subheading": "Automation isn't just building workflows – it requires a structured delivery cycle to ensure reliability. Our 6-step AI Strategy  automation process ensures transparency, accuracy, and long-term maintainability for every workflow we build.",
-                  "steps": [
-                        {
-                              "title": "Discovery & Assessment",
-                              "description": "We begin with discovery sessions to understand your processes, goals, and automation opportunities."
-                        },
-                        {
-                              "title": "Strategy & Planning",
-                              "description": "Our consultants design a clear roadmap with prioritized workflows and integration plans."
-                        },
-                        {
-                              "title": "Workflow Development",
-                              "description": "We build and configure workflows, including custom nodes and system integrations."
-                        },
-                        {
-                              "title": "Testing & Validation",
-                              "description": "All workflows are tested for performance, reliability, and compliance before deployment."
-                        },
-                        {
-                              "title": "Seamless Deployment",
-                              "description": "We integrate workflows into your business ecosystem with minimal disruption."
-                        },
-                        {
-                              "title": "Continuous Optimization",
-                              "description": "Ongoing monitoring, updates, and refinements keep your automations future-ready."
-                        }
-                  ]
-            },
             "servicesGrid": {
                   "leftCards": [
                         {
@@ -410,53 +391,6 @@
                         "containerClass": "bg-[#0b1220] text-white",
                         "image": "/images/grid3.png",
                         "imageClass": "mt-auto w-full"
-                  }
-            },
-            "transformationHero": {
-                  "badge": "Driving Strategic Growth",
-                  "heading": "Navigating the Complex Landscape of Artificial Intelligence",
-                  "subheading": "Invertio combines strategic foresight with technical depth to help organizations move from AI experimentation to full-scale production.",
-                  "button": {
-                        "text": "Contact Us",
-                        "href": "/contact-us"
-                  },
-                  "benefits": [
-                        "Objective assessment of AI feasibility and impact",
-                        "Strategic alignment with corporate growth goals",
-                        "Risk mitigation for ethical and data concerns",
-                        "Accelerated time-to-market for AI solutions",
-                        "Future-proof architecture for evolving models"
-                  ]
-            },
-            "caseStudy": {
-                  "badge": "Case Study",
-                  "heading": "Strategic Consulting Powering AI Readiness",
-                  "subheading": "From initial discovery and data auditing to full-scale governance and implementation roadmaps.",
-                  "cards": [
-                        {
-                              "title": "Strategy Development",
-                              "description": "Design custom AI blueprints that align technology choices with your specific market challenges.",
-                              "variant": "light"
-                        },
-                        {
-                              "title": "Infrastructure Planning",
-                              "description": "Build modern data environments capable of supporting complex machine learning workloads.",
-                              "variant": "primary"
-                        },
-                        {
-                              "title": "Governance & Compliance",
-                              "description": "Ensure your AI systems meet global regulatory standards while maintaining transparency.",
-                              "variant": "light"
-                        }
-                  ]
-            },
-            "ctaSection": {
-                  "tag": "Let's Build Together",
-                  "heading": "Start Your AI Transformation Journey Today",
-                  "description": "Partner with Invertio to modernize your business and build scalable AI solutions.",
-                  "button": {
-                        "text": "Talk To Our Experts",
-                        "href": "/contact-us"
                   }
             }
       }
