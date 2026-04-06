@@ -15,31 +15,32 @@ const IndustriesGrid = ({ data }) => {
                               <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mt-3 mb-4">
                                     {data.heading}
                               </h2>
-                              <p className="text-slate-600 text-lg max-w-3xl">
+                              <p className="text-slate-600 text-md max-w-4xl">
                                     {data.subheading}
                               </p>
                         </div>
 
                         {/* Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                               {data.items.map((item, idx) => {
                                     const IconComponent = Icons[item.icon] || Icons.HelpCircle;
+
                                     return (
                                           <div
                                                 key={idx}
-                                                className="bg-white p-8 rounded-2xl border border-slate-100 flex items-start gap-5 transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 group"
+                                                className="bg-white p-4 rounded-xl border border-slate-200 flex items-start gap-3 transition-all duration-200 hover:shadow-md hover:-translate-y-[2px]"
                                           >
-                                                {/* Icon Container */}
-                                                <div className="bg-slate-50 p-4 rounded-xl group-hover:bg-blue-50 transition-colors">
-                                                      <IconComponent className="w-6 h-6 text-blue-600" />
+                                                {/* Icon */}
+                                                <div className="bg-slate-50 p-2.5 rounded-lg">
+                                                      <IconComponent className="w-5 h-5 text-blue-600" />
                                                 </div>
 
-                                                {/* Text Content */}
+                                                {/* Content */}
                                                 <div>
-                                                      <h3 className="text-xl font-bold text-slate-900 mb-3">
+                                                      <h3 className="text-[15px] font-semibold text-slate-900 leading-tight mb-1">
                                                             {item.title}
                                                       </h3>
-                                                      <p className="text-slate-500 text-sm leading-relaxed">
+                                                      <p className="text-[13px] text-slate-500 leading-snug">
                                                             {item.description}
                                                       </p>
                                                 </div>

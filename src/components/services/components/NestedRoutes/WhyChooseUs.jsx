@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 
 const WhyChooseUs = ({ data }) => {
@@ -41,7 +40,7 @@ const WhyChooseUs = ({ data }) => {
                                                 <img
                                                       src={logo}
                                                       alt="Client Logo"
-                                                      className="h-8 object-contain grayscale hover:grayscale-0 transition-all"
+                                                      className="h-8 object-contain  transition-all"
                                                 />
                                           </div>
                                     ))}

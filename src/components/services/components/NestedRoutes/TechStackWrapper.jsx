@@ -15,16 +15,16 @@ const TechStackWrapper = ({ data }) => {
                               </div>
 
                               {/* COLUMN 2: The Dynamic Text from ServiceTemplate */}
-                              <div className="max-w-xl">
+                              <div className="max-w-full">
                                     {data.badge && (
                                           <span className="text-blue-600 font-bold text-sm uppercase tracking-wider">
                                                 {data.badge}
                                           </span>
                                     )}
-                                    <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mt-4 mb-6 leading-tight">
+                                    <h2 className="text-4xl lg:text-3xl font-extrabold text-slate-900 mt-4 mb-2 leading-tight">
                                           {data.title}
                                     </h2>
-                                    <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                                    <p className="text-slate-600 text-xs leading-relaxed mb-6">
                                           {data.description}
                                     </p>
                                     {data.subtext && (
@@ -32,8 +32,6 @@ const TechStackWrapper = ({ data }) => {
                                                 {data.subtext}
                                           </p>
                                     )}
-                                    {/* The signature blue accent line */}
-                                    <div className="mt-10 w-20 h-1.5 bg-blue-600 rounded-full" />
                               </div>
 
                         </div>

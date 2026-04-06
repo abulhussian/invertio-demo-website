@@ -38,16 +38,14 @@ const GuideSection = ({ data }) => {
                                     {activeContent.heading}
                               </h3>
 
-                              {/* Visual Diagram Placeholder */}
-                              <div className="bg-[#1e293b] rounded-3xl p-8 mb-10 overflow-hidden">
-                                    <img
-                                          src={activeContent.image}
-                                          alt="Process Diagram"
-                                          className="w-full h-auto rounded-lg"
-                                    />
-                              </div>
 
-                              <p className="text-slate-600 mb-10 text-lg italic">
+                              <img
+                                    src={activeContent.image}
+                                    alt="Process Diagram"
+                                    className="w-full h-auto rounded-md"
+                              />
+
+                              <p className="text-slate-600 mb-10 text-md">
                                     {activeContent.description}
                               </p>
 

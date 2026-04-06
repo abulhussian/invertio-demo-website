@@ -1,71 +1,113 @@
-import React from 'react';
-import { CheckCircle2, Users, UserPlus, Globe } from 'lucide-react';
+import React from "react";
+import { CheckCircle2, Users, UserPlus, Globe } from "lucide-react";
 
 const iconMap = {
-      Users: <UserPlus className="w-8 h-8 text-blue-600" />,
-      UserGroup: <Users className="w-8 h-8 text-blue-600" />,
-      Globe: <Globe className="w-8 h-8 text-blue-600" />
+      Users: <UserPlus className="w-6 h-6 text-blue-600" />,
+      UserGroup: <Users className="w-6 h-6 text-blue-600" />,
+      Globe: <Globe className="w-6 h-6 text-blue-600" />,
 };
 
 const HiringModels = ({ data }) => {
       if (!data) return null;
 
       return (
-            <section className="py-24 bg-[#F8F9FC]">
+            <section className="py-20 bg-[#F8F9FC]">
                   <div className="max-w-7xl mx-auto px-6">
-                        <div className="text-center mb-16">
-                              <h2 className="text-5xl font-bold text-slate-900 mb-6">{data.heading}</h2>
-                              <p className="text-slate-600 text-lg max-w-4xl mx-auto leading-relaxed">
+
+                        {/* Header */}
+                        <div className="text-center mb-14">
+                              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
+                                    {data.heading}
+                              </h2>
+                              <p className="text-[15px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
                                     {data.subheading}
                               </p>
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        {/* Cards */}
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                               {data.models.map((model, idx) => (
                                     <div
                                           key={idx}
-                                          className={`bg-white p-10 rounded-3xl border-2 flex flex-col h-full transition-all duration-300 hover:shadow-xl ${idx === 0 ? 'border-blue-500' : 'border-slate-100'}`}
+                                          className={`bg-white p-6 rounded-2xl border flex flex-col h-full transition-all duration-300 hover:-translate-y-[2px]
+              ${idx === 0
+                                                      ? "border-blue-400 shadow-sm"
+                                                      : "border-slate-200 hover:border-slate-300 hover:shadow-md"
+                                                }`}
                                     >
-                                          <div className="mb-6">{iconMap[model.icon]}</div>
+                                          {/* Icon */}
+                                          <div className="mb-4">{iconMap[model.icon]}</div>
 
-                                          <h3 className="text-2xl font-bold text-slate-900 mb-4 h-16 flex items-center">
+                                          {/* Title */}
+                                          <h3 className="text-[18px] font-semibold text-slate-900 mb-2 min-h-[48px] leading-snug">
                                                 {model.title}
                                           </h3>
 
-                                          <p className="text-slate-500 text-sm mb-8 leading-relaxed">
+                                          {/* Description */}
+                                          <p className="text-[13px] text-slate-500 mb-5 leading-relaxed">
                                                 {model.description}
                                           </p>
 
-                                          <div className="space-y-6 flex-grow">
+                                          {/* Content */}
+                                          <div className="space-y-4 flex-grow">
+
+                                                {/* What it is */}
                                                 <div>
-                                                      <h4 className="font-bold text-slate-900 mb-3">What it is:</h4>
+                                                      <h4 className="text-[13.5px] font-semibold text-slate-900 mb-2">
+                                                            What it is:
+                                                      </h4>
                                                       <ul className="space-y-2">
                                                             {model.whatItIs.map((item, i) => (
-                                                                  <li key={i} className="flex items-start gap-2 text-[13px] text-slate-600">
-                                                                        <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
+                                                                  <li
+                                                                        key={i}
+                                                                        className="flex items-start gap-2 text-[12.5px] text-slate-600"
+                                                                  >
+                                                                        <CheckCircle2 className="w-4 h-4 text-blue-500 mt-[2px] shrink-0" />
                                                                         {item}
                                                                   </li>
                                                             ))}
                                                       </ul>
                                                 </div>
 
+                                                {/* Billing */}
                                                 <div>
-                                                      <h4 className="font-bold text-slate-900">Billing:</h4>
-                                                      <p className="text-slate-600 text-sm">{model.billing}</p>
+                                                      <h4 className="text-[13.5px] font-semibold text-slate-900">
+                                                            Billing:
+                                                      </h4>
+                                                      <p className="text-[12.5px] text-slate-600">
+                                                            {model.billing}
+                                                      </p>
                                                 </div>
 
+                                                {/* Best for */}
                                                 <div>
-                                                      <h4 className="font-bold text-slate-900">Best for:</h4>
-                                                      <p className="text-slate-600 text-sm">{model.bestFor}</p>
+                                                      <h4 className="text-[13.5px] font-semibold text-slate-900">
+                                                            Best for:
+                                                      </h4>
+                                                      <p className="text-[12.5px] text-slate-600">
+                                                            {model.bestFor}
+                                                      </p>
                                                 </div>
 
+                                                {/* How it works */}
                                                 <div>
-                                                      <h4 className="font-bold text-slate-900">How it works:</h4>
-                                                      <p className="text-slate-600 text-sm">{model.howItWorks}</p>
+                                                      <h4 className="text-[13.5px] font-semibold text-slate-900">
+                                                            How it works:
+                                                      </h4>
+                                                      <p className="text-[12.5px] text-slate-600">
+                                                            {model.howItWorks}
+                                                      </p>
                                                 </div>
                                           </div>
 
-                                          <button className={`mt-10 w-full py-4 rounded-xl font-bold transition-colors ${idx === 0 ? 'bg-[#0f172a] text-white hover:bg-slate-800' : 'bg-slate-50 text-slate-900 hover:bg-slate-100'}`}>
+                                          {/* Button */}
+                                          <button
+                                                className={`mt-6 w-full py-2.5 rounded-lg text-[13px] font-medium transition
+                ${idx === 0
+                                                            ? "bg-[#0f172a] text-white hover:bg-slate-800"
+                                                            : "bg-slate-100 text-slate-800 hover:bg-slate-200"
+                                                      }`}
+                                          >
                                                 {model.buttonText}
                                           </button>
                                     </div>
