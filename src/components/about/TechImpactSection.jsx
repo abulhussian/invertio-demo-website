@@ -172,21 +172,7 @@ const TechImpactSection = () => {
 
         </div>
 
-        {/* RIGHT CONTENT */}
-
-        <div className="mt-10 lg:mt-0">
-
-          <SectionHeader
-            badge="Our Impact"
-            heading="Helping Businesses Grow Through Technology"
-            subheading={`Our solutions have supported organizations across industries and regions in achieving digital success.
-From enterprise modernization to AI-driven innovation, we help
-businesses adapt to changing markets, improve operational efficiency, and build technology ecosystems ready for the future.`}
-            size="md"
-            align="left"
-          />
-
-        </div>
+        
 
       </div>
     </Section>

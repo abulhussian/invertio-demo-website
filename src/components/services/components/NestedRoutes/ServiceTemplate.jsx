@@ -1,68 +1,106 @@
 
 
-import InsightsSection from "@/components/common/components/InsightsSection";
-import CaseStudy from "../CaseStudy";
-import TransformationHero from "../TransformationHero";
-import SolutionFinalCTA from "./SolutionFinalCTA";
 import SolutionTrustedLogos from "./SolutionTrustedLogos";
-import AboutSection from "@/components/services/components/AboutSection";
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
 import SectionHeader from "@/components/common/ui/SectionHeader";
+import ServicesGrid from "./ServicesGrid";
+import AutomationBanner from "./AutomationBanner";
+import WhyChooseUs from "./WhyChooseUs";
+import StatsSection from "./StatsSection";
+import IndustriesGrid from "./IndustriesGrid";
+import ProcessTimeline from "./ProcessTimeline";
+import HiringModels from "./HiringModels";
+import GuideSection from "./GuideSection";
+import FAQSection from "./FAQSection";
+import TechStackFeature from "./TechStackWrapper";
+import TechStackWrapper from "./TechStackWrapper";
 
 const ServiceTemplate = ({ data }) => {
       if (!data) return null;
       console.log("TEMPLATE DATA:", data);
 
       return (
-            <div>
+            <>
+                  <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34" >
 
-                  {/* 🔥 Hero Section */}
-                  {/* {data.hero && <SolutionHero data={data.hero} />} */}
-                  {data.hero && (
-                        <section className="bg-[#f8f9fb] pt-20 pb-14 px-6">
+                        {/* 🔥 Hero Section */}
+                        {/* {data.hero && <SolutionHero data={data.hero} />} */}
+                        {data.hero && (
+                              <section className="bg-[#f8f9fb] pt-20 pb-14 px-6">
 
-                              <SectionHeader
-                                    badge={data.hero.tag}
-                                    heading={data.hero.title}
-                                    subheading={data.hero.subtitle}
-                                    para={data.hero.description}
-                                    align="left"
-                                    size="xl"
-                              />
-                        </section>
-                  )}
+                                    <SectionHeader
+                                          badge={data.hero.tag}
+                                          heading={data.hero.title}
+                                          subheading={data.hero.subtitle}
+                                          para={data.hero.description}
+                                          align="left"
+                                          size="xl"
+                                    />
+                              </section>
+                        )}
 
-                  {/* 🔥 Trusted Logos */}
-                  {data.clientLogos && (
-                        <SolutionTrustedLogos data={data.clientLogos} />
-                  )}
+                        {/* 🔥 Trusted Logos */}
+                        {data.clientLogos && (
+                              <SolutionTrustedLogos data={data.clientLogos} />
+                        )}
 
-                  {/* below logos */}
+                        {/* 🔥 Consulting Services Grid (Added data prop here) */}
+                        {data.consultingServices && (
+                              <ServicesGrid data={data.consultingServices} />
+                        )}
 
-                  {data.servicesGrid && (
-                        <AboutSection
-                              leftCards={data.servicesGrid.leftCards}
-                              rightCard={data.servicesGrid.rightCard}
-                              hideImage={true}
-                        />
-                  )}
+                  </div>
+                  <div>
 
-                  {data.transformationHero && (
-                        <TransformationHero data={data.transformationHero} />
-                  )}
+                        {data.automationCTA && (
+                              <AutomationBanner data={data.automationCTA} />
+                        )}
 
-                  {data.caseStudy && (
-                        <CaseStudy data={data.caseStudy} />
-                  )}
 
-                  {data.ctaSection && (
-                        <SolutionFinalCTA data={data.ctaSection} />
-                  )}
+                        {data.whyChooseUs && (
+                              <WhyChooseUs data={data.whyChooseUs} />
+                        )}
 
-                  <InsightsSection />
+                        {data.statsSection && (
+                              <StatsSection data={data.statsSection} />
+                        )}
 
-                  <TestimonialsSection />
-            </div>
+                        {/* 🔥 Industries Section */}
+                        {data.industries &&
+                              (
+                                    <IndustriesGrid data={data.industries} />
+                              )}
+
+
+                        {data.techImpact && (
+                              <TechStackWrapper data={data.techImpact} />
+                        )}
+
+
+                        {/* 🔥 Process Section */}
+                        {data.process && (
+                              <ProcessTimeline data={data.process} />
+                        )}
+
+                        {data.hiringModels && (
+                              <HiringModels data={data.hiringModels} />
+                        )}
+
+
+                        {data.guideSection && (
+                              <GuideSection data={data.guideSection} />
+                        )}
+
+
+
+                        {data.faqs && (
+                              <FAQSection data={data.faqs} />
+                        )}
+
+
+                        <TestimonialsSection />
+                  </div >
+            </>
       );
 };
 
