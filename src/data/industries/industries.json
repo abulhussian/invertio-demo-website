@@ -10,14 +10,15 @@
                   "text": "Trusted by Fortune 500 banks and global FinTech innovators",
                   "highlight": "500",
                   "logos": [
-                        "/logo/goldman.png",
-                        "/logo/stripe.png",
-                        "/logo/revolut.png",
-                        "/logo/hsbc.png",
-                        "/logo/visa.png",
-                        "/logo/mastercard.png",
-                        "/logo/jpmorgan.png",
-                        "/logo/barclays.png"
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
                   ]
             },
             "industrySolutions": {
@@ -120,12 +121,15 @@
                         "Access to the Latest Research in Generative Finance"
                   ],
                   "logos": [
-                        "/logo/pci-dss.png",
-                        "/logo/soc2.png",
-                        "/logo/iso.png",
-                        "/logo/gdpr.png",
-                        "/logo/aws-finance.png",
-                        "/logo/azure-trust.png"
+                        "/logo/beefree.png",
+                        "/logo/elastic.png",
+                        "/logo/meta.png",
+                        "/logo/netflix.png",
+                        "/logo/slack.png",
+                        "/logo/airbnb.png",
+                        "/logo/disney.png",
+                        "/logo/samsung.png",
+                        "/logo/nvidia.png"
                   ]
             },
             "statsSection": {

@@ -5,10 +5,13 @@ import ServicesGrid from "@/components/services/components/NestedRoutes/Services
 import AutomationBanner from "@/components/services/components/NestedRoutes/AutomationBanner";
 import WhyChooseUs from "@/components/services/components/NestedRoutes/WhyChooseUs";
 import StatsSection from "@/components/services/components/NestedRoutes/StatsSection";
-import TechStackWrapper from "@/components/services/components/NestedRoutes/TechStackWrapper";
+import IndustriesGrid from "@/components/services/components/NestedRoutes/IndustriesGrid";
 import ProcessTimeline from "@/components/services/components/NestedRoutes/ProcessTimeline";
 import HiringModels from "@/components/services/components/NestedRoutes/HiringModels";
+import GuideSection from '@/components/services/components/NestedRoutes/GuideSection';
 import FAQSection from "@/components/services/components/NestedRoutes/FAQSection";
+import TechStackWrapper from "@/components/services/components/NestedRoutes/TechStackWrapper";
+
 
 // Common Components
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
@@ -59,6 +62,14 @@ const IndustryTemplate = ({ data }) => {
                               <StatsSection data={data.statsSection} />
                         )}
 
+                        {/* 🔥 Industries Section */}
+                        {data.industries && (
+                              <IndustriesGrid data={data.industries} />
+                        )}
+
+                        {data.techImpact && (
+                              <TechStackWrapper data={data.techImpact} />
+                        )}
                         {data.techImpact && (
                               <TechStackWrapper data={data.techImpact} />
                         )}
@@ -69,6 +80,11 @@ const IndustryTemplate = ({ data }) => {
 
                         {data.hiringModels && (
                               <HiringModels data={data.hiringModels} />
+                        )}
+
+                        {/* 🔥 Guide / Resources Section */}
+                        {data.guideSection && (
+                              <GuideSection data={data.guideSection} />
                         )}
 
                         {data.faqs && (
