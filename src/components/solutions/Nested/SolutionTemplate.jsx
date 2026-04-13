@@ -88,6 +88,7 @@ const SolutionTemplate = ({ data }) => {
                               <HiringModels data={data.hiringModels} />
                         )}
 
+
                         {/* 🔥 Guide / Resources Section */}
                         {data.guideSection && (
                               <GuideSection data={data.guideSection} />
