@@ -53,6 +53,7 @@ export default async function Page({ params }) {
 
   if (!match) return notFound();
 
+  // ✅ JSON DATA
   const industry = industriesData[slug];
 
   if (!industry) return notFound();

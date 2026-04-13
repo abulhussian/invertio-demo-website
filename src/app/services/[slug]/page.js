@@ -54,8 +54,6 @@ export default async function Page({ params }) {
   // ✅ JSON DATA
   const service = servicesData[slug];
 
-  console.log("SERVICE:", service);
-
   if (!service) return notFound();
 
   return <ServiceTemplate data={service} />;
