@@ -94,6 +94,109 @@
                         }
                   ]
             },
+            "consultingServices": {
+                  "heading": "AI Strategy Consulting Services We Offer",
+                  "description": "Whether you're automating sales pipelines, onboarding workflows, financial processes, or backend operations – we build automation that is secure, scalable, and aligned with your business logic.",
+                  "services": [
+                        {
+                              "title": "Workflow Assessment & Automation Strategy",
+                              "description": "Hire AI Strategy Consulting to evaluate workflows, identify automation gaps, and design strategies aligned with your goals for long-term success.",
+                              "features": [
+                                    "Faster workflow execution",
+                                    "Optimized resource usage",
+                                    "Reliable scaling solutions"
+                              ],
+                              "isHighlighted": true
+                        },
+                        {
+                              "title": "Integration Planning & Implementation",
+                              "description": "Our AI Strategy  experts connect CRMs, ERPs, and third-party apps into unified workflows with seamless integrations and reliable data flow.",
+                              "features": [
+                                    "CRM and ERP connections",
+                                    "Robust API integrations",
+                                    "Unified workflow design"
+                              ]
+                        },
+                        {
+                              "title": "Process Optimization & Refinement",
+                              "description": "We refine workflows by streamlining operations, and ensuring processes are ready for automation at scale using enterprise workflow automation with AI Strategy .",
+                              "features": [
+                                    "Workflow efficiency audits",
+                                    "Streamlined process design",
+                                    "Scalability preparation steps"
+                              ]
+                        },
+                        {
+                              "title": "Custom Node Development",
+                              "description": "Hire AI Strategy  consultants to design custom-built nodes, extend functionality, and integrate unique apps tailored to your business needs.",
+                              "features": [
+                                    "Custom node creation",
+                                    "Unique app integration",
+                                    "Feature set extension"
+                              ]
+                        },
+                        {
+                              "title": "Data Automation & Management",
+                              "description": "Our consultants design automated pipelines for extraction, transformation, and loading to keep business-critical data accurate and accessible.",
+                              "features": [
+                                    "Automated ETL pipelines",
+                                    "Real-time data sync",
+                                    "Manual error reduction"
+                              ]
+                        },
+                        {
+                              "title": "AI-Powered Automation Solutions",
+                              "description": "We implement AI-powered workflows with OpenAI, ML, and NLP to enhance decisions, automate tasks, and boost productivity.",
+                              "features": [
+                                    "AI workflow automation",
+                                    "Machine learning models",
+                                    "Natural language processing"
+                              ]
+                        },
+                        {
+                              "title": "Scalability & Performance Tuning",
+                              "description": "Hire AI Strategy  experts to optimize workflows for execution speed, resource usage, and reliable performance as your business scales.",
+                              "features": [
+                                    "Faster workflow execution",
+                                    "Optimized resource usage",
+                                    "Reliable scaling solutions"
+                              ]
+                        },
+                        {
+                              "title": "Security & Compliance Guidance",
+                              "description": "Our AI Strategy  enterprise consulting services secure workflows with configurations, access controls, and compliance best practices aligned with privacy regulations.",
+                              "features": [
+                                    "Secure workflow setups",
+                                    "Strong access controls",
+                                    "Compliance best practices"
+                              ]
+                        },
+                        {
+                              "title": "Migration from Zapier & Make",
+                              "description": "We migrate workflows from Zapier or Make to AI Strategy  for enterprises, ensuring smooth transitions, cost savings, and zero disruptions.",
+                              "features": [
+                                    "Zapier workflow migration",
+                                    "Make platform migration",
+                                    "Reduced operational costs"
+                              ]
+                        },
+                        {
+                              "title": "Ongoing Support & Maintenance",
+                              "description": "We provide continuous consulting, monitoring, and workflow updates to keep your AI Strategy  automation solution running smoothly and efficiently.",
+                              "features": [
+                                    "24/7 expert support",
+                                    "Regular workflow updates",
+                                    "Quick issue resolution"
+                              ]
+                        }
+                  ]
+            },
+            "automationCTA": {
+                  "title": "Automate What Slows You Down",
+                  "description": "Remove manual work, eliminate bottlenecks, and save hours every week with custom AI Strategy  workflows.",
+                  "buttonText": "Automate My Processes",
+                  "href": "/contact-us"
+            },
             "industryCTA": {
                   "title": "Automate What Slows Your Institution Down",
                   "description": "Remove manual work, eliminate compliance bottlenecks, and save hours every week with custom FinTech workflows designed for modern finance. Our team handles the complexity so you can focus on the vision.",
@@ -157,6 +260,43 @@
                         {
                               "value": "24/7",
                               "label": "Active Security Monitoring"
+                        }
+                  ]
+            },
+            "industries": {
+                  "badge": "Industries We Serve",
+                  "heading": "Industries We Cater To",
+                  "subheading": "Partnering with businesses in diverse sectors to unlock new avenues for growth and innovation.",
+                  "items": [
+                        {
+                              "title": "Banking & Financial Services",
+                              "description": "Secure and scalable fintech solutions enabling digital banking, payments, and financial service transformation.",
+                              "icon": "Wallet"
+                        },
+                        {
+                              "title": "Healthcare & Life Sciences",
+                              "description": "Digital healthcare platforms improving patient care, operational efficiency, and medical research capabilities.",
+                              "icon": "Stethoscope"
+                        },
+                        {
+                              "title": "Retail & E-commerce",
+                              "description": "Omnichannel solutions that enhance customer engagement and accelerate digital commerce growth.",
+                              "icon": "ShoppingBag"
+                        },
+                        {
+                              "title": "Manufacturing",
+                              "description": "Industry 4.0 solutions powered by automation, IoT, and smart factory innovations for operational excellence.",
+                              "icon": "Factory"
+                        },
+                        {
+                              "title": "Automotive",
+                              "description": "Connected vehicle platforms, smart mobility solutions, and intelligent manufacturing technologies.",
+                              "icon": "Car"
+                        },
+                        {
+                              "title": "Telecommunications",
+                              "description": "Next-generation telecom solutions supporting 5G, IoT integration, and network infrastructure modernization.",
+                              "icon": "Rss"
                         }
                   ]
             },
@@ -240,6 +380,59 @@
                               "billing": "Fixed Price based on Scope",
                               "bestFor": "MVPs and specific workflow automations",
                               "buttonText": "Get a Quote"
+                        }
+                  ]
+            },
+            "guideSection": {
+                  "title": "Guide Topics",
+                  "topics": [
+                        {
+                              "id": "challenges",
+                              "label": "Challenges Enterprises Face in Automating Workflows with AI Strategy ",
+                              "content": {
+                                    "heading": "Key Challenges Enterprises Face in Automating Workflows with AI Strategy ",
+                                    "image": "/services/challenges.png",
+                                    "description": "Implementing workflow automation can transform operations, but enterprises often face obstacles that slow adoption and reduce efficiency.",
+                                    "points": [
+                                          {
+                                                "title": "1. Disjointed Systems",
+                                                "text": "Multiple platforms create silos and make automation complex.",
+                                                "bullets": [
+                                                      "Hard to synchronize data across tools",
+                                                      "Manual workarounds increase errors",
+                                                      "Teams struggle to share information"
+                                                ]
+                                          },
+                                          {
+                                                "title": "2. Complex Workflows",
+                                                "text": "Maintaining multi-department workflows can be challenging and error-prone.",
+                                                "bullets": [
+                                                      "High effort to design effective workflows",
+                                                      "Risk of automation failures",
+                                                      "Slow adoption across teams"
+                                                ]
+                                          }
+                                    ]
+                              }
+                        },
+                        {
+                              "id": "signs",
+                              "label": "Signs Your Business Needs AI Strategy  Automation Services",
+                              "content": {
+                                    "heading": "Is it Time for Professional AI Strategy  Automation?",
+                                    "image": "/images/signs-diagram.png",
+                                    "description": "Recognizing the right time to automate can save hundreds of manual hours.",
+                                    "points": [
+                                          {
+                                                "title": "Rising Operational Costs",
+                                                "text": "When hiring more people is your only way to handle data entry.",
+                                                "bullets": [
+                                                      "Linear cost scaling",
+                                                      "Budget overruns on simple tasks"
+                                                ]
+                                          }
+                                    ]
+                              }
                         }
                   ]
             },
