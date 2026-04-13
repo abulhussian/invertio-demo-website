@@ -28,6 +28,11 @@ export default async function Page({ params }) {
     return <Education />;
   }
 
+<<<<<<< HEAD
+=======
+  // ✅ JSON DATA
+  const industry = industriesData[slug];
+>>>>>>> f910d375 (added the total slug population.js)
 
   return notFound();
 }

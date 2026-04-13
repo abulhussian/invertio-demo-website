@@ -16,5 +16,21 @@ export default async function Page({ params }) {
     return <SoftwareDevelopment />;
   }
 
+<<<<<<< HEAD
   notFound();
 }
+=======
+  const match = allLinks.find(
+    (link) => link.href === `/services/${slug}`
+  );
+
+  if (!match) return notFound();
+
+  // ✅ JSON DATA
+  const service = servicesData[slug];
+
+  if (!service) return notFound();
+
+  return <ServiceTemplate data={service} />;
+}
+>>>>>>> f910d375 (added the total slug population.js)
