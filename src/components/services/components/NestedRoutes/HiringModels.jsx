@@ -31,7 +31,7 @@ const HiringModels = ({ data }) => {
                                           key={idx}
                                           className={`bg-white p-6 rounded-2xl border flex flex-col h-full transition-all duration-300 hover:-translate-y-[2px]
               ${idx === 0
-                                                      ? "border-blue-400 shadow-sm"
+                                                      ? "border-none shadow-sm"
                                                       : "border-slate-200 hover:border-slate-300 hover:shadow-md"
                                                 }`}
                                     >
@@ -103,9 +103,9 @@ const HiringModels = ({ data }) => {
                                           {/* Button */}
                                           <button
                                                 className={`mt-6 w-full py-2.5 rounded-lg text-[13px] font-medium transition
-                ${idx === 0
-                                                            ? "bg-[#0f172a] text-white hover:bg-slate-800"
-                                                            : "bg-slate-100 text-slate-800 hover:bg-slate-200"
+  ${idx === 0
+                                                            ? "bg-[#0f172a] text-white hover:bg-black"
+                                                            : "bg-slate-100 text-slate-800 hover:bg-black hover:text-white cursor-pointer"
                                                       }`}
                                           >
                                                 {model.buttonText}
