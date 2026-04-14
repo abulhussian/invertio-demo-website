@@ -5,30 +5,35 @@ const AutomationBanner = ({ data }) => {
       if (!data) return null;
 
       return (
-            <div className="w-full bg-[#0b1220] py-12 px-6 md:px-20  overflow-hidden relative mb-16">
-                  {/* Background Subtle Accent (The dark shape in the bottom left of your image) */}
+            <div className="w-full bg-[#0b1220] py-10 px-4 sm:px-6 md:px-20 overflow-hidden relative mb-16">
+
+                  {/* Background */}
                   <div className="absolute bottom-0 left-0 opacity-10 pointer-events-none">
                         <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
                               <path d="M0 200L100 0L200 200H0Z" fill="#1d69d8" />
                         </svg>
                   </div>
 
-                  <div className="max-w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+                  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-8 relative z-10">
+
+                        {/* Text */}
                         <div className="text-left">
-                              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+                              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 leading-snug">
                                     {data.title}
                               </h2>
-                              <p className="text-slate-400 text-md md:text-md font-medium">
+                              <p className="text-slate-400 text-sm sm:text-base font-medium">
                                     {data.description}
                               </p>
                         </div>
 
+                        {/* Button */}
                         <Link
                               href={data.href || "#"}
-                              className="whitespace-nowrap bg-gradient-to-r from-[#ff8c42] to-[#ff7b2d] text-white px-8 py-4 rounded-full font-bold text-sm hover:opacity-90 transition-opacity shadow-lg shadow-orange-900/20"
+                              className="w-full md:w-auto text-center bg-gradient-to-r from-[#ff8c42] to-[#ff7b2d] text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg shadow-orange-900/20"
                         >
                               {data.buttonText}
                         </Link>
+
                   </div>
             </div>
       );
