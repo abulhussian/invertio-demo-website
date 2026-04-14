@@ -59,7 +59,7 @@ const WhyChooseUs = ({ data }) => {
                                                 <img
                                                       src={logo}
                                                       alt="Client Logo"
-                                                      className="h-6 md:h-8 w-auto object-contain  transition-all duration-300"
+                                                      className="h-8 md:h-12 w-32 object-contain  transition-all duration-300"
                                                 />
                                           </div>
                                     ))}
