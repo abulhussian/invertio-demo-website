@@ -77,7 +77,7 @@ const caseStudyData = {
 const CyberSecurity = () => {
   return (
     <>
-      <div className="bg-[#F8F9FC] px-4 sm:px-6 md:px-10 lg:px-16 py-10 md:py-14 lg:py-20">
+      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34">
         <div className="max-w-[1200px] mx-auto">
           <SectionHeader
             badge="Cybersecurity"

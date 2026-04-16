@@ -55,7 +55,7 @@ const TransformationHero = ({ data }) => {
           <div className="mt-4 sm:mt-6">
             <Link
               href={data?.button?.href || "/contact-us"}
-              className="inline-flex items-center gap-2 px-4 sm:px-8 h-10 sm:h-12 rounded-full bg-[#0F172A] text-white text-sm sm:text-base font-semibold hover:bg-[#1E293B] transition shadow-sm"
+              className="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-4 sm:px-8 h-10 sm:h-12 rounded-full bg-[#0F172A] text-white text-sm sm:text-base font-semibold hover:bg-[#1E293B] transition shadow-sm"
             >
               {data?.button?.text || "Contact Us"}
 

@@ -10,7 +10,7 @@ const page = () => {
 
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34">
         <SectionHeader
           badge="Our Services"
           heading="Technology Services Designed to Accelerate Digital Innovation"

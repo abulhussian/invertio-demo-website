@@ -121,67 +121,157 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
 
           {/* Our Services */}
           <div className="border-b border-white/10">
-            <button
-              onClick={() => toggleDropdown("services")}
-              className="flex justify-between items-center w-full py-5 text-left transition-colors"
-            >
-              <span className={openDropdown === "services" ? "text-[#F7A600] font-semibold" : "text-white"}>Our Services</span>
-              <ChevronRight
-                size={20}
-                className={`transition-transform duration-300 ${openDropdown === "services" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
-              />
-            </button>
-            <div className={`overflow-hidden transition-all duration-500 ease-in-out
-    ${openDropdown === "services" ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}`}
+
+            <div className="flex justify-between items-center w-full py-5">
+
+              {/* TEXT → NAVIGATE */}
+              <Link
+                href="/services"
+                onClick={() => setMobileOpen(false)}
+                className={`flex-1 ${openDropdown === "services"
+                  ? "text-[#F7A600]"
+                  : "text-white"
+                  }`}
+              >
+                Our Services
+              </Link>
+
+              {/* ARROW → DROPDOWN */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation(); // 🔥 prevents navigation
+                  toggleDropdown("services");
+                }}
+                className="p-2"
+              >
+                <ChevronRight
+                  size={20}
+                  className={`transition-transform duration-300 ${openDropdown === "services"
+                    ? "rotate-90 text-[#F7A600]"
+                    : "text-gray-500"
+                    }`}
+                />
+              </button>
+
+            </div>
+
+            {/* DROPDOWN */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ${openDropdown === "services"
+                ? "max-h-[5000px] opacity-100"
+                : "max-h-0 opacity-0"
+                }`}
             >
               <div className="pb-6">
                 {renderDropdownSection(megaMenuData.services)}
               </div>
             </div>
+
           </div>
 
 
 
           {/* Our Solutions */}
           <div className="border-b border-white/10">
-            <button
-              onClick={() => toggleDropdown("solutions")}
-              className="flex justify-between items-center w-full py-5 text-left transition-colors"
-            >
-              <span className={openDropdown === "solutions" ? "text-[#F7A600] font-semibold" : "text-white"}>Our Solutions</span>
-              <ChevronRight
-                size={20}
-                className={`transition-transform duration-300 ${openDropdown === "solutions" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
-              />
-            </button>
-            <div className={`overflow-hidden transition-all duration-500 ease-in-out
-    ${openDropdown === "solutions" ? "max-h-[3000px] opacity-100" : "max-h-0 opacity-0"}`}
+
+            <div className="flex justify-between items-center w-full py-5">
+
+              {/* TEXT → NAVIGATE */}
+              <Link
+                href="/solutions"
+                onClick={() => setMobileOpen(false)}
+                className={`flex-1 ${openDropdown === "solutions"
+                  ? "text-[#F7A600]"
+                  : "text-white"
+                  }`}
+              >
+                Our Solutions
+              </Link>
+
+              {/* ARROW → DROPDOWN */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleDropdown("solutions");
+                }}
+                className="p-2"
+              >
+                <ChevronRight
+                  size={20}
+                  className={`transition-transform duration-300 ${openDropdown === "solutions"
+                    ? "rotate-90 text-[#F7A600]"
+                    : "text-gray-500"
+                    }`}
+                />
+              </button>
+
+            </div>
+
+            {/* DROPDOWN */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ${openDropdown === "solutions"
+                ? "max-h-[5000px] opacity-100"
+                : "max-h-0 opacity-0"
+                }`}
             >
               <div className="pb-6">
                 {renderDropdownSection(megaMenuData.solutions)}
               </div>
             </div>
+
           </div>
+
+
+
 
           {/* Industries */}
           <div className="border-b border-white/10">
-            <button
-              onClick={() => toggleDropdown("industries")}
-              className="flex justify-between items-center w-full py-5 text-left transition-colors"
-            >
-              <span className={openDropdown === "industries" ? "text-[#F7A600] font-semibold" : "text-white"}>Industries</span>
-              <ChevronRight
-                size={20}
-                className={`transition-transform duration-300 ${openDropdown === "industries" ? "rotate-90 text-[#F7A600]" : "text-gray-500"}`}
-              />
-            </button>
-            <div className={`overflow-hidden transition-all duration-500 ease-in-out
-    ${openDropdown === "industries" ? "max-h-[3000px] opacity-100" : "max-h-0 opacity-0"}`}
+
+            <div className="flex justify-between items-center w-full py-5">
+
+              {/* TEXT → NAVIGATE */}
+              <Link
+                href="/industries"
+                onClick={() => setMobileOpen(false)}
+                className={`flex-1 ${openDropdown === "industries"
+                  ? "text-[#F7A600]"
+                  : "text-white"
+                  }`}
+              >
+                Industries
+              </Link>
+
+              {/* ARROW → DROPDOWN */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleDropdown("industries");
+                }}
+                className="p-2"
+              >
+                <ChevronRight
+                  size={20}
+                  className={`transition-transform duration-300 ${openDropdown === "industries"
+                    ? "rotate-90 text-[#F7A600]"
+                    : "text-gray-500"
+                    }`}
+                />
+              </button>
+
+            </div>
+
+            {/* DROPDOWN */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ${openDropdown === "industries"
+                ? "max-h-[5000px] opacity-100"
+                : "max-h-0 opacity-0"
+                }`}
             >
               <div className="pb-6">
                 {renderDropdownSection(megaMenuData.industries)}
               </div>
             </div>
+
           </div>
 
           <Link href="/our-work" onClick={() => setMobileOpen(false)} className="py-5 border-b border-white/5 hover:text-[#F7A600]">

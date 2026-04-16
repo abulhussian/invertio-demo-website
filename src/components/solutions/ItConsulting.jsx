@@ -1,6 +1,5 @@
 import Image from "next/image";
 import SectionHeader from "../common/ui/SectionHeader";
-import Section from "../common/ui/Section";
 import CaseStudy from "../services/components/CaseStudy";
 import AboutSection from "../services/components/AboutSection";
 import TransformationHero from "../services/components/TransformationHero";
@@ -78,7 +77,7 @@ const caseStudyData = {
 const ItConsulting = () => {
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34">
         <SectionHeader
           badge="IT Consulting"
           heading="Transforming Technology into Business Advantage"

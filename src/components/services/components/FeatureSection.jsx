@@ -16,9 +16,10 @@ const FeatureSection = ({
     return (
         <section className="w-full py-5 bg-gray-50">
             <div className="max-w-[1380px] mx-auto px-4 lg:px-4">
-                <div className="grid md:grid-cols-2 gap-16 items-center">
 
-                    {/* Content */}
+                <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+                    {/* TEXT */}
                     <div
                         className={`space-y-3 ${imagePosition === "left" ? "md:order-2" : "md:order-1"
                             }`}
@@ -27,18 +28,19 @@ const FeatureSection = ({
                             {tag}
                         </p>
 
-                        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
                             {title}
                         </h2>
 
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
                             {description}
                         </p>
 
+                        {/* BUTTON → Desktop only */}
                         <button
                             onClick={() => router.push(`/${slug}`)}
-                            className={`inline-flex items-center px-5 py-2.5 text-white rounded-full text-sm font-medium transition
-              ${imagePosition === "left"
+                            className={`hidden md:inline-flex items-center px-5 py-2.5 text-white rounded-full text-sm font-medium transition
+                ${imagePosition === "left"
                                     ? "bg-blue-600 hover:bg-blue-700"
                                     : "bg-black hover:bg-gray-800"
                                 }`}
@@ -50,7 +52,7 @@ const FeatureSection = ({
                         </button>
                     </div>
 
-                    {/* Image */}
+                    {/* IMAGE */}
                     <div
                         className={`relative w-full ${imagePosition === "left" ? "md:order-1" : "md:order-2"
                             }`}
@@ -59,9 +61,26 @@ const FeatureSection = ({
                             <img
                                 src={image}
                                 alt="feature"
-                                className="w-full h-full object-cover rounded-[28px]"
+                                className="w-full h-full object-cover rounded-[20px] sm:rounded-[28px]"
                             />
                         </div>
+                    </div>
+
+                    {/* BUTTON → Mobile only (below image) */}
+                    <div className="md:hidden mt-4">
+                        <button
+                            onClick={() => router.push(`/${slug}`)}
+                            className={`w-full flex justify-center items-center px-5 py-3 text-white rounded-full text-sm font-medium transition
+                ${imagePosition === "left"
+                                    ? "bg-blue-600 hover:bg-blue-700"
+                                    : "bg-black hover:bg-gray-800"
+                                }`}
+                        >
+                            {buttonText}
+                            <span className="ml-2">
+                                <img src="/services/Vector.svg" alt="arrow" />
+                            </span>
+                        </button>
                     </div>
 
                 </div>
