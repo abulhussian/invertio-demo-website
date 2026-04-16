@@ -1,7 +1,57 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Footer = () => {
+
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubscribe = async () => {
+    const trimmedEmail = email.trim();
+
+    if (!trimmedEmail) {
+      toast.error("Email is required");
+      return;
+    }
+
+    // email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(trimmedEmail)) {
+      toast.error("Enter valid email");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const res = await fetch("https://invertiosolutions.com/newsletter.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: trimmedEmail }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        toast.success("Subscribed successfully");
+        setEmail("");
+      } else {
+        toast.error(data.message || "Something went wrong");
+      }
+    } catch (err) {
+      toast.error("Server error");
+    }
+
+    setLoading(false);
+  };
+
+
+
   const footerData = [
     {
       title: "Quick Links",
@@ -235,14 +285,19 @@ const Footer = () => {
 
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Your Email Address"
                 className="w-full bg-transparent outline-none text-sm text-black placeholder:text-gray-500"
               />
             </div>
 
-            {/* Button */}
-            <button className="bg-orange-500 hover:bg-orange-600 transition text-white text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg whitespace-nowrap">
-              Subscribe
+            <button
+              onClick={handleSubscribe}
+              disabled={loading}
+              className="bg-orange-500 hover:bg-orange-600 transition text-white text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg whitespace-nowrap disabled:opacity-50"
+            >
+              {loading ? "Subscribing..." : "Subscribe"}
             </button>
 
           </div>
