@@ -26,13 +26,13 @@ const TechImpactSection = () => {
     "/icons/js.svg",
   ];
 
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
 
   const scale = isMobile ? 0.6 : 1;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
 
-  const radius1 = 80 * scale;
-  const radius2 = 140 * scale;
-  const radius3 = 200 * scale;
+  const radius1 = isMobile ? 70 : 100;
+  const radius2 = isMobile ? 120 : 180;
+  const radius3 = isMobile ? 170 : 260;
 
   return (
     <Section>
@@ -42,7 +42,7 @@ const TechImpactSection = () => {
         <div className="flex justify-center">
           <div className="scale-[0.65] sm:scale-[0.8] md:scale-100 origin-center">
 
-            <div className="relative w-[320px] sm:w-[420px] md:w-[500px] lg:w-[550px] aspect-square mx-auto overflow-visible mb-8 md:mb-0">
+            <div className="relative w-[320px] sm:w-[420px] md:w-[500px] lg:w-[650px] aspect-square mx-auto overflow-visible mb-8 md:mb-0">
 
               {/* Center Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -52,7 +52,7 @@ const TechImpactSection = () => {
                     alt="logo"
                     width={90}
                     height={90}
-                    className="sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px]"
+                    className="sm:w-[90px] sm:h-[90px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px]"
                   />
                 </div>
               </div>
@@ -93,13 +93,13 @@ const TechImpactSection = () => {
                       }}
                     >
                       <div style={{ transform: `rotate(-${angle}deg)` }}>
-                        <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                        <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-2 lg:p-3 border border-gray-100 flex items-center justify-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">
                           <Image
                             src={icon}
                             alt="tech"
                             width={24}
                             height={24}
-                            className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7"
+                            className="w-4 h-4 sm:w-6 sm:h-6 md:w-5 md:h-5 lg:w-6 lg:h-6"
                           />
                         </div>
                       </div>
@@ -128,7 +128,7 @@ const TechImpactSection = () => {
                             alt="tech"
                             width={26}
                             height={26}
-                            className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                            className="w-5 h-5 sm:w-7 sm:h-7 md:w-6 md:h-6 lg:w-7 lg:h-7"
                           />
                         </div>
                       </div>
@@ -157,7 +157,7 @@ const TechImpactSection = () => {
                             alt="tech"
                             width={26}
                             height={26}
-                            className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                            className="w-5 h-5 sm:w-7 sm:h-7 md:w-6 md:h-6 lg:w-7 lg:h-7"
                           />
                         </div>
                       </div>

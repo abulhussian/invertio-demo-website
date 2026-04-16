@@ -42,34 +42,34 @@ const IndustriesSection = () => {
             Delivering Industry-Focused Technology Solutions That Drive Real Impact
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-4xl lg:max-w-full text-[8px] md:text-md lg:text-sm ">
+          <p className="text-gray-600 mt-4 text-[13px] sm:text-[14px] md:text-[16px] lg:text-sm max-w-4xl lg:max-w-full leading-relaxed">
             We combine deep domain expertise with modern technology to address
             unique industry challenges and accelerate digital innovation.
           </p>
         </div>
 
         {/* Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {industries.map((item, index) => (
             <div
               key={index}
-            className="flex flex-col bg-white border border-gray-200 rounded-xl p-5 hover:shadow-sm transition"
+              className="flex flex-col bg-white border border-gray-200 rounded-xl p-5 hover:shadow-sm transition"
             >
               {/* Icon */}
-<div className="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-md mb-3">               <img
-                  src={icon}
-                  alt={item.title}
-                  className="w-5 h-5"
-                />
+              <div className="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-md mb-3">               <img
+                src={icon}
+                alt={item.title}
+                className="w-5 h-5"
+              />
               </div>
 
               {/* Content */}
               <div>
-<h3 className="font-semibold text-gray-900 text-sm mb-1">
-                      {item.title}
+                <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                  {item.title}
                 </h3>
-<p className="text-xs text-gray-600 leading-relaxed">
-                    {item.desc}
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  {item.desc}
                 </p>
               </div>
             </div>

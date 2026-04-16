@@ -6,7 +6,7 @@ import Section from "../common/ui/Section";
 const CompanyOverviewSection = () => {
   return (
     <Section>
-      <div className="flex flex-col gap-6 lg:gap-8">
+      <div className="flex flex-col gap-6 lg:gap-4">
         {/* LEFT COLUMN */}
         <div className="flex flex-col gap-6 lg:gap-8">
           {/* Top Blue Card */}
@@ -91,7 +91,7 @@ const CompanyOverviewSection = () => {
           </p>
 
           <Link href="/contact-us">
-            <button className="mt-8 w-fit bg-white text-black px-6 py-3 rounded-full text-sm font-bold hover:bg-gray-200 cursor-pointer transition flex items-center gap-2">
+            <button className="mt-8 w-full sm:w-fit bg-white text-black px-6 py-3 rounded-full text-sm font-bold hover:bg-gray-200 cursor-pointer transition flex items-center justify-center gap-2">
               Contact Us
               <span className="text-lg">↗</span>
             </button>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import projects from "@/data/ourwork.json";
 import Link from "next/link";
+import { useEffect } from "react";
 // import Link from "next/link";
 
 
@@ -12,9 +13,34 @@ const projectList = Object.values(projects);
 console.log(projectList)
 export default function ProjectsSection() {
   const [index, setIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+
   const CARD_WIDTH = 360;
   const visibleCards = 4;
   const maxIndex = projectList.length - visibleCards;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => {
+        if (prev >= maxIndex) {
+          return 0; // loop back to start
+        }
+        return prev + 1;
+      });
+    }, 3000); // ⏱️ change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [maxIndex]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const next = () => {
     setIndex((prev) => Math.min(prev + 1, maxIndex));
@@ -46,15 +72,23 @@ export default function ProjectsSection() {
         <div className="relative overflow-hidden">
 
           <div
-            className="flex gap-6 transition-transform duration-500"
-            style={{
-              transform: `translateX(-${index * CARD_WIDTH}px)`
-            }}
+            className={`flex gap-4 md:gap-6 ${isMobile
+              ? "overflow-x-auto snap-x snap-mandatory scrollbar-hide px-4"
+              : "transition-transform duration-500"
+              }`}
+            style={
+              !isMobile
+                ? { transform: `translateX(-${index * CARD_WIDTH}px)` }
+                : {}
+            }
           >
             {projectList.map((project, i) => (
               <div
                 key={i}
-                className="min-w-[320px] rounded-xl overflow-hidden bg-white shadow-md"
+                className={`rounded-xl overflow-hidden bg-white shadow-md ${isMobile
+                  ? "min-w-[85%] snap-start"
+                  : "min-w-[320px]"
+                  }`}
               >
                 <div className="relative h-[500px] bg-gray-200">
                   <Link href={project.path}>

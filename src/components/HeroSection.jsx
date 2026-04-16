@@ -17,7 +17,7 @@ const HeroSection = () => {
                     priority
                     sizes="100vw"
                     className="object-cover"
-                    style={{ objectPosition: "25% center" }}
+                    style={{ objectPosition: "10% center" }}
                 />
 
                 {/* overlay */}
@@ -62,7 +62,7 @@ const HeroSection = () => {
 
                                 <Link
                                     href="/contact-us"
-                                    className="border border-white px-5 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
+                                    className="border border-gray-600 px-5 py-3 bg-black/30 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
                                 >
                                     Book A Consultation
                                 </Link>

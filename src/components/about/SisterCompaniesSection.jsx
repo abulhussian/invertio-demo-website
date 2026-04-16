@@ -15,6 +15,7 @@ const SisterCompaniesSection = () => {
             subheading={`Together with our sister organizations, we expand our capabilities
             to deliver advanced solutions across cloud, AI, and digital
             innovation.
+            
                      Our collaborative ecosystem enables us to combine expertise,
             technology, and industry knowledge to create impactful solutions
             that empower businesses worldwide and drive continuous innovation. `}

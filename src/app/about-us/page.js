@@ -11,7 +11,7 @@ import TestimonialsSection from "@/components/common/components/TestimonialsSect
 const page = () => {
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34">
         <SectionHeader
           badge="About Invertio"
           heading="Engineering Technology That Powers Business Transformation"
