@@ -205,7 +205,7 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* STAY UPDATED */}
-      <div className="w-full flex flex-col gap-10">
+      <div id="footer-subscribe" className="w-full flex flex-col gap-10">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
           {/* Left Content */}
