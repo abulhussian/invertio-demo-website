@@ -138,24 +138,24 @@ export const megaMenuData = {
                                     {
                                           title: "FOR STARTUPS",
                                           links: [
-                                                { label: "MVP Development", href: "/solutions/startups/mvp" },
-                                                { label: "Product Discovery", href: "/solutions/startups/discovery" },
-                                                { label: "UI/UX Design Services", href: "/solutions/startups/design" },
+                                                { label: "MVP Development", href: "/services/mvp-development" },
+                                                { label: "Product Discovery", href: "/services/product-discovery" },
+                                                { label: "UI/UX Design Services", href: "/services/ui-ux-design" },
                                           ],
                                     },
                                     {
                                           title: "FOR SCALE-UPS",
                                           links: [
-                                                { label: "Custom Software Development", href: "/solutions/scaleups/software" },
-                                                { label: "Microservices Architecture", href: "/solutions/scaleups/microservices" },
-                                                { label: "API Development", href: "/solutions/scaleups/api" },
+                                                { label: "Custom Software Development", href: "/services/custom-software" },
+                                                { label: "System & Architecture Design", href: "/services/architecture-design" },
+                                                { label: "API & Backend Development", href: "/services/software-dev" },
                                           ],
                                     },
                                     {
                                           title: "FOR ENTERPRISES",
                                           links: [
-                                                { label: "Enterprise Application Development", href: "/solutions/enterprises/app-dev" },
-                                                { label: "Software Architecture", href: "/solutions/enterprises/architecture" },
+                                                { label: "Enterprise Application Development", href: "/services/enterprise-app-dev" },
+                                                { label: "Software Architecture", href: "/services/architecture-design" },
                                           ],
                                     },
                               ],
