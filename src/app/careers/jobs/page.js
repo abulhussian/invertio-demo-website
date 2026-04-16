@@ -16,6 +16,12 @@ export default function JobsPage() {
             job.title.toLowerCase().includes(search.toLowerCase())
       );
 
+      const handleSearchClick = () => {
+            if (!search.trim()) {
+                  toast.error("Please enter a role to search");
+                  return;
+            }
+      };
       //       useEffect(() => {
 
       //   const storedJobs = JSON.parse(localStorage.getItem("jobs"));
@@ -66,7 +72,9 @@ export default function JobsPage() {
                                     className="w-full h-14 pl-6 pr-16 rounded-full border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
                               />
 
-                              <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#0F172A] flex items-center justify-center">
+                              <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#0F172A] flex items-center justify-center"
+                                    onClick={handleSearchClick}
+                              >
                                     <Image
                                           src="/icons/search.png"
                                           alt="search"
