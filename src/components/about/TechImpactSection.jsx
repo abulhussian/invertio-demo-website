@@ -47,6 +47,7 @@ const TechImpactSection = () => {
                 width={90}
                 height={90}
                 className="sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px]"
+
               />
             </div>
           </div>
