@@ -176,7 +176,6 @@
 //       );
 // }
 
-
 "use client";
 import { useState } from "react";
 import Image from "next/image";
@@ -194,6 +193,7 @@ export default function ContactSection() {
             message: ""
       });
 
+      const [errors, setErrors] = useState({});
       const [loading, setLoading] = useState(false);
 
       const services = [
@@ -209,10 +209,29 @@ export default function ContactSection() {
                   ...formData,
                   [e.target.name]: e.target.value
             });
+
+            // clear error while typing
+            setErrors({
+                  ...errors,
+                  [e.target.name]: ""
+            });
       };
 
       const handleSubmit = async (e) => {
             e.preventDefault();
+
+            let newErrors = {};
+
+            if (!formData.name.trim()) newErrors.name = "Required";
+            if (!formData.company.trim()) newErrors.company = "Required";
+            if (!formData.email.trim()) newErrors.email = "Required";
+            if (!formData.phone.trim()) newErrors.phone = "Required";
+            if (!formData.message.trim()) newErrors.message = "Required";
+
+            setErrors(newErrors);
+
+            if (Object.keys(newErrors).length > 0) return;
+
             setLoading(true);
 
             const data = new FormData();
@@ -224,7 +243,7 @@ export default function ContactSection() {
             data.append("message", formData.message);
 
             try {
-                  const res = await fetch("http://localhost:8000/api.php", {
+                  const res = await fetch("https://invertiosolutions.com/contact.php", {
                         method: "POST",
                         body: data
                   });
@@ -243,6 +262,7 @@ export default function ContactSection() {
                         });
 
                         setSelectedService("Data & Analytics");
+                        setErrors({});
                   } else {
                         toast.error(result.message);
                   }
@@ -334,13 +354,13 @@ export default function ContactSection() {
                               <form className="space-y-5" onSubmit={handleSubmit}>
 
                                     <div className="grid md:grid-cols-2 gap-5">
-                                          <Input name="name" value={formData.name} onChange={handleChange} label="Full Name *" placeholder="Enter Your Full Name" />
-                                          <Input name="company" value={formData.company} onChange={handleChange} label="Company Name *" placeholder="Enter Company Name" />
+                                          <Input name="name" value={formData.name} onChange={handleChange} label="Full Name *" placeholder="Enter Your Full Name" error={errors.name} />
+                                          <Input name="company" value={formData.company} onChange={handleChange} label="Company Name *" placeholder="Enter Company Name" error={errors.company} />
                                     </div>
 
                                     <div className="grid md:grid-cols-2 gap-5">
-                                          <Input name="email" value={formData.email} onChange={handleChange} label="Email *" placeholder="example@gmail.com" />
-                                          <Input name="phone" value={formData.phone} onChange={handleChange} label="Contact Number *" placeholder="+91 Enter 10 Digit Mobile Number" />
+                                          <Input name="email" value={formData.email} onChange={handleChange} label="Email *" placeholder="example@gmail.com" error={errors.email} />
+                                          <Input name="phone" value={formData.phone} onChange={handleChange} label="Contact Number *" placeholder="+91 Enter 10 Digit Mobile Number" error={errors.phone} />
                                     </div>
 
                                     {/* Service */}
@@ -356,7 +376,7 @@ export default function ContactSection() {
                                                             key={service}
                                                             onClick={() => setSelectedService(service)}
                                                             className={`px-4 py-2 rounded-full border text-sm transition
-                    ${selectedService === service
+                      ${selectedService === service
                                                                         ? "bg-orange-500 text-white border-orange-500"
                                                                         : "bg-gray-100 text-gray-700 border-gray-200 hover:bg-gray-200"
                                                                   }`}
@@ -372,14 +392,23 @@ export default function ContactSection() {
                                           <label className="text-sm font-medium text-[#0F172A] mb-2 block">
                                                 Message *
                                           </label>
+
                                           <textarea
                                                 name="message"
                                                 value={formData.message}
                                                 onChange={handleChange}
                                                 rows="4"
-                                                className="w-full border border-gray-200 rounded-md p-4 focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+                                                className={`w-full border rounded-md p-4 focus:outline-none focus:ring-2 resize-none
+                  ${errors.message
+                                                            ? "border-red-500 focus:ring-red-500"
+                                                            : "border-gray-200 focus:ring-orange-500"
+                                                      }`}
                                                 placeholder="Message..."
                                           />
+
+                                          {errors.message && (
+                                                <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+                                          )}
                                     </div>
 
                                     {/* Submit */}
@@ -401,20 +430,29 @@ export default function ContactSection() {
       );
 }
 
-function Input({ label, placeholder, name, value, onChange }) {
+function Input({ label, placeholder, name, value, onChange, error }) {
       return (
             <div>
                   <label className="text-sm font-medium text-[#0F172A] mb-2 block">
                         {label}
                   </label>
+
                   <input
                         type="text"
                         name={name}
                         value={value}
                         onChange={onChange}
                         placeholder={placeholder}
-                        className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                        className={`w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2
+          ${error
+                                    ? "border-red-500 focus:ring-red-500"
+                                    : "border-gray-200 focus:ring-orange-500"
+                              }`}
                   />
+
+                  {error && (
+                        <p className="text-red-500 text-xs mt-1">{error}</p>
+                  )}
             </div>
       );
 }
