@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <Link onClick={() => setActiveMenu(null)} href="/">
           <Image
-            src="/logo/logo.svg"
+            src="/logo/image.png"
             alt="Logo"
             width={128}
             height={40}
