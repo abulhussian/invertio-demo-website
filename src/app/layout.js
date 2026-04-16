@@ -2,6 +2,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "react-hot-toast"; // ✅ ADD THIS
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,9 +27,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <body className="antialiased">
+
+        {/* ✅ TOASTER (ADD HERE) */}
+        <Toaster position="top-right" />
+
         <Navbar />
 
-        {/* Main content */}
         <main className="pt-[120px]">
           {children}
         </main>

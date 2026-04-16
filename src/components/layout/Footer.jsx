@@ -2,6 +2,62 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const footerData = [
+    {
+      title: "Quick Links",
+      links: [
+        { label: "Home", href: "/" },
+        { label: "About Us", href: "/about-us" },
+        { label: "Our Work", href: "/our-work" },
+        { label: "News & Insights", href: "/news-insights" },
+        { label: "Careers", href: "/careers" },
+        { label: "Contact Us", href: "/contact-us" },
+      ],
+    },
+    {
+      title: "Our Services",
+      links: [
+        {
+          label: "Digital Transformation",
+          href: "/services/digital-transformation",
+        },
+        { label: "Cloud Services", href: "/services/cloud-services" },
+        {
+          label: "Software Development",
+          href: "/services/software-development",
+        },
+      ],
+    },
+    {
+      title: "Our Solutions",
+      links: [
+        { label: "Data & Analytics", href: "/solutions/data-analytics" },
+        { label: "Cybersecurity", href: "/solutions/cybersecurity" },
+        { label: "IT Consulting", href: "/solutions/it-consulting" },
+      ],
+    },
+    {
+      title: "Our Industries",
+      links: [
+        { label: "Education", href: "/industries/education" },
+        { label: "Logistics", href: "/industries/logistics" },
+        { label: "Retail", href: "/industries/retail-ecommerce" },
+        { label: "Finance", href: "/industries/finance-banking" },
+        { label: "Healthcare", href: "/industries/healthcare" },
+        {
+          label: "Information Service",
+          href: "/industries/information",
+        },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        { label: "Our Work", href: "/our-work" },
+        { label: "News & Insights", href: "/news-insights" },
+      ],
+    },
+  ];
   return (
     <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] p-7 lg:px-30 lg:pt-16 lg:pb-8 flex flex-col gap-6">
       <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority />
@@ -149,7 +205,7 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* STAY UPDATED */}
-      <div className="w-full flex flex-col gap-10">
+      <div id="footer-subscribe" className="w-full flex flex-col gap-10">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
           {/* Left Content */}
@@ -208,13 +264,7 @@ const Footer = () => {
             Terms & Conditions
           </Link>
 
-          <Link href="/disclaimer" className="hover:text-white transition duration-200">
-            Disclaimer
-          </Link>
 
-          <Link href="/cookie-policy" className="hover:text-white transition duration-200">
-            Cookie Policy
-          </Link>
         </div>
 
         {/* Copyright */}
@@ -227,59 +277,4 @@ const Footer = () => {
 
 export default Footer;
 
-const footerData = [
-  {
-    title: "Quick Links",
-    links: [
-      { label: "Home", href: "/" },
-      { label: "About Us", href: "/about-us" },
-      { label: "Our Work", href: "/our-work" },
-      { label: "News & Insights", href: "/news-insights" },
-      { label: "Careers", href: "/careers" },
-      { label: "Contact Us", href: "/contact-us" },
-    ],
-  },
-  {
-    title: "Our Services",
-    links: [
-      {
-        label: "Digital Transformation",
-        href: "/services/digital-transformation",
-      },
-      { label: "Cloud Services", href: "/services/cloud-services" },
-      {
-        label: "Software Development",
-        href: "/services/software-development",
-      },
-    ],
-  },
-  {
-    title: "Our Solutions",
-    links: [
-      { label: "Data & Analytics", href: "/solutions/data-analytics" },
-      { label: "Cybersecurity", href: "/solutions/cybersecurity" },
-      { label: "IT Consulting", href: "/solutions/it-consulting" },
-    ],
-  },
-  {
-    title: "Our Industries",
-    links: [
-      { label: "Education", href: "/industries/education" },
-      { label: "Logistics", href: "/industries/logistics" },
-      { label: "Retail", href: "/industries/retail-ecommerce" },
-      { label: "Finance", href: "/industries/finance-banking" },
-      { label: "Healthcare", href: "/industries/healthcare" },
-      {
-        label: "Information Service",
-        href: "/industries/information",
-      },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Our Work", href: "/our-work" },
-      { label: "White Papers", href: "/white-papers" },
-    ],
-  },
-];
+

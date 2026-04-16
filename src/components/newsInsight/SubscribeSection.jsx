@@ -1,10 +1,27 @@
+"use client";
 import Image from "next/image";
 
 const SubscribeSection = () => {
+
+      const handleScroll = () => {
+            const section = document.getElementById("footer-subscribe");
+
+            section?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+            });
+
+            // optional: focus input after scroll
+            setTimeout(() => {
+                  const input = section?.querySelector("input");
+                  input?.focus();
+            }, 500);
+      };
+
       return (
             <section className="relative w-full py-12 overflow-hidden bg-[#0B1120]">
 
-                  {/* Decorative Background Shape (same style as CTA) */}
+                  {/* Background */}
                   <Image
                         className="absolute -left-40 top-16 opacity-20"
                         src="/newsinsight/subimage.png"
@@ -35,7 +52,10 @@ const SubscribeSection = () => {
 
                         {/* RIGHT BUTTON */}
                         <div className="flex-shrink-0">
-                              <button className="px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-medium transition">
+                              <button
+                                    onClick={handleScroll}
+                                    className="px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-medium transition"
+                              >
                                     Subscribe Now
                               </button>
                         </div>

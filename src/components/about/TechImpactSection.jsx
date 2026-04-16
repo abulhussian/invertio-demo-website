@@ -171,8 +171,26 @@ const TechImpactSection = () => {
           </div>
 
         </div>
+        {/* RIGHT CONTENT */}
+        <div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
 
-        
+          <p className="text-sm text-slate-500 mb-2">
+            Our Impact
+          </p>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">
+            Helping Businesses Grow Through Technology
+          </h2>
+
+          <p className="text-sm sm:text-base text-slate-600 mb-4 leading-relaxed">
+            Our solutions have supported organizations across industries and regions in achieving digital success.
+          </p>
+
+          <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+            From enterprise modernization to AI-driven innovation, we help businesses adapt to changing markets, improve operational efficiency, and build technology ecosystems ready for the future.
+          </p>
+
+        </div>
 
       </div>
     </Section>

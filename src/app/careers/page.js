@@ -122,7 +122,7 @@ const jobs = [
 export default function CareersPage() {
       return (
             <>
-                  <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+                  <div className="w-full max-w-[1380px] mx-auto px-6 lg:px-16 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
 
                         {/* Header */}
                         <SectionHeader
