@@ -36,27 +36,32 @@ The results have significantly improved efficiency and decision-making across ou
 
 const TestimonialsSection = () => {
   return (
-    <section className="w-full py-24 px-6">
-      <div className="max-w-[1380px] mx-auto px-6 lg:px-4">
+    <section className="w-full py-16 md:py-24 bg-[#F8F9FC]">
+      <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-16">
+
         {/* HEADER */}
-        <SectionHeader
-          badge="Client Testimonials"
-          heading="Trusted by Businesses That Value Innovation and Results"
-          subheading="Our clients partner with us to build reliable, scalable, and impactful digital solutions."
-          align="center"
-          size="md"
-        />
+        <div className="mb-10 md:mb-16">
+          <SectionHeader
+            badge="Client Testimonials"
+            heading="Trusted by Businesses That Value Innovation and Results"
+            subheading="Our clients partner with us to build reliable, scalable, and impactful digital solutions."
+            align="center"
+            size="md"
+          />
+        </div>
 
         {/* GRID */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-[#FCFCFD] border border-gray-200 rounded-2xl p-8 hover:shadow-2xl shadow-gray-100 transition"
+              className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 md:p-8 shadow-sm hover:shadow-xl transition duration-300"
             >
-              {/* TOP PROFILE */}
-              <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12">
+
+              {/* PROFILE */}
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="relative w-10 h-10 sm:w-12 sm:h-12">
                   <Image
                     src={item.image}
                     alt={item.name}
@@ -66,24 +71,26 @@ const TestimonialsSection = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                     {item.name}
                   </h3>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-xs sm:text-sm text-gray-500">
                     {item.role}, {item.company}
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="my-6 h-px bg-gray-200" />
+              <div className="my-4 sm:my-6 h-px bg-gray-200" />
 
-              {/* Testimonial Content */}
-              <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">
+              {/* CONTENT */}
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed whitespace-pre-line line-clamp-5">
                 {item.content}
               </p>
+
             </div>
           ))}
+
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 export default function CTASection() {
       return (
             <section className="w-full bg-[#6C74B8] py-14 md:py-16 relative overflow-hidden">
@@ -20,13 +22,15 @@ export default function CTASection() {
                         </div>
 
                         {/* BUTTON */}
+
                         <div className="w-full md:w-auto">
-                              <a
-                                    href="tel:+919876543210"
+                              <Link
+                                    href="/contact-us"
+                                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                                     className="block md:inline-block text-center w-full md:w-auto bg-[#0F172A] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1E293B] transition"
                               >
                                     Contact Our Experts
-                              </a>
+                              </Link>
                         </div>
 
                   </div>
