@@ -30,11 +30,22 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
       <div className="mt-2 flex flex-col gap-5 bg-white/5 p-5 rounded-2xl border border-white/5">
         {dataArray.map((category, catIdx) => (
           <div key={catIdx} className="flex flex-col gap-3">
+
             <p className="text-[#F7A600] font-black uppercase text-[10px] tracking-[0.2em] opacity-80">
               {category.label}
             </p>
-            {category.subTabs?.[0]?.columns?.map((col, colIdx) => (
+
+            {/* ✅ Handle columns directly (your case) */}
+            {category.columns?.map((col, colIdx) => (
               <div key={colIdx} className="flex flex-col gap-3 border-l border-white/10 ml-1 pl-4">
+
+                {/* Optional title */}
+                {col.title && (
+                  <p className="text-xs text-gray-400 uppercase tracking-wide">
+                    {col.title}
+                  </p>
+                )}
+
                 {col.links.map((link, linkIdx) => (
                   <Link
                     key={`${catIdx}-${colIdx}-${linkIdx}`}
