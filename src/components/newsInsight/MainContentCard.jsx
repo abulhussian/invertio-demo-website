@@ -14,14 +14,14 @@ const MainContentCard = ({
       return (
 
 
-            <div className="mt-14">
+            <div className="mt-12">
                   <div
                         className={`w-full  
       flex flex-col lg:flex-row overflow-hidden 
       ${className}`}
                   >
                         {/* LEFT SIDE */}
-                        <div className="flex-[1.1] py-10 lg:py-16 flex flex-col justify-center">
+                        <div className="flex-[1.1] py-10 lg:py-16 flex flex-col justify-center order-2 lg:order-1">
 
                               {/* Date + Category */}
                               <div className="flex items-center gap-3 mb-6">
@@ -73,7 +73,7 @@ const MainContentCard = ({
                         </div>
 
                         {/* RIGHT SIDE IMAGE */}
-                        <div className="flex-1 min-h-[300px] lg:min-h-[480px] rounded-md overflow-hidden relative">
+                        <div className="flex-1 min-h-[300px] lg:min-h-[480px] rounded-md overflow-hidden relative order-1 lg:order-2">
 
                               <img
                                     src={imageSrc}

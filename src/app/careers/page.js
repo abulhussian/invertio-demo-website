@@ -122,7 +122,7 @@ const jobs = [
 export default function CareersPage() {
       return (
             <>
-                  <div className="w-full max-w-[1380px] mx-auto px-6 lg:px-16 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+                  <div className="w-full max-w-[1380px] mx-auto px-6 lg:px-16 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-36">
 
                         {/* Header */}
                         <SectionHeader
@@ -135,7 +135,7 @@ export default function CareersPage() {
                         />
 
                         {/* Open Jobs Title */}
-                        <h2 className="text-center text-3xl font-extrabold my-6 py-5">
+                        <h2 className="text-center text-3xl font-extrabold my-3 py-3">
                               Open Jobs
                         </h2>
 
@@ -147,7 +147,7 @@ export default function CareersPage() {
                         </div>
 
                         {/* View All Jobs Button */}
-                        <div className="mt-16 flex justify-center">
+                        <div className="mt-10 flex justify-center">
                               <Link
                                     href="/careers/jobs"
                                     className="px-8 py-3 rounded-full bg-[#0F172A] text-white font-bold hover:bg-[#1E293B] transition shadow-md flex gap-2"

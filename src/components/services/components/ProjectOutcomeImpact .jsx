@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProjectOutcomeImpact = ({ data }) => {
       return (
-            <section className="w-full py-16">
+            <section className="w-full ">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                         {/* LEFT COLUMN */}

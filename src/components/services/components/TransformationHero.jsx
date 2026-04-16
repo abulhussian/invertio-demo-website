@@ -1,4 +1,4 @@
-
+"use client";
 
 import Section from "@/components/common/ui/Section";
 import SectionHeader from "@/components/common/ui/SectionHeader";
@@ -10,28 +10,30 @@ const TransformationHero = ({ data }) => {
 
   return (
     <Section>
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 sm:gap-10 lg:gap-16 mt-3">
 
         {/* LEFT CONTENT */}
-        <div className="flex flex-col gap-4 max-w-[520px] w-full order-2 lg:order-1">
+        <div className="flex flex-col gap-3 sm:gap-4 max-w-[520px] w-full order-2 lg:order-1">
 
           {benefits.map((value, index) => (
             <div
               key={index}
-              className={`flex items-center gap-4 bg-[#FCFCFD] border border-[#D5D9EB] rounded-xl px-5 py-4 transition duration-300 hover:shadow-md ${index % 2 === 0 ? "lg:hover:rotate-[0.6deg]" : "lg:hover:-rotate-[0.6deg]"
+              className={`flex items-center gap-3 sm:gap-4 bg-[#FCFCFD] border border-[#D5D9EB] rounded-xl px-3 py-3 sm:px-5 sm:py-4 transition duration-300 hover:shadow-md ${index % 2 === 0
+                ? "lg:hover:rotate-[0.6deg]"
+                : "lg:hover:-rotate-[0.6deg]"
                 }`}
             >
               {/* ICON */}
               <Image
                 src="/common/check.svg"
                 alt="check"
-                width={28}
-                height={28}
+                width={24}
+                height={24}
                 className="flex-shrink-0"
               />
 
               {/* TEXT */}
-              <p className="text-[15px] sm:text-base font-medium text-[#101323] leading-relaxed">
+              <p className="text-[14px] sm:text-base font-medium text-[#101323] leading-snug sm:leading-relaxed">
                 {value}
               </p>
             </div>
@@ -50,18 +52,19 @@ const TransformationHero = ({ data }) => {
             align="left"
           />
 
-          <div className="mt-6">
+          <div className="mt-4 sm:mt-6">
             <Link
               href={data?.button?.href || "/contact-us"}
-              className="inline-flex items-center gap-2 px-8 h-12 rounded-full bg-[#0F172A] text-white font-semibold hover:bg-[#1E293B] transition shadow-sm"
+              className="inline-flex items-center gap-2 px-4 sm:px-8 h-10 sm:h-12 rounded-full bg-[#0F172A] text-white text-sm sm:text-base font-semibold hover:bg-[#1E293B] transition shadow-sm"
             >
               {data?.button?.text || "Contact Us"}
 
               <Image
                 src="/arrows/rightTopFace.svg"
                 alt="arrow"
-                width={16}
-                height={16}
+                width={14}
+                height={14}
+                className="sm:w-4 sm:h-4"
               />
             </Link>
           </div>

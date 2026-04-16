@@ -7,6 +7,8 @@ import JobCard from "@/components/careers/JobCard";
 import defaultJobs from "@/data/jobs.json";
 import SectionHeader from "@/components/common/ui/SectionHeader";
 import Image from "next/image";
+import NoJobsAvalible from "@/components/careers/NoJobsAvalible";
+
 
 export default function JobsPage() {
 
@@ -48,7 +50,7 @@ export default function JobsPage() {
       }, []);;
 
       return (
-            <div className="px-8 md:px-14 lg:px-20 py-20 bg-[#F8F9FC]">
+            <div className="px-8 md:px-14 lg:px-20 bg-[#F8F9FC]">
 
                   {/* HEADER */}
                   <SectionHeader
@@ -87,7 +89,7 @@ export default function JobsPage() {
                   </div>
 
                   {/* JOB GRID */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14 pb-4">
 
                         {filteredJobs.map((job, index) => (
                               <JobCard
@@ -100,11 +102,7 @@ export default function JobsPage() {
                   </div>
 
                   {/* NO RESULTS */}
-                  {filteredJobs.length === 0 && (
-                        <p className="text-center text-gray-500 mt-12">
-                              No jobs found for this role.
-                        </p>
-                  )}
+                  {filteredJobs.length === 0 && <NoJobsAvalible />}
 
             </div>
       );

@@ -25,7 +25,7 @@ export default async function Page({ params }) {
       return (
             <>
 
-                  <div className="px-8 md:px-14 lg:px-20 py-16 bg-[#F8F9FC]">
+                  <div className="px-8 md:px-14 lg:px-20  bg-[#F8F9FC]">
                         <SectionHeader
                               badge={project.badge}
                               heading={project.title}
@@ -56,7 +56,7 @@ export default async function Page({ params }) {
                         alt={project.title}
                   />
 
-                  <div className="px-8 md:px-14 lg:px-20 py-16 bg-[#F8F9FC]">
+                  <div className="px-8 md:px-14 lg:px-20 py-8 bg-[#F8F9FC]">
                         <ProjectOutcomeImpact data={project.impactSection} />
                   </div>
 

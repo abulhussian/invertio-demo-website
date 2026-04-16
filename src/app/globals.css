@@ -6,6 +6,19 @@
   --animate-bounce-x: bounce-x 0.3s ease-in-out 2 both;
 }
 
+/* Hide scrollbar (Chrome, Safari, Edge) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar (Firefox) */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 @keyframes bounce-x {
 
   0%,

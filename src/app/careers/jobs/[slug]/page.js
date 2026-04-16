@@ -53,11 +53,7 @@ export default function JobDetails() {
       }
 
       return (
-            <div className="px-8 md:px-14 lg:px-20 py-12 bg-white min-h-screen">
-                  {/* MAIN LAYOUT GRID:
-          lg:grid-cols-6 creates 6 columns.
-          items-start is required to keep the sticky form from stretching.
-      */}
+            <div className="px-8 md:px-14 lg:px-20 lg:pt-3 bg-white min-h-screen">
                   <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 items-start">
 
                         {/* LEFT SIDE: JOB DETAILS (Takes 4 columns) */}
@@ -73,20 +69,20 @@ export default function JobDetails() {
                               </div>
 
                               <div>
-                                    <h1 className="text-[40px] md:text-[48px] font-bold text-[#0F172A] leading-tight mb-3">
+                                    <h1 className="text-[26px] sm:text-[32px] md:text-[48px] font-bold text-[#0F172A] leading-tight mb-3">
                                           {job.title}
                                     </h1>
-                                    <p className="text-[18px] text-gray-500 font-medium">
+                                    <p className="text-[15px] text-gray-500 font-medium">
                                           Pay : <span className="text-[#0F172A] font-bold">{job.pay}</span>
                                     </p>
                               </div>
 
                               {/* Skills Tags */}
-                              <div className="flex flex-wrap gap-2">
+                              <div className="flex gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
                                     {job.skills?.map((skill, i) => (
                                           <span
                                                 key={i}
-                                                className="text-[12px] px-4 py-2 border border-gray-200 rounded-lg text-gray-600 bg-white font-medium shadow-sm"
+                                                className="flex-shrink-0 text-[12px] sm:text-sm px-3 py-1.5 border border-gray-200 rounded-lg text-gray-600 bg-white font-medium shadow-sm"
                                           >
                                                 {skill}
                                           </span>
@@ -124,7 +120,7 @@ export default function JobDetails() {
                         </div>
 
                         {/* RIGHT SIDE: APPLY FORM (Takes 2 columns) */}
-                        <div className="lg:col-span-2">
+                        <div className="lg:col-span-2 mb-3">
                               <div
                                     id="apply-form-container"
                                     className={`bg-white p-8 rounded-[32px] border border-gray-200 shadow-sm transition-all
@@ -134,7 +130,7 @@ export default function JobDetails() {
 
                                     <form className="space-y-5">
                                           {/* Grid-col-2 inside the form for First/Last Name */}
-                                          <div className="grid grid-cols-2 gap-4">
+                                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                 <InputGroup label="First Name" placeholder="Enter Your First Name" />
                                                 <InputGroup label="Last Name" placeholder="Enter Your Last Name" />
                                           </div>

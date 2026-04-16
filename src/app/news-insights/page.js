@@ -2,12 +2,11 @@ import SectionHeader from "@/components/common/ui/SectionHeader";
 import BlogFilterSection from "@/components/newsInsight/BlogFilterSection";
 import MainContentCard from "@/components/newsInsight/MainContentCard";
 import SubscribeSection from "@/components/newsInsight/SubscribeSection";
-import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 lg:pt-34 pt-24">
         <SectionHeader
           badge="News & Insight"
           heading="Insights, Updates & Technology Stories"

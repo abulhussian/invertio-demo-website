@@ -22,28 +22,28 @@ const ChallengesSection = ({ data }) => {
                         </div>
 
                         {/* RIGHT LIST */}
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-3 sm:gap-4">
                               {data?.items?.map((item, index) => (
                                     <div
                                           key={index}
-                                          className="flex items-start gap-4 border border-[#D5D9EB] rounded-xl p-5 bg-white hover: transform transition-all duration-300 hover:-translate-y-1"
+                                          className="flex items-start gap-3 sm:gap-4 border border-[#D5D9EB] rounded-xl p-3 sm:p-5 bg-white transition-all duration-300 hover:-translate-y-1"
                                     >
                                           {/* ICON */}
                                           <Image
                                                 src="/services/image.png"
                                                 alt="icon"
-                                                width={28}
-                                                height={28}
-                                                className="mt-1"
+                                                width={20}
+                                                height={20}
+                                                className="mt-1 sm:w-7 sm:h-7 flex-shrink-0"
                                           />
 
                                           {/* TEXT */}
                                           <div>
-                                                <h4 className="text-lg font-semibold text-[#101323]">
+                                                <h4 className="text-[14px] sm:text-lg font-semibold text-[#101323] leading-snug">
                                                       {item.title}
                                                 </h4>
 
-                                                <p className="text-sm text-gray-500 mt-1">
+                                                <p className="text-[12px] sm:text-sm text-gray-500 mt-1 leading-relaxed">
                                                       {item.description}
                                                 </p>
                                           </div>

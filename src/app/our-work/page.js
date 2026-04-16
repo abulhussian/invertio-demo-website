@@ -1,16 +1,16 @@
 
-import CtaSection from "@/components/common/components/CtaSection";
 import InsightsSection from "@/components/common/components/InsightsSection";
 import TestimonialsSection from "@/components/common/components/TestimonialsSection";
 import SectionHeader from "@/components/common/ui/SectionHeader";
 import ProjectSection from "@/components/ourwork/ProjectSection";
+import StartJourneySection from "@/components/ourwork/StartJourneySection";
 
 export default function Page() {
   return (
     <>
 
 
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-26 lg:pt-34">
 
         <SectionHeader
           badge="Success Stories"
@@ -123,7 +123,7 @@ export default function Page() {
 
       </div>
 
-      <CtaSection />
+      <StartJourneySection />
       <InsightsSection />
       <TestimonialsSection />
     </>

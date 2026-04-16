@@ -214,7 +214,7 @@ export default function ContactSection() {
                                     </div>
 
                                     <div className="border border-gray-100 bg-white rounded-2xl p-5 shadow-sm flex items-center gap-5">
-                                          <div className="w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center">
+                                          <div className="w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
                                                 <Image src="/contact/email.png" alt="Location Icon" width={20} height={20} />
                                           </div>
                                           <div>
@@ -230,7 +230,7 @@ export default function ContactSection() {
                         </div>
 
                         {/* RIGHT SIDE FORM */}
-                        <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+                        <div className="bg-white border border-gray-200 rounded-2xl px-4 py-2 shadow-sm">
 
                               <h3 className="text-2xl font-semibold text-[#0F172A] mb-2">
                                     Send Us a Message

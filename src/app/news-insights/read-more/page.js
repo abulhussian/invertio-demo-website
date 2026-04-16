@@ -1,10 +1,13 @@
 const page = () => {
+
+
+
       return (
             <>
-                  <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+                  <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34">
 
                         {/* Header */}
-                        <div className="mb-12">
+                        <div >
                               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#0F172A] leading-tight mb-6">
                                     All You Need to Know About Progressive Web Applications
                               </h1>
@@ -19,6 +22,45 @@ const page = () => {
                                     </span>
                               </div>
                         </div>
+
+                  </div>
+                  <section className="block md:hidden relative w-full py-12 bg-[#0B1120] overflow-hidden">
+
+                        <div className="w-full mx-auto px-4 sm:px-8 md:px-14 lg:px-20 
+  flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+                              {/* LEFT */}
+                              <div className="flex flex-col gap-3 max-w-[320px] sm:max-w-md md:max-w-xl text-left">
+
+                                    <span className="text-xs sm:text-sm text-gray-400 font-medium">
+                                          News & Insights
+                                    </span>
+
+                                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white leading-tight">
+                                          Never Miss an Update
+                                    </h2>
+
+                                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                                          Subscribe to receive the latest technology insights, innovation stories,
+                                          and industry updates directly in your inbox.
+                                    </p>
+
+                              </div>
+
+                              {/* BUTTON */}
+                              <div className="w-full md:w-auto mt-4 md:mt-0">
+                                    <button
+                                          className="w-full sm:w-auto px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm sm:text-base font-medium transition"
+                                    >
+                                          Subscribe Now
+                                    </button>
+                              </div>
+
+                        </div>
+                  </section>
+
+
+                  <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-36 lg:pt-34">
 
                         {/* Content */}
                         <div className="w-full px-0 sm:px-6 md:px-12 lg:px-36 space-y-12 text-[#475569] leading-relaxed">

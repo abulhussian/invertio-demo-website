@@ -25,17 +25,17 @@ const CtaSection = () => {
         </div>
 
         {/* RIGHT BUTTONS */}
-<div className="flex flex-col gap-4 z-10 w-full sm:w-auto">
-            <Link
+        <div className="flex flex-col gap-4 z-10 w-full sm:w-auto">
+          <Link
             href="/contact-us"
-           className="w-full sm:w-auto px-4 sm:px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition text-center"
+            className="w-full sm:w-auto px-4 sm:px-8 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition text-center"
           >
             Start Your Journey
           </Link>
 
           <Link
             href="/our-work"
-           className="w-full sm:w-auto px-4 sm:px-8 py-3 rounded-full bg-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/40 transition text-center"
+            className="w-full sm:w-auto px-4 sm:px-8 py-3 rounded-full bg-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/40 transition text-center"
           >
             View Our Work
           </Link>

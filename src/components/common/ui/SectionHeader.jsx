@@ -13,17 +13,17 @@ export default function SectionHeader({
   const sizeStyles = {
     xl: {
       heading:
-        "text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] leading-tight",
-      subheading: "text-[16px] sm:text-[18px] md:text-[20px]",
+        "text-[26px] sm:text-[40px] md:text-[52px] lg:text-[64px] leading-snug",
+      subheading: "text-[14px] sm:text-[18px] md:text-[20px]",
       badge:
-        "text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold",
+        "text-[12px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold",
     },
     md: {
       heading:
-        "text-[26px] sm:text-[32px] md:text-[40px] lg:text-[32px] leading-tight",
-      subheading: "text-[14px] sm:text-[16px] md:text-[18px]",
-      badge: "text-[13px] sm:text-[14px] md:text-[20px] font-bold",
-      para: "text-[8px] sm:text-[10px] md:text-[12px]",
+        "text-[22px] sm:text-[28px] md:text-[40px] lg:text-[32px] leading-snug",
+      subheading: "text-[13px] sm:text-[16px] md:text-[18px]",
+      badge: "text-[11px] sm:text-[14px] md:text-[16px] font-bold",
+      para: "text-[13px] sm:text-[14px] md:text-[16px]", // ✅ FIXED (no more 8px)
     },
   };
   const alignStyles = {
@@ -33,7 +33,7 @@ export default function SectionHeader({
   };
 
   return (
-    <div className={`w-full max-w-[1380px] ${alignStyles[align]} flex flex-col gap-[16px]`}>
+    <div className={`w-full max-w-[1380px] ${alignStyles[align]} flex flex-col gap-2 sm:gap-3 md:gap-4`}>
       {badge && (
         <div
           className={`${sizeStyles[size].badge} font-jakarta`}
