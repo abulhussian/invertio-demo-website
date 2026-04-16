@@ -17,7 +17,7 @@ const InsightsSection = () => {
 
   return (
     <Section bg={"#F8F9FC"}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1380px] mx-auto">
         {/* HEADER */}
         <SectionHeader
           badge="News & Insights"

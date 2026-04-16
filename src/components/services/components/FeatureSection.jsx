@@ -15,8 +15,8 @@ const FeatureSection = ({
 
     return (
         <section className="w-full py-5 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-[1380px] mx-auto px-4 lg:px-4">
+                <div className="grid md:grid-cols-2 gap-16 items-center">
 
                     {/* Content */}
                     <div

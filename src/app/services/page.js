@@ -21,7 +21,7 @@ const page = () => {
       {/* Section 1 */}
       <FeatureSection
         tag="Digital Transformation"
-        title="Reimagining business processes..."
+        title=""
         image="/services/Transformation.png"
         imagePosition="right"
         slug="services/digital-transformation"

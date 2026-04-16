@@ -5,7 +5,7 @@ const SolutionTrustedLogos = ({ data }) => {
 
       return (
             <section className="bg-white py-8 sm:py-10 md:py-12 px-4 sm:px-6">
-                  <div className="max-w-6xl mx-auto text-center">
+                  <div className="max-w-[1380px] mx-auto text-center">
 
                         {/* Text */}
                         <p className="text-xs sm:text-sm font-medium text-gray-700 mb-6 sm:mb-8">

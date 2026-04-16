@@ -6,7 +6,7 @@ const TechStackWrapper = ({ data }) => {
 
       return (
             <section className="py-14 sm:py-16 md:py-20 bg-white overflow-hidden">
-                  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                  <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 lg:gap-20 items-center">
 

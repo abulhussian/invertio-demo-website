@@ -26,7 +26,7 @@ export default function ProjectsSection() {
 
   return (
     <section className="bg-[#f5f6f7] py-10">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1380px] mx-auto px-6 lg:px-3">
 
         {/* Header */}
         <div className=" mb-14">
@@ -80,19 +80,19 @@ export default function ProjectsSection() {
             ))}
           </div>
           {/* Mobile Dots */}
-         <div className="flex md:hidden justify-center items-center gap-2 mt-6">
-  {Array.from({ length: projectList.length - visibleCards + 1 }).map((_, i) => (
-    <button
-      key={i}
-      onClick={() => setIndex(i)}
-      className={`transition-all duration-300 rounded-full
-      ${index === i 
-        ? "w-10 h-1.5 bg-black" 
-        : "w-1.5 h-1.5 bg-gray-300"
-      }`}
-    />
-  ))}
-</div>
+          <div className="flex md:hidden justify-center items-center gap-2 mt-6">
+            {Array.from({ length: projectList.length - visibleCards + 1 }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setIndex(i)}
+                className={`transition-all duration-300 rounded-full
+      ${index === i
+                    ? "w-10 h-1.5 bg-black"
+                    : "w-1.5 h-1.5 bg-gray-300"
+                  }`}
+              />
+            ))}
+          </div>
 
           {/* Navigation Buttons */}
           <div className="hidden md:flex justify-end gap-3 mt-6">

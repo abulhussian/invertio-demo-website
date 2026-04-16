@@ -37,7 +37,7 @@ The results have significantly improved efficiency and decision-making across ou
 const TestimonialsSection = () => {
   return (
     <section className="w-full py-24 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1380px] mx-auto px-6 lg:px-4">
         {/* HEADER */}
         <SectionHeader
           badge="Client Testimonials"

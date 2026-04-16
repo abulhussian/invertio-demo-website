@@ -6,7 +6,7 @@ const WhyChooseUs = ({ data }) => {
 
       return (
             <section className="py-14 sm:py-16 md:py-20 bg-white overflow-hidden">
-                  <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center gap-10 sm:gap-12 lg:gap-16">
+                  <div className="max-w-[1380px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center gap-10 sm:gap-12 lg:gap-16">
 
                         {/* LEFT */}
                         <div className="w-full lg:w-1/2">

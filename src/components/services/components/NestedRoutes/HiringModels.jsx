@@ -12,7 +12,7 @@ const HiringModels = ({ data }) => {
 
       return (
             <section className="py-20 bg-[#F8F9FC]">
-                  <div className="max-w-7xl mx-auto px-6">
+                  <div className="max-w-[1380px] mx-auto px-6">
 
                         {/* Header */}
                         <div className="text-center mb-14">

@@ -6,57 +6,58 @@ const HeroSection = () => {
         <div className="w-full -mt-[120px] ">
 
             {/* HERO SECTION */}
-            <section className="relative w-full  min-h-screen">
+            <section className="relative w-full min-h-screen">
 
                 {/* background image */}
                 <img
                     src="/services/hero.jpeg"
                     alt="hero"
-                    className="absolute inset-0 w-full h-full object-cover" />
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
 
                 {/* overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#06030E00] to-[#06030E]"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#06030E00] to-[#06030E]" />
 
-                {/* content */}
-                <div className="relative min-h-screen flex items-end px-8 pb-12">
-                    <div className="flex flex-col lg:flex-row items-start lg:items-center w-full gap-6">
+                {/* content wrapper (MATCH NAVBAR WIDTH) */}
+                <div className="relative min-h-screen flex items-end pb-12">
 
-                        {/* LEFT TEXT */}
-                        <div className="flex-1  text-white">
+                    <div className="w-full max-w-[1380px] mx-auto px-6 lg:px-3">
 
-                            <p className="text-sm mb-2 text-white">
-                                Welcome to Invertio
-                            </p>
+                        <div className="flex flex-col lg:flex-row items-start lg:items-center w-full gap-6">
 
-                            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
-                                Engineering Scalable Digital Solutions for Modern Businesses
-                            </h1>
+                            {/* LEFT TEXT */}
+                            <div className="flex-1 text-white">
+                                <p className="text-sm mb-2">Welcome to Invertio</p>
 
-                            <p className="text-gray-300 text-sm md:text-base mb-2">
-                                We help organizations design, build, and scale high-performance digital products through strategic thinking, modern technology, and expert engineering — turning complex ideas into powerful business solutions.
-                            </p>
-                            <p className="text-gray-300 text-sm md:text-base">
-                                Trusted by growing startups and enterprises across industries worldwide.
-                            </p>
+                                <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
+                                    Engineering Scalable Digital Solutions for Modern Businesses
+                                </h1>
 
-                        </div>
+                                <p className="text-gray-300 text-sm md:text-base mb-2">
+                                    We help organizations design, build, and scale high-performance digital products through strategic thinking, modern technology, and expert engineering.
+                                </p>
 
-                        {/* RIGHT BUTTONS */}
-                        <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
+                                <p className="text-gray-300 text-sm md:text-base">
+                                    Trusted by growing startups and enterprises worldwide.
+                                </p>
+                            </div>
 
-                            <Link
-                                href="/contact-us"
-                                className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-sm font-medium text-white text-center"
-                            >
-                                Start Your Project
-                            </Link>
+                            {/* RIGHT BUTTONS */}
+                            <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
+                                <Link
+                                    href="/contact-us"
+                                    className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-sm font-medium text-white text-center"
+                                >
+                                    Start Your Project
+                                </Link>
 
-                            <Link
-                                href="/contact-us"
-                                className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
-                            >
-                                Book A Consultation
-                            </Link>
+                                <Link
+                                    href="/contact-us"
+                                    className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
+                                >
+                                    Book A Consultation
+                                </Link>
+                            </div>
 
                         </div>
 

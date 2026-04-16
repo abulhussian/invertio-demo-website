@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     // <header className="navbar-wrapper fixed top-0 left-0 w-full px-4 sm:px-6 md:px-10 lg:px-20 py-4 sm:py-5 md:py-6 z-50 font-jakarta"> 
     <header className="navbar-wrapper fixed top-0 left-0 w-full py-4 lg:py-6 z-50 font-jakarta">
-      <div className="w-full lg:max-w-[1280px] mx-auto bg-[#101323] px-4 lg:px-6 py-3 rounded-[20px] flex justify-between items-center">
+      <div className="w-full lg:max-w-[1380px] mx-auto bg-[#101323] px-4 lg:px-6 py-3 rounded-[20px] flex justify-between items-center">
 
         <Link onClick={() => setActiveMenu(null)} href="/">
           <Image

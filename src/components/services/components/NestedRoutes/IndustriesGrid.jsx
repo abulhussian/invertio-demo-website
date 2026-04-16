@@ -6,7 +6,7 @@ const IndustriesGrid = ({ data }) => {
 
       return (
             <section className="py-14 sm:py-16 md:py-20 bg-[#F8F9FC]">
-                  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                  <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
 
                         {/* Header */}
                         <div className="mb-10 sm:mb-12 md:mb-14">

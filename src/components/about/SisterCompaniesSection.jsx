@@ -6,7 +6,7 @@ import SectionHeader from "../common/ui/SectionHeader";
 const SisterCompaniesSection = () => {
   return (
     <Section bg="#FCFCFD">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
+      <div className="max-w-[1380px] mx-auto px-6 lg:px-4 grid lg:grid-cols-2 gap-20 items-start">
         {/* LEFT CONTENT */}
         <div>
           <SectionHeader

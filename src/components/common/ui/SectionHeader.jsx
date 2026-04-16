@@ -33,7 +33,7 @@ export default function SectionHeader({
   };
 
   return (
-    <div className={`w-full ${alignStyles[align]}  flex flex-col gap-[16px]`}>
+    <div className={`w-full max-w-[1380px] ${alignStyles[align]} flex flex-col gap-[16px]`}>
       {badge && (
         <div
           className={`${sizeStyles[size].badge} font-jakarta`}
