@@ -1,35 +1,43 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const HeroSection = () => {
     return (
         <div className="w-full -mt-[120px] ">
 
             {/* HERO SECTION */}
-            <section className="relative w-full min-h-screen">
+            <section className="relative w-full h-[80vh] md:min-h-screen">
 
                 {/* background image */}
-                <img
+                <Image
                     src="/services/hero.jpeg"
                     alt="hero"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                    style={{ objectPosition: "25% center" }}
                 />
 
                 {/* overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#06030E00] to-[#06030E]" />
 
-                {/* content wrapper (MATCH NAVBAR WIDTH) */}
-                <div className="relative min-h-screen flex items-end pb-12">
+                {/* content wrapper */}
+                <div className="relative h-full flex items-end md:items-end pb-8 md:pb-12">
 
-                    <div className="w-full max-w-[1380px] mx-auto px-6 lg:px-3">
+                    <div className="w-full max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-3">
 
                         <div className="flex flex-col lg:flex-row items-start lg:items-center w-full gap-6">
 
                             {/* LEFT TEXT */}
                             <div className="flex-1 text-white">
-                                <p className="text-sm mb-2">Welcome to Invertio</p>
 
-                                <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
+                                <p className="text-xs sm:text-sm mb-2">
+                                    Welcome to Invertio
+                                </p>
+
+                                <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight mb-3">
                                     Engineering Scalable Digital Solutions for Modern Businesses
                                 </h1>
 
@@ -43,20 +51,22 @@ const HeroSection = () => {
                             </div>
 
                             {/* RIGHT BUTTONS */}
-                            <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
+                            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 w-full sm:w-auto">
+
                                 <Link
                                     href="/contact-us"
-                                    className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-sm font-medium text-white text-center"
+                                    className="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-full text-sm font-medium text-white text-center"
                                 >
                                     Start Your Project
                                 </Link>
 
                                 <Link
                                     href="/contact-us"
-                                    className="border border-white px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
+                                    className="border border-white px-5 py-3 rounded-full text-sm hover:bg-white hover:text-black transition text-white text-center"
                                 >
                                     Book A Consultation
                                 </Link>
+
                             </div>
 
                         </div>
