@@ -26,6 +26,7 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
   // Unified helper to render dropdown sections based on your megaMenuData structure
   const renderDropdownSection = (dataArray) => {
     if (!Array.isArray(dataArray)) return null;
+
     return (
       <div className="mt-2 flex flex-col gap-5 bg-white/5 p-5 rounded-2xl border border-white/5">
         {dataArray.map((category, catIdx) => (
@@ -35,29 +36,41 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
               {category.label}
             </p>
 
-            {/* ✅ Handle columns directly (your case) */}
+            {/* ✅ Case 1: NEW structure (industries) */}
             {category.columns?.map((col, colIdx) => (
               <div key={colIdx} className="flex flex-col gap-3 border-l border-white/10 ml-1 pl-4">
-
-                {/* Optional title */}
                 {col.title && (
-                  <p className="text-xs text-gray-400 uppercase tracking-wide">
-                    {col.title}
-                  </p>
+                  <p className="text-xs text-gray-400 uppercase">{col.title}</p>
                 )}
-
                 {col.links.map((link, linkIdx) => (
                   <Link
-                    key={`${catIdx}-${colIdx}-${linkIdx}`}
+                    key={linkIdx}
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="text-gray-300 hover:text-white text-[15px] font-medium transition-colors py-1"
+                    className="text-gray-300 hover:text-white text-[15px] py-1"
                   >
                     {link.label}
                   </Link>
                 ))}
               </div>
             ))}
+
+            {/* ✅ Case 2: OLD structure (services/solutions) */}
+            {category.subTabs?.[0]?.columns?.map((col, colIdx) => (
+              <div key={colIdx} className="flex flex-col gap-3 border-l border-white/10 ml-1 pl-4">
+                {col.links.map((link, linkIdx) => (
+                  <Link
+                    key={linkIdx}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-gray-300 hover:text-white text-[15px] py-1"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ))}
+
           </div>
         ))}
       </div>

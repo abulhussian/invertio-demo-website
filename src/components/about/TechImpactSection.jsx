@@ -26,140 +26,149 @@ const TechImpactSection = () => {
     "/icons/js.svg",
   ];
 
-  const radius1 = 80;
-  const radius2 = 140;
-  const radius3 = 200;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+
+  const scale = isMobile ? 0.6 : 1;
+
+  const radius1 = 80 * scale;
+  const radius2 = 140 * scale;
+  const radius3 = 200 * scale;
 
   return (
     <Section>
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
 
         {/* ORBIT SECTION */}
-        <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[550px] aspect-square mx-auto overflow-visible">
+        <div className="flex justify-center">
+          <div className="scale-[0.65] sm:scale-[0.8] md:scale-100 origin-center">
 
-          {/* Center Logo */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-[#0B1120] rounded-full flex items-center justify-center z-10">
-              <Image
-                src="/logo/logo.svg"
-                alt="logo"
-                width={90}
-                height={90}
-                className="sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px]"
+            <div className="relative w-[320px] sm:w-[420px] md:w-[500px] lg:w-[550px] aspect-square mx-auto overflow-visible mb-8 md:mb-0">
 
-              />
+              {/* Center Logo */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-[#0B1120] rounded-full flex items-center justify-center z-10 shadow-[0_0_40px_rgba(0,0,0,0.2)]">
+                  <Image
+                    src="/logo/logo.svg"
+                    alt="logo"
+                    width={90}
+                    height={90}
+                    className="sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px]"
+                  />
+                </div>
+              </div>
+
+              {/* Orbit Rings */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div
+                  style={{ width: radius1 * 2, height: radius1 * 2 }}
+                  className="border border-gray-200/60 rounded-full"
+                />
+              </div>
+
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div
+                  style={{ width: radius2 * 2, height: radius2 * 2 }}
+                  className="border border-gray-200/40 rounded-full"
+                />
+              </div>
+
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div
+                  style={{ width: radius3 * 2, height: radius3 * 2 }}
+                  className="border border-gray-200/30 rounded-full"
+                />
+              </div>
+
+              {/* INNER RING */}
+              <div className="absolute inset-0 animate-[spin_30s_linear_infinite] sm:animate-[spin_20s_linear_infinite]">
+                {innerIcons.map((icon, index) => {
+                  const angle = (360 / innerIcons.length) * index;
+
+                  return (
+                    <div
+                      key={index}
+                      className="absolute top-1/2 left-1/2"
+                      style={{
+                        transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius1}px)`
+                      }}
+                    >
+                      <div style={{ transform: `rotate(-${angle}deg)` }}>
+                        <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                          <Image
+                            src={icon}
+                            alt="tech"
+                            width={24}
+                            height={24}
+                            className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* MIDDLE RING */}
+              <div className="absolute inset-0 animate-[spin_45s_linear_infinite] sm:animate-[spin_35s_linear_infinite]">
+                {middleIcons.map((icon, index) => {
+                  const angle = (360 / middleIcons.length) * index;
+
+                  return (
+                    <div
+                      key={index}
+                      className="absolute top-1/2 left-1/2"
+                      style={{
+                        transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius2}px)`
+                      }}
+                    >
+                      <div style={{ transform: `rotate(-${angle}deg)` }}>
+                        <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center shadow-md">
+                          <Image
+                            src={icon}
+                            alt="tech"
+                            width={26}
+                            height={26}
+                            className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* OUTER RING */}
+              <div className="absolute inset-0 animate-[spin_60s_linear_infinite] sm:animate-[spin_50s_linear_infinite]">
+                {outerIcons.map((icon, index) => {
+                  const angle = (360 / outerIcons.length) * index;
+
+                  return (
+                    <div
+                      key={index}
+                      className="absolute top-1/2 left-1/2"
+                      style={{
+                        transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius3}px)`
+                      }}
+                    >
+                      <div style={{ transform: `rotate(-${angle}deg)` }}>
+                        <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center shadow-md">
+                          <Image
+                            src={icon}
+                            alt="tech"
+                            width={26}
+                            height={26}
+                            className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
             </div>
+
           </div>
-
-          {/* Orbit Rings */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div
-              style={{ width: radius1 * 2, height: radius1 * 2 }}
-              className="border border-gray-200 rounded-full"
-            />
-          </div>
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div
-              style={{ width: radius2 * 2, height: radius2 * 2 }}
-              className="border border-gray-200 rounded-full"
-            />
-          </div>
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div
-              style={{ width: radius3 * 2, height: radius3 * 2 }}
-              className="border border-gray-200 rounded-full"
-            />
-          </div>
-
-          {/* INNER RING */}
-          <div className="absolute inset-0 animate-[spin_20s_linear_infinite] hover:[animation-play-state:paused]">
-            {innerIcons.map((icon, index) => {
-              const angle = (360 / innerIcons.length) * index;
-
-              return (
-                <div
-                  key={index}
-                  className="absolute top-1/2 left-1/2"
-                  style={{
-                    transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius1}px)`
-                  }}
-                >
-                  <div style={{ transform: `rotate(-${angle}deg)` }}>
-                    <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                      <Image
-                        src={icon}
-                        alt="tech"
-                        width={24}
-                        height={24}
-                        className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7"
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* MIDDLE RING */}
-          <div className="absolute inset-0 animate-[spin_35s_linear_infinite] hover:[animation-play-state:paused]">
-            {middleIcons.map((icon, index) => {
-              const angle = (360 / middleIcons.length) * index;
-
-              return (
-                <div
-                  key={index}
-                  className="absolute top-1/2 left-1/2"
-                  style={{
-                    transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius2}px)`
-                  }}
-                >
-                  <div style={{ transform: `rotate(-${angle}deg)` }}>
-                    <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center">
-                      <Image
-                        src={icon}
-                        alt="tech"
-                        width={26}
-                        height={26}
-                        className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* OUTER RING */}
-          <div className="absolute inset-0 animate-[spin_50s_linear_infinite] hover:[animation-play-state:paused]">
-            {outerIcons.map((icon, index) => {
-              const angle = (360 / outerIcons.length) * index;
-
-              return (
-                <div
-                  key={index}
-                  className="absolute top-1/2 left-1/2"
-                  style={{
-                    transform: `translate(-50%, -50%) rotate(${angle}deg) translate(${radius3}px)`
-                  }}
-                >
-                  <div style={{ transform: `rotate(-${angle}deg)` }}>
-                    <div className="bg-white rounded-full p-1.5 sm:p-2 md:p-4 border border-gray-100 flex items-center justify-center">
-                      <Image
-                        src={icon}
-                        alt="tech"
-                        width={26}
-                        height={26}
-                        className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
         </div>
 
         {/* RIGHT CONTENT */}

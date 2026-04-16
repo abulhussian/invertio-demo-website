@@ -77,12 +77,14 @@ const caseStudyData = {
 const CyberSecurity = () => {
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
-        <SectionHeader
-          badge="Cybersecurity"
-          heading="Safeguarding Your Digital Future"
-          subheading={`Protect your digital assets with advanced cybersecurity solutions designed to detect, prevent, and respond to evolving threats. We help organizations build resilient security infrastructures that safeguard data, applications, and business operations..`}
-        />
+      <div className="bg-[#F8F9FC] px-4 sm:px-6 md:px-10 lg:px-16 py-10 md:py-14 lg:py-20">
+        <div className="max-w-[1200px] mx-auto">
+          <SectionHeader
+            badge="Cybersecurity"
+            heading="Safeguarding Your Digital Future"
+            subheading={`Protect your digital assets with advanced cybersecurity solutions designed to detect, prevent, and respond to evolving threats. We help organizations build resilient security infrastructures that safeguard data, applications, and business operations.`}
+          />
+        </div>
       </div>
 
       <AboutSection leftCards={data.left} rightCard={data.right} />

@@ -78,12 +78,14 @@ const caseStudyData = {
 const DataAnalytics = () => {
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
-        <SectionHeader
-          badge="Data Analytics Solutions"
-          heading="Turning Data Into Actionable Business Intelligence"
-          subheading={`Unlock the true value of your data with advanced analytics, AI-powered insights, and intelligent reporting solutions. Invertio helps organizations transform raw information into strategic advantages that drive smarter decisions, operational efficiency, and sustainable business growth.`}
-        />
+      <div className="bg-[#F8F9FC] px-4 sm:px-6 md:px-10 lg:px-16 py-10 md:py-14 lg:py-20">
+        <div className="max-w-[1200px] mx-auto">
+          <SectionHeader
+            badge="Data Analytics Solutions"
+            heading="Turning Data Into Actionable Business Intelligence"
+            subheading={`Unlock the true value of your data with advanced analytics, AI-powered insights, and intelligent reporting solutions. Invertio helps organizations transform raw information into strategic advantages that drive smarter decisions, operational efficiency, and sustainable business growth.`}
+          />
+        </div>
       </div>
 
       <AboutSection leftCards={data.left} rightCard={data.right} />

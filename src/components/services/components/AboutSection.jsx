@@ -4,31 +4,22 @@ import Image from "next/image";
 const AboutSection = ({ leftCards = [], rightCard, hideImage = false }) => {
   return (
     <Section>
-      <div className="mx-auto flex flex-row gap-8">
+      <div className="mx-auto flex flex-col lg:flex-row gap-6 lg:gap-8">
+
         {/* LEFT COLUMN */}
-        <div className="flex flex-col gap-6 sm:gap-8">
+        <div className="flex flex-col gap-6 sm:gap-8 w-full lg:w-1/2">
           {leftCards.map((card, index) => (
             <div
               key={index}
               className={`relative overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col gap-4 ${card.containerClass}`}
             >
-              <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-jakarta leading-snug">
+              <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold leading-snug">
                 {card.title}
               </h2>
 
               <p className="text-base sm:text-lg font-medium leading-relaxed">
                 {card.description}
               </p>
-
-              {card.image && !hideImage && (
-                <Image
-                  className={card.imageClass}
-                  src={card.image}
-                  alt={card.title}
-                  width={card.imageWidth || 300}
-                  height={card.imageHeight || 300}
-                />
-              )}
             </div>
           ))}
         </div>
@@ -36,24 +27,15 @@ const AboutSection = ({ leftCards = [], rightCard, hideImage = false }) => {
         {/* RIGHT COLUMN */}
         {rightCard && (
           <div
-            className={` overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-12 flex flex-col gap-6 ${rightCard.containerClass}`}
+            className={`w-full lg:w-1/2 overflow-hidden rounded-[20px] p-6 sm:p-8 lg:p-12 flex flex-col gap-6 ${rightCard.containerClass}`}
           >
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-jakarta leading-snug">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold leading-snug">
               {rightCard.title}
             </h2>
 
-            <p className="text-lg font-medium leading-relaxed max-w-[600px]">
+            <p className="text-base sm:text-lg font-medium leading-relaxed lg:max-w-[600px]">
               {rightCard.description}
             </p>
-            {rightCard.image && !hideImage && (
-              <Image
-                className={rightCard.imageClass}
-                src={rightCard.image}
-                alt={rightCard.title}
-                width={rightCard.imageWidth || 400}
-                height={rightCard.imageHeight || 400}
-              />
-            )}
           </div>
         )}
       </div>
