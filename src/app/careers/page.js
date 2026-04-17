@@ -70,7 +70,7 @@ const jobs = [
             company: "Invertio",
             logo: "/logo/logo.png",
             skills: ["Figma", "Wireframing", "User Research", "Prototyping"],
-            pay: "₹40,000 – ₹90,000 / month",
+            pay: "₹20,000 – ₹30,000 / month",
       },
       {
             slug: "frontend-developer",
@@ -79,7 +79,7 @@ const jobs = [
             company: "Invertio",
             logo: "/logo/logo.png",
             skills: ["React.js", "JavaScript", "HTML5", "Tailwind CSS"],
-            pay: "₹50,000 – ₹1,20,000 / month",
+            pay: "₹22,000 – ₹32,000 / month",
       },
       {
             slug: "backend-developer",
@@ -88,7 +88,7 @@ const jobs = [
             company: "Invertio",
             logo: "/logo/logo.png",
             skills: ["Node.js", "Express.js", "REST APIs", "MongoDB"],
-            pay: "₹60,000 – ₹1,40,000 / month",
+            pay: "₹25,000 – ₹32,000 / month",
       },
       {
             slug: "data-analyst",
@@ -97,7 +97,7 @@ const jobs = [
             company: "Invertio",
             logo: "/logo/logo.png",
             skills: ["Data Visualization", "SQL", "Power BI", "Python"],
-            pay: "₹45,000 – ₹1,10,000 / month",
+            pay: "₹22,000 – ₹30,000 / month",
       },
       {
             slug: "cybersecurity-analyst",
@@ -106,7 +106,7 @@ const jobs = [
             company: "Invertio",
             logo: "/logo/logo.png",
             skills: ["Network Security", "Vulnerability Assessment", "SIEM Tools", "Ethical Hacking"],
-            pay: "₹70,000 – ₹1,60,000 / month",
+            pay: "₹25,000 – ₹32,000 / month",
       },
       {
             slug: "cloud-engineer",
@@ -115,7 +115,7 @@ const jobs = [
             company: "Invertio",
             logo: "/logo/logo.png",
             skills: ["AWS Cloud", "DevOps", "Docker", "Kubernetes"],
-            pay: "₹80,000 – ₹1,80,000 / month",
+            pay: "₹25,000 – ₹32,000 / month",
       },
 ];
 
