@@ -5,33 +5,33 @@ const Spinner = () => {
       const rings = [
             {
                   icons: ["/icons/react.svg", "/icons/github.svg"],
-                  radius: 90,
+                  radius: 70, // reduced base
                   speed: 25,
             },
             {
                   icons: ["/icons/angular.svg", "/icons/node.svg", "/icons/aws.svg", "/icons/html.svg"],
-                  radius: 150,
+                  radius: 110,
                   speed: 40,
             },
             {
                   icons: ["/icons/figma.svg", "/icons/docker.svg", "/icons/js.svg", "/icons/gitlab.svg", "/icons/mongodb.svg"],
-                  radius: 210,
+                  radius: 150,
                   speed: 60,
             },
       ];
 
       return (
-            <div className="relative w-full max-w-[520px] aspect-square mx-auto">
+            <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[520px] aspect-square mx-auto">
 
                   {/* CENTER */}
                   <div className="absolute inset-0 flex items-center justify-center z-20">
-                        <div className="w-28 h-28 bg-[#0B1120] rounded-full flex items-center justify-center shadow-xl">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#0B1120] rounded-full flex items-center justify-center shadow-xl">
                               <Image
                                     src="/logo/logo.svg"
                                     alt="logo"
-                                    width={80}
-                                    height={80}
-                                    className="object-contain"
+                                    width={60}
+                                    height={60}
+                                    className="object-contain sm:w-[70px] md:w-[80px]"
                               />
                         </div>
                   </div>
@@ -68,14 +68,13 @@ const Spinner = () => {
                                                             transformOrigin: "0 0",
                                                       }}
                                                 >
-                                                      {/* Keep icons upright */}
                                                       <div style={{ transform: `rotate(-${angle}deg)` }}>
                                                             <Image
                                                                   src={icon}
                                                                   alt="tech"
-                                                                  width={26}
-                                                                  height={26}
-                                                                  className="opacity-90 hover:opacity-100 transition"
+                                                                  width={20}
+                                                                  height={20}
+                                                                  className="sm:w-[24px] md:w-[26px] opacity-90 hover:opacity-100 transition"
                                                             />
                                                       </div>
                                                 </div>

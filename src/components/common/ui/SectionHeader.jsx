@@ -8,32 +8,41 @@ export default function SectionHeader({
   headingColor = "#101828",
   subheadingColor = "#475467",
   badgeColor = "#06030E",
-  bg,
 }) {
   const sizeStyles = {
     xl: {
       heading:
-        "text-[26px] sm:text-[40px] md:text-[52px] lg:text-[64px] leading-snug",
-      subheading: "text-[14px] sm:text-[18px] md:text-[20px]",
+        "text-[24px] sm:text-[32px] md:text-[44px] lg:text-[56px] leading-tight",
+      subheading: "text-[14px] sm:text-[16px] md:text-[18px]",
       badge:
-        "text-[12px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold",
+        "text-[11px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold",
+      para: "text-[14px] sm:text-[15px] md:text-[16px]",
     },
     md: {
       heading:
-        "text-[22px] sm:text-[28px] md:text-[40px] lg:text-[32px] leading-snug",
-      subheading: "text-[13px] sm:text-[16px] md:text-[18px]",
-      badge: "text-[11px] sm:text-[14px] md:text-[16px] font-bold",
-      para: "text-[13px] sm:text-[14px] md:text-[16px]", // ✅ FIXED (no more 8px)
+        "text-[20px] sm:text-[24px] md:text-[30px] lg:text-[36px] leading-tight",
+      subheading: "text-[13px] sm:text-[15px] md:text-[16px]",
+      badge: "text-[10px] sm:text-[12px] md:text-[14px] font-bold",
+      para: "text-[13px] sm:text-[14px] md:text-[15px]",
     },
   };
+
   const alignStyles = {
-    left: "text-left",
-    center: "text-center",
-    right: "text-right",
+    left: "items-start text-left",
+    center: "items-center text-center",
+    right: "items-end text-right",
   };
 
   return (
-    <div className={`w-full max-w-[1380px] ${alignStyles[align]} flex flex-col gap-2 sm:gap-3 md:gap-4`}>
+    <div
+      className={`w-full px-1 sm:px-0 
+        ${align === "center"
+          ? "max-w-[90%] sm:max-w-[800px] mx-auto"
+          : "max-w-full sm:max-w-[900px]"
+        } 
+        ${alignStyles[align]} 
+        flex flex-col gap-2 sm:gap-3 md:gap-4`}
+    >
       {badge && (
         <div
           className={`${sizeStyles[size].badge} font-jakarta`}
@@ -44,7 +53,7 @@ export default function SectionHeader({
       )}
 
       <h2
-        className={`${sizeStyles[size].heading} font-jakarta leading-tight font-bold`}
+        className={`${sizeStyles[size].heading} font-jakarta font-bold`}
         style={{ color: headingColor }}
       >
         {heading}
@@ -52,16 +61,16 @@ export default function SectionHeader({
 
       {subheading && (
         <p
-          className={`${sizeStyles[size].subheading} font-inter font-medium whitespace-pre-line `}
+          className={`${sizeStyles[size].subheading} font-inter font-medium whitespace-pre-line max-w-full sm:max-w-[650px]`}
           style={{ color: subheadingColor }}
         >
           {subheading}
         </p>
-
       )}
+
       {para && (
         <p
-          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line `}
+          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line max-w-full sm:max-w-[650px]`}
           style={{ color: subheadingColor }}
         >
           {para}

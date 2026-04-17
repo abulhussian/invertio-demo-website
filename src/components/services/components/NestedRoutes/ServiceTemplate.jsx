@@ -20,12 +20,12 @@ const ServiceTemplate = ({ data }) => {
 
       return (
             <>
-                  <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34" >
+                  <div className=" md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34" >
 
                         {/* 🔥 Hero Section */}
                         {/* {data.hero && <SolutionHero data={data.hero} />} */}
                         {data.hero && (
-                              <section className="bg-[#f8f9fb]  pb-14 px-6">
+                              <section className="bg-[#f8f9fb] pb-10 sm:pb-12 md:pb-14 px-4 sm:px-6 md:px-10 lg:px-14">
 
                                     <SectionHeader
                                           badge={data.hero.tag}
@@ -49,11 +49,12 @@ const ServiceTemplate = ({ data }) => {
                         )}
 
                   </div>
-                  <div>
 
-                        {data.automationCTA && (
-                              <AutomationBanner data={data.automationCTA} />
-                        )}
+                  {data.automationCTA && (
+                        <AutomationBanner data={data.automationCTA} />
+                  )}
+                  <div className="px-4 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34" >
+
 
 
                         {data.whyChooseUs && (
