@@ -109,13 +109,13 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] p-7 lg:px-30 lg:pt-16 lg:pb-8 flex flex-col gap-6">
+    <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 flex flex-col gap-6">
       <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority />
 
       <hr className="border-t border-[#101323]" />
 
       {/* links */}
-      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-8">
         {footerData.map((section) => (
           <div key={section.title} className="flex flex-col gap-3">
             <h3 className="font-semibold font-jakarta text-white text-sm">
@@ -138,7 +138,7 @@ const Footer = () => {
         ))}
 
         {/* Contact Section (different structure so separate) */}
-        <div className="flex flex-col gap-3">
+        <div className="hidden lg:flex flex-col gap-3">
           <h3 className="font-semibold font-jakarta text-white text-sm">
             Contact Us
           </h3>
@@ -184,6 +184,47 @@ const Footer = () => {
                 height={24}
               />
 
+              <span>
+                8-1-332-3/B/L, 7 Tombs Rd, Aravind Nagar Colony, Shaikpet, Hyderabad
+              </span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      {/* CONTACT - MOBILE ONLY */}
+      <div className="lg:hidden max-w-7xl mx-auto px-4 pb-6">
+        <div className="flex flex-col gap-3 text-sm text-gray-300">
+
+          <h3 className="font-semibold font-jakarta text-white text-sm">
+            Contact Us
+          </h3>
+
+          <ul className="flex flex-col gap-4 w-full">
+
+            <li className="flex gap-3 items-center">
+              <a
+                href="tel:+918121910307"
+                className="flex gap-3 items-center hover:underline"
+              >
+                <Image src="/footer/phone.svg" alt="phone" width={34} height={24} />
+                +91 81219 10307
+              </a>
+            </li>
+
+            <li className="flex gap-3 items-center">
+              <Image src="/footer/email.svg" alt="email" width={34} height={24} />
+              <a
+                href="mailto:info@invertiosolutions.com"
+                className="hover:underline"
+              >
+                info@invertiosolutions.com
+              </a>
+            </li>
+
+            <li className="flex gap-3 items-start">
+              <Image src="/footer/location.svg" alt="location" width={34} height={24} />
               <span>
                 8-1-332-3/B/L, 7 Tombs Rd, Aravind Nagar Colony, Shaikpet, Hyderabad
               </span>
