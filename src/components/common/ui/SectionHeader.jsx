@@ -36,9 +36,9 @@ export default function SectionHeader({
   return (
     <div
       className={`w-full 
-        ${align === "center" ? "max-w-[800px] mx-auto" : "max-w-[900px]"}
-        ${alignStyles[align]} 
-        flex flex-col gap-2 sm:gap-3 md:gap-4`}
+    max-w-[1380px] mx-auto px-4 lg:px-2
+    ${alignStyles[align]} 
+    flex flex-col gap-2 sm:gap-3 md:gap-4`}
     >
       {badge && (
         <div
@@ -58,7 +58,7 @@ export default function SectionHeader({
 
       {subheading && (
         <p
-          className={`${sizeStyles[size].subheading} font-inter font-medium whitespace-pre-line max-w-[800px]`}
+          className={`${sizeStyles[size].subheading} font-inter font-medium whitespace-pre-line max-w-none`}
           style={{ color: subheadingColor }}
         >
           {subheading}
@@ -67,7 +67,7 @@ export default function SectionHeader({
 
       {para && (
         <p
-          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line max-w-[800px]`}
+          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line max-w-none`}
           style={{ color: subheadingColor }}
         >
           {para}
