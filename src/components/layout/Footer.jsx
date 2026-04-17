@@ -110,7 +110,9 @@ const Footer = () => {
   ];
   return (
     <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 flex flex-col gap-6">
-      <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority />
+      <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority
+        className="lg:pl-12"
+      />
 
       <hr className="border-t border-[#101323]" />
 
@@ -296,7 +298,7 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* STAY UPDATED */}
-      <div id="footer-subscribe" className="w-full flex flex-col gap-10">
+      <div id="footer-subscribe" className="w-full flex flex-col gap-10 lg:px-12">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
           {/* Left Content */}
@@ -348,7 +350,7 @@ const Footer = () => {
       <hr className="border-t border-[#101323]" />
 
       {/* Bottom Section */}
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300 text-center lg:text-left">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300 text-center lg:text-left lg:px-12">
 
         {/* Links */}
         <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">

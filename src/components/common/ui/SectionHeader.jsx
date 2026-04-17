@@ -35,15 +35,11 @@ export default function SectionHeader({
 
   return (
     <div
-      className={`w-full px-3 sm:px-0 
-        ${align === "center"
-          ? "max-w-[92%] sm:max-w-[800px] mx-auto"
-          : "max-w-full sm:max-w-[900px]"
-        } 
+      className={`w-full 
+        ${align === "center" ? "max-w-[800px] mx-auto" : "max-w-[900px]"}
         ${alignStyles[align]} 
         flex flex-col gap-2 sm:gap-3 md:gap-4`}
     >
-      {/* Badge */}
       {badge && (
         <div
           className={`${sizeStyles[size].badge} font-jakarta`}
@@ -53,7 +49,6 @@ export default function SectionHeader({
         </div>
       )}
 
-      {/* Heading */}
       <h2
         className={`${sizeStyles[size].heading} font-jakarta font-bold`}
         style={{ color: headingColor }}
@@ -61,20 +56,18 @@ export default function SectionHeader({
         {heading}
       </h2>
 
-      {/* Subheading */}
       {subheading && (
         <p
-          className={`${sizeStyles[size].subheading} font-inter font-medium whitespace-pre-line max-w-full sm:max-w-[650px]`}
+          className={`${sizeStyles[size].subheading} font-inter font-medium whitespace-pre-line max-w-[800px]`}
           style={{ color: subheadingColor }}
         >
           {subheading}
         </p>
       )}
 
-      {/* Para */}
       {para && (
         <p
-          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line max-w-full sm:max-w-[650px]`}
+          className={`${sizeStyles[size].para} font-inter font-medium whitespace-pre-line max-w-[800px]`}
           style={{ color: subheadingColor }}
         >
           {para}
