@@ -280,7 +280,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/invertio-software-solution"
           target="_blank"
           rel="noopener noreferrer"
         >

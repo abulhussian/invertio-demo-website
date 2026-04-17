@@ -12,7 +12,7 @@ const page = () => {
   return (
     <>
 
-      <section className="w-full bg-[#F8F9FC] py-10 sm:py-12 md:py-14">
+      <section className="w-full bg-[#F8F9FC]  sm:py-12 md:py-14">
         <div className="max-w-[1380px] mx-auto px-4 lg:px-6 flex flex-col gap-3 sm:gap-4 md:gap-5">
 
           {/* Badge */}
