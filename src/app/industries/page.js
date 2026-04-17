@@ -10,7 +10,11 @@ const page = () => {
 
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-4 sm:px-6 md:px-14 lg:px-20 
+                py-4 pb-12 sm:pb-14 md:pb-16 
+                bg-[#F8F9FC] 
+                -mt-16 sm:-mt-24 md:-mt-32 
+                pt-12 sm:pt-24 md:pt-34">
         <SectionHeader
           badge="Industries We Serve"
           heading="Industry Solutions Designed to Power Digital Transformation Across Every Sector"
@@ -18,16 +22,22 @@ const page = () => {
         />
       </div>
       {/* Section 1 */}
-      <FeatureSection
-        tag="Education Industry"
-        title="Empowering modern learning environments through intelligent digital education platforms."
-        description=""
-        buttonText="Read More"
-        image="/services/Education.png"
-        imagePosition="right"
-        slug="industries/education"
+      <div className="px-4 sm:px-6 md:px-14 lg:px-20 
+                py-4 pb-12 sm:pb-14 md:pb-16 
+                bg-[#F8F9FC] 
+                -mt-16 sm:-mt-24 md:-mt-32 
+                pt-12 sm:pt-24 md:pt-34">
+        <FeatureSection
+          tag="Education Industry"
+          title="Empowering modern learning environments through intelligent digital education platforms."
+          description=""
+          buttonText="Read More"
+          image="/services/Education.png"
+          imagePosition="right"
+          slug="industries/education"
 
-      />
+        />
+      </div>
       <FeatureSection
         tag="Logistics Industry"
         title="Optimizing supply chain operations with real-time visibility and intelligent automation."

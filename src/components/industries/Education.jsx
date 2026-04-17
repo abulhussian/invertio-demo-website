@@ -78,7 +78,11 @@ const caseStudyData = {
 const Education = () => {
   return (
     <>
-      <div className="px-8 md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-34">
+      <div className="px-4 sm:px-6 md:px-14 lg:px-20 
+                py-4 pb-12 sm:pb-14 md:pb-16 
+                bg-[#F8F9FC] 
+                -mt-16 sm:-mt-24 md:-mt-32 
+                pt-12 sm:pt-24 md:pt-34 ">
         <SectionHeader
           badge="Education Industry"
           heading="Empowering Modern Learning Through Digital Innovation"

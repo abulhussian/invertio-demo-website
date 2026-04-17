@@ -10,7 +10,7 @@ const TransformationHero = ({ data }) => {
 
   return (
     <Section>
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 sm:gap-10 lg:gap-16 mt-3">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-6 sm:gap-10 lg:gap-16 mt-2 sm:mt-3">
 
         {/* LEFT CONTENT */}
         <div className="flex flex-col gap-3 sm:gap-4 max-w-[520px] w-full order-2 lg:order-1">
@@ -18,7 +18,7 @@ const TransformationHero = ({ data }) => {
           {benefits.map((value, index) => (
             <div
               key={index}
-              className={`flex items-center gap-3 sm:gap-4 bg-[#FCFCFD] border border-[#D5D9EB] rounded-xl px-3 py-3 sm:px-5 sm:py-4 transition duration-300 hover:shadow-md ${index % 2 === 0
+              className={`flex items-center gap-2 sm:gap-4 bg-[#FCFCFD] border border-[#D5D9EB] rounded-lg sm:rounded-xl px-3 py-2.5 sm:px-5 sm:py-4 transition duration-300 hover:shadow-md ${index % 2 === 0
                 ? "lg:hover:rotate-[0.6deg]"
                 : "lg:hover:-rotate-[0.6deg]"
                 }`}
@@ -27,13 +27,13 @@ const TransformationHero = ({ data }) => {
               <Image
                 src="/common/check.svg"
                 alt="check"
-                width={24}
-                height={24}
-                className="flex-shrink-0"
+                width={20}
+                height={20}
+                className="flex-shrink-0 sm:w-6 sm:h-6"
               />
 
               {/* TEXT */}
-              <p className="text-[14px] sm:text-base font-medium text-[#101323] leading-snug sm:leading-relaxed">
+              <p className="text-[13px] sm:text-base font-medium text-[#101323] leading-snug sm:leading-relaxed">
                 {value}
               </p>
             </div>
@@ -42,7 +42,7 @@ const TransformationHero = ({ data }) => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="flex flex-col justify-center max-w-[520px] order-1 lg:order-2">
+        <div className="flex flex-col justify-center max-w-full sm:max-w-[520px] order-1 lg:order-2 px-1 sm:px-0">
 
           <SectionHeader
             badge={data?.badge}
@@ -52,18 +52,18 @@ const TransformationHero = ({ data }) => {
             align="left"
           />
 
-          <div className="mt-4 sm:mt-6">
+          <div className="mt-3 sm:mt-6">
             <Link
               href={data?.button?.href || "/contact-us"}
-              className="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-4 sm:px-8 h-10 sm:h-12 rounded-full bg-[#0F172A] text-white text-sm sm:text-base font-semibold hover:bg-[#1E293B] transition shadow-sm"
+              className="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-4 sm:px-8 h-9 sm:h-12 rounded-full bg-[#0F172A] text-white text-sm sm:text-base font-semibold hover:bg-[#1E293B] transition shadow-sm"
             >
               {data?.button?.text || "Contact Us"}
 
               <Image
                 src="/arrows/rightTopFace.svg"
                 alt="arrow"
-                width={14}
-                height={14}
+                width={12}
+                height={12}
                 className="sm:w-4 sm:h-4"
               />
             </Link>

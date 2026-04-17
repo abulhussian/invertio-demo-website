@@ -30,30 +30,31 @@
 
 
 //   return notFound();
-// }
-import { notFound } from "next/navigation";
-import { megaMenuData } from "@/data/megaMenuData";
+// }import { notFound } from "next/navigation";
 import industriesData from "@/data/industries/industries.json";
 
 import ServiceTemplate from "@/components/services/components/NestedRoutes/ServiceTemplate";
 
+// ✅ Default Components (optional)
+import Education from "@/components/industries/Education";
+import Logistics from "@/components/industries/Logistics";
+import RetailECommerce from "@/components/industries/RetailECommerce";
+import FinanceBanking from "@/components/industries/FinanceBanking";
+import HealthCare from "@/components/industries/HealthCare";
+import Information from "@/components/industries/Information";
+
 export default async function Page({ params }) {
   const { slug } = await params;
 
-  // ✅ FIXED STRUCTURE
-  const allLinks = megaMenuData.industries.flatMap((item) =>
-    item.columns.flatMap((col) =>
-      col.links
-    )
-  );
+  // ✅ DEFAULT ROUTES (priority)
+  if (slug === "education") return <Education />;
+  if (slug === "logistics") return <Logistics />;
+  if (slug === "retail-ecommerce") return <RetailECommerce />;
+  if (slug === "finance-banking") return <FinanceBanking />;
+  if (slug === "healthcare") return <HealthCare />;
+  if (slug === "information") return <Information />;
 
-  const match = allLinks.find(
-    (link) => link.href === `/industries/${slug}`
-  );
-
-  if (!match) return notFound();
-
-  // ✅ JSON DATA
+  // ✅ JSON ROUTES (fallback)
   const industry = industriesData[slug];
 
   if (!industry) return notFound();
