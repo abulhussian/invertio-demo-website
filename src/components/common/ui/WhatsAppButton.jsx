@@ -6,7 +6,7 @@ import Image from 'next/image';
 const WhatsAppButton = () => {
       const [showLabel, setShowLabel] = useState(false);
 
-      const phoneNumber = "1234567890";
+      const phoneNumber = "6302122429";
       const message = "Hello! I'm visiting Invertio and have a question.";
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
