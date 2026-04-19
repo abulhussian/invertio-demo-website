@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "react-hot-toast"; // ✅ ADD THIS
+import WhatsAppButton from "@/components/common/ui/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
