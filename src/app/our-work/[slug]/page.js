@@ -8,6 +8,7 @@ import TransformationHero from "@/components/services/components/TransformationH
 import SolutionImpactSection from "@/components/services/components/SolutionImpactSection";
 import CSection from "@/components/services/components/CSection";
 import TechStackSection from "@/components/services/components/TechStackSection";
+import Image from "next/image";
 
 export default async function Page({ params }) {
       const { slug } = await params;
@@ -41,9 +42,11 @@ export default async function Page({ params }) {
                   </div>
 
                   <div className="mt-12">
-                        <img
+                        <Image
                               src={project.image}
                               alt={project.title}
+                              width={1200}
+                              height={700}
                               className="rounded-xl w-full h-[280px] md:h-[400px] lg:h-[700px] object-cover"
                         />
                   </div>

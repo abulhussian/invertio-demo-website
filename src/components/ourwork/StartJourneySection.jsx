@@ -26,9 +26,9 @@ function StartJourneySection() {
                         </div>
 
                         {/* RIGHT BUTTON */}
-                        <div className="flex-shrink-0">
+                        <div className="flex-shrink-0 w-fit self-start lg:self-center lg:ml-auto">
                               <Link href="/contact-us">
-                                    <button className="bg-[#FF8A3D] hover:bg-[#FF7A24] text-white px-8 py-3 rounded-full text-sm font-medium transition">
+                                    <button className="bg-[#FF8A3D] hover:bg-[#FF7A24] text-white px-8 py-3 rounded-full text-sm font-medium transition whitespace-nowrap">
                                           Start Your Journey
                                     </button>
                               </Link>
