@@ -1,133 +1,226 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const WhatsAppButton = () => {
+
+      const questions = [
+            "What is your name?",
+            "What is your email?",
+            "What service do you need?",
+            "What is your budget?",
+            "Project deadline?",
+            "Do you have an existing website?",
+            "Preferred contact method?",
+            "Company name?",
+            "Project description?",
+            "Any additional notes?"
+      ];
+
       const [isOpen, setIsOpen] = useState(false);
-      const [userInput, setUserInput] = useState('');
-      const [showLabel, setShowLabel] = useState(false);
+      const [input, setInput] = useState('');
+      const [step, setStep] = useState(0);
+      const [answers, setAnswers] = useState([]);
+      const [isFinished, setIsFinished] = useState(false);
+
+      const [messages, setMessages] = useState([
+            { from: 'bot', text: questions[0] }
+      ]);
+
+      const chatEndRef = useRef(null);
 
       useEffect(() => {
-            const timer = setTimeout(() => setShowLabel(true), 3000);
-            return () => clearTimeout(timer);
-      }, []);
+            chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, [messages]);
 
-      const PHONE_NUMBER = "9949443882";
+      // ✅ Validation
+      const validateInput = (value, step) => {
+            if (!value.trim()) return "This field is required";
 
-      const handleSendMessage = (e) => {
+            if (step === 1) {
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                  if (!emailRegex.test(value)) return "Enter valid email";
+            }
+
+            return null;
+      };
+
+      const handleSend = (e) => {
             e.preventDefault();
-            if (!userInput.trim()) return;
+            if (isFinished) return;
 
-            const message = `Hi Invertio Team, ${userInput}`;
-            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            const error = validateInput(input, step);
 
-            window.open(whatsappUrl, '_blank');
-            setUserInput('');
-            setIsOpen(false);
+            if (error) {
+                  setMessages(prev => [...prev, { from: 'bot', text: `⚠️ ${error}` }]);
+                  return;
+            }
+
+            const newAnswers = [...answers, input];
+
+            setMessages(prev => [...prev, { from: 'user', text: input }]);
+            setAnswers(newAnswers);
+            setInput('');
+
+            if (step < questions.length - 1) {
+                  setTimeout(() => {
+                        setMessages(prev => [...prev, { from: 'bot', text: questions[step + 1] }]);
+                        setStep(prev => prev + 1);
+                  }, 400);
+            } else {
+                  setIsFinished(true);
+                  sendEmail(newAnswers);
+            }
+      };
+
+      // ✅ EmailJS
+      const sendEmail = (data) => {
+            const params = {
+                  company: "Invertio",
+                  from_name: data[0],
+                  reply_to: data[1],
+                  q1: data[0],
+                  q2: data[1],
+                  q3: data[2],
+                  q4: data[3],
+                  q5: data[4],
+                  q6: data[5],
+                  q7: data[6],
+                  q8: data[7],
+                  q9: data[8],
+                  q10: data[9],
+            };
+
+            emailjs.send(
+                  "YOUR_SERVICE_ID",
+                  "YOUR_TEMPLATE_ID",
+                  params,
+                  "YOUR_PUBLIC_KEY"
+            )
+                  .then(() => {
+                        setMessages(prev => [
+                              ...prev,
+                              { from: 'bot', text: "✅ Details sent!" },
+                              { from: 'bot', text: "Continue on WhatsApp 👇" }
+                        ]);
+                  })
+                  .catch(() => {
+                        setMessages(prev => [
+                              ...prev,
+                              { from: 'bot', text: "⚠️ Email failed. Use WhatsApp below." }
+                        ]);
+                  });
+      };
+
+      // ✅ WhatsApp
+      const handleWhatsAppRedirect = () => {
+            const PHONE = "9949443882";
+
+            const summary = questions.map((q, i) =>
+                  `*${q}*\n${answers[i]}`
+            ).join('\n\n');
+
+            const message = `Hi Invertio 👋\n\n${summary}`;
+
+            window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`, '_blank');
       };
 
       return (
-            <div className="fixed bottom-8 right-8 z-[1000] flex flex-col items-end font-sans">
+            <motion.div
+                  drag
+                  dragMomentum={false}
+                  className="fixed bottom-4 right-4 z-[9999] flex flex-col items-end gap-3 cursor-grab active:cursor-grabbing"
+            >
 
-                  {/* On-site Chat Window */}
+                  {/* CHAT BOX */}
                   <AnimatePresence>
                         {isOpen && (
                               <motion.div
-                                    initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                                    initial={{ opacity: 0, y: 40, scale: 0.9 }}
                                     animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    exit={{ opacity: 0, y: 20, scale: 0.95 }}
-                                    className="mb-6 w-[360px] overflow-hidden rounded-2xl border border-white/10 bg-[#1a1a1a]/90 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+                                    exit={{ opacity: 0, y: 40, scale: 0.9 }}
+                                    className="relative w-[340px] h-[520px] rounded-2xl shadow-2xl overflow-hidden
+            bg-[linear-gradient(180deg,#0f172a_0%,#1e293b_100%)]"
                               >
-                                    {/* Header */}
-                                    <div className="bg-gradient-to-r from-[#0f0f0f] to-[#262626] p-5 border-b border-white/5">
-                                          <div className="flex items-center justify-between">
-                                                <div className="flex items-center gap-3">
-                                                      <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/10 border border-emerald-500/20">
-                                                            <span className="text-emerald-500 font-bold text-xl">I</span>
-                                                            <div className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#1a1a1a] bg-emerald-500"></div>
-                                                      </div>
-                                                      <div>
-                                                            <h3 className="text-sm font-semibold text-white uppercase tracking-tight">Invertio Support</h3>
-                                                            <p className="text-[10px] uppercase tracking-widest text-emerald-500/80 font-medium">Consultant Online</p>
-                                                      </div>
-                                                </div>
-                                                <button
-                                                      onClick={() => setIsOpen(false)}
-                                                      className="text-gray-400 hover:text-white transition-colors p-1"
-                                                >
-                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                            <path d="M18 6L6 18M6 6l12 12" />
-                                                      </svg>
-                                                </button>
-                                          </div>
-                                    </div>
 
-                                    {/* Chat Body */}
-                                    <div className="h-40 bg-black/20 p-5 overflow-y-auto">
-                                          <div className="max-w-[90%] rounded-2xl rounded-tl-none bg-white/5 p-4 text-sm text-gray-300 border border-white/5">
-                                                Hello! Looking for AI consulting or enterprise solutions? Type your message below to chat with our team.
-                                          </div>
-                                    </div>
+                                    {/* Pattern */}
+                                    <div className="absolute inset-0 opacity-[0.05] pointer-events-none 
+            bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
-                                    {/* Input Footer */}
-                                    <form onSubmit={handleSendMessage} className="p-4 bg-white/5 backdrop-blur-md flex items-center gap-3">
-                                          <input
-                                                type="text"
-                                                value={userInput}
-                                                onChange={(e) => setUserInput(e.target.value)}
-                                                placeholder="How can we help?"
-                                                className="flex-1 rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all"
-                                          />
-                                          <button
-                                                type="submit"
-                                                className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-600 text-white shadow-lg shadow-emerald-900/20 hover:bg-emerald-500 hover:scale-105 active:scale-95 transition-all"
-                                          >
-                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                                      <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                </svg>
-                                          </button>
-                                    </form>
+                                    <div className="relative z-10 flex flex-col h-full">
+
+                                          {/* Header */}
+                                          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 flex justify-between">
+                                                <span>Invertio Support</span>
+                                                <button onClick={() => setIsOpen(false)}>✕</button>
+                                          </div>
+
+                                          {/* Messages */}
+                                          <div className="flex-1 overflow-y-auto p-4 space-y-3">
+                                                {messages.map((msg, i) => (
+                                                      <motion.div
+                                                            key={i}
+                                                            initial={{ opacity: 0, y: 10 }}
+                                                            animate={{ opacity: 1, y: 0 }}
+                                                            className={`max-w-[75%] px-3 py-2 rounded-xl text-sm ${msg.from === 'user'
+                                                                  ? 'bg-blue-600 text-white ml-auto'
+                                                                  : 'bg-[#1f2937] text-gray-200 border border-white/5'
+                                                                  }`}
+                                                      >
+                                                            {msg.text}
+                                                      </motion.div>
+                                                ))}
+
+                                                {isFinished && (
+                                                      <button
+                                                            onClick={handleWhatsAppRedirect}
+                                                            className="w-full bg-green-500 text-white py-3 rounded-xl font-semibold mt-2"
+                                                      >
+                                                            Continue on WhatsApp
+                                                      </button>
+                                                )}
+
+                                                <div ref={chatEndRef} />
+                                          </div>
+
+                                          {/* Input */}
+                                          {!isFinished && (
+                                                <form onSubmit={handleSend} className="p-3 bg-white/5 border-t border-white/10 flex gap-2">
+                                                      <input
+                                                            value={input}
+                                                            onChange={(e) => setInput(e.target.value)}
+                                                            placeholder={questions[step]}
+                                                            className="flex-1 px-3 py-2 rounded-full bg-black/30 text-white text-sm outline-none border border-white/10"
+                                                      />
+                                                      <button className="bg-blue-600 text-white px-4 rounded-full">
+                                                            Send
+                                                      </button>
+                                                </form>
+                                          )}
+
+                                    </div>
                               </motion.div>
                         )}
                   </AnimatePresence>
 
-                  {/* Trigger Button Group */}
-                  <div className="flex items-center">
-                        {!isOpen && (
-                              <div className={`mr-4 transition-all duration-700 ${showLabel ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}>
-                                    <div className="bg-[#1a1a1a] px-5 py-2.5 rounded-full border border-white/10 shadow-2xl backdrop-blur-md">
-                                          <p className="text-[10px] font-bold text-gray-300 tracking-[0.15em] uppercase">Consult an Expert</p>
-                                    </div>
-                              </div>
-                        )}
+                  {/* BUTTON */}
+                  <motion.button
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="h-14 w-14 bg-green-500 rounded-full flex items-center justify-center shadow-xl"
+                  >
+                        <Image
+                              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                              alt="wa"
+                              width={28}
+                              height={28}
+                        />
+                  </motion.button>
 
-                        <button
-                              onClick={() => setIsOpen(!isOpen)}
-                              className={`group relative flex h-16 w-16 items-center justify-center rounded-full shadow-2xl transition-all duration-500 ${isOpen ? 'bg-white/10 border border-white/20' : 'bg-[#0f0f0f] border border-emerald-500/30'
-                                    }`}
-                        >
-                              {isOpen ? (
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" className="rotate-0 transition-transform duration-300">
-                                          <path d="M18 6L6 18M6 6l12 12" />
-                                    </svg>
-                              ) : (
-                                    <>
-                                          <div className="absolute inset-0 rounded-full bg-emerald-500/10 animate-pulse group-hover:bg-emerald-500/20" />
-                                          <Image
-                                                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                                                alt="WhatsApp"
-                                                width={32}
-                                                height={32}
-                                                className="brightness-110"
-                                          />
-                                    </>
-                              )}
-                        </button>
-                  </div>
-            </div>
+            </motion.div>
       );
 };
 

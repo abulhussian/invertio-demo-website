@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function StartJourneySection() {
       return (
             <section className="w-full bg-[#0B1225] py-14 relative overflow-hidden">
@@ -25,9 +27,11 @@ function StartJourneySection() {
 
                         {/* RIGHT BUTTON */}
                         <div className="flex-shrink-0">
-                              <button className="bg-[#FF8A3D] hover:bg-[#FF7A24] text-white px-8 py-3 rounded-full text-sm font-medium transition">
-                                    Start Your Journey
-                              </button>
+                              <Link href="/contact-us">
+                                    <button className="bg-[#FF8A3D] hover:bg-[#FF7A24] text-white px-8 py-3 rounded-full text-sm font-medium transition">
+                                          Start Your Journey
+                                    </button>
+                              </Link>
                         </div>
 
                   </div>
