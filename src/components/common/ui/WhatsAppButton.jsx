@@ -184,8 +184,8 @@ ${data.details}
                                                 <div key={i} className={`flex flex-col ${msg.from === 'user' ? 'items-end' : 'items-start'}`}>
                                                       {msg.from === 'bot' && i % 2 === 0 && (
                                                             <p className="text-[10px] font-bold text-gray-400 mb-1 ml-2 flex items-center gap-1">
-                                                                  <span className="w-5 h-5 bg-[#0a2357] rounded flex items-center justify-center text-[8px] text-white">N</span>
-                                                                  NNC Assistant
+                                                                  <span className="w-5 h-5 bg-[#0a2357] rounded flex items-center justify-center text-[8px] text-white">I</span>
+                                                                  Invertio Assistant
                                                             </p>
                                                       )}
                                                       <div className={`max-w-[85%] p-4 rounded-2xl text-[13px] leading-relaxed shadow-sm ${msg.from === 'user' ? 'bg-[#0a2357] text-white rounded-tr-none' : 'bg-white text-gray-700 rounded-tl-none'
