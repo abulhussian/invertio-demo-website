@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import projects from "@/data/ourwork.json";
 import Link from "next/link";
 
@@ -9,12 +9,15 @@ const projectList = Object.values(projects);
 export default function ProjectsSection() {
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-  const scrollRef = useRef(null);
+  const scrollContainerRef = useRef(null);
 
+  // Configuration
   const CARD_WIDTH = 360;
-  const GAP = 24; // This matches md:gap-6 (6 * 4px)
-  const visibleCards = 4;
-  const maxIndex = projectList.length - visibleCards;
+  const GAP = 24;
+  // On a 1380px wide container, you can fit roughly 3.5 cards. 
+  // We calculate maxIndex so the last card perfectly aligns with the right wall.
+  const visibleCards = isMobile ? 1 : 3.5;
+  const maxIndex = Math.max(0, projectList.length - Math.floor(visibleCards));
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -23,43 +26,59 @@ export default function ProjectsSection() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [maxIndex]);
+  const scrollToIndex = useCallback((nextIndex) => {
+    if (isMobile && scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      // In mobile, we scroll based on the full width of the card + gap
+      const itemWidth = container.querySelector('.project-card')?.offsetWidth || 0;
+      container.scrollTo({
+        left: nextIndex * (itemWidth + GAP),
+        behavior: "smooth",
+      });
+    }
+  }, [isMobile]);
 
-  const next = () => setIndex((prev) => Math.min(prev + 1, maxIndex));
-  const prev = () => setIndex((prev) => Math.max(prev - 1, 0));
+  const next = useCallback(() => {
+    setIndex((prev) => {
+      const nextIdx = prev >= maxIndex ? 0 : prev + 1;
+      if (isMobile) scrollToIndex(nextIdx);
+      return nextIdx;
+    });
+  }, [maxIndex, isMobile, scrollToIndex]);
+
+  const prev = useCallback(() => {
+    setIndex((prev) => {
+      const nextIdx = prev <= 0 ? maxIndex : prev - 1;
+      if (isMobile) scrollToIndex(nextIdx);
+      return nextIdx;
+    });
+  }, [maxIndex, isMobile, scrollToIndex]);
+
+  useEffect(() => {
+    const interval = setInterval(next, 3000);
+    return () => clearInterval(interval);
+  }, [next]);
 
   return (
     <section className="bg-[#f5f6f7] py-16 overflow-hidden">
-      {/* Everything is wrapped in this 1380px container. 
-         This ensures the Header and the Slider start and end at the exact same vertical line.
-      */}
       <div className="max-w-[1380px] mx-auto px-6">
 
-        {/* Header Section */}
         <div className="mb-12 text-center">
           <p className="text-gray-900 text-xs md:text-sm font-black uppercase tracking-widest mb-3">
             Our Work
           </p>
-          <h2 className="text-2xl md:text-2xl lg:text-3xl font-black text-[#111827] tracking-tight leading-tight">
-            Real Projects. Real Innovation. Real Business Impact.
+          <h2 className="text-2xl md:text-3xl font-black text-[#111827]">
+            Real Projects. Real Innovation.
           </h2>
-          {/* !text-base ensures it overrides any 8px issues, and mx-auto centers it within the 1380px limit */}
-          <p className="text-gray-500 !text-sm md:!text-lg mt-6 max-w-3xl mx-auto leading-relaxed">
-            We partner with organizations across industries to design and deliver
-            <span className="hidden md:inline"> scalable</span> digital solutions that solve complex challenges.
-          </p>
         </div>
 
-        {/* Slider Section */}
         <div className="relative">
           <div className="overflow-hidden">
             <div
-              className={`flex gap-6 ${isMobile ? "overflow-x-auto snap-x snap-mandatory scrollbar-hide" : "transition-transform duration-500 ease-in-out"
+              ref={scrollContainerRef}
+              className={`flex gap-6 ${isMobile
+                ? "overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+                : "transition-transform duration-500 ease-in-out"
                 }`}
               style={
                 !isMobile
@@ -70,7 +89,7 @@ export default function ProjectsSection() {
               {projectList.map((project, i) => (
                 <div
                   key={i}
-                  className={`rounded-xl overflow-hidden bg-white shadow-md flex-shrink-0 ${isMobile ? "min-w-[85vw] snap-start" : `w-[360px]`
+                  className={`project-card rounded-xl overflow-hidden bg-white shadow-md flex-shrink-0 ${isMobile ? "min-w-[85vw] snap-center" : "w-[360px]"
                     }`}
                 >
                   <div className="relative h-[500px] bg-gray-200">
@@ -78,10 +97,10 @@ export default function ProjectsSection() {
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover cursor-pointer"
+                        className="w-full h-full object-cover"
                       />
                     </Link>
-                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
+                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent text-white">
                       <h3 className="font-bold text-lg">{project.badge}</h3>
                       <p className="text-sm mt-1 opacity-90 line-clamp-2">{project.title}</p>
                     </div>
@@ -91,20 +110,12 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          {/* Desktop Navigation - Positioned at the bottom of the 1380px container */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex justify-end gap-3 mt-8">
-            <button
-              onClick={prev}
-              disabled={index === 0}
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center bg-white shadow-sm hover:bg-gray-50 disabled:opacity-30 transition-all"
-            >
+            <button onClick={prev} className="w-12 h-12 rounded-full border border-gray-300 bg-white flex items-center justify-center hover:bg-black hover:text-white transition-all">
               ←
             </button>
-            <button
-              onClick={next}
-              disabled={index >= maxIndex}
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center bg-white shadow-sm hover:bg-gray-50 disabled:opacity-30 transition-all"
-            >
+            <button onClick={next} className="w-12 h-12 rounded-full border border-gray-300 bg-white flex items-center justify-center hover:bg-black hover:text-white transition-all">
               →
             </button>
           </div>
@@ -114,7 +125,6 @@ export default function ProjectsSection() {
             {projectList.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setIndex(i)}
                 className={`transition-all duration-300 rounded-full h-1.5 ${index === i ? "w-8 bg-black" : "w-1.5 bg-gray-300"
                   }`}
               />

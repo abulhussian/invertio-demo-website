@@ -132,7 +132,7 @@ export default function ContactSection() {
             data.append("message", formData.message);
 
             try {
-                  const res = await fetch("https://invertiosolutions.com/contact.php", {
+                  const res = await fetch("https://invertio.in/contact.php", {
                         method: "POST",
                         body: data
                   });

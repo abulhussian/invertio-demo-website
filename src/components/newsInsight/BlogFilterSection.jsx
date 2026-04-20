@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import NoBlogsFound from "./NoBlogsFound";
 
 
 const categories = [
@@ -92,10 +93,12 @@ const BlogFilterSection = () => {
                                                 onChange={(e) => setSearchTerm(e.target.value)}
                                                 className="w-full bg-gray-100 text-sm px-4 py-2 rounded-full outline-none"
                                           />
-                                          <img
+                                          <Image
                                                 src="/newsinsight/search.png"
                                                 alt="Search"
-                                                className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 opacity-60"
+                                                width={16}
+                                                height={16}
+                                                className="absolute right-4 top-1/2 -translate-y-1/2 opacity-60"
                                           />
                                     </div>
 
@@ -104,9 +107,7 @@ const BlogFilterSection = () => {
                   </section>
 
                   {currentBlogs.length === 0 && (
-                        <p className="text-center text-gray-500 py-10">
-                              No blogs found.
-                        </p>
+                        <NoBlogsFound />
                   )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {currentBlogs.map((item) => (
