@@ -1,226 +1,269 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 const WhatsAppButton = () => {
+      const [isOpen, setIsOpen] = useState(false);
+      const [stepIndex, setStepIndex] = useState(0);
+      const [input, setInput] = useState('');
+      const [answers, setAnswers] = useState({});
+      const [messages, setMessages] = useState([]);
 
-      const questions = [
-            "What is your name?",
-            "What is your email?",
-            "What service do you need?",
-            "What is your budget?",
-            "Project deadline?",
-            "Do you have an existing website?",
-            "Preferred contact method?",
-            "Company name?",
-            "Project description?",
-            "Any additional notes?"
+      const steps = [
+            { type: "input", key: "name", question: "Let’s start — what’s your name?" },
+            { type: "input", key: "phone", question: "What’s your contact number so our team can reach you?" },
+            { type: "input", key: "email", question: "Your email address? (type 'skip' to continue)" },
+            {
+                  type: "options",
+                  key: "service",
+                  question: "What service are you looking for?",
+                  options: ["Website Development", "Mobile App Development", "UI/UX Design", "Digital Marketing", "Branding"]
+            },
+            {
+                  type: "options",
+                  key: "budget",
+                  question: "What’s your approximate budget?",
+                  options: ["Under ₹50,000", "₹50,000 – ₹2,00,000", "₹2,00,000+"]
+            },
+            {
+                  type: "options",
+                  key: "timeline",
+                  question: "What timeline are you targeting?",
+                  options: ["Immediately", "Within 1 month", "1–3 months", "Flexible"]
+            },
+            {
+                  type: "options",
+                  key: "type",
+                  question: "Who is this project for?",
+                  options: ["Startup", "Small Business", "Enterprise", "Personal"]
+            },
+            {
+                  type: "options",
+                  key: "industry",
+                  question: "Which industry are you in?",
+                  options: ["E-commerce", "Healthcare", "Education", "Real Estate", "Finance", "Other"]
+            },
+            { type: "input", key: "details", question: "Tell us briefly about your project" }
       ];
 
-      const [isOpen, setIsOpen] = useState(false);
-      const [input, setInput] = useState('');
-      const [step, setStep] = useState(0);
-      const [answers, setAnswers] = useState([]);
-      const [isFinished, setIsFinished] = useState(false);
-
-      const [messages, setMessages] = useState([
-            { from: 'bot', text: questions[0] }
-      ]);
-
       const chatEndRef = useRef(null);
+
+      useEffect(() => {
+            if (isOpen && messages.length === 0) {
+                  setMessages([
+                        {
+                              from: 'bot',
+                              text: `Welcome to Invertio 👋  
+Trusted by 500+ businesses.
+
+I'll ask a few quick questions. It takes less than 2 minutes.`
+                        },
+                        { from: 'bot', text: steps[0].question }
+                  ]);
+            }
+      }, [isOpen]);
 
       useEffect(() => {
             chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
       }, [messages]);
 
-      // ✅ Validation
-      const validateInput = (value, step) => {
-            if (!value.trim()) return "This field is required";
+      // ✅ EMAIL FUNCTION
+      const sendEmail = async (data) => {
+            const params = {
+                  company: "Invertio",
+                  from_name: data.name,
+                  reply_to: data.email,
+                  phone: data.phone,
+                  service: data.service,
+                  budget: data.budget,
+                  timeline: data.timeline,
+                  type: data.type,
+                  industry: data.industry,
+                  details: data.details,
+            };
 
-            if (step === 1) {
-                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                  if (!emailRegex.test(value)) return "Enter valid email";
+            try {
+                  await emailjs.send(
+                        "YOUR_SERVICE_ID",
+                        "YOUR_TEMPLATE_ID",
+                        params,
+                        "YOUR_PUBLIC_KEY"
+                  );
+                  return true;
+            } catch (err) {
+                  console.log("Email error:", err);
+                  return false;
+            }
+      };
+
+      const nextStep = (value) => {
+            const step = steps[stepIndex];
+            const updatedAnswers = { ...answers, [step.key]: value };
+
+            setAnswers(updatedAnswers);
+            setMessages(prev => [...prev, { from: 'user', text: value }]);
+
+            const next = stepIndex + 1;
+
+            if (next < steps.length) {
+                  setTimeout(() => {
+                        setMessages(prev => [
+                              ...prev,
+                              { from: 'bot', text: steps[next].question }
+                        ]);
+                        setStepIndex(next);
+                  }, 400);
+            } else {
+                  setTimeout(async () => {
+
+                        const success = await sendEmail(updatedAnswers);
+
+                        setMessages(prev => [
+                              ...prev,
+                              {
+                                    from: 'bot',
+                                    text: success
+                                          ? "✅ Details sent successfully! Our team will contact you soon."
+                                          : "⚠️ Something went wrong, but you can continue via WhatsApp."
+                              }
+                        ]);
+
+                        setStepIndex(steps.length);
+
+                  }, 400);
             }
 
-            return null;
+            setInput('');
       };
 
       const handleSend = (e) => {
             e.preventDefault();
-            if (isFinished) return;
+            if (!input.trim()) return;
 
-            const error = validateInput(input, step);
-
-            if (error) {
-                  setMessages(prev => [...prev, { from: 'bot', text: `⚠️ ${error}` }]);
+            if (steps[stepIndex].key === "email" && input.toLowerCase() === "skip") {
+                  nextStep("Skipped");
                   return;
             }
 
-            const newAnswers = [...answers, input];
-
-            setMessages(prev => [...prev, { from: 'user', text: input }]);
-            setAnswers(newAnswers);
-            setInput('');
-
-            if (step < questions.length - 1) {
-                  setTimeout(() => {
-                        setMessages(prev => [...prev, { from: 'bot', text: questions[step + 1] }]);
-                        setStep(prev => prev + 1);
-                  }, 400);
-            } else {
-                  setIsFinished(true);
-                  sendEmail(newAnswers);
-            }
+            nextStep(input);
       };
 
-      // ✅ EmailJS
-      const sendEmail = (data) => {
-            const params = {
-                  company: "Invertio",
-                  from_name: data[0],
-                  reply_to: data[1],
-                  q1: data[0],
-                  q2: data[1],
-                  q3: data[2],
-                  q4: data[3],
-                  q5: data[4],
-                  q6: data[5],
-                  q7: data[6],
-                  q8: data[7],
-                  q9: data[8],
-                  q10: data[9],
-            };
-
-            emailjs.send(
-                  "YOUR_SERVICE_ID",
-                  "YOUR_TEMPLATE_ID",
-                  params,
-                  "YOUR_PUBLIC_KEY"
-            )
-                  .then(() => {
-                        setMessages(prev => [
-                              ...prev,
-                              { from: 'bot', text: "✅ Details sent!" },
-                              { from: 'bot', text: "Continue on WhatsApp 👇" }
-                        ]);
-                  })
-                  .catch(() => {
-                        setMessages(prev => [
-                              ...prev,
-                              { from: 'bot', text: "⚠️ Email failed. Use WhatsApp below." }
-                        ]);
-                  });
+      const handleOptionClick = (option) => {
+            nextStep(option);
       };
 
-      // ✅ WhatsApp
-      const handleWhatsAppRedirect = () => {
-            const PHONE = "9949443882";
+      const handleWhatsApp = () => {
+            const PHONE = "8121910307";
+            const message = Object.entries(answers)
+                  .map(([k, v]) => `*${k.toUpperCase()}*: ${v}`)
+                  .join('\n');
 
-            const summary = questions.map((q, i) =>
-                  `*${q}*\n${answers[i]}`
-            ).join('\n\n');
-
-            const message = `Hi Invertio 👋\n\n${summary}`;
-
-            window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`);
       };
+
+      const currentStep = steps[stepIndex];
 
       return (
-            <motion.div
-                  drag
-                  dragMomentum={false}
-                  className="fixed bottom-4 right-4 z-[9999] flex flex-col items-end gap-3 cursor-grab active:cursor-grabbing"
-            >
+            <div className="fixed bottom-4 right-4 z-[9999] font-sans">
 
-                  {/* CHAT BOX */}
                   <AnimatePresence>
                         {isOpen && (
                               <motion.div
-                                    initial={{ opacity: 0, y: 40, scale: 0.9 }}
-                                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    exit={{ opacity: 0, y: 40, scale: 0.9 }}
-                                    className="relative w-[340px] h-[520px] rounded-2xl shadow-2xl overflow-hidden
-            bg-[linear-gradient(180deg,#0f172a_0%,#1e293b_100%)]"
+                                    initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    exit={{ opacity: 0, scale: 0.9, y: 20 }}
+                                    className="w-[350px] h-[550px] bg-slate-900/90 backdrop-blur-xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] border border-white/10 flex flex-col overflow-hidden mb-4"
                               >
 
-                                    {/* Pattern */}
-                                    <div className="absolute inset-0 opacity-[0.05] pointer-events-none 
-            bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-
-                                    <div className="relative z-10 flex flex-col h-full">
-
-                                          {/* Header */}
-                                          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 flex justify-between">
-                                                <span>Invertio Support</span>
-                                                <button onClick={() => setIsOpen(false)}>✕</button>
+                                    {/* HEADER */}
+                                    <div className="bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md text-white p-5 flex justify-between items-center border-b border-white/10">
+                                          <div className="flex items-center gap-2">
+                                                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                                                <span className="font-semibold tracking-tight">Invertio Support</span>
                                           </div>
+                                          <button onClick={() => setIsOpen(false)}>✕</button>
+                                    </div>
 
-                                          {/* Messages */}
-                                          <div className="flex-1 overflow-y-auto p-4 space-y-3">
-                                                {messages.map((msg, i) => (
-                                                      <motion.div
-                                                            key={i}
-                                                            initial={{ opacity: 0, y: 10 }}
-                                                            animate={{ opacity: 1, y: 0 }}
-                                                            className={`max-w-[75%] px-3 py-2 rounded-xl text-sm ${msg.from === 'user'
-                                                                  ? 'bg-blue-600 text-white ml-auto'
-                                                                  : 'bg-[#1f2937] text-gray-200 border border-white/5'
-                                                                  }`}
-                                                      >
-                                                            {msg.text}
-                                                      </motion.div>
-                                                ))}
+                                    {/* CHAT */}
+                                    <div className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-hide">
+                                          {messages.map((msg, i) => (
+                                                <motion.div
+                                                      key={i}
+                                                      initial={{ opacity: 0, x: msg.from === 'user' ? 10 : -10 }}
+                                                      animate={{ opacity: 1, x: 0 }}
+                                                      className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-[13px] ${msg.from === 'user'
+                                                            ? 'bg-blue-600 text-white ml-auto'
+                                                            : 'bg-white/10 text-white border border-white/10'
+                                                            }`}
+                                                >
+                                                      {msg.text}
+                                                </motion.div>
+                                          ))}
 
-                                                {isFinished && (
-                                                      <button
-                                                            onClick={handleWhatsAppRedirect}
-                                                            className="w-full bg-green-500 text-white py-3 rounded-xl font-semibold mt-2"
-                                                      >
-                                                            Continue on WhatsApp
-                                                      </button>
-                                                )}
-
-                                                <div ref={chatEndRef} />
-                                          </div>
-
-                                          {/* Input */}
-                                          {!isFinished && (
-                                                <form onSubmit={handleSend} className="p-3 bg-white/5 border-t border-white/10 flex gap-2">
-                                                      <input
-                                                            value={input}
-                                                            onChange={(e) => setInput(e.target.value)}
-                                                            placeholder={questions[step]}
-                                                            className="flex-1 px-3 py-2 rounded-full bg-black/30 text-white text-sm outline-none border border-white/10"
-                                                      />
-                                                      <button className="bg-blue-600 text-white px-4 rounded-full">
-                                                            Send
-                                                      </button>
-                                                </form>
+                                          {/* OPTIONS */}
+                                          {currentStep?.type === "options" && (
+                                                <div className="flex flex-col gap-2">
+                                                      {currentStep.options.map((opt, i) => (
+                                                            <button
+                                                                  key={i}
+                                                                  onClick={() => handleOptionClick(opt)}
+                                                                  className="bg-white/5 border border-white/10 text-white px-4 py-2 rounded-xl text-left"
+                                                            >
+                                                                  {opt}
+                                                            </button>
+                                                      ))}
+                                                </div>
                                           )}
 
+                                          {/* FINAL BUTTON */}
+                                          {stepIndex >= steps.length && (
+                                                <button
+                                                      onClick={handleWhatsApp}
+                                                      className="w-full bg-emerald-500 text-white py-3 rounded-xl"
+                                                >
+                                                      Continue on WhatsApp
+                                                </button>
+                                          )}
+
+                                          <div ref={chatEndRef} />
                                     </div>
+
+                                    {/* INPUT */}
+                                    {currentStep?.type === "input" && stepIndex < steps.length && (
+                                          <form onSubmit={handleSend} className="p-4 flex gap-2">
+                                                <input
+                                                      value={input}
+                                                      onChange={(e) => setInput(e.target.value)}
+                                                      placeholder="Type a message..."
+                                                      className="flex-1 px-3 py-2 rounded-xl"
+                                                />
+                                                <button className="bg-blue-600 text-white px-4 rounded-xl">
+                                                      Send
+                                                </button>
+                                          </form>
+                                    )}
+
                               </motion.div>
                         )}
                   </AnimatePresence>
 
-                  {/* BUTTON */}
-                  <motion.button
-                        whileTap={{ scale: 0.9 }}
+                  {/* FLOAT BUTTON */}
+                  <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="h-14 w-14 bg-green-500 rounded-full flex items-center justify-center shadow-xl"
+                        className="h-16 w-16 bg-emerald-500 rounded-full flex items-center justify-center"
                   >
                         <Image
                               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                              alt="wa"
-                              width={28}
-                              height={28}
+                              alt="WhatsApp"
+                              width={32}
+                              height={32}
                         />
-                  </motion.button>
+                  </button>
 
-            </motion.div>
+            </div>
       );
 };
 
