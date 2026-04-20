@@ -70,7 +70,6 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
             chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
       }, [messages]);
 
-      // ✅ EMAIL FUNCTION
       const sendEmail = async (data) => {
             const params = {
                   company: "Invertio",
@@ -118,7 +117,6 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
                   }, 400);
             } else {
                   setTimeout(async () => {
-
                         const success = await sendEmail(updatedAnswers);
 
                         setMessages(prev => [
@@ -132,7 +130,6 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
                         ]);
 
                         setStepIndex(steps.length);
-
                   }, 400);
             }
 
@@ -175,42 +172,41 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
                                     initial={{ opacity: 0, scale: 0.9, y: 20 }}
                                     animate={{ opacity: 1, scale: 1, y: 0 }}
                                     exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                                    className="w-[350px] h-[550px] bg-slate-900/90 backdrop-blur-xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] border border-white/10 flex flex-col overflow-hidden mb-4"
+                                    className="w-[350px] h-[550px] bg-white rounded-3xl shadow-xl border border-gray-200 flex flex-col overflow-hidden mb-4"
                               >
 
                                     {/* HEADER */}
-                                    <div className="bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md text-white p-5 flex justify-between items-center border-b border-white/10">
+                                    <div className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-5 flex justify-between items-center">
                                           <div className="flex items-center gap-2">
                                                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                                                <span className="font-semibold tracking-tight">Invertio Support</span>
+                                                <span className="font-semibold">Invertio Support</span>
                                           </div>
                                           <button onClick={() => setIsOpen(false)}>✕</button>
                                     </div>
 
                                     {/* CHAT */}
-                                    <div className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-hide">
+                                    <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
                                           {messages.map((msg, i) => (
                                                 <motion.div
                                                       key={i}
                                                       initial={{ opacity: 0, x: msg.from === 'user' ? 10 : -10 }}
                                                       animate={{ opacity: 1, x: 0 }}
                                                       className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-[13px] ${msg.from === 'user'
-                                                            ? 'bg-blue-600 text-white ml-auto'
-                                                            : 'bg-white/10 text-white border border-white/10'
+                                                            ? 'bg-blue-500 text-white ml-auto'
+                                                            : 'bg-white text-gray-800 border border-gray-200'
                                                             }`}
                                                 >
                                                       {msg.text}
                                                 </motion.div>
                                           ))}
 
-                                          {/* OPTIONS */}
                                           {currentStep?.type === "options" && (
                                                 <div className="flex flex-col gap-2">
                                                       {currentStep.options.map((opt, i) => (
                                                             <button
                                                                   key={i}
                                                                   onClick={() => handleOptionClick(opt)}
-                                                                  className="bg-white/5 border border-white/10 text-white px-4 py-2 rounded-xl text-left"
+                                                                  className="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-xl hover:bg-gray-100 text-left"
                                                             >
                                                                   {opt}
                                                             </button>
@@ -218,7 +214,6 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
                                                 </div>
                                           )}
 
-                                          {/* FINAL BUTTON */}
                                           {stepIndex >= steps.length && (
                                                 <button
                                                       onClick={handleWhatsApp}
@@ -233,14 +228,14 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
 
                                     {/* INPUT */}
                                     {currentStep?.type === "input" && stepIndex < steps.length && (
-                                          <form onSubmit={handleSend} className="p-4 flex gap-2">
+                                          <form onSubmit={handleSend} className="p-4 flex gap-2 border-t border-gray-200">
                                                 <input
                                                       value={input}
                                                       onChange={(e) => setInput(e.target.value)}
                                                       placeholder="Type a message..."
-                                                      className="flex-1 px-3 py-2 rounded-xl"
+                                                      className="flex-1 px-3 py-2 rounded-xl border border-gray-300 outline-none"
                                                 />
-                                                <button className="bg-blue-600 text-white px-4 rounded-xl">
+                                                <button className="bg-blue-500 text-white px-4 rounded-xl">
                                                       Send
                                                 </button>
                                           </form>
@@ -250,18 +245,27 @@ I'll ask a few quick questions. It takes less than 2 minutes.`
                         )}
                   </AnimatePresence>
 
-                  {/* FLOAT BUTTON */}
-                  <button
+                  {/* FLOATING WHATSAPP BUTTON WITH MOVEMENT */}
+                  <motion.button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="h-16 w-16 bg-emerald-500 rounded-full flex items-center justify-center"
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ type: "spring", stiffness: 200 }}
+                        className="relative h-16 w-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg"
                   >
+                        {/* Pulse Effect */}
+                        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-50 animate-ping"></span>
+
+                        {/* Icon */}
                         <Image
                               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                               alt="WhatsApp"
                               width={32}
                               height={32}
+                              className="relative z-10"
                         />
-                  </button>
+                  </motion.button>
 
             </div>
       );
