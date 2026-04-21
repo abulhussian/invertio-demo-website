@@ -21,7 +21,7 @@ const page = () => {
       {/* Section 1 */}
       <FeatureSection
         tag="Digital Transformation"
-        title=""
+        title="Reimagining business processes using modern technologies to improve efficiency, agility, and customer experience."
         image="/services/Transformation.png"
         imagePosition="right"
         slug="services/digital-transformation"
@@ -29,7 +29,7 @@ const page = () => {
 
       <FeatureSection
         tag="Cloud Services"
-        title="Designing secure and scalable cloud environments..."
+        title="Designing secure and scalable cloud environments that enhance performance, flexibility, and operational reliability."
         image="/services/cloud services.png"
         imagePosition="left"
         slug="services/cloud-services"
@@ -37,7 +37,7 @@ const page = () => {
 
       <FeatureSection
         tag="Software Development"
-        title="Building custom applications..."
+        title="Building custom applications and enterprise platforms tailored to business needs with a focus on scalability and performance."
         image="/services/Software-development.png"
         imagePosition="right"
         slug="services/software-development"
