@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { MdLocationOn } from "react-icons/md";
 import toast from "react-hot-toast";
 
 export default function ContactSection() {
@@ -176,7 +177,7 @@ export default function ContactSection() {
                                           Get In Touch
                                     </p>
 
-                                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] leading-tight mb-4">
+                                    <h2 className="text-3xl sm:text-4xl lg:text-3xl font-bold text-[#0F172A] leading-tight mb-4">
                                           We’d Love to Hear From You
                                     </h2>
 
@@ -200,37 +201,46 @@ export default function ContactSection() {
                                                 </p>
                                           </div>
                                     </div>
-
-                                    <div className="border border-gray-100 bg-white rounded-2xl p-5 shadow-sm flex items-center gap-5">
-                                          <div className="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center">
-                                                <Image src="/contact/telephone.png" alt="Phone Icon" width={20} height={20} />
-                                          </div>
-                                          <div>
-                                                <p className="font-semibold text-[#0F172A] text-base">Call Us</p>
-                                                <p className="text-gray-500 text-sm">
-                                                      +91 81219 10307
-                                                </p>
-                                          </div>
-                                    </div>
-
                                     <div className="border border-gray-100 bg-white rounded-2xl p-5 shadow-sm flex items-center gap-5">
                                           <div className="w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                                                <Image src="/contact/email.png" alt="Location Icon" width={20} height={20} />
+                                                <MdLocationOn className="text-black w-5 h-5" />
                                           </div>
                                           <div>
-                                                <p className="font-semibold text-[#0F172A] text-base">Office Address</p>
+                                                <p className="font-semibold text-[#0F172A] text-base">HeadQuarters</p>
                                                 <p className="text-gray-500 text-sm leading-relaxed">
-                                                      8-1-332-3/B/L, 7 Tombs Rd, JPB Colony, Aravind Nagar Colony,
-                                                      Shaikpet, Hyderabad, Telangana 500008
+                                                      Hyderabad, India, 500008
                                                 </p>
                                           </div>
                                     </div>
+                                    <div className="border border-gray-100 bg-white rounded-2xl p-5 shadow-sm flex items-center gap-5">
+                                          <div className="w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                                <MdLocationOn className="text-black w-5 h-5" />
+                                          </div>
+                                          <div>
+                                                <p className="font-semibold text-[#0F172A] text-base">Dubai</p>
+                                                <p className="text-gray-500 text-sm leading-relaxed">
+                                                      Sharjah,UAE, 500008
+                                                </p>
+                                          </div>
+                                    </div>
+                                    <div className="border border-gray-100 bg-white rounded-2xl p-5 shadow-sm flex items-center gap-5">
+                                          <div className="w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                                <MdLocationOn className="text-black w-5 h-5" />
+                                          </div>
+                                          <div>
+                                                <p className="font-semibold text-[#0F172A] text-base">Saudi Arabia</p>
+                                                <p className="text-gray-500 text-sm leading-relaxed">
+                                                      Riyadh, SA, 500008
+                                                </p>
+                                          </div>
+                                    </div>
+
 
                               </div>
                         </div>
 
                         {/* RIGHT SIDE FORM */}
-                        <div className="bg-white border border-gray-200 rounded-2xl px-4 py-2 shadow-sm">
+                        <div className="bg-white border border-gray-200 rounded-2xl px-4 py-5 shadow-sm">
 
                               <h3 className="text-2xl font-semibold text-[#0F172A] mb-2">
                                     Send Us a Message
@@ -254,7 +264,7 @@ export default function ContactSection() {
                                                 value={formData.phone}
                                                 onChange={handleChange}
                                                 label="Contact Number *"
-                                                placeholder="+91 Enter 10 Digit Mobile Number"
+                                                placeholder="Enter Your Mobile Number"
                                                 maxLength={10}
                                           />
                                     </div>
