@@ -1,331 +1,3 @@
-// "use client";
-// import Image from "next/image";
-// import Link from "next/link";
-// import { useState } from "react";
-// import toast from "react-hot-toast";
-
-// const Footer = () => {
-
-//   const [email, setEmail] = useState("");
-//   const [loading, setLoading] = useState(false);
-
-//   const handleSubscribe = async () => {
-//     const trimmedEmail = email.trim();
-
-//     if (!trimmedEmail) {
-//       toast.error("Email is required");
-//       return;
-//     }
-
-//     // email validation
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     if (!emailRegex.test(trimmedEmail)) {
-//       toast.error("Enter valid email");
-//       return;
-//     }
-
-//     setLoading(true);
-
-//     try {
-//       const res = await fetch("https://invertiosolutions.com/newsletter.php", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ email: trimmedEmail }),
-//       });
-
-//       const data = await res.json();
-
-//       if (data.success) {
-//         toast.success("Subscribed successfully");
-//         setEmail("");
-//       } else {
-//         toast.error(data.message || "Something went wrong");
-//       }
-//     } catch (err) {
-//       toast.error("Server error");
-//     }
-
-//     setLoading(false);
-//   };
-
-
-
-//   const footerData = [
-//     {
-//       title: "Quick Links",
-//       links: [
-//         { label: "Home", href: "/" },
-//         { label: "About Us", href: "/about-us" },
-//         { label: "Our Work", href: "/our-work" },
-//         { label: "News & Insights", href: "/news-insights" },
-//         { label: "Careers", href: "/careers" },
-//         { label: "Contact Us", href: "/contact-us" },
-//       ],
-//     },
-//     {
-//       title: "Our Services",
-//       links: [
-//         {
-//           label: "Digital Transformation",
-//           href: "/services/digital-transformation",
-//         },
-//         { label: "Cloud Services", href: "/services/cloud-services" },
-//         {
-//           label: "Software Development",
-//           href: "/services/software-development",
-//         },
-//       ],
-//     },
-//     {
-//       title: "Our Solutions",
-//       links: [
-//         { label: "Data & Analytics", href: "/solutions/data-analytics" },
-//         { label: "Cybersecurity", href: "/solutions/cybersecurity" },
-//         { label: "IT Consulting", href: "/solutions/it-consulting" },
-//       ],
-//     },
-//     {
-//       title: "Our Industries",
-//       links: [
-//         { label: "Education", href: "/industries/education" },
-//         { label: "Logistics", href: "/industries/logistics" },
-//         { label: "Retail", href: "/industries/retail-ecommerce" },
-//         { label: "Finance", href: "/industries/finance-banking" },
-//         { label: "Healthcare", href: "/industries/healthcare" },
-//         {
-//           label: "Information Service",
-//           href: "/industries/information",
-//         },
-//       ],
-//     },
-//     {
-//       title: "Resources",
-//       links: [
-//         { label: "Our Work", href: "/our-work" },
-//         { label: "News & Insights", href: "/news-insights" },
-//       ],
-//     },
-//   ];
-//   return (
-//     <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 flex flex-col gap-6">
-//       <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority
-//         className="lg:pl-12"
-//       />
-
-//       <hr className="border-t border-[#101323]" />
-
-//       {/* links */}
-//       <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-8">
-//         {footerData.map((section) => (
-//           <div key={section.title} className="flex flex-col gap-3">
-//             <h3 className="font-semibold font-jakarta text-white text-sm">
-//               {section.title}
-//             </h3>
-
-//             <ul className="flex flex-col gap-2 text-sm text-gray-300 w-full">
-//               {section.links.map((link) => (
-//                 <li key={link.href}>
-//                   <Link
-//                     href={link.href}
-//                     className="hover:text-white transition text-sm hover:underline underline-offset-4"
-//                   >
-//                     {link.label}
-//                   </Link>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         ))}
-
-//         {/* Contact Section (different structure so separate) */}
-
-//       </div>
-
-//       {/* CONTACT - MOBILE ONLY */}
-//       <div className="lg:hidden max-w-[1380px] mx-auto px-4 pb-6">
-//         <div className="flex flex-col gap-3 text-sm text-gray-300">
-
-//           <h3 className="font-semibold font-jakarta text-white text-sm">
-//             Contact Us
-//           </h3>
-
-//           <ul className="flex flex-col gap-4 w-full">
-
-//             <li className="flex gap-3 items-center">
-//               <a
-//                 href="tel:+918121910307"
-//                 className="flex gap-3 items-center hover:underline"
-//               >
-//                 <Image src="/footer/phone.svg" alt="phone" width={34} height={24} />
-//                 +91 81219 10307
-//               </a>
-//             </li>
-
-//             <li className="flex gap-3 items-center">
-//               <Image src="/footer/email.svg" alt="email" width={34} height={24} />
-//               <a
-//                 href="mailto:info@invertiosolutions.com"
-//                 className="hover:underline"
-//               >
-//                 info@invertiosolutions.com
-//               </a>
-//             </li>
-
-//             <li className="flex gap-3 items-start">
-//               <Image src="/footer/location.svg" alt="location" width={34} height={24} />
-//               <span>
-//                 8-1-332-3/B/L, 7 Tombs Rd, Aravind Nagar Colony, Shaikpet, Hyderabad
-//               </span>
-//             </li>
-
-//           </ul>
-//         </div>
-//       </div>
-
-//       <hr className="border-t border-[#101323]" />
-//       {/* social media logos */}
-//       <div className="flex gap-4 items-center w-full justify-center py-4">
-
-//         <a
-//           href="https://www.facebook.com/profile.php?id=61554332513059"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             src="/footer/facebook.svg"
-//             alt="facebook"
-//             width={40}
-//             height={40}
-//           />
-//         </a>
-
-//         <a
-//           href="https://www.instagram.com/invertiotechsolutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             src="/footer/instagram.svg"
-//             alt="instagram"
-//             width={40}
-//             height={40}
-//           />
-//         </a>
-
-//         <a
-//           href="https://x.com/Invertio_s"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             src="/footer/x.svg"
-//             alt="x"
-//             width={40}
-//             height={40}
-//           />
-//         </a>
-
-//         <a
-//           href="https://www.linkedin.com/company/invertio-software-solution"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             src="/footer/linkedin.svg"
-//             alt="linkedin"
-//             width={40}
-//             height={40}
-//           />
-//         </a>
-
-//       </div>
-
-
-//       <hr className="border-t border-[#101323]" />
-
-//       {/* STAY UPDATED */}
-//       <div id="footer-subscribe" className="w-full flex flex-col gap-10 lg:px-12">
-//         {/* Top Section */}
-//         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
-//           {/* Left Content */}
-//           <div className="flex flex-col gap-3 max-w-xl text-center lg:text-left">
-//             <h2 className="text-white font-jakarta text-3xl font-semibold">
-//               Stay Updated
-//             </h2>
-
-//             <p className="text-gray-300 text-xs">
-//               Subscribe to receive the latest insights, technology updates, and
-//               innovation trends directly in your inbox.
-//             </p>
-//           </div>
-
-//           {/* Email Subscription Box */}
-//           <div className="w-full lg:w-fit bg-white rounded-xl flex items-center p-2 gap-2">
-
-//             {/* Input + Icon */}
-//             <div className="flex items-center gap-2 px-3 flex-1 min-w-0">
-//               <Image
-//                 src="/footer/email2.svg"
-//                 alt="email"
-//                 width={20}
-//                 height={20}
-//                 className="shrink-0"
-//               />
-
-//               <input
-//                 type="email"
-//                 value={email}
-//                 onChange={(e) => setEmail(e.target.value)}
-//                 placeholder="Enter Your Email Address"
-//                 className="w-full bg-transparent outline-none text-sm text-black placeholder:text-gray-500"
-//               />
-//             </div>
-
-//             <button
-//               onClick={handleSubscribe}
-//               disabled={loading}
-//               className="bg-orange-500 hover:bg-orange-600 transition text-white text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg whitespace-nowrap disabled:opacity-50"
-//             >
-//               {loading ? "Subscribing..." : "Subscribe"}
-//             </button>
-
-//           </div>
-//         </div>
-//       </div>
-
-//       <hr className="border-t border-[#101323]" />
-
-//       {/* Bottom Section */}
-//       <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300 text-center lg:text-left lg:px-12">
-
-//         {/* Links */}
-//         <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
-//           <Link href="/privacy-policy" className="hover:text-white transition duration-200">
-//             Privacy Policy
-//           </Link>
-
-//           <Link href="/terms-and-conditions" className="hover:text-white transition duration-200">
-//             Terms & Conditions
-//           </Link>
-
-
-//         </div>
-
-//         {/* Copyright */}
-//         <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
-
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Footer;
-
-
-
-
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -333,16 +5,19 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 const Footer = () => {
+
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubscribe = async () => {
     const trimmedEmail = email.trim();
+
     if (!trimmedEmail) {
       toast.error("Email is required");
       return;
     }
 
+    // email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(trimmedEmail)) {
       toast.error("Enter valid email");
@@ -350,13 +25,18 @@ const Footer = () => {
     }
 
     setLoading(true);
+
     try {
       const res = await fetch("https://invertiosolutions.com/newsletter.php", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ email: trimmedEmail }),
       });
+
       const data = await res.json();
+
       if (data.success) {
         toast.success("Subscribed successfully");
         setEmail("");
@@ -365,10 +45,12 @@ const Footer = () => {
       }
     } catch (err) {
       toast.error("Server error");
-    } finally {
-      setLoading(false);
     }
+
+    setLoading(false);
   };
+
+
 
   const footerData = [
     {
@@ -385,9 +67,15 @@ const Footer = () => {
     {
       title: "Our Services",
       links: [
-        { label: "Digital Transformation", href: "/services/digital-transformation" },
+        {
+          label: "Digital Transformation",
+          href: "/services/digital-transformation",
+        },
         { label: "Cloud Services", href: "/services/cloud-services" },
-        { label: "Software Development", href: "/services/software-development" },
+        {
+          label: "Software Development",
+          href: "/services/software-development",
+        },
       ],
     },
     {
@@ -406,6 +94,10 @@ const Footer = () => {
         { label: "Retail", href: "/industries/retail-ecommerce" },
         { label: "Finance", href: "/industries/finance-banking" },
         { label: "Healthcare", href: "/industries/healthcare" },
+        {
+          label: "Information Service",
+          href: "/industries/information",
+        },
       ],
     },
     {
@@ -416,113 +108,182 @@ const Footer = () => {
       ],
     },
   ];
-
   return (
-    <footer className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-10 lg:px-12">
-        {/* Logo Section */}
-        <div className="mb-8 flex justify-center lg:justify-start">
+    <div className="bg-[linear-gradient(98.95deg,#2A1F3F_0%,#1E2238_50.02%,#0F2236_75.03%,#0A0F1C_100.04%)] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 flex flex-col gap-6">
+      <Image src="/logo/logo.svg" alt="Logo" width={308} height={96} priority
+        className="lg:pl-12"
+      />
+
+      <hr className="border-t border-[#101323]" />
+
+      {/* links */}
+      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-15">
+        {footerData.map((section) => (
+          <div key={section.title} className="flex flex-col gap-3">
+            <h3 className="font-semibold font-jakarta text-white text-sm">
+              {section.title}
+            </h3>
+
+            <ul className="flex flex-col gap-2 text-sm text-gray-300 w-full">
+              {section.links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-white transition text-sm hover:underline underline-offset-4"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        {/* Contact Section (different structure so separate) */}
+
+      </div>
+
+
+
+      <hr className="border-t border-[#101323]" />
+      {/* social media logos */}
+      <div className="flex gap-4 items-center w-full justify-center py-4">
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61554332513059"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
-            src="/logo/logo.svg"
-            alt="Logo"
-            width={220}
-            height={60}
-            priority
-            className="h-auto w-auto"
+            src="/footer/facebook.svg"
+            alt="facebook"
+            width={40}
+            height={40}
           />
-        </div>
+        </a>
 
-        <hr className="border-white/10 mb-10" />
+        <a
+          href="https://www.instagram.com/invertiotechsolutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/instagram.svg"
+            alt="instagram"
+            width={40}
+            height={40}
+          />
+        </a>
 
-        {/* Main Links Grid - Adjusted to 5 columns on desktop */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-12">
-          {footerData.map((section) => (
-            <div key={section.title} className="flex flex-col gap-4">
-              <h3 className="font-bold text-sm tracking-wider uppercase text-white/90">
-                {section.title}
-              </h3>
-              <ul className="flex flex-col gap-2">
-                {section.links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-400 hover:text-orange-400 transition-colors text-sm"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        <a
+          href="https://x.com/Invertio_s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/x.svg"
+            alt="x"
+            width={40}
+            height={40}
+          />
+        </a>
 
-        <hr className="border-white/10 mb-10" />
+        <a
+          href="https://www.linkedin.com/company/invertio-software-solution"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/footer/linkedin.svg"
+            alt="linkedin"
+            width={40}
+            height={40}
+          />
+        </a>
 
-        {/* Newsletter and Socials */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-10">
-          <div className="text-center lg:text-left max-w-md">
-            <h2 className="text-2xl font-bold mb-2">Stay Updated</h2>
-            <p className="text-gray-400 text-sm">
-              Latest insights and tech updates delivered to your inbox.
+      </div>
+
+
+      <hr className="border-t border-[#101323]" />
+
+      {/* STAY UPDATED */}
+      <div id="footer-subscribe" className="w-full flex flex-col gap-10 lg:px-12">
+        {/* Top Section */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+          {/* Left Content */}
+          <div className="flex flex-col gap-3 max-w-xl text-center lg:text-left">
+            <h2 className="text-white font-jakarta text-3xl font-semibold">
+              Stay Updated
+            </h2>
+
+            <p className="text-gray-300 text-xs">
+              Subscribe to receive the latest insights, technology updates, and
+              innovation trends directly in your inbox.
             </p>
           </div>
 
-          <div className="w-full lg:max-w-md">
-            <div className="bg-white rounded-full p-1.5 flex items-center shadow-lg">
+          {/* Email Subscription Box */}
+          <div className="w-full lg:w-fit bg-white rounded-xl flex items-center p-2 gap-2">
+
+            {/* Input + Icon */}
+            <div className="flex items-center gap-2 px-3 flex-1 min-w-0">
+              <Image
+                src="/footer/email2.svg"
+                alt="email"
+                width={20}
+                height={20}
+                className="shrink-0"
+              />
+
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter Your Email"
-                className="flex-grow bg-transparent px-4 py-2 text-black text-sm outline-none w-full"
+                placeholder="Enter Your Email Address"
+                className="w-full bg-transparent outline-none text-sm text-black placeholder:text-gray-500"
               />
-              <button
-                onClick={handleSubscribe}
-                disabled={loading}
-                className="bg-orange-500 hover:bg-orange-600 px-6 py-2.5 rounded-full text-sm font-bold transition-all disabled:opacity-50"
-              >
-                {loading ? "..." : "Subscribe"}
-              </button>
             </div>
-          </div>
 
-          {/* Social Icons */}
-          <div className="flex gap-4">
-            {['facebook', 'instagram', 'x', 'linkedin'].map((social) => (
-              <Link
-                key={social}
-                href="#"
-                className="hover:scale-110 transition-transform duration-200"
-              >
-                <Image
-                  src={`/footer/${social}.svg`}
-                  alt={social}
-                  width={32}
-                  height={32}
-                />
-              </Link>
-            ))}
-          </div>
-        </div>
+            <button
+              onClick={handleSubscribe}
+              disabled={loading}
+              className="bg-orange-500 hover:bg-orange-600 transition text-white text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg whitespace-nowrap disabled:opacity-50"
+            >
+              {loading ? "Subscribing..." : "Subscribe"}
+            </button>
 
-        <hr className="border-white/10 mb-6" />
-
-        {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-and-conditions" className="hover:text-white transition-colors">
-              Terms & Conditions
-            </Link>
           </div>
-          <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+
+      <hr className="border-t border-[#101323]" />
+
+      {/* Bottom Section */}
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-300 text-center lg:text-left lg:px-12">
+
+        {/* Copyright */}
+        <p>© {new Date().getFullYear()} Invertio. All rights reserved.</p>
+
+        {/* Links */}
+        <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+          <Link href="/privacy-policy" className="hover:text-white transition duration-200">
+            Privacy Policy
+          </Link>
+
+          <Link href="/terms-and-conditions" className="hover:text-white transition duration-200">
+            Terms & Conditions
+          </Link>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
   );
 };
 
 export default Footer;
+
+
