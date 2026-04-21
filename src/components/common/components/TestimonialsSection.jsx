@@ -22,15 +22,15 @@ export default function TestimonialsSection() {
     {
       id: 2,
       name: "Sachin",
-      role: "Program Lead",
+      role: "founder of mediwaves",
       company: "AI Pilot – Public Health Initiative",
-      image: "/public/logo/aipolit.png",
+      image: "/logo/aipolit.png",
       content: `We needed a better way for the government team to monitor Anganwadi children and assign the right tasks based on BMI and health indicators. Invertio helped us build an application that made this process structured and easier to manage. The image-based height measurement feature was especially useful for accurate field data.`,
     },
     {
       id: 3,
       name: "Mohammed Othman Al Maliki",
-      role: "Retail Operations Lead",
+      role: "general manager",
       company: "BaladiExpress Mart",
       image: "/logo/Baladi.png",
       content: `Invertio helped us build multiple portals across our e-commerce operations based on different workflow needs. As the business grew, managing inventory and operations became complex. Their team simplified these processes and built systems that were much easier for our teams to use.`,
