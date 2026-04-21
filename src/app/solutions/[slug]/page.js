@@ -29,6 +29,13 @@ import ItConsulting from "@/components/solutions/ItConsulting";
 import CyberSecurity from "@/components/solutions/CyberSecurity";
 import DataAnalytics from "@/components/solutions/DataAnalytics";
 
+export async function generateStaticParams() {
+  const hardcodedSlugs = ["it-consulting", "cybersecurity", "data-analytics"];
+  const jsonSlugs = Object.keys(solutionsData);
+  const allSlugs = [...new Set([...hardcodedSlugs, ...jsonSlugs])];
+  return allSlugs.map((slug) => ({ slug }));
+}
+
 export default async function Page({ params }) {
   const { slug } = await params; // ✅ FIX HERE
 

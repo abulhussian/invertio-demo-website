@@ -1,3 +1,8 @@
-export default function BlogSlugPage({ params }) {
-      return <div>Slug: {params.slug}</div>;
+export async function generateStaticParams() {
+      return [{ slug: 'placeholder' }];
+}
+
+export default async function BlogSlugPage({ params }) {
+      const { slug } = await params;
+      return <div>Slug: {slug}</div>;
 }

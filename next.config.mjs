@@ -9,13 +9,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "ranamahacreations.com",
-      "w7.pngwing.com",
-      "upload.wikimedia.org",
-      "seeklogo.com"
+    remotePatterns: [
+      { hostname: "ranamahacreations.com" },
+      { hostname: "w7.pngwing.com" },
+      { hostname: "upload.wikimedia.org" },
+      { hostname: "seeklogo.com" }
     ],
+    unoptimized: true,
   },
+  output: "export",
 };
 
 export default nextConfig;
