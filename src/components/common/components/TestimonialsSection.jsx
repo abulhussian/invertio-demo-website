@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
       name: "Sachin",
       role: "Program Lead",
       company: "AI Pilot – Public Health Initiative",
-      image: "/logo/aipolit.png",
+      image: "/public/logo/aipolit.png",
       content: `We needed a better way for the government team to monitor Anganwadi children and assign the right tasks based on BMI and health indicators. Invertio helped us build an application that made this process structured and easier to manage. The image-based height measurement feature was especially useful for accurate field data.`,
     },
     {
@@ -97,7 +97,8 @@ export default function TestimonialsSection() {
     <section className="w-full py-16 md:py-24 bg-[#F8F9FC]">
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-16 relative">
 
-        <div className="mb-14">
+        {/* 1. SECTION HEADER (Center Aligned as per image) */}
+        <div className="mb-6 text-center">
           <SectionHeader
             badge="Client Testimonials"
             heading="Trusted by Businesses That Value Innovation and Results"
@@ -107,97 +108,113 @@ export default function TestimonialsSection() {
           />
         </div>
 
+        {/* 2. NAVIGATION ARROWS (In-between Header and Slides) */}
+        <div className="flex justify-end items-center w-full px-2 mb-8">
+          <button className="swiper-button-prev-custom bg-white rounded-full group cursor-pointer transition-transform active:scale-90">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000000"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="hover:stroke-black transition-colors"
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+
+          <button className="swiper-button-next-custom group cursor-pointer bg-white rounded-full transition-transform active:scale-90">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000000"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="hover:stroke-black transition-colors"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+
+        {/* 3. TESTIMONIAL SLIDES */}
         <div className="relative">
-
-          {/* Left Arrow */}
-          <button className="swiper-button-prev !hidden md:!flex !w-12 !h-12 !rounded-full !text-blue-600 after:!text-sm absolute top-1/2 -translate-y-1/2 -left-12 z-10 hover:scale-110 transition" />
-
-          {/* Right Arrow */}
-          <button className="swiper-button-next !hidden md:!flex !w-12 !h-12 !rounded-full !text-blue-600 after:!text-sm absolute top-1/2 -translate-y-1/2 -right-12 z-10 hover:scale-110 transition" />
-
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={20}
-            slidesPerView={1} // mobile default
+            slidesPerView={1}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
             }}
             pagination={{
               el: ".custom-pagination",
               clickable: true,
             }}
-            className="!pb-14"
+            className="!pb-12"
           >
             {testimonials.map((item) => (
-              <SwiperSlide key={item.id} className="!h-full flex">
-
-                {/* CARD (important for equal height) */}
-                <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm h-full flex flex-col min-h-[260px]">
-
-                  {/* PROFILE */}
-                  <div className="flex items-center gap-3 min-h-[60px]">
-                    <div className="relative w-10 h-10 rounded-full overflow-hidden">
+              <SwiperSlide key={item.id} className="!h-auto flex">
+                <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm h-full flex flex-col w-full">
+                  {/* Profile Section */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0">
                       <Image
                         src={item.image}
                         alt={item.name}
-                        fill
-                        className="object-cover"
+                        width={48}    // Using fixed width for maximum clarity
+                        height={48}   // Matching height
+                        className="object-contain p-1" // 'contain' is better for logos to prevent cropping
                       />
                     </div>
-
-                    <div>
-                      <h3 className="text-sm font-semibold text-black">
-                        {item.name}
-                      </h3>
-                      <p className="text-xs text-black/80">
-                        {item.company}
-                      </p>
-                      <p className="text-xs text-black/60">
-                        {item.role}
-                      </p>
+                    <div className="flex flex-col">
+                      <h3 className="text-[15px] font-bold text-gray-900">{item.name}</h3>
+                      <p className="text-[12px] text-gray-600 font-medium">{item.company}</p>
+                      <p className="text-[11px] text-gray-400">{item.role}</p>
                     </div>
                   </div>
 
-                  {/* Divider */}
-                  <div className="w-full h-px bg-gray-200 my-4" />
+                  <div className="w-full h-px bg-gray-100 mb-6" />
 
-                  {/* CONTENT */}
-                  <p className="text-sm text-black leading-relaxed flex-grow line-clamp-4">
+                  {/* Content */}
+                  <p className="text-[14px] leading-relaxed text-gray-700 flex-grow">
                     {item.content}
                   </p>
-
                 </div>
-
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* Pagination */}
-          <div className="custom-pagination mt-6 flex justify-center gap-2"></div>
-
+          {/* Pagination dots if needed at the very bottom */}
+          <div className="custom-pagination mt-4 flex justify-center gap-2"></div>
         </div>
       </div>
 
-      {/* Pagination Styles */}
       <style jsx global>{`
-        .custom-pagination .swiper-pagination-bullet {
-          width: 8px;
-          height: 8px;
-          background: #cbd5e1;
-          opacity: 1;
-        }
-        .custom-pagination .swiper-pagination-bullet-active {
-          width: 20px;
-          border-radius: 4px;
-          background: #3b82f6;
-        }
-      `}</style>
+    .custom-pagination .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background: #cbd5e1;
+      opacity: 0.5;
+    }
+    .custom-pagination .swiper-pagination-bullet-active {
+      width: 20px;
+      border-radius: 4px;
+      background: #3b82f6;
+      opacity: 1;
+    }
+  `}</style>
     </section>
   );
 }

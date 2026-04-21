@@ -164,30 +164,30 @@ const WhatsAppButton = () => {
                                     initial={{ opacity: 0, y: 30, scale: 0.9 }}
                                     animate={{ opacity: 1, y: 0, scale: 1 }}
                                     exit={{ opacity: 0, y: 30, scale: 0.9 }}
-                                    className="w-[92vw] sm:w-[380px] h-[80dvh] sm:h-[600px] max-h-[550px] bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col border border-gray-100 mb-4"
+                                    className="w-[92vw] sm:w-[380px] h-[75dvh] lg:h-[600px] max-h-[650px] bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col border border-gray-100 mb-4"
                               >
                                     {/* RESPONSIVE HEADER */}
-                                    <div className="bg-[#0a2357] p-5 sm:p-6 text-white shrink-0">
-                                          <div className="flex justify-between items-center mb-5">
+                                    <div className="bg-[#0a2357] p-4 sm:p-6 text-white shrink-0">
+                                          <div className="flex justify-between items-center mb-3 sm:mb-5">
                                                 <div className="flex items-center gap-3">
-                                                      <div className="w-10 h-10 sm:w-12 sm:h-11 bg-white rounded-2xl flex items-center justify-center">
-                                                            <div className="text-[#0a2357] font-bold text-xl sm:text-2xl">M</div>
+                                                      <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-2xl flex items-center justify-center">
+                                                            <div className="text-[#0a2357] font-bold text-lg sm:text-2xl">M</div>
                                                       </div>
                                                       <div>
-                                                            <h3 className="text-lg font-bold leading-none tracking-tight">Invertio</h3>
-                                                            <p className="text-[10px] text-blue-200 flex items-center gap-1 mt-1">
-                                                                  <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Available Online
+                                                            <h3 className="text-base sm:text-lg font-bold leading-none tracking-tight">Invertio</h3>
+                                                            <p className="text-[9px] text-blue-200 flex items-center gap-1 mt-1">
+                                                                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span> Available Online
                                                             </p>
                                                       </div>
                                                 </div>
                                                 <button onClick={() => setIsOpen(false)} className="bg-white/10 p-2 rounded-xl">
-                                                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M18 6L6 18M6 6l12 12" /></svg>
+                                                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M18 6L6 18M6 6l12 12" /></svg>
                                                 </button>
                                           </div>
 
                                           {/* MOBILE PROGRESS */}
-                                          <div className="mb-4">
-                                                <div className="flex justify-between text-[10px] uppercase font-bold tracking-widest mb-2 text-blue-300">
+                                          <div className="mb-3">
+                                                <div className="flex justify-between text-[9px] uppercase font-bold tracking-widest mb-1.5 text-blue-300">
                                                       <span>Step Tracking</span>
                                                       <span>{progress}%</span>
                                                 </div>
@@ -197,11 +197,11 @@ const WhatsAppButton = () => {
                                           </div>
 
                                           {/* GRID STATS */}
-                                          <div className="grid grid-cols-4 gap-1 text-center border-t border-white/10 pt-4">
-                                                <div className="flex flex-col"><span className="font-bold text-xs sm:text-sm">565+</span><span className="text-[8px] uppercase text-blue-200">Wins</span></div>
-                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-xs sm:text-sm">4.9</span><span className="text-[8px] uppercase text-blue-200">Stars</span></div>
-                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-xs sm:text-sm">4</span><span className="text-[8px] uppercase text-blue-200">Gloves</span></div>
-                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-xs sm:text-sm">8+</span><span className="text-[8px] uppercase text-blue-200">Years</span></div>
+                                          <div className="grid grid-cols-4 gap-1 text-center border-t border-white/10 pt-3">
+                                                <div className="flex flex-col"><span className="font-bold text-[10px] sm:text-sm">565+</span><span className="text-[7px] uppercase text-blue-200">Wins</span></div>
+                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">4.9</span><span className="text-[7px] uppercase text-blue-200">Stars</span></div>
+                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">4</span><span className="text-[7px] uppercase text-blue-200">Gloves</span></div>
+                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">8+</span><span className="text-[7px] uppercase text-blue-200">Years</span></div>
                                           </div>
                                     </div>
 
@@ -210,12 +210,12 @@ const WhatsAppButton = () => {
                                           {messages.map((msg, i) => (
                                                 <div key={i} className={`flex flex-col ${msg.from === 'user' ? 'items-end' : 'items-start'}`}>
                                                       {msg.from === 'bot' && i % 2 === 0 && (
-                                                            <p className="text-[10px] font-bold text-gray-400 mb-1 ml-1 uppercase flex items-center gap-2">
-                                                                  <span className="w-4 h-4 bg-[#0a2357] rounded-md flex items-center justify-center text-[7px] text-white">AI</span>
+                                                            <p className="text-[9px] font-bold text-gray-400 mb-1 ml-1 uppercase flex items-center gap-2">
+                                                                  <span className="w-3.5 h-3.5 bg-[#0a2357] rounded-md flex items-center justify-center text-[6px] text-white">AI</span>
                                                                   Assistant
                                                             </p>
                                                       )}
-                                                      <div className={`max-w-[88%] p-3.5 sm:p-4 rounded-2xl text-[12px] sm:text-[14px] leading-relaxed shadow-sm ${msg.from === 'user' ? 'bg-[#0a2357] text-white rounded-tr-none' : 'bg-white text-gray-700 rounded-tl-none border border-gray-100'
+                                                      <div className={`max-w-[90%] p-3 sm:p-4 rounded-2xl text-[12px] sm:text-[14px] leading-relaxed shadow-sm ${msg.from === 'user' ? 'bg-[#0a2357] text-white rounded-tr-none' : 'bg-white text-gray-700 rounded-tl-none border border-gray-100'
                                                             }`}>
                                                             {msg.text}
                                                       </div>
@@ -223,15 +223,15 @@ const WhatsAppButton = () => {
                                           ))}
 
                                           {currentStep?.type === "options" && (
-                                                <div className="flex flex-col gap-2.5 mt-2 w-full max-w-[95%]">
+                                                <div className="flex flex-col gap-2 mt-1 w-full max-w-[95%]">
                                                       {currentStep.options.map((opt, i) => (
-                                                            <button key={i} onClick={() => nextStep(opt)} className="bg-white border border-gray-200 p-4 rounded-2xl text-left text-xs sm:text-sm hover:border-blue-500 hover:bg-blue-50/30 active:scale-95 transition-all shadow-sm font-semibold text-gray-800">
+                                                            <button key={i} onClick={() => nextStep(opt)} className="bg-white border border-gray-200 p-3.5 sm:p-4 rounded-2xl text-left text-xs sm:text-sm hover:border-blue-500 hover:bg-blue-50/30 active:scale-95 transition-all shadow-sm font-semibold text-gray-800">
                                                                   {opt}
                                                             </button>
                                                       ))}
                                                 </div>
                                           )}
-                                          <div ref={chatEndRef} className="h-4" />
+                                          <div ref={chatEndRef} className="h-2" />
                                     </div>
 
                                     {/* INPUT SECTION */}
@@ -243,10 +243,10 @@ const WhatsAppButton = () => {
                                                             value={input}
                                                             onChange={(e) => setInput(e.target.value)}
                                                             placeholder={currentStep?.placeholder}
-                                                            className="w-full bg-[#f1f5f9] py-4 px-6 rounded-2xl outline-none text-sm pr-14 text-gray-800 border border-transparent focus:bg-white focus:border-blue-200 focus:shadow-inner transition-all"
+                                                            className="w-full bg-[#f1f5f9] py-3 sm:py-4 px-5 rounded-2xl outline-none text-sm pr-12 text-gray-800 border border-transparent focus:bg-white focus:border-blue-200 transition-all"
                                                       />
-                                                      <button type="submit" className="absolute right-2 bg-[#0a2357] text-white p-3 rounded-xl hover:opacity-90 active:scale-90 transition-all shadow-md">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="rotate-45"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
+                                                      <button type="submit" className="absolute right-1.5 bg-[#0a2357] text-white p-2.5 rounded-xl hover:opacity-90 active:scale-90 transition-all">
+                                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="rotate-45"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
                                                       </button>
                                                 </form>
                                           ) : (
@@ -256,15 +256,15 @@ const WhatsAppButton = () => {
                                                             const msg = `*Inquiry:* ${data.service}\n*Name:* ${data.name}\n*Contact:* ${data.phone}\n*Details:* ${data.details}`;
                                                             window.open(`https://wa.me/918121910307?text=${encodeURIComponent(msg)}`);
                                                       }}
-                                                      className="w-full bg-[#25D366] text-white py-4 rounded-2xl font-black shadow-lg active:scale-95 transition-all uppercase tracking-wide text-sm"
+                                                      className="w-full bg-[#25D366] text-white py-4 rounded-2xl font-black shadow-lg active:scale-95 transition-all uppercase tracking-wide text-xs sm:text-sm"
                                                 >
                                                       Complete on WhatsApp
                                                 </button>
                                           )}
-                                          <div className="mt-4 flex items-center justify-center gap-3">
-                                                <div className="h-px bg-gray-100 w-8"></div>
-                                                <p className="text-[9px] uppercase font-bold text-gray-400 tracking-widest">Invertio • India</p>
-                                                <div className="h-px bg-gray-100 w-8"></div>
+                                          <div className="mt-3 flex items-center justify-center gap-3">
+                                                <div className="h-px bg-gray-100 w-6"></div>
+                                                <p className="text-[8px] uppercase font-bold text-gray-400 tracking-widest">Invertio • India</p>
+                                                <div className="h-px bg-gray-100 w-6"></div>
                                           </div>
                                     </div>
                               </motion.div>
@@ -279,7 +279,7 @@ const WhatsAppButton = () => {
                                           initial={{ opacity: 0, y: 10 }}
                                           animate={{ opacity: 1, y: 0 }}
                                           exit={{ opacity: 0, y: 10 }}
-                                          className="bg-white px-5 py-2.5 rounded-2xl shadow-xl text-xs font-bold text-gray-700 border border-gray-50 mr-2"
+                                          className="bg-white px-4 py-2 rounded-2xl shadow-xl text-[11px] font-bold text-gray-700 border border-gray-50 mr-2"
                                     >
                                           Need help? Talk to us 👋
                                     </motion.div>
@@ -290,13 +290,13 @@ const WhatsAppButton = () => {
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.9 }}
                               onClick={() => setIsOpen(!isOpen)}
-                              className={`h-16 w-16 rounded-[22px] sm:rounded-[26px] flex items-center justify-center shadow-2xl transition-all ${isOpen ? 'bg-[#0a2357]' : 'bg-[#25D366]'
+                              className={`h-14 w-14 sm:h-16 sm:w-16 rounded-[20px] sm:rounded-[26px] flex items-center justify-center shadow-2xl transition-all ${isOpen ? 'bg-[#0a2357]' : 'bg-[#25D366]'
                                     }`}
                         >
                               {isOpen ? (
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><path d="M18 6L6 18M6 6l12 12" /></svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><path d="M18 6L6 18M6 6l12 12" /></svg>
                               ) : (
-                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width={34} height={34} />
+                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width={30} height={30} />
                               )}
                         </motion.button>
                   </div>

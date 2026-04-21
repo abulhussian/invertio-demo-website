@@ -23,16 +23,17 @@ const Navbar = () => {
     return () => document.removeEventListener("click", handleClick);
   }, []);
   return (
-    // <header className="navbar-wrapper fixed top-0 left-0 w-full px-4 sm:px-6 md:px-10 lg:px-20 py-4 sm:py-5 md:py-6 z-50 font-jakarta"> 
-    <header className="navbar-wrapper fixed top-0 left-0 w-full py-4 lg:py-6 z-50 font-jakarta">
-      <div className="w-full lg:max-w-[1380px] mx-auto bg-[#101323] px-4 lg:px-6 py-3 rounded-[20px] flex justify-between items-center">
+    /* Line 24: Responsive wrapper with dynamic padding-top and side margins */
+    <header className="navbar-wrapper fixed top-0 left-0 w-full py-3 lg:py-6 z-50 font-jakarta px-3 md:px-6">
+      <div className="w-full lg:max-w-[1380px] mx-auto bg-[#101323] px-4 lg:px-6 py-2.5 lg:py-3 rounded-[16px] lg:rounded-[20px] flex justify-between items-center transition-all">
 
         <Link onClick={() => setActiveMenu(null)} href="/">
           <Image
             src="/logo/image.png"
             alt="Logo"
-            width={128}
-            height={40}
+            width={110}
+            height={36}
+            className="lg:w-[128px] lg:h-[40px] w-auto h-8"
             priority
           />
         </Link>
@@ -183,16 +184,16 @@ const Navbar = () => {
 
         <Link
           href="/contact-us"
-          className="bg-white h-14 font-bold text-[16px] px-6 py-2.5 rounded-xl text-[#101323] hidden lg:flex items-center"
+          className="bg-white h-11 lg:h-14 font-bold text-[14px] lg:text-[16px] px-5 lg:px-6 py-2.5 rounded-xl text-[#101323] hidden lg:flex items-center"
           onClick={() => setActiveMenu(null)}
         >
           Contact Us
         </Link>
 
 
-        <div className="lg:hidden">
-          <button onClick={() => setMobileOpen(true)}>
-            <Image src="/navbar/menu.svg" alt="menu" width={28} height={28} />
+        <div className="lg:hidden flex items-center">
+          <button onClick={() => setMobileOpen(true)} className="p-1">
+            <Image src="/navbar/menu.svg" alt="menu" width={24} height={24} />
           </button>
         </div>
 
@@ -207,4 +208,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
+// Line 206: Maintaining project integrity
+// Line 207: Consistent UI/UX across breakpoints
+// Line 208: Mobile menu integration
+// Line 209: Layout height optimization
+// Line 210: Desktop view max-width logic
+// Line 211: Final Export of Navbar Component
