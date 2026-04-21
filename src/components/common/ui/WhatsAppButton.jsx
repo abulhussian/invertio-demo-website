@@ -129,12 +129,20 @@ const WhatsAppButton = () => {
                                     initial={{ opacity: 0, y: 30, scale: 0.9 }}
                                     animate={{ opacity: 1, y: 0, scale: 1 }}
                                     exit={{ opacity: 0, y: 30, scale: 0.9 }}
-                                    className="w-[92vw] sm:w-[380px] h-[75dvh] lg:h-[600px] max-h-[650px] bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col border border-gray-100 mb-4"
+                                    className="w-[92vw] sm:w-[380px] h-[75dvh] lg:h-[530px] max-h-[82dvh] bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col border border-gray-100 mb-4"
                               >
                                     <div className="bg-[#0a2357] p-4 sm:p-6 text-white shrink-0">
                                           <div className="flex justify-between items-center mb-3 sm:mb-5">
                                                 <div className="flex items-center gap-3">
-                                                      <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-2xl flex items-center justify-center text-[#0a2357] font-bold text-lg sm:text-2xl">M</div>
+                                                      <div className="w-9 h-9 sm:w-11 sm:h-11 bg-black rounded-2xl flex items-center justify-center text-[#0a2357] font-bold text-lg sm:text-2xl">
+                                                            <Image
+                                                                  src="/logo/image.png"
+                                                                  alt="Logo"
+                                                                  width={28}
+                                                                  height={28}
+                                                                  className="object-contain"
+                                                            />
+                                                      </div>
                                                       <div>
                                                             <h3 className="text-base sm:text-lg font-bold leading-none">Invertio</h3>
                                                             <p className="text-[9px] text-blue-200 flex items-center gap-1 mt-1">
@@ -219,4 +227,3 @@ const WhatsAppButton = () => {
 };
 
 export default WhatsAppButton;
-
