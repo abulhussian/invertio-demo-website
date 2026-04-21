@@ -98,7 +98,7 @@ const MobileNavbar = ({ mobileOpen, setMobileOpen, megaMenuData }) => {
 
         {/* Full-Width Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full w-full bg-[#0B0E1A] text-white z-[70] shadow-2xl overflow-y-auto flex flex-col transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed top-0 right-0 h-full w-full max-w-md bg-[#0B0E1A] text-white z-[70] shadow-2xl overflow-y-auto flex flex-col transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileOpen ? "translate-x-0" : "translate-x-full"
             }`}
         >
           {/* Header Section */}

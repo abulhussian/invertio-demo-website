@@ -30,6 +30,13 @@ import CloudService from "@/components/services/CloudService";
 import DigitalTransformation from "@/components/services/DigitalTransformation";
 import SoftwareDevelopment from "@/components/services/SoftwareDevelopment";
 
+export async function generateStaticParams() {
+  const hardcodedSlugs = ["cloud-services", "digital-transformation", "software-development"];
+  const jsonSlugs = Object.keys(servicesData);
+  const allSlugs = [...new Set([...hardcodedSlugs, ...jsonSlugs])];
+  return allSlugs.map((slug) => ({ slug }));
+}
+
 export default async function Page({ params }) {
   const { slug } = await params;
 

@@ -22,8 +22,8 @@ const Navbar = () => {
     document.addEventListener("click", handleClick);
     return () => document.removeEventListener("click", handleClick);
   }, []);
+
   return (
-    /* Line 24: Responsive wrapper with dynamic padding-top and side margins */
     <header className="navbar-wrapper fixed top-0 left-0 w-full py-3 lg:py-6 z-50 font-jakarta px-3 md:px-6">
       <div className="w-full lg:max-w-[1380px] mx-auto bg-[#101323] px-4 lg:px-6 py-2.5 lg:py-3 rounded-[16px] lg:rounded-[20px] flex justify-between items-center transition-all">
 
@@ -38,12 +38,11 @@ const Navbar = () => {
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-0 xl:gap-1">
           <Link
             onClick={() => setActiveMenu(null)}
             href="/"
-            className={`text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center
-  ${pathname === "/" ? "text-white" : "text-[#717BBC] hover:text-white"}`}
+            className={`text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center transition-colors ${pathname === "/" ? "text-white" : "text-[#717BBC] hover:text-white"}`}
           >
             Home
           </Link>
@@ -51,108 +50,70 @@ const Navbar = () => {
           <Link
             onClick={() => setActiveMenu(null)}
             href="/about-us"
-            className={`text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center
-  ${pathname === "/about-us" ? "text-white" : "text-[#717BBC] hover:text-white"
-              }`}
+            className={`text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center transition-colors ${pathname === "/about-us" ? "text-white" : "text-[#717BBC] hover:text-white"}`}
           >
             About Us
           </Link>
-          {/* our servies */}
-          <div
-            className={`relative text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center gap-2
-  ${pathname.startsWith("/services")
-                ? "text-white"
-                : "text-[#717BBC] hover:text-white"
-              }`}
-          >
-            <Link onClick={() => setActiveMenu(null)} href="/services">
-              Our Services
-            </Link>
 
+          {/* Our Services */}
+          <div
+            className={`relative text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center gap-1 xl:gap-2 cursor-pointer group ${pathname.startsWith("/services") ? "text-white" : "text-[#717BBC] hover:text-white"}`}
+          >
+            <Link onClick={() => setActiveMenu(null)} href="/services">Our Services</Link>
             <Image
               src="/navbar/Arrow_Down.svg"
-              width={24}
-              height={24}
-              className={`group-hover:contrast-200 group-hover:brightness-200 cursor-pointer transition ${activeMenu === "services" && "rotate-180"}`}
+              width={18}
+              height={18}
+              className={`brightness-75 group-hover:brightness-100 transition-transform duration-300 ${activeMenu === "services" ? "rotate-180" : ""}`}
               alt="down arrow"
-              onClick={() =>
-                setActiveMenu((prev) =>
-                  prev === "services" ? null : "services",
-                )
-              }
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveMenu((prev) => (prev === "services" ? null : "services"));
+              }}
             />
-            <MegaMenu
-              columns={megaMenuData.services}
-              setActiveMenu={setActiveMenu}
-              open={activeMenu === "services"}
-            />
+            <MegaMenu columns={megaMenuData.services} setActiveMenu={setActiveMenu} open={activeMenu === "services"} />
           </div>
 
           {/* Our Solutions */}
           <div
-            className={`relative text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center gap-2
-  ${pathname.startsWith("/solutions")
-                ? "text-white"
-                : "text-[#717BBC] hover:text-white"
-              }`}
+            className={`relative text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center gap-1 xl:gap-2 cursor-pointer group ${pathname.startsWith("/solutions") ? "text-white" : "text-[#717BBC] hover:text-white"}`}
           >
-            <Link onClick={() => setActiveMenu(null)} href="/solutions">
-              Our Solutions
-            </Link>
-
+            <Link onClick={() => setActiveMenu(null)} href="/solutions">Our Solutions</Link>
             <Image
               src="/navbar/Arrow_Down.svg"
-              width={24}
-              height={24}
-              className={`group-hover:contrast-200 group-hover:brightness-200 cursor-pointer transition ${activeMenu === "solutions" && "rotate-180"}`}
+              width={18}
+              height={18}
+              className={`brightness-75 group-hover:brightness-100 transition-transform duration-300 ${activeMenu === "solutions" ? "rotate-180" : ""}`}
               alt="down arrow"
-              onClick={() =>
-                setActiveMenu((prev) => (prev === "solutions" ? null : "solutions"))
-              }
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveMenu((prev) => (prev === "solutions" ? null : "solutions"));
+              }}
             />
-            <MegaMenu
-              columns={megaMenuData.solutions}
-              setActiveMenu={setActiveMenu}
-              open={activeMenu === "solutions"}
-            />
+            <MegaMenu columns={megaMenuData.solutions} setActiveMenu={setActiveMenu} open={activeMenu === "solutions"} />
           </div>
 
           {/* Industries */}
-          <div className={`relative text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center gap-2
-  ${pathname.startsWith("/industries")
-              ? "text-white"
-              : "text-[#717BBC] hover:text-white"
-            }`}
-          >
-            <Link onClick={() => setActiveMenu(null)} href="/industries">
-              Industries
-            </Link>
-
+          <div className={`relative text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center gap-1 xl:gap-2 cursor-pointer group ${pathname.startsWith("/industries") ? "text-white" : "text-[#717BBC] hover:text-white"}`}>
+            <Link onClick={() => setActiveMenu(null)} href="/industries">Industries</Link>
             <Image
               src="/navbar/Arrow_Down.svg"
-              width={24}
-              height={24}
-              className={`group-hover:contrast-200 group-hover:brightness-200 cursor-pointer transition ${activeMenu === "industries" && "rotate-180"}`}
+              width={18}
+              height={18}
+              className={`brightness-75 group-hover:brightness-100 transition-transform duration-300 ${activeMenu === "industries" ? "rotate-180" : ""}`}
               alt="down arrow"
-              onClick={() =>
-                setActiveMenu((prev) => (prev === "industries" ? null : "industries"))
-              }
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveMenu((prev) => (prev === "industries" ? null : "industries"));
+              }}
             />
-            <MegaMenu
-              columns={megaMenuData.industries}
-              setActiveMenu={setActiveMenu}
-              open={activeMenu === "industries"}
-            />
+            <MegaMenu columns={megaMenuData.industries} setActiveMenu={setActiveMenu} open={activeMenu === "industries"} />
           </div>
-
-
 
           <Link
             onClick={() => setActiveMenu(null)}
             href="/our-work"
-            className={`text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center
-  ${pathname === "/our-work" ? "text-white" : "text-[#717BBC] hover:text-white"
-              }`}
+            className={`text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center transition-colors ${pathname === "/our-work" ? "text-white" : "text-[#717BBC] hover:text-white"}`}
           >
             Our Work
           </Link>
@@ -160,23 +121,15 @@ const Navbar = () => {
           <Link
             onClick={() => setActiveMenu(null)}
             href="/news-insights"
-            className={`text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center
-  ${pathname.startsWith("/news-insights")
-                ? "text-white"
-                : "text-[#717BBC] hover:text-white"
-              }`}
-
-
-
+            className={`text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center transition-colors ${pathname.startsWith("/news-insights") ? "text-white" : "text-[#717BBC] hover:text-white"}`}
           >
-            News & Insights
+            Insights
           </Link>
 
           <Link
             onClick={() => setActiveMenu(null)}
             href="/careers"
-            className={`text-[14px] font-semibold h-16 px-4 py-2.5 flex items-center
-  ${pathname === "/careers" ? "text-white" : "text-[#717BBC] hover:text-white"}`}
+            className={`text-[13px] xl:text-[14px] font-semibold h-16 px-2.5 xl:px-4 py-2.5 flex items-center transition-colors ${pathname === "/careers" ? "text-white" : "text-[#717BBC] hover:text-white"}`}
           >
             Careers
           </Link>
@@ -184,12 +137,11 @@ const Navbar = () => {
 
         <Link
           href="/contact-us"
-          className="bg-white h-11 lg:h-14 font-bold text-[14px] lg:text-[16px] px-5 lg:px-6 py-2.5 rounded-xl text-[#101323] hidden lg:flex items-center"
+          className="bg-white h-10 xl:h-12 font-bold text-[13px] xl:text-[14px] px-4 xl:px-6 py-2 rounded-xl text-[#101323] hidden lg:flex items-center hover:bg-gray-100 transition-colors"
           onClick={() => setActiveMenu(null)}
         >
           Contact Us
         </Link>
-
 
         <div className="lg:hidden flex items-center">
           <button onClick={() => setMobileOpen(true)} className="p-1">
@@ -208,9 +160,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// Line 206: Maintaining project integrity
-// Line 207: Consistent UI/UX across breakpoints
-// Line 208: Mobile menu integration
-// Line 209: Layout height optimization
-// Line 210: Desktop view max-width logic
-// Line 211: Final Export of Navbar Component

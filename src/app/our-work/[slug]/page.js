@@ -10,6 +10,13 @@ import CSection from "@/components/services/components/CSection";
 import TechStackSection from "@/components/services/components/TechStackSection";
 import Image from "next/image";
 
+
+export async function generateStaticParams() {
+      return Object.keys(projects).map((slug) => ({
+            slug: slug,
+      }));
+}
+
 export default async function Page({ params }) {
       const { slug } = await params;
 

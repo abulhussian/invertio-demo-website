@@ -43,6 +43,13 @@ import FinanceBanking from "@/components/industries/FinanceBanking";
 import HealthCare from "@/components/industries/HealthCare";
 import Information from "@/components/industries/Information";
 
+export async function generateStaticParams() {
+  const hardcodedSlugs = ["education", "logistics", "retail-ecommerce", "finance-banking", "healthcare", "information"];
+  const jsonSlugs = Object.keys(industriesData);
+  const allSlugs = [...new Set([...hardcodedSlugs, ...jsonSlugs])];
+  return allSlugs.map((slug) => ({ slug }));
+}
+
 export default async function Page({ params }) {
   const { slug } = await params;
 
