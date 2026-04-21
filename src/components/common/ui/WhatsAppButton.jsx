@@ -223,7 +223,27 @@ ${data.details}
                                                       </button>
                                                 </form>
                                           ) : (
-                                                <button onClick={() => window.open('https://wa.me/918121910307')} className="w-full bg-green-500 text-white py-4 rounded-2xl font-bold shadow-lg">
+                                                <button
+                                                      onClick={() => {
+                                                            const data = answers;
+
+                                                            const message = `*New Inquiry*
+    
+Name: ${data.name || ""}
+Phone: ${data.phone || ""}
+Email: ${data.email || ""}
+Service: ${data.service || ""}
+
+*Project Details:*
+${data.details || ""}
+`;
+
+                                                            const encodedMessage = encodeURIComponent(message);
+
+                                                            window.open(`https://wa.me/918121910307?text=${encodedMessage}`);
+                                                      }}
+                                                      className="w-full bg-green-500 text-white py-4 rounded-2xl font-bold shadow-lg"
+                                                >
                                                       Continue on WhatsApp
                                                 </button>
                                           )}

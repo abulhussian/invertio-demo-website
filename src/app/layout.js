@@ -33,11 +33,12 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <body className="antialiased">
 
-        {/* ✅ GOOGLE ANALYTICS */}
+        {/* ✅ GOOGLE ANALYTICS tag manager*/}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6R2T7L9HN6"
           strategy="afterInteractive"
         />
+        {/* google analytics */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -56,6 +57,26 @@ export default function RootLayout({ children }) {
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "wel9i821i9");
           `}
+        </Script>
+        {/* leedfeeder */}
+        <Script id="leadfeeder-script" strategy="afterInteractive">
+          {`
+(function(ss,ex){
+  window.ldfdr=window.ldfdr||function(){
+    (ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));
+  };
+  (function(d,s){
+    var fs=d.getElementsByTagName(s)[0];
+    function ce(src){
+      var cs=d.createElement(s);
+      cs.src=src;
+      cs.async=1;
+      fs.parentNode.insertBefore(cs,fs);
+    };
+    ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js');
+  })(document,'script');
+})('DzLR5a51RnJaBoQ2');
+`}
         </Script>
 
         {/* ✅ TOASTER */}

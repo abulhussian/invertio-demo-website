@@ -25,7 +25,7 @@ const CTASection = ({ data }) => {
                         {/* RIGHT BUTTON */}
                         <Link
                               href={data?.button?.href || "/contact-us"}
-                              className="px-6 py-3 rounded-full bg-[#0F172A] text-white text-sm font-semibold hover:bg-[#1E293B] transition sm:w-full"
+                              className="px-6 py-3 rounded-full bg-[#0F172A] text-white text-sm font-semibold hover:bg-[#1E293B] transition w-fit"
                         >
                               {data?.button?.text || "Talk To Our Experts"}
                         </Link>
