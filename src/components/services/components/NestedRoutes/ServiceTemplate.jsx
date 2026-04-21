@@ -22,7 +22,7 @@ const ServiceTemplate = ({ data }) => {
             <>
                   <div className=" md:px-14 lg:px-20 py-4 pb-16 bg-[#F8F9FC] -mt-32 pt-24 lg:pt-34" >
 
-                        {/* 🔥 Hero Section */}
+                        {/*  Hero Section */}
                         {/* {data.hero && <SolutionHero data={data.hero} />} */}
                         {data.hero && (
                               <section className="bg-[#f8f9fb] pb-10 sm:pb-12 md:pb-14 px-4 sm:px-6 md:px-10 lg:px-14">
