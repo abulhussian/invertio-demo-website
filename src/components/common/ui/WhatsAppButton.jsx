@@ -122,7 +122,7 @@ const WhatsAppButton = () => {
       const currentStep = steps[stepIndex];
 
       return (
-            <div className="fixed bottom-4 right-4 sm:right-6 z-[9999] flex flex-col items-end">
+            <div className="fixed bottom-2 right-4 sm:right-6 z-[9999] flex flex-col items-end">
                   <AnimatePresence>
                         {isOpen && (
                               <motion.div
@@ -155,10 +155,10 @@ const WhatsAppButton = () => {
                                                 </div>
                                           </div>
                                           <div className="grid grid-cols-4 gap-1 text-center border-t border-white/10 pt-3">
-                                                <div className="flex flex-col"><span className="font-bold text-[10px] sm:text-sm">565+</span><span className="text-[7px] text-blue-200 uppercase">Wins</span></div>
+                                                <div className="flex flex-col"><span className="font-bold text-[10px] sm:text-sm">65+</span><span className="text-[7px] text-blue-200 uppercase">Wins</span></div>
                                                 <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">4.9</span><span className="text-[7px] text-blue-200 uppercase">Stars</span></div>
                                                 <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">4</span><span className="text-[7px] text-blue-200 uppercase">Gloves</span></div>
-                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">8+</span><span className="text-[7px] text-blue-200 uppercase">Years</span></div>
+                                                <div className="border-l border-white/10 flex flex-col"><span className="font-bold text-[10px] sm:text-sm">1.5+</span><span className="text-[7px] text-blue-200 uppercase">Years</span></div>
                                           </div>
                                     </div>
                                     <div className="flex-1 overflow-y-auto p-4 sm:p-5 bg-[#f8fafc] space-y-4">
